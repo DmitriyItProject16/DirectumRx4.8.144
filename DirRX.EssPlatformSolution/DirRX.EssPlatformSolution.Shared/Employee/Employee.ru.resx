@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASCIIWarning" xml:space="preserve">
+    <value>Адрес электронной личной почты содержит не только латинские буквы.</value>
+  </data>
+  <data name="Enum_Operation_StatChanged" xml:space="preserve">
+    <value>Изменение статуса подключения к ЛК</value>
+  </data>
+  <data name="PersonalPhoneNotUniq" xml:space="preserve">
+    <value>Личный телефон должен быть уникален для персоны.</value>
+  </data>
+  <data name="PersonalPhoneNumbersCountError" xml:space="preserve">
+    <value>Введенный личный телефон имеет неверный формат. В номере должно быть 11 цифр.</value>
+  </data>
+  <data name="PersonalPhoneRequired" xml:space="preserve">
+    <value>Укажите личный телефон сотрудника.</value>
+  </data>
+  <data name="PersonalPhoneNotUniqInESS" xml:space="preserve">
+    <value>Личный телефон должен быть уникален в базе данных личного кабинета. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="BusinessUnitOfEmployeeIsNotUseEssError" xml:space="preserve">
+    <value>Отправлять приглашение можно только сотруднику действующей организации, которая подключена к личному кабинету.</value>
+  </data>
+  <data name="SaveBeforeCreateESSUser" xml:space="preserve">
+    <value>Сохраните карточку сотрудника перед отправкой приглашения.</value>
+  </data>
+  <data name="SaveBeforeDeleteESSUser" xml:space="preserve">
+    <value>Сохраните карточку сотрудника перед отключением от личного кабинета.</value>
+  </data>
+  <data name="EmptyPersonalEMailError" xml:space="preserve">
+    <value>Укажите личную электронную почту в группе полей "Личный кабинет".</value>
+  </data>
+  <data name="IsNeedUpdateEmployees" xml:space="preserve">
+    <value>IsNeedUpdateEmployees:{0}</value>
+  </data>
+  <data name="EmployeeWithMainPlaceEmploymentTypeDouble" xml:space="preserve">
+    <value>Для персоны уже создана запись справочника "Сотрудники" с видом занятости "Основное место работы". Выберите вид занятости "Внутреннее совместительство" или "Внешнее совместительство".</value>
+  </data>
+  <data name="PropertyChanged" xml:space="preserve">
+    <value>Поле "{0}" будет изменено во всех карточках сотрудников, где указана персона {1}.</value>
+  </data>
+  <data name="PersonHasSeveralActiveEmployees" xml:space="preserve">
+    <value>Все сотрудники, в карточках которых указана персона {0}, будут отключены от личного кабинета.</value>
+  </data>
+  <data name="LockedByAsync" xml:space="preserve">
+    <value>Информация о сотруднике обновляется, поэтому некоторые поля недоступны для изменения. Повторите попытку позднее.</value>
+  </data>
+  <data name="DeleteEssUserDialogHeader" xml:space="preserve">
+    <value>Выберите вариант отключения </value>
+  </data>
+  <data name="BeforeCertificateIssueTaskError" xml:space="preserve">
+    <value>При отправке запроса на выпуск сертификата электронной подписи произошла ошибка: {0}</value>
+  </data>
+  <data name="DeleteEssUserDialogString" xml:space="preserve">
+    <value>Отключить сотрудника на время или удалить его учетную запись в личном кабинете?
+Восстановить удаленную учетную запись невозможно. В этом случае для повторного подключения зарегистрируйте для сотрудника новую учетную запись.</value>
+  </data>
+  <data name="DeleteEssUserDialogButton" xml:space="preserve">
+    <value>Удалить учетную запись</value>
+  </data>
+  <data name="TemporaryDisconnectEssUserDialogButton" xml:space="preserve">
+    <value>Временно отключить</value>
+  </data>
+  <data name="IssueCertificateTaskSent" xml:space="preserve">
+    <value>Выпуск сертификата электронной подписи инициирован</value>
+  </data>
+  <data name="EmptyEmail" xml:space="preserve">
+    <value>Укажите электронную почту сотрудника в группе "Каналы доставки сообщений" или "Контактная информация". Если у сотрудника нет электронной почты, укажите корпоративную электронную почту для получения сертификата в настройках подключения к сервисам личного кабинета.</value>
+  </data>
+  <data name="CertificateIssueTaskAlreadyExist" xml:space="preserve">
+    <value>Для сотрудника уже существует задача на выпуск сертификата электронной подписи. Стартовать еще одну задачу?</value>
+  </data>
+  <data name="ESSUserActivated" xml:space="preserve">
+    <value>Сотрудник подключен</value>
+  </data>
+  <data name="RevokeCertificateDialogTitle" xml:space="preserve">
+    <value>Выбор сертификата для отзыва</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Сертификат</value>
+  </data>
+  <data name="RevocationReason" xml:space="preserve">
+    <value>Причина отзыва</value>
+  </data>
+  <data name="RevocationDone" xml:space="preserve">
+    <value>Сертификат отозван успешно.</value>
+  </data>
+  <data name="CertificateRevocationError" xml:space="preserve">
+    <value>При отзыве сертификата произошла ошибка. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="CloudCertificateAlreadyExist" xml:space="preserve">
+    <value>У сотрудника уже есть действующий сертификат. Продолжить выпуск?</value>
+  </data>
+  <data name="EssUserDisconnectNotify" xml:space="preserve">
+    <value>Учетная запись удалена из личного кабинета.</value>
+  </data>
+  <data name="EssUserTemporaryDisconnectNotify" xml:space="preserve">
+    <value>Учетная запись временно отключена от личного кабинета.</value>
+  </data>
+  <data name="EmptyEMailError" xml:space="preserve">
+    <value>Укажите электронную почту в группе полей "Контактная информация".</value>
+  </data>
+  <data name="EmptyPersonalEMailOrWorkEmailError" xml:space="preserve">
+    <value>Укажите электронную почту в группе полей "Контактная информация" или личную электронную почту в группе полей "Личный кабинет".</value>
+  </data>
+  <data name="EmptySMSError" xml:space="preserve">
+    <value>Чтобы оповещать сотрудника о заданиях через SMS или Viber, подключите его к личному кабинету.</value>
+  </data>
+  <data name="NeedReissueCertificateAfterChange" xml:space="preserve">
+    <value>Контактные данные для получения кода подтверждения были изменены. Выпустите для сотрудника новый сертификат электронной подписи. </value>
+  </data>
+  <data name="ChangingConfirmationTypeWhenSigning" xml:space="preserve">
+    <value>Настройка подтверждения при подписании</value>
+  </data>
+  <data name="EmptyPersonalEMailOrWorkEmailPartTimeWorkerError" xml:space="preserve">
+    <value>В карточках сотрудников-совместителей укажите электронную почту в группе "Контактная информация" или личную электронную почту в группе "Личный кабинет".</value>
+  </data>
+  <data name="EmptyEmailPartTimeWorkerError" xml:space="preserve">
+    <value>В карточках сотрудников-совместителей укажите электронную почту в группе "Контактная информация".</value>
+  </data>
+  <data name="PropertyChangedInBusinessUnit" xml:space="preserve">
+    <value>Значение поля "{0}" изменится для всех сотрудников этой организации, связанных с персоной {1}.</value>
+  </data>
+  <data name="ErrorChangeStatusWhenEmployeeCardLock" xml:space="preserve">
+    <value>Статус подключения к личному кабинету изменится после закрытия карточки сотрудника. Изменение статуса займет некоторое время.</value>
+  </data>
+  <data name="ErrorChangeStatusWhenPartTimeEmployeeCardLock" xml:space="preserve">
+    <value>Статус подключения к личному кабинету изменится после закрытия этой карточки и карточек сотрудников-совместителей. Изменение статуса займет некоторое время.</value>
+  </data>
+  <data name="OnlyPrimaryEmploymentTypeCanHaveLogin" xml:space="preserve">
+    <value>Невозможно присвоить учетную запись сотруднику с видом занятости "Внутреннее совместительство". Измените вид занятости или укажите учетную запись в карточке сотрудника с основным местом работы.</value>
+  </data>
+  <data name="InheritFormEmptyBusinessUnitError" xml:space="preserve">
+    <value>На вкладке "HR Pro" снимите флажок "Использовать настройки организации". При необходимости укажите способы доставки оповещений.</value>
+  </data>
+</root>

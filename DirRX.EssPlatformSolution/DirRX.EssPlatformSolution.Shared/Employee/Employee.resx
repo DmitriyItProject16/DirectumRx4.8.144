@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ASCIIWarning" xml:space="preserve">
+    <value>Email address contains non-Latin letters.</value>
+  </data>
+  <data name="Enum_Operation_StatChanged" xml:space="preserve">
+    <value>Change ESS status</value>
+  </data>
+  <data name="PersonalPhoneNotUniq" xml:space="preserve">
+    <value>The mobile phone number must be unique for the person.</value>
+  </data>
+  <data name="PersonalPhoneNumbersCountError" xml:space="preserve">
+    <value>Invalid format of the phone number. The number must consist of 11 digits.</value>
+  </data>
+  <data name="PersonalPhoneRequired" xml:space="preserve">
+    <value>Phone numbers of some employees are not specified:
+{0}
+Specify phone numbers in the the employees' cards in the "Employee Self Service" group.</value>
+  </data>
+  <data name="PersonalPhoneNotUniqInESS" xml:space="preserve">
+    <value>Personal phone number must be unique within the Employee Self Service database. Contact your system administrator.</value>
+  </data>
+  <data name="BusinessUnitOfEmployeeIsNotUseEssError" xml:space="preserve">
+    <value>You can send invitations only to employees of an active business unit connected to Employee Self Service.</value>
+  </data>
+  <data name="SaveBeforeCreateESSUser" xml:space="preserve">
+    <value>Save the employee card before you send the invitation.</value>
+  </data>
+  <data name="SaveBeforeDeleteESSUser" xml:space="preserve">
+    <value>Save the employee card before you disconnect him or her from Employee Self Service.</value>
+  </data>
+  <data name="EmptyPersonalEMailError" xml:space="preserve">
+    <value>Specify the employee's personal email in the "Employee Self Service" group.</value>
+  </data>
+  <data name="IsNeedUpdateEmployees" xml:space="preserve">
+    <value>IsNeedUpdateEmployees:{0}</value>
+  </data>
+  <data name="EmployeeWithMainPlaceEmploymentTypeDouble" xml:space="preserve">
+    <value>In the "Employee" databook, the record with the primary employment type has already been created for this person. Fill in the "Employment type" field with the "Internal secondary employment" or "External secondary employment".</value>
+  </data>
+  <data name="PropertyChanged" xml:space="preserve">
+    <value>Field "{0}" will be changed for all employee cards with specified person {1}.</value>
+  </data>
+  <data name="PersonHasSeveralActiveEmployees" xml:space="preserve">
+    <value>All employees, in whose card person {0} is specified, will be disconnected from the ESS.</value>
+  </data>
+  <data name="LockedByAsync" xml:space="preserve">
+    <value>Employee data is being updated, and values in some fields cannot be changed. Try again later.</value>
+  </data>
+  <data name="DeleteEssUserDialogHeader" xml:space="preserve">
+    <value>Select Disconnection Option</value>
+  </data>
+  <data name="BeforeCertificateIssueTaskError" xml:space="preserve">
+    <value>An error occurred when sending a request to issue an electronic signature certificate: {0} </value>
+  </data>
+  <data name="DeleteEssUserDialogString" xml:space="preserve">
+    <value>Suspend or delete employee's account in the ESS?
+A deleted account cannot be restored. To provide the employee with access to the ESS, create a new account. </value>
+  </data>
+  <data name="DeleteEssUserDialogButton" xml:space="preserve">
+    <value>Delete Account</value>
+  </data>
+  <data name="TemporaryDisconnectEssUserDialogButton" xml:space="preserve">
+    <value>Suspend Account</value>
+  </data>
+  <data name="IssueCertificateTaskSent" xml:space="preserve">
+    <value>Issue of the electronic signature certificate has been initiated.</value>
+  </data>
+  <data name="EmptyEmail" xml:space="preserve">
+    <value>Specify the employee's email in group "Delivery Methods" or "Contact Information". If the employee does not have an email, then in the ESS connection settings, specify a company's email to receive the certificate.</value>
+  </data>
+  <data name="CertificateIssueTaskAlreadyExist" xml:space="preserve">
+    <value>A task to issue an electronic signature certificate for this employee already exists. Send another task?</value>
+  </data>
+  <data name="ESSUserActivated" xml:space="preserve">
+    <value>Employee is connected</value>
+  </data>
+  <data name="RevokeCertificateDialogTitle" xml:space="preserve">
+    <value>Select Certificate to Revoke</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="RevocationReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="RevocationDone" xml:space="preserve">
+    <value>The certificate has been successfully revoked.</value>
+  </data>
+  <data name="CertificateRevocationError" xml:space="preserve">
+    <value>An error occurred when revoking the certificate. Contact your system administrator.</value>
+  </data>
+  <data name="CloudCertificateAlreadyExist" xml:space="preserve">
+    <value>The employee has an active certificate. Do you want to issue a new certificate?</value>
+  </data>
+  <data name="EssUserDisconnectNotify" xml:space="preserve">
+    <value>The account has been deleted from the Employee Self Service.</value>
+  </data>
+  <data name="EssUserTemporaryDisconnectNotify" xml:space="preserve">
+    <value>The account has been temporarily disconnected from the Employee Self Service.</value>
+  </data>
+  <data name="EmptyEMailError" xml:space="preserve">
+    <value>Specify the employee's email in the "Contact Information" group.</value>
+  </data>
+  <data name="EmptyPersonalEMailOrWorkEmailError" xml:space="preserve">
+    <value>Specify the email in the "Contact Information" group or the personal email in the "Employee Self Service" group.</value>
+  </data>
+  <data name="EmptySMSError" xml:space="preserve">
+    <value>To notify the employee of their assignments via SMS or Viber, connect the employee to the Employee Self Service.</value>
+  </data>
+  <data name="NeedReissueCertificateAfterChange" xml:space="preserve">
+    <value>Contact information for receiving confirmation codes has changed. Issue a new electronic signature certificate.</value>
+  </data>
+  <data name="ChangingConfirmationTypeWhenSigning" xml:space="preserve">
+    <value>Configure Confirmation for Document Signing</value>
+  </data>
+  <data name="EmptyPersonalEMailOrWorkEmailPartTimeWorkerError" xml:space="preserve">
+    <value>In the cards of employees working on multiple job positions, specify email in the "Contact Information" group or personal email in the "Employee Self Service" group.</value>
+  </data>
+  <data name="EmptyEmailPartTimeWorkerError" xml:space="preserve">
+    <value>In the cards of employees working on multiple job positions, specify email in the "Contact Information" group.</value>
+  </data>
+  <data name="PropertyChangedInBusinessUnit" xml:space="preserve">
+    <value>Value of field "{0}" will change for all employees of this business unit that are related to person {1}.</value>
+  </data>
+  <data name="ErrorChangeStatusWhenEmployeeCardLock" xml:space="preserve">
+    <value>Status of connection to ESS will change after the employee card is closed. Change of the status will take some time.</value>
+  </data>
+  <data name="ErrorChangeStatusWhenPartTimeEmployeeCardLock" xml:space="preserve">
+    <value>Status of connection to ESS will change after this card and cards of employee's other job positions are closed. Change of the status will take some time.</value>
+  </data>
+  <data name="OnlyPrimaryEmploymentTypeCanHaveLogin" xml:space="preserve">
+    <value>Cannot assign an account to the employee with the internal secondary employment type. Change the employment type or assign the account to the employee with the primary employment type.</value>
+  </data>
+  <data name="InheritFormEmptyBusinessUnitError" xml:space="preserve">
+    <value>On the "HR Pro" tab, clear checkbox "Use notification settings of business unit". Change the settings if required.</value>
+  </data>
+</root>

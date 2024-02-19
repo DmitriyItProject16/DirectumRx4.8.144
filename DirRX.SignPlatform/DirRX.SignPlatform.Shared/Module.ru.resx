@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SetIdentificationTypeDialogTitle" xml:space="preserve">
+    <value>Выпуск сертификата электронной подписи</value>
+  </data>
+  <data name="ErrorTryGetLastCloudCertificatesExpirationTaskDate" xml:space="preserve">
+    <value>Jobs CloudCertificatesExpirationTasks: Ошибка при получении последней даты запуска проверки срока сертификатов</value>
+  </data>
+  <data name="SetIdentificationTypeDialogCloudProvider" xml:space="preserve">
+    <value>Облачный провайдер</value>
+  </data>
+  <data name="SetIdentificationTypeDialogIdentificationType" xml:space="preserve">
+    <value>Способ идентификации</value>
+  </data>
+  <data name="GetCloudSignProviderInfosException" xml:space="preserve">
+    <value>Не удалось получить информацию об облачном провайдере. Произошла ошибка при выполнении функции SignPlatform.ModuleServerFunctions.GetCloudSignProviderInfos(). {0}: {1}</value>
+  </data>
+  <data name="IdentityDocumentKindRequired" xml:space="preserve">
+    <value>Укажите вид документа, удостоверяющего личность, в карточке персоны.</value>
+  </data>
+  <data name="InilaRequired" xml:space="preserve">
+    <value>Укажите СНИЛС в карточке персоны.</value>
+  </data>
+  <data name="TinRequired" xml:space="preserve">
+    <value>Укажите ИНН в карточке персоны.</value>
+  </data>
+  <data name="SendCertificateIssueRequestException" xml:space="preserve">
+    <value>Не удалось отправить запрос на выдачу сертификата электронной подписи. Произошла ошибка при выполнении функции SignPlatform.ModuleServerFunctions.SendCertificateIssueRequest(). {0}: {1}</value>
+  </data>
+  <data name="CertificateIssueStatementDocumentName" xml:space="preserve">
+    <value>Заявление на выпуск сертификата электронной подписи для сотрудника: {0}</value>
+  </data>
+  <data name="CertificateIssueKind" xml:space="preserve">
+    <value>Заявление о выпуске электронной подписи</value>
+  </data>
+  <data name="CloudSignProviderUnavailable" xml:space="preserve">
+    <value>Сервис облачного подписания недоступен. Повторите попытку позже или обратитесь к администратору системы.</value>
+  </data>
+  <data name="CertificateRequestEntryName" xml:space="preserve">
+    <value>Заявка на выпуск сертификата электронной подписи №{0} для сотрудника: {1}</value>
+  </data>
+  <data name="InvalidIdentificationType" xml:space="preserve">
+    <value>Неверный тип идентификации сотрудника: {0}</value>
+  </data>
+  <data name="CertificateIssueMessage" xml:space="preserve">
+    <value>{0}
+
+SMS-сообщение с кодом подтверждения отправлено на номер телефона {1}. Введите код в течение 5 минут. Если вы не получили код или не успели его ввести, повторно нажмите на кнопку "Подписать".</value>
+  </data>
+  <data name="CertificateIssuedSuccessfullyTitle" xml:space="preserve">
+    <value>Выпущен сертификат электронной подписи для сотрудника: {0}</value>
+  </data>
+  <data name="GosuslugiConfirmMessage" xml:space="preserve">
+    <value>Заявление будет направлено в личный кабинет Единого портала государственных услуг (Госуслуги). Нажмите на кнопку "ОК", чтобы подтвердить отправку и выполнить задание. После этого перейдите на Госуслуги и подпишите заявление.</value>
+  </data>
+  <data name="ConfirmCertificateIssue" xml:space="preserve">
+    <value>Подтверждение выпуска сертификата.</value>
+  </data>
+  <data name="CertificateIssueTaskSubject" xml:space="preserve">
+    <value>Выпуск сертификата электронной подписи для сотрудника: {0}</value>
+  </data>
+  <data name="CertificateIssueAssignmentSubject" xml:space="preserve">
+    <value>Подпишите: {0}</value>
+  </data>
+  <data name="VerificationCode" xml:space="preserve">
+    <value>Код подтверждения</value>
+  </data>
+  <data name="CertificateIssueErrorAssignmentSubject" xml:space="preserve">
+    <value>Произошли ошибки при выполнении запроса №{0} на получение сертификата электронной подписи для сотрудника: {1} </value>
+  </data>
+  <data name="SignServiceNotAnswer" xml:space="preserve">
+    <value>Сервис подписания недоступен длительное время. Выдача сертификата прервана. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="DateOfBirthRequired" xml:space="preserve">
+    <value>Укажите дату рождения в карточке персоны.</value>
+  </data>
+  <data name="UnexpectedErrorText" xml:space="preserve">
+    <value>Произошла ошибка. Код: {0}</value>
+  </data>
+  <data name="UnexpectedStatusError" xml:space="preserve">
+    <value>Некорректное значение статуса запроса: {0}</value>
+  </data>
+  <data name="UnexpectedRequestStatusError" xml:space="preserve">
+    <value>Значение статуса выпуска сертификата электронной подписи: {0}</value>
+  </data>
+  <data name="GenderError" xml:space="preserve">
+    <value>Укажите пол в карточке персоны</value>
+  </data>
+  <data name="Error400SignServiceRequest" xml:space="preserve">
+    <value>При выпуске сертификата электронной подписи произошла ошибка.</value>
+  </data>
+  <data name="Error500SignServiceRequest" xml:space="preserve">
+    <value>При выпуске сертификата электронной подписи произошла ошибка.</value>
+  </data>
+  <data name="Error404SignServiceRequest" xml:space="preserve">
+    <value>При выпуске сертификата электронной подписи произошла ошибка.</value>
+  </data>
+  <data name="UnknownResponseCode" xml:space="preserve">
+    <value>Код ответа сервиса подписания: {0}</value>
+  </data>
+  <data name="CloudCertificateIDNotFound" xml:space="preserve">
+    <value>Для запроса на выпуск УНЭП с ИД {0} не найден ИД облачного сертификата электронной подписи.</value>
+  </data>
+  <data name="AddressOfSignServiceIsNullOrEmpty" xml:space="preserve">
+    <value>При выполнении запроса произошла ошибка. Укажите адрес сервиса подписания в настройках подключения модуля "Платформа личного кабинета".</value>
+  </data>
+  <data name="CRL_REASON_UNSPECIFIED" xml:space="preserve">
+    <value>Причина неизвестна</value>
+  </data>
+  <data name="CRL_REASON_KEY_COMPROMISE" xml:space="preserve">
+    <value>Компрометация ключей</value>
+  </data>
+  <data name="CRL_REASON_CA_COMPROMISE" xml:space="preserve">
+    <value>Компрометация Центра Сертификации</value>
+  </data>
+  <data name="CRL_REASON_AFFILIATION_CHANGED" xml:space="preserve">
+    <value>Имя пользователя или другая информация в сертификате изменена, но нет причины полагать, что секретный ключ скомпрометирован</value>
+  </data>
+  <data name="CRL_REASON_SUPERSEDED" xml:space="preserve">
+    <value>Сертификат заменен другим, но нет причины полагать, что секретный ключ скомпрометирован</value>
+  </data>
+  <data name="CRL_REASON_CESSATION_OF_OPERATION" xml:space="preserve">
+    <value>Сертификат более не нужен для целей, которых он выдавался, но нет причины полагать, что секретный ключ скомпрометирован</value>
+  </data>
+  <data name="ByDisconnectingFromESS" xml:space="preserve">
+    <value>Задача прекращена, так как сотрудник отключен от личного кабинета.</value>
+  </data>
+  <data name="ErrorGetConfirmationTypes" xml:space="preserve">
+    <value>
+Не удалось получить способы подтверждения с сервиса подписания. Обратитесь к администратору системы.
+Произошла ошибка при выполнении функции SignPlatform.ModuleServerFunctions.GetConfirmationTypes(). {0}: {1}.
+Не удалось получить способы подтверждения с сервиса подписания. Обратитесь к администратору системы.
+</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_DefaultValue" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_Email" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_FlashCall" xml:space="preserve">
+    <value>Звонок</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_None" xml:space="preserve">
+    <value>Не требуется</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_Sms" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="ConfirmationTypeNotFound" xml:space="preserve">
+    <value>Способ подтверждения {0} не настроен. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="ConfirmationType" xml:space="preserve">
+    <value>Подтверждение при подписании</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>Пользователь не найден в сервисе подписания. Выпустите сертификат электронной подписи.</value>
+  </data>
+  <data name="ErrorAddingParametersToCertificate" xml:space="preserve">
+    <value>Заполнение параметров сертификатов завершено. Параметры сертификатов с ИД {0} не заполнены из-за блокировки.</value>
+  </data>
+  <data name="SuccessfullyAddingCertificateParameters" xml:space="preserve">
+    <value>Параметры сертификатов успешно заполнены.</value>
+  </data>
+  <data name="NoCertificatesWithEmptyParameters" xml:space="preserve">
+    <value>Нет сертификатов с незаполненными параметрами.</value>
+  </data>
+</root>

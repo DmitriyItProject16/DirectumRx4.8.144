@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_IdentityDocumentKind" xml:space="preserve">
+    <value>Вид документа</value>
+  </data>
+  <data name="Enum_IdentityDocumentKind_PassportRF" xml:space="preserve">
+    <value>Паспорт гражданина РФ</value>
+  </data>
+  <data name="Enum_IdentityDocumentKind_OtherDocument" xml:space="preserve">
+    <value>Иной документ, удостоверяющий личность</value>
+  </data>
+  <data name="Property_IdentityDocumentSeries" xml:space="preserve">
+    <value>Серия</value>
+  </data>
+  <data name="Property_IdentityDocumentNumber" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="Property_IdentityDocumentIssueDate" xml:space="preserve">
+    <value>Дата выдачи</value>
+  </data>
+  <data name="Property_IdentityDocumentIssuedBy" xml:space="preserve">
+    <value>Кем выдан</value>
+  </data>
+  <data name="Property_IdentityDocumentIssuerID" xml:space="preserve">
+    <value>Код подразделения</value>
+  </data>
+  <data name="Property_IdentityDocumentExpirationDate" xml:space="preserve">
+    <value>Срок действия</value>
+  </data>
+  <data name="ControlGroup_f01a229289844c158cbfee70282fcc89" xml:space="preserve">
+    <value>Документ, удостоверяющий личность</value>
+  </data>
+  <data name="Form_73ed64274ad64a5d9ffed97e0af0cf79" xml:space="preserve">
+    <value>HRPro. Документ, удостоверяющий личность</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Персона</value>
+  </data>
+  <data name="Property_IdentificationTypeDirRx" xml:space="preserve">
+    <value>Тип идентификации</value>
+  </data>
+  <data name="Enum_IdentificationTypeDirRx_Personal" xml:space="preserve">
+    <value>Личная</value>
+  </data>
+  <data name="Enum_IdentificationTypeDirRx_Esia" xml:space="preserve">
+    <value>ЕСИА</value>
+  </data>
+  <data name="Property_IdentityDocumentBirthPlaceDirRX" xml:space="preserve">
+    <value>Место рождения</value>
+  </data>
+  <data name="Enum_IdentityDocumentKind_ForeignPassport" xml:space="preserve">
+    <value>Иностранный паспорт</value>
+  </data>
+</root>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SetIdentificationTypeDialogTitle" xml:space="preserve">
+    <value>Issue Electronic Signature Certificate</value>
+  </data>
+  <data name="ErrorTryGetLastCloudCertificatesExpirationTaskDate" xml:space="preserve">
+    <value>Jobs CloudCertificatesExpirationTasks: Error while getting last task date of cloud certificates expiration</value>
+  </data>
+  <data name="SetIdentificationTypeDialogCloudProvider" xml:space="preserve">
+    <value>Cloud provider</value>
+  </data>
+  <data name="SetIdentificationTypeDialogIdentificationType" xml:space="preserve">
+    <value>Identification type</value>
+  </data>
+  <data name="GetCloudSignProviderInfosException" xml:space="preserve">
+    <value>Cannot get information about the cloud provider. An error occurred when executing function SignPlatform.ModuleServerFunctions.GetCloudSignProviderInfos(). {0}: {1}</value>
+  </data>
+  <data name="IdentityDocumentKindRequired" xml:space="preserve">
+    <value>Specify the identity document type in the person card.</value>
+  </data>
+  <data name="InilaRequired" xml:space="preserve">
+    <value>Specify the INILA in the person card.</value>
+  </data>
+  <data name="TinRequired" xml:space="preserve">
+    <value>Specify the INN in the person card.</value>
+  </data>
+  <data name="SendCertificateIssueRequestException" xml:space="preserve">
+    <value>Cannot send a request for an electronic signature certificate. An error occurred when executing function SignPlatform.ModuleServerFunctions.SendCertificateIssueRequest(). {0}: {1}</value>
+  </data>
+  <data name="CertificateIssueStatementDocumentName" xml:space="preserve">
+    <value>Application for electronic signature certificate for employee: {0}</value>
+  </data>
+  <data name="CertificateIssueKind" xml:space="preserve">
+    <value>Application for issuing electronic signature certificate</value>
+  </data>
+  <data name="CloudSignProviderUnavailable" xml:space="preserve">
+    <value>The cloud signing service is unavailable. Try again later or contact your system administrator.</value>
+  </data>
+  <data name="CertificateRequestEntryName" xml:space="preserve">
+    <value>Request for electronic signature certificate No. {0} for employee: {1}</value>
+  </data>
+  <data name="InvalidIdentificationType" xml:space="preserve">
+    <value>Incorrect employee identification type: {0}</value>
+  </data>
+  <data name="CertificateIssueMessage" xml:space="preserve">
+    <value>{0}
+
+SMS with the confirmation code is sent to your phone number: {1}. Enter the code within 5 minutes. If you haven't received the code or haven't entered it in time, click "Sign" again.</value>
+  </data>
+  <data name="CertificateIssuedSuccessfullyTitle" xml:space="preserve">
+    <value>Electronic signature certificate issued for employee: {0}</value>
+  </data>
+  <data name="GosuslugiConfirmMessage" xml:space="preserve">
+    <value>The application will be sent to the Public Services Portal of the Russian Federation (Gosuslugi). Click OK to confirm sending application and complete the assignment. After that, go to the Gosuslugi portal and sign the application.</value>
+  </data>
+  <data name="ConfirmCertificateIssue" xml:space="preserve">
+    <value>Confirm Certificate Issue</value>
+  </data>
+  <data name="CertificateIssueTaskSubject" xml:space="preserve">
+    <value>Issue electronic signature certificate for employee: {0}</value>
+  </data>
+  <data name="CertificateIssueAssignmentSubject" xml:space="preserve">
+    <value>Sign: {0}</value>
+  </data>
+  <data name="VerificationCode" xml:space="preserve">
+    <value>Confirmation code</value>
+  </data>
+  <data name="CertificateIssueErrorAssignmentSubject" xml:space="preserve">
+    <value>Errors occurred when executing request No.{0} for electronic signature certificate for employee: {1}</value>
+  </data>
+  <data name="SignServiceNotAnswer" xml:space="preserve">
+    <value>The Sign Service has been unavailable for some time. Certificate issue procedure has been aborted. Contact your system administrator.</value>
+  </data>
+  <data name="DateOfBirthRequired" xml:space="preserve">
+    <value>Specify the date of birth in the person card.</value>
+  </data>
+  <data name="UnexpectedErrorText" xml:space="preserve">
+    <value>An error occurred. Error code: {0}.</value>
+  </data>
+  <data name="UnexpectedStatusError" xml:space="preserve">
+    <value>Incorrect request status: {0}</value>
+  </data>
+  <data name="UnexpectedRequestStatusError" xml:space="preserve">
+    <value>Status of electronic signature certificate issue: {0}</value>
+  </data>
+  <data name="GenderError" xml:space="preserve">
+    <value>Specify the sex in the person card.</value>
+  </data>
+  <data name="Error400SignServiceRequest" xml:space="preserve">
+    <value>An error occurred when issuing the electronic signature certificate.</value>
+  </data>
+  <data name="Error500SignServiceRequest" xml:space="preserve">
+    <value>An error occurred when issuing the electronic signature certificate.</value>
+  </data>
+  <data name="Error404SignServiceRequest" xml:space="preserve">
+    <value>An error occurred when issuing the electronic signature certificate.</value>
+  </data>
+  <data name="UnknownResponseCode" xml:space="preserve">
+    <value>Sign Service response code: {0}</value>
+  </data>
+  <data name="CloudCertificateIDNotFound" xml:space="preserve">
+    <value>Cannot find ID of the electronic signature cloud certificate that is required to send a request for issuing a non-qualified electronic signature with ID: {0}</value>
+  </data>
+  <data name="AddressOfSignServiceIsNullOrEmpty" xml:space="preserve">
+    <value>An error occurred when executing the request. Specify the Signing Service address in the connection settings of the "ESS Platform" module.</value>
+  </data>
+  <data name="CRL_REASON_UNSPECIFIED" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="CRL_REASON_KEY_COMPROMISE" xml:space="preserve">
+    <value>Keys are compromised</value>
+  </data>
+  <data name="CRL_REASON_CA_COMPROMISE" xml:space="preserve">
+    <value>Certification authority has been compromised</value>
+  </data>
+  <data name="CRL_REASON_AFFILIATION_CHANGED" xml:space="preserve">
+    <value>The username or other information in the certificate has been modified but there is no cause to suspect that the private key has been compromised.</value>
+  </data>
+  <data name="CRL_REASON_SUPERSEDED" xml:space="preserve">
+    <value>Certificate has been replaced, but there is no cause to suspect that the private key has been compromised</value>
+  </data>
+  <data name="CRL_REASON_CESSATION_OF_OPERATION" xml:space="preserve">
+    <value>The certificate is no longer needed for the purpose for which it was issued, but there is no cause to suspect that the private key has been compromised</value>
+  </data>
+  <data name="ByDisconnectingFromESS" xml:space="preserve">
+    <value>The task was aborted, because the employee was disconnected from Employee Self Service.</value>
+  </data>
+  <data name="ErrorGetConfirmationTypes" xml:space="preserve">
+    <value>
+Cannot get available confirmation types from the signing service. Contact your system administrator.
+An error occurred when executing function SignPlatform.ModuleServerFunctions.GetConfirmationTypes(). {0}: {1}.Cannot get available confirmation types from the signing service. Contact your system administrator.
+An error occurred when executing function SignPlatform.ModuleServerFunctions.GetConfirmationTypes(). {0}: {1}.</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_DefaultValue" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_FlashCall" xml:space="preserve">
+    <value>Flash call</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_Sms" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="EssSetting_Enum_ConfirmationType_Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="ConfirmationTypeNotFound" xml:space="preserve">
+    <value>Confirmation type {0} is not configured. Contact your system administrator.</value>
+  </data>
+  <data name="ConfirmationType" xml:space="preserve">
+    <value>Confirmation for document signing</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>The user is not found in the signing service. Issue an electronic signature certificate.</value>
+  </data>
+  <data name="ErrorAddingParametersToCertificate" xml:space="preserve">
+    <value>Filling of certificate parameters is completed. Parameters of certificates {0} were not filled in due to a lock.</value>
+  </data>
+  <data name="SuccessfullyAddingCertificateParameters" xml:space="preserve">
+    <value>Certificate parameters are successfully filled in.</value>
+  </data>
+  <data name="NoCertificatesWithEmptyParameters" xml:space="preserve">
+    <value>There are no certificates with blank parameters.</value>
+  </data>
+</root>

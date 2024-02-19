@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Request for Electronic Signature Certificate</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Request for Electronic Signature Certificate</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Requests for Electronic Signature Certificates</value>
+  </data>
+  <data name="Property_Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="Property_IssueStatus" xml:space="preserve">
+    <value>Issue status</value>
+  </data>
+  <data name="Enum_IssueStatus_NeedConfirm" xml:space="preserve">
+    <value>Need confirm</value>
+  </data>
+  <data name="Enum_IssueStatus_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Property_Errors" xml:space="preserve">
+    <value>Errors</value>
+  </data>
+  <data name="Property_RequestId" xml:space="preserve">
+    <value>Request ID</value>
+  </data>
+  <data name="Property_TaskId" xml:space="preserve">
+    <value>Task ID</value>
+  </data>
+  <data name="Property_CreateDate" xml:space="preserve">
+    <value>Request created</value>
+  </data>
+  <data name="Property_LastStatusChange" xml:space="preserve">
+    <value>Last status change</value>
+  </data>
+  <data name="Property_IdentificationType" xml:space="preserve">
+    <value>Identification type</value>
+  </data>
+  <data name="Property_Executor" xml:space="preserve">
+    <value>Monitoring</value>
+  </data>
+  <data name="Enum_Executor_TaskScheme" xml:space="preserve">
+    <value>Task scheme</value>
+  </data>
+  <data name="Enum_Executor_BckgrndProcess" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="Enum_IssueStatus_DocVerification" xml:space="preserve">
+    <value>Documents verification</value>
+  </data>
+  <data name="Enum_IssueStatus_InProgress" xml:space="preserve">
+    <value>Creating certificate</value>
+  </data>
+  <data name="Enum_IssueStatus_CertCreated" xml:space="preserve">
+    <value>Certificate created</value>
+  </data>
+  <data name="Enum_IdentificationType_Personal" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="Enum_IdentificationType_Esia" xml:space="preserve">
+    <value>Esia</value>
+  </data>
+  <data name="Enum_IssueStatus_CertRegistered" xml:space="preserve">
+    <value>Certificate registered</value>
+  </data>
+  <data name="Enum_IssueStatus_NeedDownloadSt" xml:space="preserve">
+    <value>Application available for download</value>
+  </data>
+  <data name="Enum_IssueStatus_IssVerification" xml:space="preserve">
+    <value>Issue verification</value>
+  </data>
+  <data name="Enum_IssueStatus_NeedConfirmEsia" xml:space="preserve">
+    <value>Waiting for confirmation from Gosuslugi</value>
+  </data>
+  <data name="Action_OpenTask" xml:space="preserve">
+    <value>Open Task to Issue Certificate</value>
+  </data>
+  <data name="Action_OpenTaskDescription" xml:space="preserve">
+    <value>Open the task to issue electronic signature certificate.</value>
+  </data>
+  <data name="Action_OpenTaskHint" xml:space="preserve">
+    <value>Open Task to Issue Electronic Signature Certificate</value>
+  </data>
+  <data name="Action_OpenTaskConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_OpenTaskConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_Tasks_28004d9281364de4875b5b71b85399df" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="Property_DocumentID" xml:space="preserve">
+    <value>Application ID</value>
+  </data>
+  <data name="Action_OpenDocument" xml:space="preserve">
+    <value>Open application</value>
+  </data>
+  <data name="Action_OpenDocumentDescription" xml:space="preserve">
+    <value>Open the application for electronic signature certificate.</value>
+  </data>
+  <data name="Action_OpenDocumentHint" xml:space="preserve">
+    <value>Open Application for Electronic Signature Certificate</value>
+  </data>
+  <data name="Action_OpenDocumentConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_OpenDocumentConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_Documents_bffeaa45e07e471bbac27bd78910ed65" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="FilterPanel_DateCreate_d3a9620825d845e8b82d680b79a99585" xml:space="preserve">
+    <value>Request created</value>
+  </data>
+  <data name="FilterPanel_LastDate_bad994fc12fd404f996cade6afd0c7af" xml:space="preserve">
+    <value>Last status change</value>
+  </data>
+  <data name="FilterPanel_Status_c5f6652d2c244a8e94098b4da2e3e531" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="FilterPanel_Error_f39c339bc1fe4d64840bc449b3a21400" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="FilterPanel_Work_59f5f2feeb7f4a8db84c41b2ecce1ed3" xml:space="preserve">
+    <value>In progress</value>
+  </data>
+  <data name="FilterPanel_Done_d45dfb71db4540ada54f898b10939af2" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="FilterPanel_Employee_32b833a670bd4b73bc2f00b437d8d23e" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="Property_CloudCertificateID" xml:space="preserve">
+    <value>Cloud certificate ID</value>
+  </data>
+  <data name="Property_CertificateID" xml:space="preserve">
+    <value>Certificate ID</value>
+  </data>
+  <data name="Property_ProviderId" xml:space="preserve">
+    <value>Provider ID</value>
+  </data>
+</root>

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_PersonalAccountStatusDirRX" xml:space="preserve">
+    <value>Подключение к ЛК</value>
+  </data>
+  <data name="Enum_PersonalAccountStatusDirRX_InviteIsNotSent" xml:space="preserve">
+    <value>Не подключен</value>
+  </data>
+  <data name="Enum_PersonalAccountStatusDirRX_InviteSent" xml:space="preserve">
+    <value>Приглашение отправлено</value>
+  </data>
+  <data name="Enum_PersonalAccountStatusDirRX_InviteAccepted" xml:space="preserve">
+    <value>Подключен</value>
+  </data>
+  <data name="Property_PersonalPhoneDirRX" xml:space="preserve">
+    <value>Личный телефон</value>
+  </data>
+  <data name="Property_MessagesEmailDirRX" xml:space="preserve">
+    <value>Личная эл. почта</value>
+  </data>
+  <data name="ControlGroup_0b3bb168612249a59633c5b81742ae05" xml:space="preserve">
+    <value>Сотрудник</value>
+  </data>
+  <data name="Control_78ddbf99b0fd44f3bd37a00960472a99_EmptyText" xml:space="preserve">
+    <value>+7 (111) 222-33-44</value>
+  </data>
+  <data name="ControlGroup_8fd91d31742d436298477ab019995687" xml:space="preserve">
+    <value>Контактная информация</value>
+  </data>
+  <data name="ControlGroup_2c0826c892f34f649c8aa320b064db91" xml:space="preserve">
+    <value>Уведомлять по электронной почте</value>
+  </data>
+  <data name="Action_CreateESSUserDirRX" xml:space="preserve">
+    <value>Подключить к ЛК</value>
+  </data>
+  <data name="Action_CreateESSUserDirRXDescription" xml:space="preserve">
+    <value>Отправка приглашения для входа в личный кабинет.</value>
+  </data>
+  <data name="Action_CreateESSUserDirRXHint" xml:space="preserve">
+    <value>Отправить приглашение в личный кабинет</value>
+  </data>
+  <data name="Action_CreateESSUserDirRXConfirmationMessage" xml:space="preserve">
+    <value>Отправить приглашение в личный кабинет?</value>
+  </data>
+  <data name="Action_DisconnectDirRX" xml:space="preserve">
+    <value>Удалить учетную запись</value>
+  </data>
+  <data name="Action_DisconnectDirRXDescription" xml:space="preserve">
+    <value>Сохранение с последующим удалением учетной записи сотрудника в личном кабинете.</value>
+  </data>
+  <data name="Action_DisconnectDirRXHint" xml:space="preserve">
+    <value>Сохранить изменения и удалить учетную запись в ЛК</value>
+  </data>
+  <data name="Operation_CreateEssUsersDirRX" xml:space="preserve">
+    <value>Приглашение в ЛК</value>
+  </data>
+  <data name="Action_DeleteEssUserDirRX" xml:space="preserve">
+    <value>Отключить от ЛК</value>
+  </data>
+  <data name="Action_DeleteEssUserDirRXDescription" xml:space="preserve">
+    <value>Отключение пользователя от личного кабинета.</value>
+  </data>
+  <data name="Action_DeleteEssUserDirRXHint" xml:space="preserve">
+    <value>Отключить от личного кабинета</value>
+  </data>
+  <data name="Action_DeleteEssUserDirRXConfirmationMessage" xml:space="preserve">
+    <value>Отключить пользователя от личного кабинета?</value>
+  </data>
+  <data name="Property_SmsNotifDirRX" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="Property_EmailNotifDirRX" xml:space="preserve">
+    <value>Эл. почта</value>
+  </data>
+  <data name="Property_ViberNotifDirRX" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="Property_EmploymentType" xml:space="preserve">
+    <value>Вид занятости</value>
+  </data>
+  <data name="Enum_EmploymentType_MainPlace" xml:space="preserve">
+    <value>Основное место работы</value>
+  </data>
+  <data name="Enum_EmploymentType_InternalConcurr" xml:space="preserve">
+    <value>Внутреннее совместительство</value>
+  </data>
+  <data name="Enum_EmploymentType_ExternalConcurr" xml:space="preserve">
+    <value>Внешнее совместительство</value>
+  </data>
+  <data name="Property_BusinessUnitDirRX" xml:space="preserve">
+    <value>Наша организация</value>
+  </data>
+  <data name="AdditionalInfoTemplate" xml:space="preserve">
+    <value>[JobTitle]</value>
+  </data>
+  <data name="Property_LockedByAsync" xml:space="preserve">
+    <value>Заблокирован асинхронным обработчиком</value>
+  </data>
+  <data name="Action_TempDisconnectDirRX" xml:space="preserve">
+    <value>Временно отключить</value>
+  </data>
+  <data name="Property_CloudSignProvider" xml:space="preserve">
+    <value>Облачный провайдер</value>
+  </data>
+  <data name="Action_TempDisconnectDirRXDescription" xml:space="preserve">
+    <value>Сохранить и временно отключить учетную записи сотрудника от личного кабинета.</value>
+  </data>
+  <data name="Action_ShowPerson" xml:space="preserve">
+    <value>Открыть карточку персоны</value>
+  </data>
+  <data name="Action_TempDisconnectDirRXHint" xml:space="preserve">
+    <value>Сохранить и временно отключить учетную записи сотрудника от личного кабинета.</value>
+  </data>
+  <data name="Action_ShowPersonDescription" xml:space="preserve">
+    <value>Открыть карточку персоны</value>
+  </data>
+  <data name="Action_ShowPersonHint" xml:space="preserve">
+    <value>Открыть карточку персоны</value>
+  </data>
+  <data name="Action_CreateCertificateIssueTaskDirRx" xml:space="preserve">
+    <value>Выпустить сертификат</value>
+  </data>
+  <data name="Action_CreateCertificateIssueTaskDirRxDescription" xml:space="preserve">
+    <value>Стартовать задачу на выпуск сертификата электронной подписи</value>
+  </data>
+  <data name="Action_CreateCertificateIssueTaskDirRxHint" xml:space="preserve">
+    <value>Стартовать задачу на выпуск сертификата электронной подписи</value>
+  </data>
+  <data name="Operation_CreateCertificateIssueTaskDirRx" xml:space="preserve">
+    <value>Выпуск сертификата</value>
+  </data>
+  <data name="Action_RevokeCertificateIssueTaskDirRx" xml:space="preserve">
+    <value>Отозвать сертификат</value>
+  </data>
+  <data name="Action_RevokeCertificateIssueTaskDirRxDescription" xml:space="preserve">
+    <value>Отозвать сертификат электронной подписи</value>
+  </data>
+  <data name="Action_RevokeCertificateIssueTaskDirRxHint" xml:space="preserve">
+    <value>Отозвать сертификат электронной подписи</value>
+  </data>
+  <data name="Operation_RevokeCertificateIssueTaskDirRx" xml:space="preserve">
+    <value>Отзыв сертификата</value>
+  </data>
+  <data name="Form_9dd7f5a95f8c45e99c6fc39ee66a406f" xml:space="preserve">
+    <value>HR Pro</value>
+  </data>
+  <data name="ControlGroup_ba7c755322f74579be9cbf6c040cc30d" xml:space="preserve">
+    <value>Личный кабинет</value>
+  </data>
+  <data name="ControlGroup_c6c62bb548f1493085baf36331737bc2" xml:space="preserve">
+    <value>Способы доставки оповещений</value>
+  </data>
+  <data name="Property_NeedNotifyNewHRAssignmentDirRX" xml:space="preserve">
+    <value>О новых заданиях</value>
+  </data>
+  <data name="Property_NeedNotifyExpiredHRAssignmentDirRX" xml:space="preserve">
+    <value>О просроченных заданиях</value>
+  </data>
+  <data name="Property_NeedNotifyHRRepeatDirRX" xml:space="preserve">
+    <value>О приближении срока ознакомления и подписания</value>
+  </data>
+  <data name="Enum_NeedNotifyHRRepeatDirRX_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Enum_NeedNotifyHRRepeatDirRX_Email" xml:space="preserve">
+    <value>Эл. почта</value>
+  </data>
+  <data name="Enum_NeedNotifyExpiredHRAssignmentDirRX_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Enum_NeedNotifyNewHRAssignmentDirRX_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Enum_NeedNotifyNewHRAssignmentDirRX_Email" xml:space="preserve">
+    <value>Эл. почта</value>
+  </data>
+  <data name="Enum_NeedNotifyNewHRAssignmentDirRX_EmailPersonal" xml:space="preserve">
+    <value>Личная эл. почта</value>
+  </data>
+  <data name="Enum_NeedNotifyNewHRAssignmentDirRX_SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="Enum_NeedNotifyExpiredHRAssignmentDirRX_Email" xml:space="preserve">
+    <value>Эл. почта</value>
+  </data>
+  <data name="Enum_NeedNotifyExpiredHRAssignmentDirRX_EmailPersonal" xml:space="preserve">
+    <value>Личная эл. почта</value>
+  </data>
+  <data name="Enum_NeedNotifyExpiredHRAssignmentDirRX_SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="Enum_NeedNotifyHRRepeatDirRX_EmailPersonal" xml:space="preserve">
+    <value>Личная эл. почта</value>
+  </data>
+  <data name="Enum_NeedNotifyHRRepeatDirRX_SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="Enum_NeedNotifyNewHRAssignmentDirRX_Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="Enum_NeedNotifyExpiredHRAssignmentDirRX_Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="Enum_NeedNotifyHRRepeatDirRX_Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="Property_ConfirmationTypeDirRX" xml:space="preserve">
+    <value>Подтверждение при подписании</value>
+  </data>
+  <data name="Enum_ConfirmationTypeDirRX_Sms" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="Enum_ConfirmationTypeDirRX_Email" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="Enum_ConfirmationTypeDirRX_Viber" xml:space="preserve">
+    <value>Viber</value>
+  </data>
+  <data name="Enum_ConfirmationTypeDirRX_FlashCall" xml:space="preserve">
+    <value>Звонок</value>
+  </data>
+  <data name="Enum_ConfirmationTypeDirRX_None" xml:space="preserve">
+    <value>Не требуется</value>
+  </data>
+  <data name="Enum_ConfirmationTypeDirRX_DefaultValue" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="ControlGroup_3340dc2477b84c3f88906e537b21ca7d" xml:space="preserve">
+    <value>Настройки подписания</value>
+  </data>
+  <data name="Ribbon_ElectronicInteraction_3c804800e51941ff897f9d57c725e4b6" xml:space="preserve">
+    <value>Электронное взаимодействие</value>
+  </data>
+  <data name="Ribbon_ElectronicInteraction_bec8eb8642ef4421baccd3c69fb7149c" xml:space="preserve">
+    <value>Электронное взаимодействие</value>
+  </data>
+  <data name="Action_ChangeConfirmationTypeDirRX" xml:space="preserve">
+    <value>Изменить подтверждение при подписании</value>
+  </data>
+  <data name="Action_ChangeConfirmationTypeDirRXHint" xml:space="preserve">
+    <value>Настройка подтверждения при подписании документов</value>
+  </data>
+  <data name="Action_ChangeConfirmationTypeDirRXDescription" xml:space="preserve">
+    <value>Настройка подтверждения при подписании документов</value>
+  </data>
+  <data name="Property_InheritFromBusinessUnitDirRX" xml:space="preserve">
+    <value>Использовать настройки организации</value>
+  </data>
+  <data name="Property_PersonalAccountStatusChangedDirRX" xml:space="preserve">
+    <value>Статус подключения изменен</value>
+  </data>
+</root>

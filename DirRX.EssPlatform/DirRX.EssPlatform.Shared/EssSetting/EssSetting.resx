@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SetIdsPassword" xml:space="preserve">
+    <value>Set Password for Identity Service</value>
+  </data>
+  <data name="IdsPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="IdsConnectionEstablished" xml:space="preserve">
+    <value>Connection to the Identity Service established.</value>
+  </data>
+  <data name="ConnectionEstablished" xml:space="preserve">
+    <value>Connection to the services established.</value>
+  </data>
+  <data name="EssSettingsCannotBeDeleted" xml:space="preserve">
+    <value>Cannot clear the settings.</value>
+  </data>
+  <data name="IdsUrlInvalid" xml:space="preserve">
+    <value>Address of the Identity Service must be specified in the URL format.</value>
+  </data>
+  <data name="ErrorWhileConnectToIds" xml:space="preserve">
+    <value>An error occurred when connecting to the Identity Service. Check the connection parameters.</value>
+  </data>
+  <data name="MBUrlIsInvalid" xml:space="preserve">
+    <value>Address of the Message Service must be specified in the URL format.</value>
+  </data>
+  <data name="DisconnectIdentityServiceError" xml:space="preserve">
+    <value>Some employees have been invited or already connected to Empolyee Self Service. Disconnect them from ESS before you disable it.</value>
+  </data>
+  <data name="DisconnecErrorBusinessUnit" xml:space="preserve">
+    <value>Some business units are connected to Employee Self Service. Disconnect them before you disable ESS.</value>
+  </data>
+  <data name="ESSUrlIsInvalid" xml:space="preserve">
+    <value>The address of the Employee Self Service website must be specified in the URL format.</value>
+  </data>
+  <data name="AgreementUrlIsInvalid" xml:space="preserve">
+    <value>Specify the address of the Consent for Digital HR Document Management in the URL format.</value>
+  </data>
+  <data name="DefaultAgreementUrl" xml:space="preserve">
+    <value>https://www.directum.ru/download/agreement_information_system.pdf</value>
+  </data>
+  <data name="EssServiceUrlIsInvalid" xml:space="preserve">
+    <value>Address of the ESS Application Server must be specified in the URL format.</value>
+  </data>
+  <data name="SignServiceUrlIsInvalid" xml:space="preserve">
+    <value>The address of the Sign Service must be specified in the URL format.</value>
+  </data>
+  <data name="EmptyCertificateMail" xml:space="preserve">
+    <value>Specify an email to receive certificates for electronic signatures.</value>
+  </data>
+  <data name="CanNotChangeConfirmationType" xml:space="preserve">
+    <value>Cannot change the confirmation type in the signing service. Contact your system administrator.</value>
+  </data>
+  <data name="HasEmployeeWithoutEmail" xml:space="preserve">
+    <value>Some employees do not have emails specified. Fill in email addresses in employee cards and try again, or select another confirmation type.</value>
+  </data>
+</root>

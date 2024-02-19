@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CoverGroup_AdminGroup" xml:space="preserve">
+    <value>Администрирование</value>
+  </data>
+  <data name="CoverAction_InviteUsers" xml:space="preserve">
+    <value>Подключение пользователей к сервису</value>
+  </data>
+  <data name="CoverDescription_InviteUsers" xml:space="preserve">
+    <value>Отправить пользователям ссылку-приглашение.</value>
+  </data>
+  <data name="AsyncHandler_Description_3c639b5bcbea4c2a95182664be64371e" xml:space="preserve">
+    <value>Обновление поля "Приглашение в личный кабинет" у сотрудника на "Принято" при принятии Соглашения об ЭДО.</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Платформа личного кабинета</value>
+  </data>
+  <data name="CoverAction_ShowEssSettings" xml:space="preserve">
+    <value>Настройки подключения к личному кабинету</value>
+  </data>
+  <data name="CoverDescription_ShowEssSettings" xml:space="preserve">
+    <value>Параметры взаимодействия с сервисами личного кабинета.</value>
+  </data>
+  <data name="CoverTitle" xml:space="preserve">
+    <value>Платформа личного кабинета</value>
+  </data>
+  <data name="CoverDescription" xml:space="preserve">
+    <value>Модуль предназначен для настройки платформы личного кабинета.</value>
+  </data>
+  <data name="AsyncHandler_Description_b440e7c9ea6d48a9adcd3e0504db378f" xml:space="preserve">
+    <value>Добавить пользователей в личный кабинет</value>
+  </data>
+  <data name="AsyncHandler_Description_bb2065e89a814c87bea19b104a135d29" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
+  <data name="AsyncHandler_Description_873bcd17913f4fce83b566474fe0f665" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
+  <data name="AsyncHandler_Description_d6ed7d2743234ea7bc12c9acf0cb8cca" xml:space="preserve">
+    <value>AsyncHandler</value>
+  </data>
+  <data name="AsyncHandler_Description_6b7b3f5d09ea4f1d9f313050b488f4d3" xml:space="preserve">
+    <value>Синхронизация полей в справочнике Сотрудники</value>
+  </data>
+  <data name="CoverAction_ShowRoles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="CoverDescription_ShowRoles" xml:space="preserve">
+    <value>Назначить исполнителей ролей</value>
+  </data>
+  <data name="CoverAction_ShowCertificateRequest" xml:space="preserve">
+    <value>Запросы на выдачу сертификатов</value>
+  </data>
+  <data name="CoverDescription_ShowCertificateRequest" xml:space="preserve">
+    <value>Показать журнал запросов на выдачу сертификатов электронных подписей.</value>
+  </data>
+  <data name="CoverAction_CertificateRequestJob" xml:space="preserve">
+    <value>Проверить статусы запросов на выдачу сертификатов</value>
+  </data>
+  <data name="CoverDescription_CertificateRequestJob" xml:space="preserve">
+    <value>Запустить проверку статусов запросов на выдачу сертификатов электронных подписей</value>
+  </data>
+  <data name="CoverGroup_CertificateGroup" xml:space="preserve">
+    <value>Управление сертификатами</value>
+  </data>
+  <data name="CoverTab_Tab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+</root>

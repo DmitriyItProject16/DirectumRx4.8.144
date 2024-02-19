@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmployeeRefuseIssueCertificate" xml:space="preserve">
+    <value>Employee {0} refused to sign the application for electronic signature certificate</value>
+  </data>
+  <data name="ErrorTimeoutDocVerification" xml:space="preserve">
+    <value>A response from the certification authority on document verification has timed out. Send the request for electronic signature certificate again.</value>
+  </data>
+  <data name="ErrorTimeoutCertificateIssued" xml:space="preserve">
+    <value>A response from the certification authority on issuing the certificate has timed out. Send the request for electronic signature certificate again.</value>
+  </data>
+  <data name="ErrorTimeoutSignStatementESIA" xml:space="preserve">
+    <value>The employee has not signed the application for electronic signature certificate on the Gosuslugi portal in time. Contact the employee and send the application again if required.</value>
+  </data>
+  <data name="ErrorEmployeeRefuseIssueCertificate" xml:space="preserve">
+    <value>The employee has refused to sign the application for electronic signature certificate. Contact the employee and send the request again if required.</value>
+  </data>
+  <data name="ErrorUserNotFoundInESIA" xml:space="preserve">
+    <value>The employee is not found on the Gosuslugi portal, or his account has not been verified. Contact the employee and send the request for electronic signature certificate again if required.</value>
+  </data>
+  <data name="ErrorConfirmationRejected" xml:space="preserve">
+    <value>The employee has declined the request for electronic signature certificate.</value>
+  </data>
+  <data name="ErrorConfirmationExpired" xml:space="preserve">
+    <value>The employee has not confirmed their identity on the Gosuslugi portal in time.</value>
+  </data>
+  <data name="SaveCertificateError" xml:space="preserve">
+    <value>Errors occurred while saving electronic signature certificate No. {0} for employee: {1}.</value>
+  </data>
+  <data name="GetRequestByIdError" xml:space="preserve">
+    <value>Errors occurred while sending a request to issue electronic signature certificate No. {0} for employee: {1}.</value>
+  </data>
+  <data name="GetRequestError" xml:space="preserve">
+    <value>Errors occurred while receiving a request to issue an electronic signature certificate for employee: {0}.</value>
+  </data>
+  <data name="CertificateDescription" xml:space="preserve">
+    <value>For signing: ({0})</value>
+  </data>
+  <data name="CertificateIssueErrorInstruction" xml:space="preserve">
+    <value>Contact the employee to find out the reason for rejection. If necessary, click on the “Issue certificate” button and initiate the issuance of the certificate again. If the employee wants to sign paper documents, complete the assignment.</value>
+  </data>
+</root>

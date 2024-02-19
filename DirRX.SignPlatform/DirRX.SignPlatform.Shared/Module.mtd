@@ -1,0 +1,944 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "62758c9d-6fc1-424a-827c-4a10f09a8b44",
+  "Name": "SignPlatform",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "c2221603-fc24-4be4-9550-7b5c6766a325",
+      "Name": "AbortIssueTask",
+      "DelayPeriod": 15,
+      "DelayStrategy": "ExponentialDelayStrategy",
+      "IsHandlerGenerated": true,
+      "Parameters": [
+        {
+          "NameGuid": "3cd827a3-2ebc-4a2b-ac6c-0d716a8ebc70",
+          "Name": "TaskIds",
+          "ParameterType": "String"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "DirRX.SignPlatform.Client",
+  "ClientBaseAssemblyName": "DirRX.SignPlatform.ClientBase",
+  "ClientBaseNamespace": "DirRX.SignPlatform.ClientBase",
+  "ClientNamespace": "DirRX.SignPlatform.Client",
+  "Code": "SignPla",
+  "CompanyCode": "DirRX",
+  "Cover": {
+    "NameGuid": "70d145b4-e72c-433e-984f-f76ec8009d79",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "d4c12f93-3da5-4a54-b45a-6c23adf2f7b6",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "8445433f-128b-4acf-a019-fa604f4ccc54",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "2f09c48b-3c08-4de0-b64c-9db6276da985",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "df83a2ea-8d43-4ec4-a34a-2e61863014df",
+      "MaxVersion": "",
+      "MinVersion": "4.8.138.0"
+    },
+    {
+      "Id": "179a8916-3b1e-4363-92c4-c27e038ff6c6",
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "7c5ac48f-b0e6-4f79-a61c-d71f208852a3"
+    },
+    {
+      "ItemId": "b76d9d43-14e6-443d-b296-39f939193c9f",
+      "PreviousItemId": "7c5ac48f-b0e6-4f79-a61c-d71f208852a3"
+    },
+    {
+      "ItemId": "5e031555-7065-428b-af87-bdfeb1ac6676",
+      "PreviousItemId": "b76d9d43-14e6-443d-b296-39f939193c9f"
+    },
+    {
+      "ItemId": "b6d5f428-ec9e-4373-b2e6-fa833128146b",
+      "PreviousItemId": "5e031555-7065-428b-af87-bdfeb1ac6676"
+    },
+    {
+      "ItemId": "80c918d7-4060-4609-adc3-bd3f46797b99",
+      "PreviousItemId": "b6d5f428-ec9e-4373-b2e6-fa833128146b"
+    },
+    {
+      "ItemId": "a4a338f6-3820-4b31-88d6-13ab90129f76",
+      "PreviousItemId": "80c918d7-4060-4609-adc3-bd3f46797b99"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "DirRX.SignPlatform",
+  "IsolatedAssemblyName": "DirRX.SignPlatform.Isolated",
+  "IsolatedNamespace": "DirRX.SignPlatform.Isolated",
+  "IsVisible": false,
+  "Jobs": [
+    {
+      "NameGuid": "fdf40f26-f91b-401f-9dc1-f2da32a4ee16",
+      "Name": "CertificateIssueTaskMonitoring",
+      "Daily": "Repeat",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "TimePeriod": 15
+    },
+    {
+      "NameGuid": "483348ca-1e3a-49e0-80f5-14fe4f90bc6f",
+      "Name": "CloudCertificatesReissueTasks",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    }
+  ],
+  "Libraries": [
+    {
+      "NameGuid": "d9a2c9f3-66a6-4b62-8f17-2f81260fb9b5",
+      "Name": "NewtonsoftJson",
+      "Scope": "Both"
+    },
+    {
+      "NameGuid": "8e904360-9ff6-4bb8-a392-b1a07ae8860a",
+      "Name": "Http",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "CertificateIssueTaskMonitoringBackgroundProcessKey",
+      "ParentClasses": [
+        "Module",
+        "ParamKey"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"DirRX.SignPlatform.BackgroundProcessKey\""
+    },
+    {
+      "Name": "CertificateIssueTaskMonitoringKey",
+      "ParentClasses": [
+        "Module",
+        "ParamKey"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"DirRX.SignPlatform.MonitoringKey\""
+    },
+    {
+      "Name": "CertificateIssueTaskTimeoutBackgroundProcessKey",
+      "ParentClasses": [
+        "Module",
+        "ParamKey"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"DirRX.SignPlatform.BackgroundProcessKey\""
+    },
+    {
+      "Name": "CertificateIssueTaskTimeoutKey",
+      "ParentClasses": [
+        "Module",
+        "ParamKey"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"DirRX.SignPlatform.TimeoutKey\""
+    },
+    {
+      "Name": "HttpStatusCodeTooManyRequests",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "429"
+    },
+    {
+      "Name": "OwnerIdCertificateKeyParameter",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"ownerId\""
+    },
+    {
+      "Name": "PluginIdOfCloudCertificates",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"54599f8e-4001-4ac4-8e8b-cc731f5ef757\""
+    },
+    {
+      "Name": "ProviderIdCertificateKeyParameter",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"providerId\""
+    },
+    {
+      "Name": "RevokeException",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"RevokeException\""
+    },
+    {
+      "Name": "SignServiceHealth",
+      "ParentClasses": [
+        "Module",
+        "RequestApiSignService"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"health\""
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "AbortCertificateIssueTask",
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "AfterIssueCertificate",
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "author",
+          "ParameterType": "global::Sungero.CoreEntities.IUser",
+          "ParameterTypeFullName": "Sungero.CoreEntities.IUser, Sungero.Domain.Shared"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "ChangeConfirmationType",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "confirmationType",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "ChangeConfirmationTypeForCertificateOwner",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "confirmationType",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "certificateOwnerId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::DirRX.SignPlatform.Structures.Module.IChangeConfirmationTypeForCertificateOwnerResult",
+      "ReturnTypeFullName": "DirRX.SignPlatform.Structures.Module.IChangeConfirmationTypeForCertificateOwnerResult"
+    },
+    {
+      "Name": "FillCertificateParams",
+      "Parameters": [
+        {
+          "Name": "numberRecordsProcess",
+          "ParameterType": "global::System.Int32",
+          "ParameterTypeFullName": "System.Int32"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Post"
+    },
+    {
+      "Name": "GetCertificateEmail",
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetCertificateProvider",
+      "Parameters": [
+        {
+          "Name": "certificateId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Get"
+    },
+    {
+      "Name": "GetCloudSignProviderInfo",
+      "ReturnType": "global::System.Collections.Generic.List<global::DirRX.SignPlatform.Structures.Module.ICloudSignProviderInfo>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetConfirmationType",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "confirmationTypeLocalized",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetConfirmationTypeEnumeration",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "confirmationTypeLocalized",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::Sungero.Core.Enumeration",
+      "ReturnTypeFullName": "Sungero.Core.Enumeration, Sungero.Domain.Shared"
+    },
+    {
+      "Name": "GetConfirmationTypeLocalized",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "confirmationType",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetConfirmationTypes",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetConfirmationTypesLocalized",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetHiddenPhone",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "phone",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetIdentificationType",
+      "Parameters": [
+        {
+          "Name": "employeeId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Get"
+    },
+    {
+      "Name": "GetNumberCertificatesWithBlankParameters",
+      "ReturnType": "global::System.Int32",
+      "ReturnTypeFullName": "System.Int32",
+      "WebApiRequestType": "Get"
+    },
+    {
+      "Name": "GetRevocationReasons",
+      "ReturnType": "System.Collections.Generic.Dictionary<global::System.String, global::System.String>"
+    },
+    {
+      "Name": "HasEmployeeCertificateOrIssueTask",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "IssueCertificate",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "author",
+          "ParameterType": "global::Sungero.CoreEntities.IUser",
+          "ParameterTypeFullName": "Sungero.CoreEntities.IUser, Sungero.Domain.Shared"
+        },
+        {
+          "Name": "providerId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "IssueCertificate",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "author",
+          "ParameterType": "global::Sungero.CoreEntities.IUser",
+          "ParameterTypeFullName": "Sungero.CoreEntities.IUser, Sungero.Domain.Shared"
+        },
+        {
+          "Name": "providerId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "fromTask",
+          "ParameterType": "global::DirRX.SignPlatform.ICertificateIssueTask",
+          "ParameterTypeFullName": "DirRX.SignPlatform.ICertificateIssueTask, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "SendCertificateIssueConfirmation",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "requestId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        },
+        {
+          "Name": "identificationType",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "phone",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "providerId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "SendCertificateIssueConfirmation",
+      "Parameters": [
+        {
+          "Name": "assignmentId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Post"
+    },
+    {
+      "Name": "SendCertificateIssueConfirmPersonal",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "requestId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        },
+        {
+          "Name": "code",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "providerId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "SendCertificateIssueRequest",
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "providerId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::DirRX.SignPlatform.Structures.Module.ICertificateIssueRequestResponse",
+      "ReturnTypeFullName": "DirRX.SignPlatform.Structures.Module.ICertificateIssueRequestResponse"
+    },
+    {
+      "Name": "SendConfirmCodePersonal",
+      "Parameters": [
+        {
+          "Name": "assignmentId",
+          "ParameterType": "global::System.Int64",
+          "ParameterTypeFullName": "System.Int64"
+        },
+        {
+          "Name": "code",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String",
+      "WebApiRequestType": "Post"
+    },
+    {
+      "Name": "SendRevokeCertificate",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "thumbprint",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "revocationReason",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        },
+        {
+          "Name": "providerId",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "SetActivatingEssUserParameters",
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "global::DirRX.SignPlatform.Structures.Module.IUserConnectionParams",
+      "ReturnTypeFullName": "DirRX.SignPlatform.Structures.Module.IUserConnectionParams"
+    },
+    {
+      "Name": "SetDisableEmployeeCertificates",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "thumbprint",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "StartCertificateIssueTask",
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "fromTask",
+          "ParameterType": "global::DirRX.SignPlatform.ICertificateIssueTask",
+          "ParameterTypeFullName": "DirRX.SignPlatform.ICertificateIssueTask, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "global::DirRX.SignPlatform.Structures.Module.IStartCertificateIssueTaskResult",
+      "ReturnTypeFullName": "DirRX.SignPlatform.Structures.Module.IStartCertificateIssueTaskResult"
+    },
+    {
+      "Name": "ValidateEmployeeRequiredFields",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::DirRX.EssPlatformSolution.IEmployee",
+          "ParameterTypeFullName": "DirRX.EssPlatformSolution.IEmployee, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "ValidatePersonRequiredFields",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "basePerson",
+          "ParameterType": "global::Sungero.Parties.IPerson",
+          "ParameterTypeFullName": "Sungero.Parties.IPerson, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    }
+  ],
+  "PublicStructures": [
+    {
+      "Name": "Certificate",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Id",
+          "TypeFullName": "global::System.Int64"
+        },
+        {
+          "Name": "OwnerCommonName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "IssuerCommonName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ValidFrom",
+          "IsNullable": true,
+          "TypeFullName": "global::System.DateTime"
+        },
+        {
+          "Name": "ValidTo",
+          "IsNullable": true,
+          "TypeFullName": "global::System.DateTime"
+        },
+        {
+          "Name": "Thumbprint",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Content",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ProviderId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "OwnerId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "CertificateConfirmationRequest",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "identificationType",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "phoneNumber",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "CertificateIssueRequestResponse",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "RequestId",
+          "TypeFullName": "global::System.Int64"
+        },
+        {
+          "Name": "Error",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "ChangeConfirmationTypeForCertificateOwnerResult",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "IsCompleted",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "ErrorMessage",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "CloudSignProviderInfo",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Name",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "IdentificationTypes",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.Dictionary<global::System.String, global::System.String>"
+        },
+        {
+          "Name": "ProviderId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "ConfirmationCode",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "code",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "StartCertificateIssueTaskError",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Error",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ShowPersonAction",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "StartCertificateIssueTaskResult",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "IsStarted",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "DataErrorList",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::DirRX.SignPlatform.Structures.Module.IStartCertificateIssueTaskError>"
+        },
+        {
+          "Name": "StartTaskError",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    },
+    {
+      "Name": "UserConnectionParams",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "CloudSignProviderInfo",
+          "IsNullable": true,
+          "TypeFullName": "global::DirRX.SignPlatform.Structures.Module.ICloudSignProviderInfo"
+        },
+        {
+          "Name": "IsSet",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "DirRX.SignPlatform.Structures.Module"
+    }
+  ],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "DirRX.SignPlatform",
+  "ResourcesKeys": [
+    "SetIdentificationTypeDialogTitle",
+    "ErrorTryGetLastCloudCertificatesExpirationTaskDate",
+    "SetIdentificationTypeDialogCloudProvider",
+    "SetIdentificationTypeDialogIdentificationType",
+    "GetCloudSignProviderInfosException",
+    "IdentityDocumentKindRequired",
+    "InilaRequired",
+    "TinRequired",
+    "SendCertificateIssueRequestException",
+    "CertificateIssueStatementDocumentName",
+    "CertificateIssueKind",
+    "CloudSignProviderUnavailable",
+    "CertificateRequestEntryName",
+    "InvalidIdentificationType",
+    "CertificateIssueMessage",
+    "CertificateIssuedSuccessfullyTitle",
+    "GosuslugiConfirmMessage",
+    "ConfirmCertificateIssue",
+    "CertificateIssueTaskSubject",
+    "CertificateIssueAssignmentSubject",
+    "VerificationCode",
+    "CertificateIssueErrorAssignmentSubject",
+    "SignServiceNotAnswer",
+    "DateOfBirthRequired",
+    "UnexpectedErrorText",
+    "UnexpectedStatusError",
+    "UnexpectedRequestStatusError",
+    "GenderError",
+    "Error400SignServiceRequest",
+    "Error500SignServiceRequest",
+    "Error404SignServiceRequest",
+    "UnknownResponseCode",
+    "CloudCertificateIDNotFound",
+    "AddressOfSignServiceIsNullOrEmpty",
+    "CRL_REASON_UNSPECIFIED",
+    "CRL_REASON_KEY_COMPROMISE",
+    "CRL_REASON_CA_COMPROMISE",
+    "CRL_REASON_AFFILIATION_CHANGED",
+    "CRL_REASON_SUPERSEDED",
+    "CRL_REASON_CESSATION_OF_OPERATION",
+    "ByDisconnectingFromESS",
+    "ErrorGetConfirmationTypes",
+    "EssSetting_Enum_ConfirmationType_DefaultValue",
+    "EssSetting_Enum_ConfirmationType_Email",
+    "EssSetting_Enum_ConfirmationType_FlashCall",
+    "EssSetting_Enum_ConfirmationType_None",
+    "EssSetting_Enum_ConfirmationType_Sms",
+    "EssSetting_Enum_ConfirmationType_Viber",
+    "ConfirmationTypeNotFound",
+    "ConfirmationType",
+    "UserNotFound",
+    "ErrorAddingParametersToCertificate",
+    "SuccessfullyAddingCertificateParameters",
+    "NoCertificatesWithEmptyParameters"
+  ],
+  "ServerAssemblyName": "DirRX.SignPlatform.Server",
+  "ServerNamespace": "DirRX.SignPlatform.Server",
+  "SharedAssemblyName": "DirRX.SignPlatform.Shared",
+  "SharedNamespace": "DirRX.SignPlatform.Shared",
+  "SpecialFolders": [],
+  "Version": "2.1.48138.4",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

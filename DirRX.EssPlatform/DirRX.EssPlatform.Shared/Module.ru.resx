@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConfirmDeleteEssUser" xml:space="preserve">
+    <value>После сохранения учетная запись сотрудника в личном кабинете будет удалена.
+Для повторного подключения к личному кабинету зарегистрируйте для сотрудника новую учетную запись.</value>
+  </data>
+  <data name="ParameterIsTempDisconnect" xml:space="preserve">
+    <value>IsTempDisconnect:{0}</value>
+  </data>
+  <data name="BulkSendInvantions" xml:space="preserve">
+    <value>Отправка приглашений пользователям</value>
+  </data>
+  <data name="BusinessUnit" xml:space="preserve">
+    <value>Наши организации</value>
+  </data>
+  <data name="SelectBusinessUnits" xml:space="preserve">
+    <value>Выбрать наши организации</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Подразделения</value>
+  </data>
+  <data name="SelectDepartments" xml:space="preserve">
+    <value>Выбрать подразделения</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Сотрудники</value>
+  </data>
+  <data name="SelectEmployees" xml:space="preserve">
+    <value>Выбрать сотрудников</value>
+  </data>
+  <data name="PersonalPhoneRequired" xml:space="preserve">
+    <value>Не указаны личные телефоны сотрудников:
+{0}
+Укажите телефон в карточке сотрудника в группе "Личный кабинет".</value>
+  </data>
+  <data name="ParameterOldPhoneEmpForUpdate" xml:space="preserve">
+    <value>OldPhoneEmpForUpdate:{0}</value>
+  </data>
+  <data name="ESSInviteSent" xml:space="preserve">
+    <value>Приглашение отправлено.</value>
+  </data>
+  <data name="ErrorESSInvite" xml:space="preserve">
+    <value>При отправке приглашения произошла ошибка. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Ошибка аутентификации. Проверьте правильность логина и пароля.</value>
+  </data>
+  <data name="ErrorWhileConnectToIds" xml:space="preserve">
+    <value>При подключении к сервису идентификации произошла ошибка. Проверьте настройки подключения.</value>
+  </data>
+  <data name="ErrorESSInvites" xml:space="preserve">
+    <value>При отправке приглашений произошла ошибка. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="InvitesSend" xml:space="preserve">
+    <value>Обработано карточек сотрудников: {0}
+Отправлено приглашений: {1}
+Количество сотрудников, у которых не указан личный телефон: {2}
+Количество сотрудников, у которых не указан рабочий либо личный email: {3}
+Количество сотрудников, которым уже было отправлено приглашение: {4}
+Количество сотрудников, которые уже подключены к личному кабинету: {5}</value>
+  </data>
+  <data name="CreateEssUsers" xml:space="preserve">
+    <value>Приглашение в ЛК</value>
+  </data>
+  <data name="MessageBrokerCheckConnectionError" xml:space="preserve">
+    <value>Сервис обмена сообщениями: {0}.</value>
+  </data>
+  <data name="FindEssUserException" xml:space="preserve">
+    <value>При поиске пользователя личного кабинета произошла ошибка: {0}, {1}. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="GetAnAuthenticationTokenError" xml:space="preserve">
+    <value>При соединении с сервисом идентификации произошла ошибка. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="SendSMSError" xml:space="preserve">
+    <value>При отправке SMS произошла ошибка: {0}, {1}. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="AuthenticationRightsErrorText" xml:space="preserve">
+    <value>Unable to Authentication: no rights granted</value>
+  </data>
+  <data name="AuthenticationErrorText" xml:space="preserve">
+    <value>Unable to Authentication: wrong login or password</value>
+  </data>
+  <data name="ActivateESSUserException" xml:space="preserve">
+    <value>При выполнении EssPlatform.ModuleServerFunctions.ActivateESSUser() произошла ошибка. {0}: {1}</value>
+  </data>
+  <data name="EmptyIdentityServiceField" xml:space="preserve">
+    <value>Произошла ошибка. В настройках подключения к личному кабинету не заполнено поле "{0}". Обратитесь к администратору системы.</value>
+  </data>
+  <data name="ActivateEssUserError" xml:space="preserve">
+    <value>При отправке приглашения произошла ошибка - {0}. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="NoEssSettings" xml:space="preserve">
+    <value>Сервисы личного кабинета не подключены. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="DisconnectEssUserError" xml:space="preserve">
+    <value>При отключении пользователя от личного кабинета произошла ошибка. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="UpdateEssuserError" xml:space="preserve">
+    <value>При обновлении личного телефона сотрудника произошла ошибка. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="ESSInviteSentToAsync" xml:space="preserve">
+    <value>Запущена отправка приглашений. Результат отправки поступит в уведомлении.</value>
+  </data>
+  <data name="ESSNoticeSubject" xml:space="preserve">
+    <value>Результат отправки приглашений</value>
+  </data>
+  <data name="ActivateEssUsersMaxRetryCount" xml:space="preserve">
+    <value>Число попыток отправить приглашения превысило {0}.</value>
+  </data>
+  <data name="UserNotAdministrator" xml:space="preserve">
+    <value>Выполнять массовую рассылку приглашений могут только сотрудники, входящие в роль "Администраторы".</value>
+  </data>
+  <data name="InviteSendWithErrors" xml:space="preserve">
+    <value>Количество пользователей, которым не были отправлены приглашения из-за ошибок: {0}.</value>
+  </data>
+  <data name="SendEMailError" xml:space="preserve">
+    <value>При отправке e-mail произошла ошибка. Обратитесь к администратору системы.
+{0}: {1}. </value>
+  </data>
+  <data name="SendViberError" xml:space="preserve">
+    <value>При отправке сообщения в Viber произошла ошибка. Обратитесь к администратору системы.
+{0}: {1}. </value>
+  </data>
+  <data name="NewAssignmentNotificationText" xml:space="preserve">
+    <value>У вас новое задание: {0}</value>
+  </data>
+  <data name="NewNoticeNotificationText" xml:space="preserve">
+    <value>У вас новое уведомление: {0}</value>
+  </data>
+  <data name="ESSCheckConnectionError" xml:space="preserve">
+    <value>Ошибка подключения: {0}.</value>
+  </data>
+  <data name="CheckConnectionError" xml:space="preserve">
+    <value>Ошибка {0}</value>
+  </data>
+  <data name="SendMessagesErrorSubject" xml:space="preserve">
+    <value>Ошибка при отправке сообщения пользователю личного кабинета</value>
+  </data>
+  <data name="SendMessageToViberNoticeError" xml:space="preserve">
+    <value>При отправке сообщения в Viber пользователю {0} произошла ошибка. ИД пользователя: {1}.</value>
+  </data>
+  <data name="SendEmailNoticeError" xml:space="preserve">
+    <value>При отправке сообщения по электронной почте пользователю {0} произошла ошибка. ИД пользователя: {1}.</value>
+  </data>
+  <data name="SendSmsNoticeError" xml:space="preserve">
+    <value>При отправке SMS-сообщения пользователю {0} произошла ошибка. ИД пользователя: {1}.</value>
+  </data>
+  <data name="EmployeePhoneCheckErrorsList" xml:space="preserve">
+    <value>При проверке номера телефона возникли ошибки: {0}</value>
+  </data>
+  <data name="ParameterPersonPhoneCheckError" xml:space="preserve">
+    <value>PersonPhoneCheckError:{0}</value>
+  </data>
+  <data name="ErrorPhoneNumberDigits" xml:space="preserve">
+    <value>Неверное количество цифр в номере телефона {0}</value>
+  </data>
+  <data name="EssSeviceCheckConnectionError" xml:space="preserve">
+    <value>Адрес сервера приложения личного кабинета: {0}.</value>
+  </data>
+  <data name="SelfOfficeObjectHyperlink" xml:space="preserve">
+    <value>{0}/{1}/{2}/{3}/{4}</value>
+  </data>
+  <data name="Init_CreateRoles" xml:space="preserve">
+    <value>Инициализация: Создание стандартных ролей.</value>
+  </data>
+  <data name="SelfOfficeFacilitiesHyperlink" xml:space="preserve">
+    <value>{0}/{1}/{2}</value>
+  </data>
+  <data name="RoleName_UsersWithAccessToIdentityDocument" xml:space="preserve">
+    <value>Сотрудники с доступом к персональным данным</value>
+  </data>
+  <data name="RoleDescription_UsersWithAccessToIdentityDocument" xml:space="preserve">
+    <value>Сотрудники, ответственные за работу с персональными данными.</value>
+  </data>
+  <data name="SignServiceCheckConnectionError" xml:space="preserve">
+    <value>Сервис подписания: {0}.</value>
+  </data>
+  <data name="CertificateRequestJobStarted" xml:space="preserve">
+    <value>Проверка статусов запросов запущена</value>
+  </data>
+  <data name="RoleName_AdminElEmployeeInteractionSystem" xml:space="preserve">
+    <value>Администраторы выпуска сертификатов электронных подписей</value>
+  </data>
+  <data name="RoleDescription_AdminElEmployeeInteractionSystem" xml:space="preserve">
+    <value>Администраторы, ответственные за отправку запросов на выпуск сертификатов электронных подписей и проверку статусов запросов.</value>
+  </data>
+  <data name="UserNotAdminElEmployeeInteractionSystem" xml:space="preserve">
+    <value>Проверку статусов запросов могут запускать только сотрудники, входящие в роль "Администраторы выпуска сертификатов электронных подписей".</value>
+  </data>
+  <data name="CloudSignError" xml:space="preserve">
+    <value>Сервис идентификации недоступен. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="CreateCertificateIssueTask" xml:space="preserve">
+    <value>Выпуск сертификата</value>
+  </data>
+  <data name="ConfirmationType" xml:space="preserve">
+    <value>Подтверждение при подписании</value>
+  </data>
+  <data name="EmailTemplate" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type="text/css"&gt;
+      body table tr td { border-collapse: collapse; vertical-align:text-top; } 
+    &lt;/style&gt;
+  &lt;/head&gt;
+{{&lt; hr}}
+&lt;hr size="1" width="99%" noshade="" style="color:#D0D0D0" align="center"&gt;
+{{/hr}}
+  &lt;body&gt;
+    &lt;img border="0" height="25" src="cid:logo.png@01D004A6.A303C580" /&gt;
+    &lt;p style="margin-bottom:0"&gt;
+      У вас {{#IsExpired}}просроченное{{/IsExpired}}{{^IsExpired}}новое{{/IsExpired}}
+      {{#Sungero.Docflow.PublicFunctions.Module.GetAssignmentTypeName Assignment}}{{ToLower}}{{/Sungero.Docflow.PublicFunctions.Module.GetAssignmentTypeName}}.
+    &lt;/p&gt;
+    {{&gt; hr}}
+  &lt;table style="margin-left:15px;"&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{{Sungero.Docflow.PublicFunctions.Module.GetAssignmentTypeName Assignment}}:&lt;/td&gt;
+      &lt;td&gt;&lt;a href="{{Hyperlink}}"&gt;{{Assignment.Subject}}&lt;/a&gt;&lt;/td&gt; 
+    &lt;/tr&gt;
+    {{#Subject}}
+      &lt;tr&gt;
+        &lt;td valign="top"&gt;Тема задачи:&lt;/td&gt;
+        &lt;td&gt;{{.}}&lt;/td&gt;
+      &lt;/tr&gt;
+    {{/Subject}}
+
+    {{#if HasSubstitutions}}
+    &lt;tr&gt;
+      &lt;td&gt;Кому:&lt;/td&gt;
+      &lt;td&gt;{{Assignment.Performer}}&lt;/td&gt; 
+    &lt;/tr&gt;
+    {{/if}}
+    {{#Author}}
+      &lt;tr&gt;
+        &lt;td&gt;От:&lt;/td&gt;
+        &lt;td&gt;{{.}}&lt;/td&gt;
+      &lt;/tr&gt;
+    {{/Author}}
+    {{#if Assignment.Deadline.HasValue}}
+    &lt;tr&gt;
+      &lt;td&gt;Срок:&lt;/td&gt;
+      &lt;td&gt;{{Sungero.Docflow.PublicFunctions.Module.GetDateDisplayValue Assignment.Deadline Assignment.Performer}}&lt;/td&gt;
+    &lt;/tr&gt;
+    {{/if}}
+    &lt;tr&gt; 
+      &lt;td&gt;Отправлено:&lt;/td&gt;
+      &lt;td&gt;{{Sungero.Docflow.PublicFunctions.Module.GetDateDisplayValue Assignment.Created Assignment.Performer}}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+  {{&gt; hr}}
+  &lt;p style="margin-bottom:0;margin-top:0"&gt;
+    {{#process_text Assignment.Task.ActiveText}}
+      {{#IsNewLine}}  
+       &lt;/p&gt;&lt;p style="margin-bottom:0;margin-top:0"&gt;
+      {{/IsNewLine}}
+      {{#IsHyperlink}}
+        &lt;a href = "{{Text}}"&gt;{{DisplayValue}}&lt;/a&gt;
+      {{/IsHyperlink}}
+      {{^IsHyperlink}}  
+        {{Text}}
+      {{/IsHyperlink}}
+    {{/process_text}}
+  &lt;/p&gt;
+  {{#if Assignment.Task.ActiveText}}
+    {{^Attachments}}
+      {{&gt; hr}}
+    {{/Attachments}}
+  {{/if}}
+  {{#if Attachments}}
+    &lt;p style="margin-bottom:0"&gt;
+      Вложения:
+    &lt;/p&gt;
+    {{#Attachments}} 
+      &lt;p style="margin-bottom:0;margin-top:0;margin-left:15px;"&gt;&amp;bull;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href="{{Sungero.Core.Hyperlinks.Get .}}"&gt;{{DisplayValue}}&lt;/a&gt;&lt;/p&gt;
+    {{/Attachments}}
+    &lt;/p&gt;
+    {{&gt; hr}}
+  {{/if}} 
+&lt;footer style="display:block"&gt;
+  &lt;p style="color:#808080;margin-top:0"&gt;
+    &lt;small&gt;Это сообщение отправлено автоматически. Чтобы отписаться от рассылки, отправьте &lt;a href="mailto:{{AdministratorEmail}}?subject=Отписка%20от%20рассылки%20Directum%20RX&amp;body=Прошу%20отписать%20меня%20от%20рассылки%20{{&amp;MailingName}}" target="_top"&gt;письмо администратору&lt;/a&gt;.&lt;/small&gt;
+  &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="IncludeSubordinateDepartments" xml:space="preserve">
+    <value>Включить подчиненные подразделения</value>
+  </data>
+  <data name="PersonRequiredInfoEmpty" xml:space="preserve">
+    <value>В карточке персоны, связанной с сотрудником {0}, не заполнено одно или несколько полей: ИНН; СНИЛС; Документ, удостоверяющий личность; Дата рождения.</value>
+  </data>
+  <data name="EmployeeCardIsLocked" xml:space="preserve">
+    <value>Карточка сотрудника {0} заблокирована другим пользователем.</value>
+  </data>
+  <data name="SignatureTypeParamsName" xml:space="preserve">
+    <value>EmployerSignatureForDocID{0}UserID{1}</value>
+  </data>
+</root>

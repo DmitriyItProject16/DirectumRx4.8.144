@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Запрос на выдачу сертификата электронной подписи</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Запроса на выдачу сертификата электронной подписи</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Запросы на выдачу сертификата электронной подписи</value>
+  </data>
+  <data name="Property_Employee" xml:space="preserve">
+    <value>Сотрудник</value>
+  </data>
+  <data name="Property_IssueStatus" xml:space="preserve">
+    <value>Статус выпуска</value>
+  </data>
+  <data name="Enum_IssueStatus_NeedConfirm" xml:space="preserve">
+    <value>Ожидается подтверждение</value>
+  </data>
+  <data name="Enum_IssueStatus_Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Property_Errors" xml:space="preserve">
+    <value>Ошибки</value>
+  </data>
+  <data name="Property_RequestId" xml:space="preserve">
+    <value>ИД запроса</value>
+  </data>
+  <data name="Property_TaskId" xml:space="preserve">
+    <value>ИД задачи на выпуск</value>
+  </data>
+  <data name="Property_CreateDate" xml:space="preserve">
+    <value>Дата создания заявки</value>
+  </data>
+  <data name="Property_LastStatusChange" xml:space="preserve">
+    <value>Дата последнего изменения статуса</value>
+  </data>
+  <data name="Property_IdentificationType" xml:space="preserve">
+    <value>Тип идентификации</value>
+  </data>
+  <data name="Property_Executor" xml:space="preserve">
+    <value>Мониторинг</value>
+  </data>
+  <data name="Enum_Executor_TaskScheme" xml:space="preserve">
+    <value>Задача</value>
+  </data>
+  <data name="Enum_Executor_BckgrndProcess" xml:space="preserve">
+    <value>Фоновый процесс</value>
+  </data>
+  <data name="Enum_IssueStatus_DocVerification" xml:space="preserve">
+    <value>Проверка документов</value>
+  </data>
+  <data name="Enum_IssueStatus_InProgress" xml:space="preserve">
+    <value>Создание сертификата</value>
+  </data>
+  <data name="Enum_IssueStatus_CertCreated" xml:space="preserve">
+    <value>Сертификат создан</value>
+  </data>
+  <data name="Enum_IdentificationType_Personal" xml:space="preserve">
+    <value>Личная</value>
+  </data>
+  <data name="Enum_IdentificationType_Esia" xml:space="preserve">
+    <value>ЕСИА</value>
+  </data>
+  <data name="Enum_IssueStatus_CertRegistered" xml:space="preserve">
+    <value>Сертификат зарегистрирован</value>
+  </data>
+  <data name="Enum_IssueStatus_NeedDownloadSt" xml:space="preserve">
+    <value>Заявление доступно для скачивания</value>
+  </data>
+  <data name="Enum_IssueStatus_IssVerification" xml:space="preserve">
+    <value>Проверка заявления</value>
+  </data>
+  <data name="Enum_IssueStatus_NeedConfirmEsia" xml:space="preserve">
+    <value>Ожидается подтверждение на сайте Госуслуг</value>
+  </data>
+  <data name="Action_OpenTask" xml:space="preserve">
+    <value>Открыть задачу на выпуск</value>
+  </data>
+  <data name="Action_OpenTaskDescription" xml:space="preserve">
+    <value>Открыть задачу на выпуск сертификата электронной подписи</value>
+  </data>
+  <data name="Action_OpenTaskHint" xml:space="preserve">
+    <value>Открыть задачу на выпуск сертификата электронной подписи</value>
+  </data>
+  <data name="Ribbon_Tasks_28004d9281364de4875b5b71b85399df" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+  <data name="Property_DocumentID" xml:space="preserve">
+    <value>ИД заявления</value>
+  </data>
+  <data name="Action_OpenDocument" xml:space="preserve">
+    <value>Открыть заявление</value>
+  </data>
+  <data name="Action_OpenDocumentHint" xml:space="preserve">
+    <value>Открыть заявление на выпуск сертификата электронной подписи</value>
+  </data>
+  <data name="Action_OpenDocumentDescription" xml:space="preserve">
+    <value>Открыть заявление на выпуск сертификата электронной подписи</value>
+  </data>
+  <data name="Ribbon_Documents_bffeaa45e07e471bbac27bd78910ed65" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="FilterPanel_DateCreate_d3a9620825d845e8b82d680b79a99585" xml:space="preserve">
+    <value>Дата создания запроса</value>
+  </data>
+  <data name="FilterPanel_LastDate_bad994fc12fd404f996cade6afd0c7af" xml:space="preserve">
+    <value>Дата последнего изменения статуса</value>
+  </data>
+  <data name="FilterPanel_Status_c5f6652d2c244a8e94098b4da2e3e531" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="FilterPanel_Error_f39c339bc1fe4d64840bc449b3a21400" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="FilterPanel_Work_59f5f2feeb7f4a8db84c41b2ecce1ed3" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="FilterPanel_Done_d45dfb71db4540ada54f898b10939af2" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="FilterPanel_Employee_32b833a670bd4b73bc2f00b437d8d23e" xml:space="preserve">
+    <value>Сотрудник</value>
+  </data>
+  <data name="Property_CloudCertificateID" xml:space="preserve">
+    <value>ИД облачного сертификата</value>
+  </data>
+  <data name="Property_CertificateID" xml:space="preserve">
+    <value>ИД сертификата</value>
+  </data>
+  <data name="Property_ProviderId" xml:space="preserve">
+    <value>ИД провайдера</value>
+  </data>
+</root>

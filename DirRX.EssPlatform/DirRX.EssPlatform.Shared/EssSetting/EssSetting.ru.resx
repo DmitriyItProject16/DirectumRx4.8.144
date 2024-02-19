@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SetIdsPassword" xml:space="preserve">
+    <value>Задайте пароль для сервиса идентификации</value>
+  </data>
+  <data name="IdsPassword" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="IdsConnectionEstablished" xml:space="preserve">
+    <value>Соединение с сервисом идентификации установлено.</value>
+  </data>
+  <data name="ConnectionEstablished" xml:space="preserve">
+    <value>Соединение с сервисами установлено.</value>
+  </data>
+  <data name="EssSettingsCannotBeDeleted" xml:space="preserve">
+    <value>Нельзя удалить настройки.</value>
+  </data>
+  <data name="IdsUrlInvalid" xml:space="preserve">
+    <value>Адрес сервиса идентификации должен соответствовать формату URL.</value>
+  </data>
+  <data name="ErrorWhileConnectToIds" xml:space="preserve">
+    <value>При подключении к сервису идентификации произошла ошибка. Проверьте настройки подключения.</value>
+  </data>
+  <data name="MBUrlIsInvalid" xml:space="preserve">
+    <value>Адрес сервиса сообщений должен быть указан в формате URL.</value>
+  </data>
+  <data name="DisconnectIdentityServiceError" xml:space="preserve">
+    <value>Есть сотрудники, которым было отправлено приглашение в личный кабинет или подключенные к личному кабинету. Отключите их перед тем, как отключить сервисы личного кабинета.</value>
+  </data>
+  <data name="DisconnecErrorBusinessUnit" xml:space="preserve">
+    <value>Некоторые наши организации подключены к личному кабинету. Отключите их перед тем, как отключить сервисы личного кабинета.</value>
+  </data>
+  <data name="ESSUrlIsInvalid" xml:space="preserve">
+    <value>Адрес сайта личного кабинета должен быть указан в формате URL.</value>
+  </data>
+  <data name="AgreementUrlIsInvalid" xml:space="preserve">
+    <value>Адрес Соглашения об ЭДО должен быть указан в формате URL.</value>
+  </data>
+  <data name="DefaultAgreementUrl" xml:space="preserve">
+    <value>https://www.directum.ru/download/agreement_information_system.pdf</value>
+  </data>
+  <data name="EssServiceUrlIsInvalid" xml:space="preserve">
+    <value>Адрес сервера приложения личного кабинета должен быть указан в формате URL.</value>
+  </data>
+  <data name="SignServiceUrlIsInvalid" xml:space="preserve">
+    <value>Адрес сервиса подписания должен быть указан в формате URL.</value>
+  </data>
+  <data name="EmptyCertificateMail" xml:space="preserve">
+    <value>Укажите эл. почту для получения сертификатов электронных подписей</value>
+  </data>
+  <data name="CanNotChangeConfirmationType" xml:space="preserve">
+    <value>Не удалось изменить способ подтверждения в сервисе подписания. Обратитесь к администратору системы.</value>
+  </data>
+  <data name="HasEmployeeWithoutEmail" xml:space="preserve">
+    <value>У некоторых сотрудников не указан адрес электронной почты. Заполните адреса в карточках сотрудников и повторите попытку или выберите другой вариант подтверждения.</value>
+  </data>
+</root>

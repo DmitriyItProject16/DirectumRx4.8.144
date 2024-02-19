@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmployeeRefuseIssueCertificate" xml:space="preserve">
+    <value>Сотрудник {0} отказался от подписания заявления на получение сертификата электронной подписи</value>
+  </data>
+  <data name="ErrorTimeoutDocVerification" xml:space="preserve">
+    <value>Истекло время ожидания ответа по проверке документов от удостоверяющего центра. Отправьте запрос на выпуск сертификата электронной подписи сотрудника повторно.</value>
+  </data>
+  <data name="ErrorTimeoutCertificateIssued" xml:space="preserve">
+    <value>Истекло время ожидания ответа по выпуску сертификата от удостоверяющего центра. Отправьте запрос на выпуск сертификата электронной подписи сотрудника повторно.</value>
+  </data>
+  <data name="ErrorTimeoutSignStatementESIA" xml:space="preserve">
+    <value>Истекло время ожидания подписания сотрудником заявления на выдачу сертификата электронной подписи на портале Госуслуг. Свяжитесь с сотрудником и при необходимости отправьте заявку на выпуск сертификата повторно.</value>
+  </data>
+  <data name="ErrorEmployeeRefuseIssueCertificate" xml:space="preserve">
+    <value>Сотрудник отказался от подписания заявления на выпуск сертификата электронной подписи. Свяжитесь с сотрудником и при необходимости отправьте запрос на выпуск сертификата повторно.</value>
+  </data>
+  <data name="ErrorUserNotFoundInESIA" xml:space="preserve">
+    <value>Сотрудник не найден на портале Госуслуг, либо его учетная запись не подтверждена. Свяжитесь с сотрудником и при необходимости отправьте запрос на выпуск сертификата электронной подписи повторно.</value>
+  </data>
+  <data name="ErrorConfirmationRejected" xml:space="preserve">
+    <value>Сотрудник отклонил запрос на выдачу сертификата УНЭП.</value>
+  </data>
+  <data name="ErrorConfirmationExpired" xml:space="preserve">
+    <value>Время на подтверждение личности сотрудника на портале Госуслуг истекло.</value>
+  </data>
+  <data name="SaveCertificateError" xml:space="preserve">
+    <value>Произошли ошибки при сохранении сертификата электронной подписи №{0} для сотрудника: {1}.</value>
+  </data>
+  <data name="GetRequestByIdError" xml:space="preserve">
+    <value>Произошли ошибки при отправке запроса на выпуск сертификата электронной подписи №{0} для сотрудника: {1}.</value>
+  </data>
+  <data name="GetRequestError" xml:space="preserve">
+    <value>Произошли ошибки при получении запроса на выпуск сертификата электронной подписи для сотрудника: {0}.</value>
+  </data>
+  <data name="CertificateDescription" xml:space="preserve">
+    <value>Для подписания ({0})</value>
+  </data>
+  <data name="CertificateIssueErrorInstruction" xml:space="preserve">
+    <value>Свяжитесь с сотрудником для уточнения причины отказа. При необходимости нажмите на кнопку “Выпустить сертификат” и инициируйте выпуск сертификата повторно. Если сотрудник планирует подписывать документы в бумажном виде, выполните задание.</value>
+  </data>
+</root>
