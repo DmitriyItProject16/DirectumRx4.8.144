@@ -1,0 +1,65 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "30bb8042-449a-41e8-80f9-5e815aee1bd9",
+  "Name": "HRProWredSolution",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "HRPro.HRProWredSolution.Client",
+  "ClientBaseAssemblyName": "HRPro.HRProWredSolution.ClientBase",
+  "ClientBaseNamespace": "HRPro.HRProWredSolution.ClientBase",
+  "ClientNamespace": "HRPro.HRProWredSolution.Client",
+  "Code": "HRWredS",
+  "CompanyCode": "HRPro",
+  "Cover": {
+    "NameGuid": "cf6b24e4-b3fe-45f4-948f-4c38d7f03fd4",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "e5b5a0f4-dc2b-4e59-b6e4-699113e8539a",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "125a21e4-ba1a-4011-aade-8f6f9214903e",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "fe3c4aab-1934-4787-bc2d-b44a3244b3e7"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "HRPro.HRProWredSolution",
+  "IsolatedAssemblyName": "HRPro.HRProWredSolution.Isolated",
+  "IsolatedNamespace": "HRPro.HRProWredSolution.Isolated",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "HRPro.HRProWredSolution",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "HRPro.HRProWredSolution.Server",
+  "ServerNamespace": "HRPro.HRProWredSolution.Server",
+  "SharedAssemblyName": "HRPro.HRProWredSolution.Shared",
+  "SharedNamespace": "HRPro.HRProWredSolution.Shared",
+  "SpecialFolders": [],
+  "Version": "1.0.2148.104",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

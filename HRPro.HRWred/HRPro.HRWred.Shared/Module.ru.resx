@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExportDocuments" xml:space="preserve">
+    <value>Выгрузка электронных документов</value>
+  </data>
+  <data name="ExportParamsDialogInstruction" xml:space="preserve">
+    <value>Укажите критерии поиска и параметры выгрузки документов</value>
+  </data>
+  <data name="BusinessUnitFieldName" xml:space="preserve">
+    <value>Наша организация</value>
+  </data>
+  <data name="DeparmentFieldName" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="EmployeeFieldName" xml:space="preserve">
+    <value>Сотрудники</value>
+  </data>
+  <data name="DocumentKindsFieldName" xml:space="preserve">
+    <value>Вид документа</value>
+  </data>
+  <data name="PeriodFromFieldName" xml:space="preserve">
+    <value>Дата создания документов с</value>
+  </data>
+  <data name="PeriodToFieldName" xml:space="preserve">
+    <value>Дата создания документов по</value>
+  </data>
+  <data name="NextButton" xml:space="preserve">
+    <value>Далее</value>
+  </data>
+  <data name="FileListButton" xml:space="preserve">
+    <value>Показать документы</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="ExportButton" xml:space="preserve">
+    <value>Выгрузить</value>
+  </data>
+  <data name="CloseButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Выбрать</value>
+  </data>
+  <data name="ExportDatesError" xml:space="preserve">
+    <value>Дата, указанная в поле "Дата создания документов с", не может быть позже даты, указанной в поле "Дата создания документов по".</value>
+  </data>
+  <data name="ExportDialog_Error_DocumentCountLimit" xml:space="preserve">
+    <value>Количество документов для выгрузки превышает {0}. Скорректируйте критерии поиска.</value>
+  </data>
+  <data name="ExportDialog_Instruction" xml:space="preserve">
+    <value>Найдено документов - {0}
+
+
+1. Для просмотра найденных документов для выгрузки нажмите "Показать документы".
+2. Чтобы изменить параметры выгрузки, вернитесь к окну выбора параметров по кнопке "Назад".
+3. Для выгрузки документов нажмите "Выгрузить".</value>
+  </data>
+  <data name="ExportDialog_SuccessInfo" xml:space="preserve">
+    <value>Документы доступны для выгрузки.</value>
+  </data>
+  <data name="ExportDialog_Error_Client_NoReason" xml:space="preserve">
+    <value>Произошла ошибка при подготовке документов. Обратитесь к администратору.</value>
+  </data>
+  <data name="ExportDialog_Error_ExportedFilesLimit" xml:space="preserve">
+    <value>Количество файлов превышает {0}. Скорректируйте список документов для выгрузки.</value>
+  </data>
+  <data name="ExportDialog_Error_ExportedSizeLimit" xml:space="preserve">
+    <value>Объем файлов превышает {0} МБ. Скорректируйте список документов для выгрузки.</value>
+  </data>
+  <data name="ExportDialog_MinistryOfLaborResultsInfo" xml:space="preserve">
+    <value>Контейнеры с электронными документами выгружены.
+
+Выгружено контейнеров: {0}
+
+Контейнеров с ошибками: {1}</value>
+  </data>
+  <data name="ErrorCheckXMLInfo" xml:space="preserve">
+    <value>В XML-описании контейнера {1} нет информации о файле {0}.</value>
+  </data>
+  <data name="ErrorReadXML" xml:space="preserve">
+    <value>При чтении XML-описания контейнера {0} произошла ошибка.</value>
+  </data>
+  <data name="ErrorWhileGetDataFromXMLNode" xml:space="preserve">
+    <value>В XML-описании контейнера {2} в узле {0} не найден узел {1}.</value>
+  </data>
+  <data name="ExportDocumentFolderName" xml:space="preserve">
+    <value>Выгрузка от {0}</value>
+  </data>
+  <data name="ExportDialog_Error_Client" xml:space="preserve">
+    <value>Произошла ошибка при выгрузке документа ({0})</value>
+  </data>
+  <data name="CanExportHRDocuments" xml:space="preserve">
+    <value>Выгружать документы могут только участники роли {0} или их замещающие.</value>
+  </data>
+  <data name="SigningOperationName" xml:space="preserve">
+    <value>Подписание документа "{0}" сотрудником {1}</value>
+  </data>
+  <data name="RoleNameHRDocExportManager" xml:space="preserve">
+    <value>Ответственные за выгрузку кадровых документов</value>
+  </data>
+  <data name="RoleDescrHRDocExportManager" xml:space="preserve">
+    <value>Пользователи, имеющие право выгружать кадровые документы организации.</value>
+  </data>
+  <data name="PointExportDialog" xml:space="preserve">
+    <value>Найдено документов - {0}</value>
+  </data>
+  <data name="SomeDocumentsAreNotAvailableForUploading" xml:space="preserve">
+    <value>Нельзя выгрузить документы с состоянием контейнера "Документ подписан работодателем" или "Ожидание подписания документа работодателем".</value>
+  </data>
+  <data name="AccessRightsErrorWhenUploading" xml:space="preserve">
+    <value>Нельзя выгрузить документы, на которые нет прав доступа.</value>
+  </data>
+</root>

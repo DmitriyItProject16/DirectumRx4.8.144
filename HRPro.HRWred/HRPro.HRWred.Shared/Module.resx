@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExportDocuments" xml:space="preserve">
+    <value>Export Electronic Documents</value>
+  </data>
+  <data name="ExportParamsDialogInstruction" xml:space="preserve">
+    <value>Specify search criteria and parameters to export documents</value>
+  </data>
+  <data name="BusinessUnitFieldName" xml:space="preserve">
+    <value>Business unit</value>
+  </data>
+  <data name="DeparmentFieldName" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="EmployeeFieldName" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="DocumentKindsFieldName" xml:space="preserve">
+    <value>Doc.kind</value>
+  </data>
+  <data name="PeriodFromFieldName" xml:space="preserve">
+    <value>Created from</value>
+  </data>
+  <data name="PeriodToFieldName" xml:space="preserve">
+    <value>Created to</value>
+  </data>
+  <data name="NextButton" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="FileListButton" xml:space="preserve">
+    <value>Show Documents</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ExportButton" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="CloseButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="ExportDatesError" xml:space="preserve">
+    <value>The date specified in the "Created from" field cannot be later than the date specified in the "Created to" field.</value>
+  </data>
+  <data name="ExportDialog_Error_DocumentCountLimit" xml:space="preserve">
+    <value>There are over {0} documents to export. Correct the search criteria.</value>
+  </data>
+  <data name="ExportDialog_Instruction" xml:space="preserve">
+    <value>Documents to export found  - {0}</value>
+  </data>
+  <data name="ExportDialog_SuccessInfo" xml:space="preserve">
+    <value>Now you can export the documents.</value>
+  </data>
+  <data name="ExportDialog_Error_Client_NoReason" xml:space="preserve">
+    <value>An error occurred while preparing documents. Contact your system administrator.</value>
+  </data>
+  <data name="ExportDialog_Error_ExportedFilesLimit" xml:space="preserve">
+    <value>There are over {0} files to export. Correct the list of documents to export.</value>
+  </data>
+  <data name="ExportDialog_Error_ExportedSizeLimit" xml:space="preserve">
+    <value>There are over {0} MB of files to export. Correct the list of documents to export.</value>
+  </data>
+  <data name="ExportDialog_MinistryOfLaborResultsInfo" xml:space="preserve">
+    <value>Containers with electronic documents have been exported.
+
+Containers exported: {0}
+
+Exported with errors: {1}</value>
+  </data>
+  <data name="ErrorCheckXMLInfo" xml:space="preserve">
+    <value>Information about file {0} is not found in the XML description of container {1}.</value>
+  </data>
+  <data name="ErrorReadXML" xml:space="preserve">
+    <value>An error occurred when reading the container {0} XML description</value>
+  </data>
+  <data name="ErrorWhileGetDataFromXMLNode" xml:space="preserve">
+    <value>Node {1} is not found in node {0} of the XML description of container {2}.</value>
+  </data>
+  <data name="ExportDocumentFolderName" xml:space="preserve">
+    <value>Export dated {0}</value>
+  </data>
+  <data name="ExportDialog_Error_Client" xml:space="preserve">
+    <value>An error occurred while exporting document {0}</value>
+  </data>
+  <data name="CanExportHRDocuments" xml:space="preserve">
+    <value>Only employees included in role {0} or their substitutes can export documents.</value>
+  </data>
+  <data name="SigningOperationName" xml:space="preserve">
+    <value>Signing of document "{0}" by {1}</value>
+  </data>
+  <data name="RoleNameHRDocExportManager" xml:space="preserve">
+    <value>Employees responsible for exporting HR documents</value>
+  </data>
+  <data name="RoleDescrHRDocExportManager" xml:space="preserve">
+    <value>Users who are authorized to export HR documents of the business unit.</value>
+  </data>
+  <data name="PointExportDialog" xml:space="preserve">
+    <value>Documents to export found  - {0}</value>
+  </data>
+  <data name="SomeDocumentsAreNotAvailableForUploading" xml:space="preserve">
+    <value>Cannot export documents whose container status is "Document signed by employer" or "Employer signature pending".</value>
+  </data>
+  <data name="AccessRightsErrorWhenUploading" xml:space="preserve">
+    <value>Cannot export documents that you do not have access rights to.</value>
+  </data>
+</root>

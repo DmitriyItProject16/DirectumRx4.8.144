@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <ViewName>Default</ViewName>
+  <Collectione53595a99f604aa9a7a5a42bc54b775f FormGuid="470983a8-f03b-4c8a-b9f4-274a39f04cf1">
+    <XtraSerializer version="1.0" application="GridControl">
+      <property name="#LayoutVersion" isnull="true" />
+      <property name="$GridControl" iskey="true" value="GridControl">
+        <property name="View" isnull="true" iskey="true">
+          <property name="LinesPerRowMode">None</property>
+          <property name="ColumnChooserState" isnull="true" iskey="true">
+            <property name="Location">715.333333333333,557.333333333333</property>
+            <property name="Size">220,250</property>
+          </property>
+          <property name="AllowMoveColumnToDropArea">false</property>
+          <property name="AllowColumnMoving">true</property>
+          <property name="AllowSorting">true</property>
+          <property name="ShowTotalSummary">false</property>
+          <property name="IsRowCellMenuEnabled">false</property>
+          <property name="ShowGroupPanel">false</property>
+          <property name="AutoWidth">false</property>
+          <property name="AllowGrouping">false</property>
+        </property>
+        <property name="TotalSummary" iskey="true" value="0" />
+        <property name="SortInfo" iskey="true" value="0" />
+        <property name="GroupSummary" iskey="true" value="0" />
+        <property name="GroupCount">0</property>
+        <property name="Columns" iskey="true" value="6">
+          <property name="Item1" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_Attachments_Document</property>
+            <property name="FieldName">Document</property>
+            <property name="VisibleIndex">0</property>
+            <property name="Width">124</property>
+            <property name="ActualWidth">22*</property>
+          </property>
+          <property name="Item2" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_Attachments_AttachmentDocumentVersion</property>
+            <property name="FieldName">AttachmentDocumentVersion</property>
+            <property name="VisibleIndex">1</property>
+            <property name="Width">112</property>
+            <property name="ActualWidth">20*</property>
+          </property>
+          <property name="Item3" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_Attachments_SignatureId</property>
+            <property name="FieldName">SignatureId</property>
+            <property name="VisibleIndex">2</property>
+            <property name="Width">56</property>
+            <property name="ActualWidth">10*</property>
+          </property>
+          <property name="Item4" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_Attachments_DocumentAnnotation</property>
+            <property name="FieldName">DocumentAnnotation</property>
+            <property name="VisibleIndex">3</property>
+            <property name="Width">118</property>
+            <property name="ActualWidth">21*</property>
+          </property>
+          <property name="Item5" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_Attachments_DocumentFileName</property>
+            <property name="FieldName">DocumentFileName</property>
+            <property name="VisibleIndex">4</property>
+            <property name="Width">118</property>
+            <property name="ActualWidth">21*</property>
+          </property>
+          <property name="Item6" isnull="true" iskey="true">
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_Attachments_SignatureFileName</property>
+            <property name="FieldName">SignatureFileName</property>
+            <property name="VisibleIndex">5</property>
+            <property name="Width">135</property>
+            <property name="ActualWidth">24*</property>
+          </property>
+        </property>
+        <property name="GroupSummarySortInfo" iskey="true" value="0" />
+      </property>
+    </XtraSerializer>
+  </Collectione53595a99f604aa9a7a5a42bc54b775f>
+  <Collection9a62c96c382f44e18e20ef2c81c3e7bb FormGuid="470983a8-f03b-4c8a-b9f4-274a39f04cf1">
+    <XtraSerializer version="1.0" application="GridControl">
+      <property name="#LayoutVersion" isnull="true" />
+      <property name="$GridControl" iskey="true" value="GridControl">
+        <property name="View" isnull="true" iskey="true">
+          <property name="LinesPerRowMode">None</property>
+          <property name="ColumnChooserState" isnull="true" iskey="true">
+            <property name="Location">715.333333333333,261.333333333333</property>
+            <property name="Size">220,250</property>
+          </property>
+          <property name="AllowMoveColumnToDropArea">false</property>
+          <property name="AllowColumnMoving">true</property>
+          <property name="AllowSorting">true</property>
+          <property name="ShowTotalSummary">false</property>
+          <property name="IsRowCellMenuEnabled">false</property>
+          <property name="ShowGroupPanel">false</property>
+          <property name="AutoWidth">false</property>
+          <property name="AllowGrouping">false</property>
+        </property>
+        <property name="TotalSummary" iskey="true" value="0" />
+        <property name="SortInfo" iskey="true" value="0" />
+        <property name="GroupSummary" iskey="true" value="0" />
+        <property name="GroupCount">0</property>
+        <property name="Columns" iskey="true" value="4">
+          <property name="Item1" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">1</property>
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_PowerOfAttorney_DocumentFileName</property>
+            <property name="FieldName">DocumentFileName</property>
+            <property name="VisibleIndex">1</property>
+            <property name="Width">140</property>
+            <property name="ActualWidth">25*</property>
+          </property>
+          <property name="Item2" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">0</property>
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_PowerOfAttorney_Document</property>
+            <property name="FieldName">Document</property>
+            <property name="VisibleIndex">0</property>
+            <property name="Width">124</property>
+            <property name="ActualWidth">22*</property>
+          </property>
+          <property name="Item3" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">2</property>
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_PowerOfAttorney_SignatureID</property>
+            <property name="FieldName">SignatureID</property>
+            <property name="VisibleIndex">2</property>
+            <property name="Width">96</property>
+            <property name="ActualWidth">17*</property>
+          </property>
+          <property name="Item4" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">3</property>
+            <property name="Visible">true</property>
+            <property name="Name">SigningOperation_PowerOfAttorney_SignatureFileName</property>
+            <property name="FieldName">SignatureFileName</property>
+            <property name="VisibleIndex">3</property>
+            <property name="Width">180</property>
+            <property name="ActualWidth">32*</property>
+          </property>
+        </property>
+        <property name="GroupSummarySortInfo" iskey="true" value="0" />
+      </property>
+    </XtraSerializer>
+  </Collection9a62c96c382f44e18e20ef2c81c3e7bb>
+</settings>

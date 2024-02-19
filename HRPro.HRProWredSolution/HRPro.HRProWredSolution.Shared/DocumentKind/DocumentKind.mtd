@@ -1,0 +1,113 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "fe3c4aab-1934-4787-bc2d-b44a3244b3e7",
+  "Name": "DocumentKind",
+  "AccessRightsMode": "Both",
+  "BaseGuid": "14a59623-89a2-4ea8-b6e9-2ad4365f358c",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "5d4501da-7520-435d-b1c3-00d562a779cb",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.InplaceFormMetadata, Sungero.Metadata",
+      "NameGuid": "0fbc7605-9f73-457a-ae0f-b449af017789",
+      "Name": "HRProWred",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "d65ff2b4-a487-4642-9c28-ce67e392022c",
+          "Name": "ControlGroupHRPro"
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "ffd31a66-1a8c-4d0b-8a62-491bd9e07806",
+          "Name": "ExportDocuments",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "ParentGuid": "d65ff2b4-a487-4642-9c28-ce67e392022c",
+          "RowNumber": 0,
+          "RowSpan": 1
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "59a4ab4c-dc69-4511-8812-f1a96ab98683",
+          "Name": "WredcCodeHRPro",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "ffd31a66-1a8c-4d0b-8a62-491bd9e07806",
+          "PropertyGuid": "606a6f80-5955-4d47-932a-a8e976362754",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ],
+      "ParentFormGuid": "1bed4d65-d566-4bb4-9a60-1fbd80116216"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "LayeredFromGuid": "14a59623-89a2-4ea8-b6e9-2ad4365f358c",
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "beb749b5-b07e-46a1-9a4a-adb7452e08d1",
+      "Name": "AvailableActions",
+      "EntityGuid": "3df60b51-c41b-4c4b-b400-4b3cf0a954c9",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "606a6f80-5955-4d47-932a-a8e976362754",
+      "Name": "WredcCodeHRPro",
+      "Code": "WredcCodeHRPro",
+      "Length": 16,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "7eca1266-9b95-447b-9886-77d1f63d8228"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "1776fb65-e340-4e10-ae73-5b386123a5da",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "0c1fec6e-f07d-4c71-af02-c31e0e109547",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

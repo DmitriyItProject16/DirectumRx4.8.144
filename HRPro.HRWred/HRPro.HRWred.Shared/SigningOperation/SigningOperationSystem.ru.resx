@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Операция подписания</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Операцию подписания</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Операции подписания</value>
+  </data>
+  <data name="Property_Document" xml:space="preserve">
+    <value>Основной документ</value>
+  </data>
+  <data name="Property_DocumentVersion" xml:space="preserve">
+    <value>Версия документа</value>
+  </data>
+  <data name="Property_DocumentName" xml:space="preserve">
+    <value>Имя документа</value>
+  </data>
+  <data name="Property_DocumentFileName" xml:space="preserve">
+    <value>Имя файла документа</value>
+  </data>
+  <data name="Property_DocumentAnnotation" xml:space="preserve">
+    <value>Содержание документа</value>
+  </data>
+  <data name="Property_DocumentRegistrationNumber" xml:space="preserve">
+    <value>Регистрационный номер документа</value>
+  </data>
+  <data name="Property_DocumentWredCode" xml:space="preserve">
+    <value>Код документа по классификации Минтруда</value>
+  </data>
+  <data name="Property_SignatureID" xml:space="preserve">
+    <value>ИД подписи</value>
+  </data>
+  <data name="Property_Signatory" xml:space="preserve">
+    <value>Сотрудник</value>
+  </data>
+  <data name="Property_SignatoryName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Property_SignatoryLastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Property_SignatoryMiddleName" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="Property_SignatoryJobTitle" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="Property_SignatoryINILA" xml:space="preserve">
+    <value>СНИЛС</value>
+  </data>
+  <data name="Property_IsSignatoryAnOfficial" xml:space="preserve">
+    <value>Сотрудник подписал документ от имени работодателя</value>
+  </data>
+  <data name="Property_EmployerSigningOperation" xml:space="preserve">
+    <value>Операция подписания работодателем</value>
+  </data>
+  <data name="Property_BusinessUnitName" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="Property_BusinessUnitTIN" xml:space="preserve">
+    <value>ИНН</value>
+  </data>
+  <data name="Property_BusinessUnitPSRN" xml:space="preserve">
+    <value>ОГРН</value>
+  </data>
+  <data name="Property_BusinessUnitTRRC" xml:space="preserve">
+    <value>КПП</value>
+  </data>
+  <data name="Property_ContainerGUID" xml:space="preserve">
+    <value>Идентификатор контейнера</value>
+  </data>
+  <data name="Property_XmlDescription" xml:space="preserve">
+    <value>Описание в формате XML</value>
+  </data>
+  <data name="Property_SignatureFileName" xml:space="preserve">
+    <value>Имя файла подписи</value>
+  </data>
+  <data name="Property_OperationState" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="Enum_OperationState_Registrated" xml:space="preserve">
+    <value>Документ подписан работодателем</value>
+  </data>
+  <data name="Enum_OperationState_ReadyForExport" xml:space="preserve">
+    <value>Контейнер готов к выгрузке</value>
+  </data>
+  <data name="Enum_OperationState_Formed" xml:space="preserve">
+    <value>Контейнер выгружен</value>
+  </data>
+  <data name="Enum_OperationState_AwaitingSigning" xml:space="preserve">
+    <value>Ожидание подписания документа работодателем</value>
+  </data>
+  <data name="Enum_OperationState_Error" xml:space="preserve">
+    <value>Ошибка при формировании контейнера</value>
+  </data>
+  <data name="Property_Attachments" xml:space="preserve">
+    <value>Приложения</value>
+  </data>
+  <data name="ControlGroup_253066dd421c4f5ebf5db7b5a573b867" xml:space="preserve">
+    <value>Информация о документе</value>
+  </data>
+  <data name="ControlGroup_1fc8f590016e46988e1b31829b8380e9" xml:space="preserve">
+    <value>Операция подписания работодателем</value>
+  </data>
+  <data name="ControlGroup_89e563cd953f4ae1bcd32e2a023974ae" xml:space="preserve">
+    <value>Информация о подписи и сотруднике</value>
+  </data>
+  <data name="ControlGroup_0d6e5790bc714bbbbfd348b6fb248148" xml:space="preserve">
+    <value>Информация об организации работодателя</value>
+  </data>
+  <data name="ControlGroup_b9417c4757624e23b7889057cce0253d" xml:space="preserve">
+    <value>Информация о контейнере</value>
+  </data>
+  <data name="Property_PowerOfAttorney" xml:space="preserve">
+    <value>Доверенности</value>
+  </data>
+  <data name="Property_SignatoryContainerName" xml:space="preserve">
+    <value>Имя папки</value>
+  </data>
+  <data name="ControlGroup_46d43b08d1714da09ee65fcc998a150d" xml:space="preserve">
+    <value>Приложения</value>
+  </data>
+  <data name="ControlGroup_7ddfd63b4c3e40bd99e04cb3d68fc104" xml:space="preserve">
+    <value>Доверенности</value>
+  </data>
+  <data name="Property_XmlErrors" xml:space="preserve">
+    <value>Ошибки при формировании XML</value>
+  </data>
+  <data name="Property_Note" xml:space="preserve">
+    <value>Примечание</value>
+  </data>
+  <data name="Ribbon_ExportCommands_0aae6751efe547348765cba0cd9cf740" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="Action_ExportHint" xml:space="preserve">
+    <value>Выгрузка документов в соответствии с требованиями Министерства труда и социальной защиты Российской Федерации</value>
+  </data>
+  <data name="Action_ExportDescription" xml:space="preserve">
+    <value>Выгрузка документов в соответствии с требованиями Министерства труда и социальной защиты Российской Федерации</value>
+  </data>
+  <data name="Action_Export" xml:space="preserve">
+    <value>Выгрузить</value>
+  </data>
+</root>

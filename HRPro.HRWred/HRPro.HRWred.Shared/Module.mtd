@@ -1,0 +1,997 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "02dc781f-9aad-49e5-a79a-da6842516b11",
+  "Name": "HRWred",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "HRPro.HRWred.Client",
+  "ClientBaseAssemblyName": "HRPro.HRWred.ClientBase",
+  "ClientBaseNamespace": "HRPro.HRWred.ClientBase",
+  "ClientNamespace": "HRPro.HRWred.Client",
+  "Code": "HRWred",
+  "CompanyCode": "HRPro",
+  "Cover": {
+    "NameGuid": "a195eb98-dcd0-4050-8dee-6d5a85465102",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "b199bf4d-fa9d-4893-b5e3-b114fae949be",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "06d4e059-fceb-4646-b033-4038779c9644",
+      "BackgroundPosition": "Stretch"
+    },
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "30bb8042-449a-41e8-80f9-5e815aee1bd9",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    },
+    {
+      "Id": "ec7b606a-21ee-4f16-aba8-ab8c2af76d12",
+      "MaxVersion": "",
+      "MinVersion": "0.0.1.0"
+    },
+    {
+      "Id": "d534e107-a54d-48ec-85ff-bc44d731a82f",
+      "MaxVersion": "",
+      "MinVersion": "4.8.138.0"
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "aeab9823-e3cc-4612-af14-4ba819cdf64e"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "HRPro.HRWred",
+  "IsolatedAssemblyName": "HRPro.HRWred.Isolated",
+  "IsolatedNamespace": "HRPro.HRWred.Isolated",
+  "IsVisible": false,
+  "Libraries": [
+    {
+      "NameGuid": "6a9614c2-f055-4c9b-91a9-9241a13cb07f",
+      "Name": "Wred",
+      "Scope": "Both"
+    },
+    {
+      "NameGuid": "42d8be0b-fb10-4576-b301-87189d09db7a",
+      "Name": "AsposeExtension",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "AcquaintanceEmployeeWithRightRefuseSentBusinessTrip",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.017\""
+    },
+    {
+      "Name": "AcquaintanceWithLNARelatedLaborActivity",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"01.010\""
+    },
+    {
+      "Name": "AgreementAmendTermsEmploymentContractDefinedByParties",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"10.001\""
+    },
+    {
+      "Name": "AgreementFullIndividualFinancialResponsibility",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"03.003\""
+    },
+    {
+      "Name": "CancelOrderToPerformAdditionalWork",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.003\""
+    },
+    {
+      "Name": "ConsentToSentToSportsTeams",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"12.006\""
+    },
+    {
+      "Name": "ConsentTransferToAnotherJob",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"10.002\""
+    },
+    {
+      "Name": "DecisionReduceNumberOrStaffOfEmployees",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"07.003\""
+    },
+    {
+      "Name": "DocumentsEstablishingProcedureProcessingPersonalEmployeesData",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"09.005\""
+    },
+    {
+      "Name": "EmployeesApplicationForLeaveWithoutPay",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.015\""
+    },
+    {
+      "Name": "EmployeesConsentPerformAdditionalWork",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.001\""
+    },
+    {
+      "Name": "EmployeesConsentTerminationContract",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"11.008\""
+    },
+    {
+      "Name": "EmployeesStatementPostponementAnnualPaidLeave",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.013\""
+    },
+    {
+      "Name": "EmploymentContract",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"01.006\""
+    },
+    {
+      "Name": "ExportXmlFilename",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"wredc_data\""
+    },
+    {
+      "Name": "HRDocExportManager",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"9353351b-c7b4-47bc-82f0-84e04a08b432\")"
+    },
+    {
+      "Name": "InternalLaborRegulations",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.025\""
+    },
+    {
+      "Name": "LNARelatedLaborActivity",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"01.009\""
+    },
+    {
+      "Name": "MedicalExamination",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"05.001\""
+    },
+    {
+      "Name": "NotificationReadinessMakePaymentDelayedWages",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"04.005\""
+    },
+    {
+      "Name": "ObligationVoluntaryCompensationForDamage",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"03.006\""
+    },
+    {
+      "Name": "OfferOfAnotherJob",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"10.010\""
+    },
+    {
+      "Name": "OrderApplicationDisciplinaryPunishment",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"12.008\""
+    },
+    {
+      "Name": "OrderInvolvementEmployeeOnWeekendsAndHolidays",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.011\""
+    },
+    {
+      "Name": "OtherDocuments",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"12.999\""
+    },
+    {
+      "Name": "PaidDaysToCareForDisabledChild",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.019\""
+    },
+    {
+      "Name": "ReplaceVacationByMoney",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.014\""
+    },
+    {
+      "Name": "StartTimeOfVacationNotification",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"02.024\""
+    },
+    {
+      "Name": "StudentAgreement",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"06.001\""
+    },
+    {
+      "Name": "WarningAboutTerminationContractDueUnsatisfactoryTestResult",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"11.001\""
+    },
+    {
+      "Name": "WarningEmployeeAboutTerminationContractDue",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"11.003\""
+    },
+    {
+      "Name": "WarningTerminationOfEmploymentContract",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"11.012\""
+    },
+    {
+      "Name": "WarningTerminationOfEmploymentContractAtWill",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"11.002\""
+    },
+    {
+      "Name": "WarningTerminationPartTimeEmploymentContract",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"11.010\""
+    },
+    {
+      "Name": "WarningUpcomingDismissal",
+      "ParentClasses": [
+        "Module",
+        "DocumentСodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"11.011\""
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "AppendToZip",
+      "Parameters": [
+        {
+          "Name": "targetStream",
+          "ParameterType": "System.IO.MemoryStream"
+        },
+        {
+          "Name": "sourceStream",
+          "ParameterType": "System.IO.MemoryStream"
+        },
+        {
+          "Name": "filename",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateDefaultSigningOperation",
+      "Parameters": [
+        {
+          "Name": "documentSet",
+          "ParameterType": "global::HRPro.HRWred.Structures.Module.IDocumentSet",
+          "ParameterTypeFullName": "HRPro.HRWred.Structures.Module.IDocumentSet"
+        },
+        {
+          "Name": "signatory",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "note",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::HRPro.HRWred.ISigningOperation",
+      "ReturnTypeFullName": "HRPro.HRWred.ISigningOperation, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "CreateSigningOperation",
+      "Parameters": [
+        {
+          "Name": "mainDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "addendaDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "signatory",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "isEmployer",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        },
+        {
+          "Name": "note",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateSigningOperation",
+      "Parameters": [
+        {
+          "Name": "mainDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "addendaDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "signatory",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "isEmployer",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateSigningOperation",
+      "Parameters": [
+        {
+          "Name": "mainDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "addendaDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "completedBy",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "performer",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "isEmployer",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        },
+        {
+          "Name": "note",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateSigningOperation",
+      "Parameters": [
+        {
+          "Name": "mainDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "addendaDocs",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "completedBy",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "performer",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "isEmployer",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "DivideDocumentsOnSets",
+      "Parameters": [
+        {
+          "Name": "documents",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "addenda",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        }
+      ],
+      "ReturnType": "global::HRPro.HRWred.Structures.Module.ISetsAndNotSetDocuments",
+      "ReturnTypeFullName": "HRPro.HRWred.Structures.Module.ISetsAndNotSetDocuments"
+    },
+    {
+      "Name": "ExportDocumentsFromCardOrList",
+      "Parameters": [
+        {
+          "Name": "documents",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Docflow.IOfficialDocument>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "Name": "GetDocumentAttachments",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "mainDocument",
+          "ParameterType": "global::Sungero.Docflow.IOfficialDocument",
+          "ParameterTypeFullName": "Sungero.Docflow.IOfficialDocument, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Docflow.IOfficialDocument>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetFilteredEmployees",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "departments",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Company.IDepartment>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Company.IEmployee>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetFilteredEmployees",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "departments",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Company.IDepartment>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "activeOnly",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Company.IEmployee>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetFilteredEmployees",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "businessUnit",
+          "ParameterType": "global::Sungero.Company.IBusinessUnit",
+          "ParameterTypeFullName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "activeOnly",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Company.IEmployee>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetHRDocumentKindsIDs",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::System.Collections.Generic.List<global::System.Int64>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetNotSetDocuments",
+      "Parameters": [
+        {
+          "Name": "documents",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        },
+        {
+          "Name": "addenda",
+          "ParameterType": "System.Collections.Generic.IEnumerable<global::Sungero.Docflow.IOfficialDocument>"
+        }
+      ],
+      "ReturnType": "global::System.Collections.Generic.List<global::Sungero.Docflow.IOfficialDocument>",
+      "ReturnTypeFullName": "System.Collections.Generic.List"
+    },
+    {
+      "Name": "GetOperationState",
+      "Parameters": [
+        {
+          "Name": "currentSigningOperation",
+          "ParameterType": "global::HRPro.HRWred.ISigningOperation",
+          "ParameterTypeFullName": "HRPro.HRWred.ISigningOperation, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "referenceSigningOperation",
+          "ParameterType": "global::HRPro.HRWred.ISigningOperation",
+          "ParameterTypeFullName": "HRPro.HRWred.ISigningOperation, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.Nullable<global::Sungero.Core.Enumeration>",
+      "ReturnTypeFullName": "System.Nullable"
+    },
+    {
+      "Name": "GetRole",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "roleGuid",
+          "ParameterType": "global::System.Guid",
+          "ParameterTypeFullName": "System.Guid"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::Sungero.CoreEntities.IRole",
+      "ReturnTypeFullName": "Sungero.CoreEntities.IRole, Sungero.Domain.Shared"
+    },
+    {
+      "Name": "GetVersionSignature",
+      "Parameters": [
+        {
+          "Name": "employee",
+          "ParameterType": "global::Sungero.Company.IEmployee",
+          "ParameterTypeFullName": "Sungero.Company.IEmployee, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "version",
+          "ParameterType": "global::Sungero.Content.IElectronicDocumentVersions",
+          "ParameterTypeFullName": "Sungero.Content.IElectronicDocumentVersions, Sungero.Content.Shared"
+        }
+      ],
+      "ReturnType": "Sungero.Domain.Shared.ISignature"
+    },
+    {
+      "Name": "IsDocKindSignedOnlyByEmployee",
+      "Parameters": [
+        {
+          "Name": "document",
+          "ParameterType": "global::Sungero.Docflow.IOfficialDocument",
+          "ParameterTypeFullName": "Sungero.Docflow.IOfficialDocument, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "IsHRDocExportManager",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "users",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.CoreEntities.IUser>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "IsIncludedInRole",
+      "Parameters": [
+        {
+          "Name": "users",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.CoreEntities.IUser>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "roleGuid",
+          "ParameterType": "global::System.Guid",
+          "ParameterTypeFullName": "System.Guid"
+        }
+      ],
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "SearchSigningOperationsByRequisitesAsQueryable",
+      "Parameters": [
+        {
+          "Name": "selectedBusinessUnit",
+          "ParameterType": "global::Sungero.Company.IBusinessUnit",
+          "ParameterTypeFullName": "Sungero.Company.IBusinessUnit, Sungero.Domain.Interfaces"
+        },
+        {
+          "Name": "selectesDepartments",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Company.IDepartment>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "selectedEmployees",
+          "ParameterType": "global::System.Collections.Generic.List<global::Sungero.Company.IEmployee>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "documentKinds",
+          "ParameterType": "global::System.Collections.Generic.List<global::HRPro.HRProWredSolution.IDocumentKind>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "beginPeriod",
+          "ParameterType": "global::System.Nullable<global::System.DateTime>",
+          "ParameterTypeFullName": "System.Nullable"
+        },
+        {
+          "Name": "endPeriod",
+          "ParameterType": "global::System.Nullable<global::System.DateTime>",
+          "ParameterTypeFullName": "System.Nullable"
+        },
+        {
+          "Name": "signingOperationsId",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Int64>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        }
+      ],
+      "ReturnType": "global::System.Linq.IQueryable<global::HRPro.HRWred.ISigningOperation>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    },
+    {
+      "Name": "ShowExportDocumentsDialog",
+      "Placement": "Client",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "ShowPointExportDocumentsDialog",
+      "Parameters": [
+        {
+          "Name": "signingOperationsId",
+          "ParameterType": "global::System.Collections.Generic.List<global::System.Int64>",
+          "ParameterTypeFullName": "System.Collections.Generic.List"
+        },
+        {
+          "Name": "containsNotAvailableDocs",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        },
+        {
+          "Name": "containsNotRightsDocs",
+          "ParameterType": "global::System.Boolean",
+          "ParameterTypeFullName": "System.Boolean"
+        }
+      ],
+      "Placement": "Client",
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    }
+  ],
+  "PublicStructures": [
+    {
+      "Name": "DocumentSet",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "MainDocument",
+          "IsEntity": true,
+          "IsNullable": true,
+          "TypeFullName": "global::Sungero.Docflow.IOfficialDocument"
+        },
+        {
+          "Name": "Addenda",
+          "IsEntity": true,
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::Sungero.Docflow.IOfficialDocument>"
+        }
+      ],
+      "StructureNamespace": "HRPro.HRWred.Structures.Module"
+    },
+    {
+      "Name": "ExportResult",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "CountSuccessExportContainers",
+          "TypeFullName": "global::System.Int32"
+        },
+        {
+          "Name": "CountErrorExportContainers",
+          "TypeFullName": "global::System.Int32"
+        }
+      ],
+      "StructureNamespace": "HRPro.HRWred.Structures.Module"
+    },
+    {
+      "Name": "FileXml",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "File",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Size",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Int64"
+        },
+        {
+          "Name": "Error",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "HRPro.HRWred.Structures.Module"
+    },
+    {
+      "Name": "NotSetAddenda",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Addenda",
+          "IsEntity": true,
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::Sungero.Docflow.IOfficialDocument>"
+        }
+      ],
+      "StructureNamespace": "HRPro.HRWred.Structures.Module"
+    },
+    {
+      "Name": "SetsAndNotSetDocuments",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Sets",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::HRPro.HRWred.Structures.Module.IDocumentSet>"
+        },
+        {
+          "Name": "NotSets",
+          "IsNullable": true,
+          "TypeFullName": "global::HRPro.HRWred.Structures.Module.INotSetAddenda"
+        }
+      ],
+      "StructureNamespace": "HRPro.HRWred.Structures.Module"
+    },
+    {
+      "Name": "ValidationXml",
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "FilesXml",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::HRPro.HRWred.Structures.Module.IFileXml>"
+        },
+        {
+          "Name": "Errors",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::System.String>"
+        }
+      ],
+      "StructureNamespace": "HRPro.HRWred.Structures.Module"
+    }
+  ],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "HRPro.HRWred",
+  "ResourcesKeys": [
+    "ExportDocuments",
+    "ExportParamsDialogInstruction",
+    "BusinessUnitFieldName",
+    "DeparmentFieldName",
+    "EmployeeFieldName",
+    "DocumentKindsFieldName",
+    "PeriodFromFieldName",
+    "PeriodToFieldName",
+    "NextButton",
+    "FileListButton",
+    "BackButton",
+    "ExportButton",
+    "CloseButton",
+    "CancelButton",
+    "Select",
+    "ExportDatesError",
+    "ExportDialog_Error_DocumentCountLimit",
+    "ExportDialog_Instruction",
+    "ExportDialog_SuccessInfo",
+    "ExportDialog_Error_Client_NoReason",
+    "ExportDialog_Error_ExportedFilesLimit",
+    "ExportDialog_Error_ExportedSizeLimit",
+    "ExportDialog_MinistryOfLaborResultsInfo",
+    "ErrorCheckXMLInfo",
+    "ErrorReadXML",
+    "ErrorWhileGetDataFromXMLNode",
+    "ExportDocumentFolderName",
+    "ExportDialog_Error_Client",
+    "CanExportHRDocuments",
+    "SigningOperationName",
+    "RoleNameHRDocExportManager",
+    "RoleDescrHRDocExportManager",
+    "PointExportDialog",
+    "SomeDocumentsAreNotAvailableForUploading",
+    "AccessRightsErrorWhenUploading"
+  ],
+  "ServerAssemblyName": "HRPro.HRWred.Server",
+  "ServerNamespace": "HRPro.HRWred.Server",
+  "SharedAssemblyName": "HRPro.HRWred.Shared",
+  "SharedNamespace": "HRPro.HRWred.Shared",
+  "SpecialFolders": [],
+  "Version": "1.0.2148.104",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

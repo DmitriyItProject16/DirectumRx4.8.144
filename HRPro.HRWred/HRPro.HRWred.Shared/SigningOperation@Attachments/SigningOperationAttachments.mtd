@@ -1,0 +1,105 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "7a12d3e6-d058-4855-b4ad-968d716017c9",
+  "Name": "SigningOperationAttachments",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "Attachments",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "9d1f5880-07fd-481d-bc12-ec1f091b5e61",
+      "Name": "SigningOperation",
+      "CanBeSearch": false,
+      "Code": "SigningOperati",
+      "EntityGuid": "aeab9823-e3cc-4612-af14-4ba819cdf64e",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "4d7f34a5-b305-4d80-bdc3-2c45f098a04a",
+      "Name": "Document",
+      "CanBeSearch": false,
+      "Code": "Document",
+      "EntityGuid": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "9d1f5880-07fd-481d-bc12-ec1f091b5e61"
+    },
+    {
+      "$type": "Sungero.Metadata.LongIntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c54113ad-a459-49b2-99d4-5e8448de92a1",
+      "Name": "AttachmentDocumentVersion",
+      "CanBeSearch": false,
+      "Code": "AttachmentDocu",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "4d7f34a5-b305-4d80-bdc3-2c45f098a04a"
+    },
+    {
+      "$type": "Sungero.Metadata.LongIntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "7e3f8cce-2744-4b25-8424-86fbbb5a3426",
+      "Name": "SignatureId",
+      "CanBeSearch": false,
+      "Code": "SignatureId",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "c54113ad-a459-49b2-99d4-5e8448de92a1"
+    },
+    {
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "b23c1f24-6dbb-4a57-96ad-7319b283378d",
+      "Name": "DocumentAnnotation",
+      "CanBeSearch": false,
+      "Code": "DocumentAnnota",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.MultilineStringEditorToTextBinder",
+      "PreviousPropertyGuid": "7e3f8cce-2744-4b25-8424-86fbbb5a3426"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "50512477-29bc-40a2-8080-b7ef77627147",
+      "Name": "DocumentFileName",
+      "CanBeSearch": false,
+      "Code": "DocumentFileNa",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "b23c1f24-6dbb-4a57-96ad-7319b283378d"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "f61ea89d-5641-4b35-b2de-0b1cfe370747",
+      "Name": "SignatureFileName",
+      "CanBeSearch": false,
+      "Code": "SignatureFileN",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "50512477-29bc-40a2-8080-b7ef77627147"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "72d11686-1cd8-441a-8594-7eddea7b1db6",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "20bcc3ff-17ca-4829-b993-9a1545cb6063",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

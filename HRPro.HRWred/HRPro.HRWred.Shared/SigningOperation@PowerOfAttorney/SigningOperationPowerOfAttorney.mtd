@@ -1,0 +1,88 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "18813440-1b93-4c25-8360-8b3a25238512",
+  "Name": "SigningOperationPowerOfAttorney",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "PowerOfAttorne",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c747df0a-369a-4771-8ab3-aef69d1b96fb",
+      "Name": "SigningOperation",
+      "CanBeSearch": false,
+      "Code": "SigningOperati",
+      "EntityGuid": "aeab9823-e3cc-4612-af14-4ba819cdf64e",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "d4afca0a-8346-4072-b387-a7ce5db1c8a6",
+      "Name": "DocumentFileName",
+      "CanBeSearch": false,
+      "Code": "DocumentFileNa",
+      "Length": 255,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "c747df0a-369a-4771-8ab3-aef69d1b96fb"
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "e21f64a5-fd13-43fd-80da-3408426a17ee",
+      "Name": "Document",
+      "CanBeSearch": false,
+      "Code": "Document",
+      "EntityGuid": "104472db-b71b-42a8-bca5-581a08d1ca7b",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "d4afca0a-8346-4072-b387-a7ce5db1c8a6"
+    },
+    {
+      "$type": "Sungero.Metadata.LongIntegerPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "5b736ee1-6e55-4740-87cd-bfd4c3bc92d1",
+      "Name": "SignatureID",
+      "CanBeSearch": false,
+      "Code": "SignatureID",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "e21f64a5-fd13-43fd-80da-3408426a17ee"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1139eb99-fc6a-43aa-9679-dc9709a45873",
+      "Name": "SignatureFileName",
+      "CanBeSearch": false,
+      "Code": "AttorneySigna1",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "5b736ee1-6e55-4740-87cd-bfd4c3bc92d1"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "dd73f14d-6932-4b88-9949-92d84ae8258f",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "d71c4188-357c-4418-bb53-b46f5a98069d",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

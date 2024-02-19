@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Signing Operation</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Signing Operation</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Signing Operations</value>
+  </data>
+  <data name="Property_Document" xml:space="preserve">
+    <value>Main document</value>
+  </data>
+  <data name="Property_DocumentVersion" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Property_DocumentName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Property_DocumentFileName" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="Property_DocumentAnnotation" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Property_DocumentRegistrationNumber" xml:space="preserve">
+    <value>Reg. No.</value>
+  </data>
+  <data name="Property_DocumentWredCode" xml:space="preserve">
+    <value>Classification code (Ministry of Labor)</value>
+  </data>
+  <data name="Property_SignatureID" xml:space="preserve">
+    <value>Signature ID</value>
+  </data>
+  <data name="Property_Signatory" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="Property_SignatoryName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Property_SignatoryLastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="Property_SignatoryMiddleName" xml:space="preserve">
+    <value>Patronym</value>
+  </data>
+  <data name="Property_SignatoryJobTitle" xml:space="preserve">
+    <value>Job title</value>
+  </data>
+  <data name="Property_SignatoryINILA" xml:space="preserve">
+    <value>INILA</value>
+  </data>
+  <data name="Property_IsSignatoryAnOfficial" xml:space="preserve">
+    <value>Employee signed the document on behalf of employer</value>
+  </data>
+  <data name="Property_EmployerSigningOperation" xml:space="preserve">
+    <value>Signing operation of employer</value>
+  </data>
+  <data name="Property_BusinessUnitName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Property_BusinessUnitTIN" xml:space="preserve">
+    <value>TIN</value>
+  </data>
+  <data name="Property_BusinessUnitPSRN" xml:space="preserve">
+    <value>PSRN</value>
+  </data>
+  <data name="Property_BusinessUnitTRRC" xml:space="preserve">
+    <value>TRRC</value>
+  </data>
+  <data name="Property_ContainerGUID" xml:space="preserve">
+    <value>Container GUID</value>
+  </data>
+  <data name="Property_XmlDescription" xml:space="preserve">
+    <value>XML description</value>
+  </data>
+  <data name="Property_SignatureFileName" xml:space="preserve">
+    <value>Signature file name</value>
+  </data>
+  <data name="Property_OperationState" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Enum_OperationState_Registrated" xml:space="preserve">
+    <value>Document signed by employer</value>
+  </data>
+  <data name="Enum_OperationState_ReadyForExport" xml:space="preserve">
+    <value>Container ready for export</value>
+  </data>
+  <data name="Enum_OperationState_Formed" xml:space="preserve">
+    <value>Container exported</value>
+  </data>
+  <data name="Enum_OperationState_AwaitingSigning" xml:space="preserve">
+    <value>Employer signature pending</value>
+  </data>
+  <data name="Enum_OperationState_Error" xml:space="preserve">
+    <value>Container generation error</value>
+  </data>
+  <data name="Property_Attachments" xml:space="preserve">
+    <value>Addenda</value>
+  </data>
+  <data name="ControlGroup_253066dd421c4f5ebf5db7b5a573b867" xml:space="preserve">
+    <value>Document information</value>
+  </data>
+  <data name="ControlGroup_89e563cd953f4ae1bcd32e2a023974ae" xml:space="preserve">
+    <value>Signature and employee information</value>
+  </data>
+  <data name="ControlGroup_1fc8f590016e46988e1b31829b8380e9" xml:space="preserve">
+    <value>Signing operation of employer</value>
+  </data>
+  <data name="ControlGroup_0d6e5790bc714bbbbfd348b6fb248148" xml:space="preserve">
+    <value>Information about business unit of employer</value>
+  </data>
+  <data name="ControlGroup_b9417c4757624e23b7889057cce0253d" xml:space="preserve">
+    <value>Container information</value>
+  </data>
+  <data name="Property_PowerOfAttorney" xml:space="preserve">
+    <value>Powers of attorney</value>
+  </data>
+  <data name="Property_SignatoryContainerName" xml:space="preserve">
+    <value>Folder name</value>
+  </data>
+  <data name="ControlGroup_46d43b08d1714da09ee65fcc998a150d" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="ControlGroup_7ddfd63b4c3e40bd99e04cb3d68fc104" xml:space="preserve">
+    <value>Powers of attorney</value>
+  </data>
+  <data name="Property_XmlErrors" xml:space="preserve">
+    <value>XML Errors</value>
+  </data>
+  <data name="Property_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Action_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Action_ExportDescription" xml:space="preserve">
+    <value>Export documents in accordance with the requirements of the Ministry of Labour and Social Protection of the Russian Federation</value>
+  </data>
+  <data name="Action_ExportHint" xml:space="preserve">
+    <value>Export documents in accordance with the requirements of the Ministry of Labour and Social Protection of the Russian Federation</value>
+  </data>
+  <data name="Action_ExportConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ExportConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ribbon_ExportCommands_0aae6751efe547348765cba0cd9cf740" xml:space="preserve">
+    <value>Export</value>
+  </data>
+</root>
