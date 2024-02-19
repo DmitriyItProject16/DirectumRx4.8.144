@@ -1,0 +1,14 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Intelligence.Client">
+
+    <DataTemplate DataType="{x:Type local:AIManagersAssistantCollectionPresenter`1}">
+      <local:AIManagersAssistantCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AIManagersAssistantPresenter`1}">
+        <local:AIManagersAssistantView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

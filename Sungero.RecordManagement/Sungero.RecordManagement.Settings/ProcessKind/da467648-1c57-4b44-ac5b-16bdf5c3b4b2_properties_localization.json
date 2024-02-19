@@ -1,0 +1,13 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "Name": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Ознакомление с документом ",
+    "ru-RU": "Ознакомление с документом"
+  },
+  "Description": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Ознакомление сотрудников организации с документами в электронном виде или под личную подпись",
+    "ru-RU": "Ознакомление сотрудников организации с документами в электронном виде или под личную подпись"
+  }
+}

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{20ce99b8-f3ec-a3fc-3014-f9a2fb33c6ca}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Parties.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.Parties.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Bank%40ExchangeBoxes\BankExchangeBoxes.g.cs" />
+    <Compile Include="Bank\Bank.g.cs" />
+    <Compile Include="Bank\BankActions.cs" />
+    <Compile Include="Bank\BankClientFunctions.cs" />
+    <Compile Include="Bank\BankHandlers.cs" />
+    <Compile Include="Company%40ExchangeBoxes\CompanyExchangeBoxes.g.cs" />
+    <Compile Include="CompanyBase%40ExchangeBoxes\CompanyBaseExchangeBoxes.g.cs" />
+    <Compile Include="CompanyBase\CompanyBase.g.cs" />
+    <Compile Include="CompanyBase\CompanyBaseActions.cs" />
+    <Compile Include="CompanyBase\CompanyBaseClientFunctions.cs" />
+    <Compile Include="CompanyBase\CompanyBaseHandlers.cs" />
+    <Compile Include="Company\Company.g.cs" />
+    <Compile Include="Company\CompanyActions.cs" />
+    <Compile Include="Company\CompanyClientFunctions.cs" />
+    <Compile Include="Company\CompanyHandlers.cs" />
+    <Compile Include="Contact\Contact.g.cs" />
+    <Compile Include="Contact\ContactActions.cs" />
+    <Compile Include="Contact\ContactClientFunctions.cs" />
+    <Compile Include="Contact\ContactHandlers.cs" />
+    <Compile Include="Counterparty%40ExchangeBoxes\CounterpartyExchangeBoxes.g.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKind.g.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindActions.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindClientFunctions.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindHandlers.cs" />
+    <Compile Include="Counterparty\Counterparty.g.cs" />
+    <Compile Include="Counterparty\CounterpartyActions.cs" />
+    <Compile Include="Counterparty\CounterpartyClientFunctions.cs" />
+    <Compile Include="Counterparty\CounterpartyHandlers.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsite.g.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteActions.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteClientFunctions.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteHandlers.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKind.g.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindActions.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindClientFunctions.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="Person%40ExchangeBoxes\PersonExchangeBoxes.g.cs" />
+    <Compile Include="Person\Person.g.cs" />
+    <Compile Include="Person\PersonActions.cs" />
+    <Compile Include="Person\PersonClientFunctions.cs" />
+    <Compile Include="Person\PersonHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Parties.Shared\Sungero.Parties.Shared.csproj">
+      <Project>{913448dc-cfc4-386d-5c5a-bf9119e4dfc8}</Project>
+      <Name>Sungero.Parties.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bank\Icons\Bank.ico" />
+    <Resource Include="Bank\Icons\Bank.svg" />
+    <Resource Include="Bank\Icons\Bank_large.svg" />
+    <Resource Include="Bank\Icons\Ribbon_Contacts_93b9842989774e8099a5d21e270fdfb4.png" />
+    <Resource Include="Bank\Icons\Ribbon_Contacts_93b9842989774e8099a5d21e270fdfb4.svg" />
+    <Resource Include="CompanyBase\Icons\Action_FillFromService_large_5afd431e3d374293b8867ebf86035e6b.png" />
+    <Resource Include="CompanyBase\Icons\Action_FillFromService_large_5afd431e3d374293b8867ebf86035e6b.svg" />
+    <Resource Include="CompanyBase\Icons\Action_FillFromService_small_5afd431e3d374293b8867ebf86035e6b.png" />
+    <Resource Include="CompanyBase\Icons\Action_FillFromService_small_5afd431e3d374293b8867ebf86035e6b.svg" />
+    <Resource Include="CompanyBase\Icons\Action_OpenContacts_large_2ff7648daaa44fa996f7ed7b659483b7.png" />
+    <Resource Include="CompanyBase\Icons\Action_OpenContacts_large_2ff7648daaa44fa996f7ed7b659483b7.svg" />
+    <Resource Include="CompanyBase\Icons\Action_OpenContacts_small_2ff7648daaa44fa996f7ed7b659483b7.png" />
+    <Resource Include="CompanyBase\Icons\Action_OpenContacts_small_2ff7648daaa44fa996f7ed7b659483b7.svg" />
+    <Resource Include="CompanyBase\Icons\Action_OpenInService_large_e296d20d581146269b702d0fa03fc5f4.png" />
+    <Resource Include="CompanyBase\Icons\Action_OpenInService_large_e296d20d581146269b702d0fa03fc5f4.svg" />
+    <Resource Include="CompanyBase\Icons\Action_OpenInService_small_e296d20d581146269b702d0fa03fc5f4.png" />
+    <Resource Include="CompanyBase\Icons\Action_OpenInService_small_e296d20d581146269b702d0fa03fc5f4.svg" />
+    <Resource Include="CompanyBase\Icons\CompanyBase.ico" />
+    <Resource Include="CompanyBase\Icons\CompanyBase.svg" />
+    <Resource Include="CompanyBase\Icons\CompanyBase_large.svg" />
+    <Resource Include="CompanyBase\Icons\Ribbon_Contacts_93b9842989774e8099a5d21e270fdfb4.png" />
+    <Resource Include="CompanyBase\Icons\Ribbon_Contacts_93b9842989774e8099a5d21e270fdfb4.svg" />
+    <Resource Include="Company\Icons\Company.ico" />
+    <Resource Include="Company\Icons\Company.svg" />
+    <Resource Include="Company\Icons\Company_large.svg" />
+    <Resource Include="Contact\Icons\Action_GoToWebsite_large_28def8ceb3034c9d9d1e0c249d29cbf5.png" />
+    <Resource Include="Contact\Icons\Action_GoToWebsite_large_28def8ceb3034c9d9d1e0c249d29cbf5.svg" />
+    <Resource Include="Contact\Icons\Action_GoToWebsite_small_28def8ceb3034c9d9d1e0c249d29cbf5.png" />
+    <Resource Include="Contact\Icons\Action_GoToWebsite_small_28def8ceb3034c9d9d1e0c249d29cbf5.svg" />
+    <Resource Include="Contact\Icons\Action_ShowDuplicates_large_090e09b721af468695c23a2fb7eaed79.png" />
+    <Resource Include="Contact\Icons\Action_ShowDuplicates_large_090e09b721af468695c23a2fb7eaed79.svg" />
+    <Resource Include="Contact\Icons\Action_ShowDuplicates_small_090e09b721af468695c23a2fb7eaed79.png" />
+    <Resource Include="Contact\Icons\Action_ShowDuplicates_small_090e09b721af468695c23a2fb7eaed79.svg" />
+    <Resource Include="Contact\Icons\Action_WriteLetter_large_59f0a447fd0d4647b0f476a35d2a5b0f.png" />
+    <Resource Include="Contact\Icons\Action_WriteLetter_large_59f0a447fd0d4647b0f476a35d2a5b0f.svg" />
+    <Resource Include="Contact\Icons\Action_WriteLetter_small_59f0a447fd0d4647b0f476a35d2a5b0f.png" />
+    <Resource Include="Contact\Icons\Action_WriteLetter_small_59f0a447fd0d4647b0f476a35d2a5b0f.svg" />
+    <Resource Include="Contact\Icons\Contact.ico" />
+    <Resource Include="Contact\Icons\Contact.svg" />
+    <Resource Include="Contact\Icons\Contact_large.svg" />
+    <Resource Include="Contact\Icons\Ribbon_Contacts_9eb2112802894bc69afd246ac2af5095.png" />
+    <Resource Include="Contact\Icons\Ribbon_Contacts_9eb2112802894bc69afd246ac2af5095.svg" />
+    <Resource Include="Contact\Icons\Ribbon_Contacts_small_9eb2112802894bc69afd246ac2af5095.png" />
+    <Resource Include="Contact\Icons\Ribbon_Contacts_small_9eb2112802894bc69afd246ac2af5095.svg" />
+    <Resource Include="Contact\Icons\Ribbon_Duplicates_3cf9f00cad164a2abf0f1a9cc0849c3d.png" />
+    <Resource Include="Contact\Icons\Ribbon_Duplicates_3cf9f00cad164a2abf0f1a9cc0849c3d.svg" />
+    <Resource Include="Contact\Icons\Ribbon_Duplicates_small_3cf9f00cad164a2abf0f1a9cc0849c3d.png" />
+    <Resource Include="Contact\Icons\Ribbon_Duplicates_small_3cf9f00cad164a2abf0f1a9cc0849c3d.svg" />
+    <Resource Include="Counterparty\Icons\Action_AcceptInvitation_large_dda7730b4b304448aabe3c13ca27bad5.png" />
+    <Resource Include="Counterparty\Icons\Action_AcceptInvitation_large_dda7730b4b304448aabe3c13ca27bad5.svg" />
+    <Resource Include="Counterparty\Icons\Action_AcceptInvitation_small_dda7730b4b304448aabe3c13ca27bad5.png" />
+    <Resource Include="Counterparty\Icons\Action_AcceptInvitation_small_dda7730b4b304448aabe3c13ca27bad5.svg" />
+    <Resource Include="Counterparty\Icons\Action_CanExchange_large_2359c2f77624411a8cfbbca8b06917f3.png" />
+    <Resource Include="Counterparty\Icons\Action_CanExchange_large_2359c2f77624411a8cfbbca8b06917f3.svg" />
+    <Resource Include="Counterparty\Icons\Action_CanExchange_small_2359c2f77624411a8cfbbca8b06917f3.png" />
+    <Resource Include="Counterparty\Icons\Action_CanExchange_small_2359c2f77624411a8cfbbca8b06917f3.svg" />
+    <Resource Include="Counterparty\Icons\Action_EditExchange_large_2ff7b95e1a304bdf82f6ba6f1770680b.png" />
+    <Resource Include="Counterparty\Icons\Action_EditExchange_large_2ff7b95e1a304bdf82f6ba6f1770680b.svg" />
+    <Resource Include="Counterparty\Icons\Action_EditExchange_small_2ff7b95e1a304bdf82f6ba6f1770680b.png" />
+    <Resource Include="Counterparty\Icons\Action_EditExchange_small_2ff7b95e1a304bdf82f6ba6f1770680b.svg" />
+    <Resource Include="Counterparty\Icons\Action_FillFromService_large_49fe724889934384817958ef3f243e8c.png" />
+    <Resource Include="Counterparty\Icons\Action_FillFromService_large_49fe724889934384817958ef3f243e8c.svg" />
+    <Resource Include="Counterparty\Icons\Action_GoToWebsite_large_ab7ae51d205b43ba89612d2ec069651f.png" />
+    <Resource Include="Counterparty\Icons\Action_GoToWebsite_large_ab7ae51d205b43ba89612d2ec069651f.svg" />
+    <Resource Include="Counterparty\Icons\Action_GoToWebsite_small_ab7ae51d205b43ba89612d2ec069651f.png" />
+    <Resource Include="Counterparty\Icons\Action_GoToWebsite_small_ab7ae51d205b43ba89612d2ec069651f.svg" />
+    <Resource Include="Counterparty\Icons\Action_OpenInService_large_71cc22082f5443f3a0413c0e9cde811d.png" />
+    <Resource Include="Counterparty\Icons\Action_OpenInService_large_71cc22082f5443f3a0413c0e9cde811d.svg" />
+    <Resource Include="Counterparty\Icons\Action_RejectInvitation_large_beceed964d254418bedb66c08adca7e1.png" />
+    <Resource Include="Counterparty\Icons\Action_RejectInvitation_large_beceed964d254418bedb66c08adca7e1.svg" />
+    <Resource Include="Counterparty\Icons\Action_RejectInvitation_small_beceed964d254418bedb66c08adca7e1.png" />
+    <Resource Include="Counterparty\Icons\Action_RejectInvitation_small_beceed964d254418bedb66c08adca7e1.svg" />
+    <Resource Include="Counterparty\Icons\Action_SearchDocuments_large_7dad0c83dfe74e7a9d4d16d287855b9d.png" />
+    <Resource Include="Counterparty\Icons\Action_SearchDocuments_large_7dad0c83dfe74e7a9d4d16d287855b9d.svg" />
+    <Resource Include="Counterparty\Icons\Action_SearchDocuments_small_7dad0c83dfe74e7a9d4d16d287855b9d.png" />
+    <Resource Include="Counterparty\Icons\Action_SearchDocuments_small_7dad0c83dfe74e7a9d4d16d287855b9d.svg" />
+    <Resource Include="Counterparty\Icons\Action_SendInvitation_large_7b714d1507ef4393953db815a2dab7b6.png" />
+    <Resource Include="Counterparty\Icons\Action_SendInvitation_large_7b714d1507ef4393953db815a2dab7b6.svg" />
+    <Resource Include="Counterparty\Icons\Action_SendInvitation_small_7b714d1507ef4393953db815a2dab7b6.png" />
+    <Resource Include="Counterparty\Icons\Action_SendInvitation_small_7b714d1507ef4393953db815a2dab7b6.svg" />
+    <Resource Include="Counterparty\Icons\Action_ShowCounterpartyDocuments_large_2f4477e0bcb9439b9bad2b4d51af45c0.png" />
+    <Resource Include="Counterparty\Icons\Action_ShowCounterpartyDocuments_large_2f4477e0bcb9439b9bad2b4d51af45c0.svg" />
+    <Resource Include="Counterparty\Icons\Action_ShowCounterpartyDocuments_small_2f4477e0bcb9439b9bad2b4d51af45c0.png" />
+    <Resource Include="Counterparty\Icons\Action_ShowCounterpartyDocuments_small_2f4477e0bcb9439b9bad2b4d51af45c0.svg" />
+    <Resource Include="Counterparty\Icons\Action_ShowDepartmentBoxes_large_be07c67d4734468e9ff07e302d1092d0.png" />
+    <Resource Include="Counterparty\Icons\Action_ShowDepartmentBoxes_large_be07c67d4734468e9ff07e302d1092d0.svg" />
+    <Resource Include="Counterparty\Icons\Action_ShowDepartmentBoxes_small_be07c67d4734468e9ff07e302d1092d0.png" />
+    <Resource Include="Counterparty\Icons\Action_ShowDepartmentBoxes_small_be07c67d4734468e9ff07e302d1092d0.svg" />
+    <Resource Include="Counterparty\Icons\Action_ShowDuplicates_large_1565517f98d54a508e05d9812e9d4cf9.png" />
+    <Resource Include="Counterparty\Icons\Action_ShowDuplicates_large_1565517f98d54a508e05d9812e9d4cf9.svg" />
+    <Resource Include="Counterparty\Icons\Action_ShowDuplicates_small_1565517f98d54a508e05d9812e9d4cf9.png" />
+    <Resource Include="Counterparty\Icons\Action_ShowDuplicates_small_1565517f98d54a508e05d9812e9d4cf9.svg" />
+    <Resource Include="Counterparty\Icons\Action_WriteLetter_large_ed7ee153a2114ad6adddd5089c80e9d4.png" />
+    <Resource Include="Counterparty\Icons\Action_WriteLetter_large_ed7ee153a2114ad6adddd5089c80e9d4.svg" />
+    <Resource Include="Counterparty\Icons\Action_WriteLetter_small_ed7ee153a2114ad6adddd5089c80e9d4.png" />
+    <Resource Include="Counterparty\Icons\Action_WriteLetter_small_ed7ee153a2114ad6adddd5089c80e9d4.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Contacts_7ef0a3c576ac4fedb79e26827b7bf183.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Contacts_7ef0a3c576ac4fedb79e26827b7bf183.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Contacts_small_7ef0a3c576ac4fedb79e26827b7bf183.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Contacts_small_7ef0a3c576ac4fedb79e26827b7bf183.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Duplicates_9ebc8a1f68a94412861f769ed7331e53.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Duplicates_9ebc8a1f68a94412861f769ed7331e53.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Duplicates_small_9ebc8a1f68a94412861f769ed7331e53.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Duplicates_small_9ebc8a1f68a94412861f769ed7331e53.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Information_aa25262be7824a70829e0856dd1e2b57.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Information_aa25262be7824a70829e0856dd1e2b57.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Information_small_aa25262be7824a70829e0856dd1e2b57.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Information_small_aa25262be7824a70829e0856dd1e2b57.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Invitation_5640d1dc94a04cb495c520cdad8f0368.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Invitation_5640d1dc94a04cb495c520cdad8f0368.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Invitation_small_5640d1dc94a04cb495c520cdad8f0368.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Invitation_small_5640d1dc94a04cb495c520cdad8f0368.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Relation_98408b2b5a874ef08366115fe6e746ef.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Relation_98408b2b5a874ef08366115fe6e746ef.svg" />
+    <Resource Include="Counterparty\Icons\Ribbon_Relation_small_98408b2b5a874ef08366115fe6e746ef.png" />
+    <Resource Include="Counterparty\Icons\Ribbon_Relation_small_98408b2b5a874ef08366115fe6e746ef.svg" />
+    <Resource Include="DueDiligenceWebsite\Icons\Action_OpenWebsite_large_6bccb12400ec431eb066dc79be6603a8.png" />
+    <Resource Include="DueDiligenceWebsite\Icons\Action_OpenWebsite_large_6bccb12400ec431eb066dc79be6603a8.svg" />
+    <Resource Include="DueDiligenceWebsite\Icons\DueDiligenceWebsite.ico" />
+    <Resource Include="DueDiligenceWebsite\Icons\DueDiligenceWebsite.svg" />
+    <Resource Include="DueDiligenceWebsite\Icons\DueDiligenceWebsite_large.svg" />
+    <Resource Include="Icons\GroupIconCheckCounterparty_87826cb7c8074d7a985513002fa7a7d0.png" />
+    <Resource Include="Icons\GroupIconCheckCounterparty_87826cb7c8074d7a985513002fa7a7d0.svg" />
+    <Resource Include="Icons\GroupIconCompanies_ad56e847534f45fcbb6889422da6f002.png" />
+    <Resource Include="Icons\GroupIconCompanies_ad56e847534f45fcbb6889422da6f002.svg" />
+    <Resource Include="Icons\GroupIconContactPersons_f11faba82ffa4c2ab96abe73705cccc5.png" />
+    <Resource Include="Icons\GroupIconContactPersons_f11faba82ffa4c2ab96abe73705cccc5.svg" />
+    <Resource Include="Icons\GroupIconExchange_accdd7aaea5249c3b63467738e98d1a9.png" />
+    <Resource Include="Icons\GroupIconExchange_accdd7aaea5249c3b63467738e98d1a9.svg" />
+    <Resource Include="Icons\GroupIconLinks_4587e4ba98c4428eabee37d8eab138cd.png" />
+    <Resource Include="Icons\GroupIconLinks_4587e4ba98c4428eabee37d8eab138cd.svg" />
+    <Resource Include="Icons\GroupIconPersons_f95eb69172654bca878c4dcbb2cecdf8.png" />
+    <Resource Include="Icons\GroupIconPersons_f95eb69172654bca878c4dcbb2cecdf8.svg" />
+    <Resource Include="Person\Icons\Person.ico" />
+    <Resource Include="Person\Icons\Person.svg" />
+    <Resource Include="Person\Icons\Person_large.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1f0ee6ab-06cb-4f66-bf2d-97abb3ea1a43.xml" />
+    <EmbeddedResource Include="87d25407-dbad-46a4-927c-34d0e11562dc.xml" />
+    <EmbeddedResource Include="Bank\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Bank\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="CompanyBase\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="CompanyBase\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="CompanyBase\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Company\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Company\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Company\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Contact\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Contact\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Contact\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="CounterpartyKind\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="CounterpartyKind\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="CounterpartyKind\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Counterparty\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Counterparty\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Counterparty\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="DueDiligenceWebsite\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="DueDiligenceWebsite\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="DueDiligenceWebsite\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="IdentityDocumentKind\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="IdentityDocumentKind\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="IdentityDocumentKind\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Person\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Person\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Person\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

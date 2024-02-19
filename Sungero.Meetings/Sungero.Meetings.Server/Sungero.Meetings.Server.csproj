@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{40510c43-b995-8b41-c530-9ca0d8225d70}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Meetings.Server</RootNamespace>
+    <AssemblyName>Sungero.Meetings.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Server">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Server">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Server\Sungero.Docflow.Server.csproj">
+      <Project>{4fbfe066-29ab-5455-15f9-1e22f5e7d449}</Project>
+      <Name>Sungero.Docflow.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Server\Sungero.ExchangeCore.Server.csproj">
+      <Project>{9d7a4505-eca5-87c4-ab95-f89d01c6b77f}</Project>
+      <Name>Sungero.ExchangeCore.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda%40Tracking\AgendaTracking.g.cs" />
+    <Compile Include="Agenda%40Versions\AgendaVersions.g.cs" />
+    <Compile Include="Agenda\Agenda.g.cs" />
+    <Compile Include="Agenda\AgendaHandlers.cs" />
+    <Compile Include="Agenda\AgendaServerFunctions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Meeting%40Members\MeetingMembers.g.cs" />
+    <Compile Include="Meeting\Meeting.g.cs" />
+    <Compile Include="Meeting\MeetingHandlers.cs" />
+    <Compile Include="Meeting\MeetingServerFunctions.cs" />
+    <Compile Include="Minutes%40Tracking\MinutesTracking.g.cs" />
+    <Compile Include="Minutes%40Versions\MinutesVersions.g.cs" />
+    <Compile Include="Minutes\Minutes.g.cs" />
+    <Compile Include="Minutes\MinutesHandlers.cs" />
+    <Compile Include="Minutes\MinutesServerFunctions.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleAsyncHandlers.cs" />
+    <Compile Include="ModuleBlockHandlers.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="ModuleJobs.cs" />
+    <Compile Include="ModuleServerFunctions.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Meetings.Shared\Sungero.Meetings.Shared.csproj">
+      <Project>{93c0f95b-512f-d5c3-c17d-c3dfef959151}</Project>
+      <Name>Sungero.Meetings.Shared</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agenda\AgendaQueries.xml" />
+    <EmbeddedResource Include="Meeting\MeetingQueries.xml" />
+    <EmbeddedResource Include="Minutes\MinutesQueries.xml" />
+    <EmbeddedResource Include="ModuleQueries.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

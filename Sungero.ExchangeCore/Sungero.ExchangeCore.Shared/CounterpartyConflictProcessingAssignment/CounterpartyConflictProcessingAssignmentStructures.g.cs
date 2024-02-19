@@ -1,0 +1,3 @@
+namespace Sungero.ExchangeCore.Structures.CounterpartyConflictProcessingAssignment
+{
+}

@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{4fbfe066-29ab-5455-15f9-1e22f5e7d449}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Docflow.Server</RootNamespace>
+    <AssemblyName>Sungero.Docflow.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\FastReport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sungero.Workflow.Blocks">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Blocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nustache.Core">
+      <HintPath>..\Sungero.Docflow.Libraries\Nustache\Nustache.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.ArioExtensions">
+      <HintPath>..\Sungero.Docflow.Libraries\ArioExtensions\Sungero.ArioExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DocumentComparer">
+      <HintPath>..\Sungero.Docflow.Libraries\DocumentComparer\DocumentComparer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\Sungero.Docflow.Libraries\SkiaSharp\SkiaSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\Sungero.Docflow.Libraries\SystemDrawingCommon\System.Drawing.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="BitMiracle.LibTiff.NET">
+      <HintPath>..\Sungero.Docflow.Libraries\BitMiracleLibTiff\BitMiracle.LibTiff.NET.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FormalizeDocumentsParser">
+      <HintPath>..\Sungero.Docflow.Libraries\FDP\FormalizeDocumentsParser.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Server">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Server">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Server\Sungero.ExchangeCore.Server.csproj">
+      <Project>{9d7a4505-eca5-87c4-ab95-f89d01c6b77f}</Project>
+      <Name>Sungero.ExchangeCore.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItem.g.cs" />
+    <Compile Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItemHandlers.cs" />
+    <Compile Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItemServerFunctions.cs" />
+    <Compile Include="AccessRightsRule%40BusinessUnits\AccessRightsRuleBusinessUnits.g.cs" />
+    <Compile Include="AccessRightsRule%40Departments\AccessRightsRuleDepartments.g.cs" />
+    <Compile Include="AccessRightsRule%40DocumentGroups\AccessRightsRuleDocumentGroups.g.cs" />
+    <Compile Include="AccessRightsRule%40DocumentKinds\AccessRightsRuleDocumentKinds.g.cs" />
+    <Compile Include="AccessRightsRule%40Members\AccessRightsRuleMembers.g.cs" />
+    <Compile Include="AccessRightsRule\AccessRightsRule.g.cs" />
+    <Compile Include="AccessRightsRule\AccessRightsRuleHandlers.cs" />
+    <Compile Include="AccessRightsRule\AccessRightsRuleServerFunctions.cs" />
+    <Compile Include="AccountingDocumentBase%40Tracking\AccountingDocumentBaseTracking.g.cs" />
+    <Compile Include="AccountingDocumentBase%40Versions\AccountingDocumentBaseVersions.g.cs" />
+    <Compile Include="AccountingDocumentBase\AccountingDocumentBase.g.cs" />
+    <Compile Include="AccountingDocumentBase\AccountingDocumentBaseHandlers.cs" />
+    <Compile Include="AccountingDocumentBase\AccountingDocumentBaseServerFunctions.cs" />
+    <Compile Include="Addendum%40Tracking\AddendumTracking.g.cs" />
+    <Compile Include="Addendum%40Versions\AddendumVersions.g.cs" />
+    <Compile Include="Addendum\Addendum.g.cs" />
+    <Compile Include="Addendum\AddendumHandlers.cs" />
+    <Compile Include="Addendum\AddendumServerFunctions.cs" />
+    <Compile Include="ApprovalAssignment\ApprovalAssignment.g.cs" />
+    <Compile Include="ApprovalAssignment\ApprovalAssignmentHandlers.cs" />
+    <Compile Include="ApprovalAssignment\ApprovalAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalCheckingAssignment\ApprovalCheckingAssignment.g.cs" />
+    <Compile Include="ApprovalCheckingAssignment\ApprovalCheckingAssignmentHandlers.cs" />
+    <Compile Include="ApprovalCheckingAssignment\ApprovalCheckingAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignment.g.cs" />
+    <Compile Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignmentHandlers.cs" />
+    <Compile Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalConvertPdfStage\ApprovalConvertPdfStage.g.cs" />
+    <Compile Include="ApprovalConvertPdfStage\ApprovalConvertPdfStageHandlers.cs" />
+    <Compile Include="ApprovalConvertPdfStage\ApprovalConvertPdfStageServerFunctions.cs" />
+    <Compile Include="ApprovalExecutionAssignment%40CollapsedStagesTypesExe\ApprovalExecutionAssignmentCollapsedStagesTypesExe.g.cs" />
+    <Compile Include="ApprovalExecutionAssignment\ApprovalExecutionAssignment.g.cs" />
+    <Compile Include="ApprovalExecutionAssignment\ApprovalExecutionAssignmentHandlers.cs" />
+    <Compile Include="ApprovalExecutionAssignment\ApprovalExecutionAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItem.g.cs" />
+    <Compile Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItemHandlers.cs" />
+    <Compile Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItemServerFunctions.cs" />
+    <Compile Include="ApprovalFunctionStageBase\ApprovalFunctionStageBase.g.cs" />
+    <Compile Include="ApprovalFunctionStageBase\ApprovalFunctionStageBaseHandlers.cs" />
+    <Compile Include="ApprovalFunctionStageBase\ApprovalFunctionStageBaseServerFunctions.cs" />
+    <Compile Include="ApprovalManagerAssignment%40AddApprovers\ApprovalManagerAssignmentAddApprovers.g.cs" />
+    <Compile Include="ApprovalManagerAssignment%40Addressees\ApprovalManagerAssignmentAddressees.g.cs" />
+    <Compile Include="ApprovalManagerAssignment\ApprovalManagerAssignment.g.cs" />
+    <Compile Include="ApprovalManagerAssignment\ApprovalManagerAssignmentHandlers.cs" />
+    <Compile Include="ApprovalManagerAssignment\ApprovalManagerAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalNotification\ApprovalNotification.g.cs" />
+    <Compile Include="ApprovalNotification\ApprovalNotificationHandlers.cs" />
+    <Compile Include="ApprovalNotification\ApprovalNotificationServerFunctions.cs" />
+    <Compile Include="ApprovalPrintingAssignment%40CollapsedStagesTypesPr\ApprovalPrintingAssignmentCollapsedStagesTypesPr.g.cs" />
+    <Compile Include="ApprovalPrintingAssignment\ApprovalPrintingAssignment.g.cs" />
+    <Compile Include="ApprovalPrintingAssignment\ApprovalPrintingAssignmentHandlers.cs" />
+    <Compile Include="ApprovalPrintingAssignment\ApprovalPrintingAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalRegistrationAssignment%40CollapsedStagesTypesReg\ApprovalRegistrationAssignmentCollapsedStagesTypesReg.g.cs" />
+    <Compile Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignment.g.cs" />
+    <Compile Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignmentHandlers.cs" />
+    <Compile Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStage.g.cs" />
+    <Compile Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStageHandlers.cs" />
+    <Compile Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStageServerFunctions.cs" />
+    <Compile Include="ApprovalReviewAssignment%40CollapsedStagesTypesRe\ApprovalReviewAssignmentCollapsedStagesTypesRe.g.cs" />
+    <Compile Include="ApprovalReviewAssignment\ApprovalReviewAssignment.g.cs" />
+    <Compile Include="ApprovalReviewAssignment\ApprovalReviewAssignmentHandlers.cs" />
+    <Compile Include="ApprovalReviewAssignment\ApprovalReviewAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalReviewTaskStage\ApprovalReviewTaskStage.g.cs" />
+    <Compile Include="ApprovalReviewTaskStage\ApprovalReviewTaskStageHandlers.cs" />
+    <Compile Include="ApprovalReviewTaskStage\ApprovalReviewTaskStageServerFunctions.cs" />
+    <Compile Include="ApprovalReworkAssignment%40AddApprovers\ApprovalReworkAssignmentAddApprovers.g.cs" />
+    <Compile Include="ApprovalReworkAssignment%40Addressees\ApprovalReworkAssignmentAddressees.g.cs" />
+    <Compile Include="ApprovalReworkAssignment%40Approvers\ApprovalReworkAssignmentApprovers.g.cs" />
+    <Compile Include="ApprovalReworkAssignment%40RegApprovers\ApprovalReworkAssignmentRegApprovers.g.cs" />
+    <Compile Include="ApprovalReworkAssignment\ApprovalReworkAssignment.g.cs" />
+    <Compile Include="ApprovalReworkAssignment\ApprovalReworkAssignmentHandlers.cs" />
+    <Compile Include="ApprovalReworkAssignment\ApprovalReworkAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalRoleBase\ApprovalRoleBase.g.cs" />
+    <Compile Include="ApprovalRoleBase\ApprovalRoleBaseHandlers.cs" />
+    <Compile Include="ApprovalRoleBase\ApprovalRoleBaseServerFunctions.cs" />
+    <Compile Include="ApprovalRole\ApprovalRole.g.cs" />
+    <Compile Include="ApprovalRole\ApprovalRoleHandlers.cs" />
+    <Compile Include="ApprovalRole\ApprovalRoleServerFunctions.cs" />
+    <Compile Include="ApprovalRule%40BusinessUnits\ApprovalRuleBusinessUnits.g.cs" />
+    <Compile Include="ApprovalRule%40Conditions\ApprovalRuleConditions.g.cs" />
+    <Compile Include="ApprovalRule%40Departments\ApprovalRuleDepartments.g.cs" />
+    <Compile Include="ApprovalRule%40DocumentGroups\ApprovalRuleDocumentGroups.g.cs" />
+    <Compile Include="ApprovalRule%40DocumentKinds\ApprovalRuleDocumentKinds.g.cs" />
+    <Compile Include="ApprovalRule%40Stages\ApprovalRuleStages.g.cs" />
+    <Compile Include="ApprovalRule%40Transitions\ApprovalRuleTransitions.g.cs" />
+    <Compile Include="ApprovalRuleBase%40BusinessUnits\ApprovalRuleBaseBusinessUnits.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Conditions\ApprovalRuleBaseConditions.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Departments\ApprovalRuleBaseDepartments.g.cs" />
+    <Compile Include="ApprovalRuleBase%40DocumentGroups\ApprovalRuleBaseDocumentGroups.g.cs" />
+    <Compile Include="ApprovalRuleBase%40DocumentKinds\ApprovalRuleBaseDocumentKinds.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Stages\ApprovalRuleBaseStages.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Transitions\ApprovalRuleBaseTransitions.g.cs" />
+    <Compile Include="ApprovalRuleBase\ApprovalRuleBase.g.cs" />
+    <Compile Include="ApprovalRuleBase\ApprovalRuleBaseHandlers.cs" />
+    <Compile Include="ApprovalRuleBase\ApprovalRuleBaseServerFunctions.cs" />
+    <Compile Include="ApprovalRule\ApprovalRule.g.cs" />
+    <Compile Include="ApprovalRule\ApprovalRuleHandlers.cs" />
+    <Compile Include="ApprovalRule\ApprovalRuleServerFunctions.cs" />
+    <Compile Include="ApprovalSendingAssignment%40CollapsedStagesTypesSen\ApprovalSendingAssignmentCollapsedStagesTypesSen.g.cs" />
+    <Compile Include="ApprovalSendingAssignment\ApprovalSendingAssignment.g.cs" />
+    <Compile Include="ApprovalSendingAssignment\ApprovalSendingAssignmentHandlers.cs" />
+    <Compile Include="ApprovalSendingAssignment\ApprovalSendingAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalSigningAssignment%40CollapsedStagesTypesSig\ApprovalSigningAssignmentCollapsedStagesTypesSig.g.cs" />
+    <Compile Include="ApprovalSigningAssignment\ApprovalSigningAssignment.g.cs" />
+    <Compile Include="ApprovalSigningAssignment\ApprovalSigningAssignmentHandlers.cs" />
+    <Compile Include="ApprovalSigningAssignment\ApprovalSigningAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalSimpleAssignment\ApprovalSimpleAssignment.g.cs" />
+    <Compile Include="ApprovalSimpleAssignment\ApprovalSimpleAssignmentHandlers.cs" />
+    <Compile Include="ApprovalSimpleAssignment\ApprovalSimpleAssignmentServerFunctions.cs" />
+    <Compile Include="ApprovalSimpleNotification\ApprovalSimpleNotification.g.cs" />
+    <Compile Include="ApprovalSimpleNotification\ApprovalSimpleNotificationHandlers.cs" />
+    <Compile Include="ApprovalSimpleNotification\ApprovalSimpleNotificationServerFunctions.cs" />
+    <Compile Include="ApprovalStage%40ApprovalRoles\ApprovalStageApprovalRoles.g.cs" />
+    <Compile Include="ApprovalStage%40Recipients\ApprovalStageRecipients.g.cs" />
+    <Compile Include="ApprovalStageBase\ApprovalStageBase.g.cs" />
+    <Compile Include="ApprovalStageBase\ApprovalStageBaseHandlers.cs" />
+    <Compile Include="ApprovalStageBase\ApprovalStageBaseServerFunctions.cs" />
+    <Compile Include="ApprovalStage\ApprovalStage.g.cs" />
+    <Compile Include="ApprovalStage\ApprovalStageHandlers.cs" />
+    <Compile Include="ApprovalStage\ApprovalStageServerFunctions.cs" />
+    <Compile Include="ApprovalTask%40AddApproversExpanded\ApprovalTaskAddApproversExpanded.g.cs" />
+    <Compile Include="ApprovalTask%40AddApprovers\ApprovalTaskAddApprovers.g.cs" />
+    <Compile Include="ApprovalTask%40AddedAddenda\ApprovalTaskAddedAddenda.g.cs" />
+    <Compile Include="ApprovalTask%40Addressees\ApprovalTaskAddressees.g.cs" />
+    <Compile Include="ApprovalTask%40Observers\ApprovalTaskObservers.g.cs" />
+    <Compile Include="ApprovalTask%40RemovedAddenda\ApprovalTaskRemovedAddenda.g.cs" />
+    <Compile Include="ApprovalTask%40ReqApprovers\ApprovalTaskReqApprovers.g.cs" />
+    <Compile Include="ApprovalTask%40RevokedDocumentsRights\ApprovalTaskRevokedDocumentsRights.g.cs" />
+    <Compile Include="ApprovalTask\ApprovalTask.g.cs" />
+    <Compile Include="ApprovalTask\ApprovalTaskBlockHandlers.cs" />
+    <Compile Include="ApprovalTask\ApprovalTaskHandlers.cs" />
+    <Compile Include="ApprovalTask\ApprovalTaskRouteHandlers.cs" />
+    <Compile Include="ApprovalTask\ApprovalTaskServerFunctions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CaseFile\CaseFile.g.cs" />
+    <Compile Include="CaseFile\CaseFileHandlers.cs" />
+    <Compile Include="CaseFile\CaseFileServerFunctions.cs" />
+    <Compile Include="CheckReturnAssignment\CheckReturnAssignment.g.cs" />
+    <Compile Include="CheckReturnAssignment\CheckReturnAssignmentHandlers.cs" />
+    <Compile Include="CheckReturnAssignment\CheckReturnAssignmentServerFunctions.cs" />
+    <Compile Include="CheckReturnCheckAssignment\CheckReturnCheckAssignment.g.cs" />
+    <Compile Include="CheckReturnCheckAssignment\CheckReturnCheckAssignmentHandlers.cs" />
+    <Compile Include="CheckReturnCheckAssignment\CheckReturnCheckAssignmentServerFunctions.cs" />
+    <Compile Include="CheckReturnTask%40Observers\CheckReturnTaskObservers.g.cs" />
+    <Compile Include="CheckReturnTask\CheckReturnTask.g.cs" />
+    <Compile Include="CheckReturnTask\CheckReturnTaskBlockHandlers.cs" />
+    <Compile Include="CheckReturnTask\CheckReturnTaskHandlers.cs" />
+    <Compile Include="CheckReturnTask\CheckReturnTaskRouteHandlers.cs" />
+    <Compile Include="CheckReturnTask\CheckReturnTaskServerFunctions.cs" />
+    <Compile Include="Condition%40Addressees\ConditionAddressees.g.cs" />
+    <Compile Include="Condition%40ConditionDocumentKinds\ConditionConditionDocumentKinds.g.cs" />
+    <Compile Include="Condition%40Currencies\ConditionCurrencies.g.cs" />
+    <Compile Include="Condition%40DeliveryMethods\ConditionDeliveryMethods.g.cs" />
+    <Compile Include="Condition%40DocumentKinds\ConditionDocumentKinds.g.cs" />
+    <Compile Include="ConditionBase%40ConditionDocumentKinds\ConditionBaseConditionDocumentKinds.g.cs" />
+    <Compile Include="ConditionBase%40Currencies\ConditionBaseCurrencies.g.cs" />
+    <Compile Include="ConditionBase%40DeliveryMethods\ConditionBaseDeliveryMethods.g.cs" />
+    <Compile Include="ConditionBase%40DocumentKinds\ConditionBaseDocumentKinds.g.cs" />
+    <Compile Include="ConditionBase\ConditionBase.g.cs" />
+    <Compile Include="ConditionBase\ConditionBaseHandlers.cs" />
+    <Compile Include="ConditionBase\ConditionBaseServerFunctions.cs" />
+    <Compile Include="Condition\Condition.g.cs" />
+    <Compile Include="Condition\ConditionHandlers.cs" />
+    <Compile Include="Condition\ConditionServerFunctions.cs" />
+    <Compile Include="ContractualDocumentBase%40Tracking\ContractualDocumentBaseTracking.g.cs" />
+    <Compile Include="ContractualDocumentBase%40Versions\ContractualDocumentBaseVersions.g.cs" />
+    <Compile Include="ContractualDocumentBase\ContractualDocumentBase.g.cs" />
+    <Compile Include="ContractualDocumentBase\ContractualDocumentBaseHandlers.cs" />
+    <Compile Include="ContractualDocumentBase\ContractualDocumentBaseServerFunctions.cs" />
+    <Compile Include="CounterpartyDocument%40Tracking\CounterpartyDocumentTracking.g.cs" />
+    <Compile Include="CounterpartyDocument%40Versions\CounterpartyDocumentVersions.g.cs" />
+    <Compile Include="CounterpartyDocument\CounterpartyDocument.g.cs" />
+    <Compile Include="CounterpartyDocument\CounterpartyDocumentHandlers.cs" />
+    <Compile Include="CounterpartyDocument\CounterpartyDocumentServerFunctions.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.g.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentHandlers.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentServerFunctions.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotification.g.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationHandlers.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationServerFunctions.cs" />
+    <Compile Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTask.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskBlockHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskRouteHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskServerFunctions.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.g.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentHandlers.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentServerFunctions.cs" />
+    <Compile Include="DistributionList%40Addressees\DistributionListAddressees.g.cs" />
+    <Compile Include="DistributionList\DistributionList.g.cs" />
+    <Compile Include="DistributionList\DistributionListHandlers.cs" />
+    <Compile Include="DistributionList\DistributionListServerFunctions.cs" />
+    <Compile Include="DocumentComparisonInfo\DocumentComparisonInfo.g.cs" />
+    <Compile Include="DocumentComparisonInfo\DocumentComparisonInfoHandlers.cs" />
+    <Compile Include="DocumentComparisonInfo\DocumentComparisonInfoServerFunctions.cs" />
+    <Compile Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItem.g.cs" />
+    <Compile Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItemHandlers.cs" />
+    <Compile Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItemServerFunctions.cs" />
+    <Compile Include="DocumentGroupBase%40DocumentKinds\DocumentGroupBaseDocumentKinds.g.cs" />
+    <Compile Include="DocumentGroupBase\DocumentGroupBase.g.cs" />
+    <Compile Include="DocumentGroupBase\DocumentGroupBaseHandlers.cs" />
+    <Compile Include="DocumentGroupBase\DocumentGroupBaseServerFunctions.cs" />
+    <Compile Include="DocumentKind%40AvailableActions\DocumentKindAvailableActions.g.cs" />
+    <Compile Include="DocumentKind\DocumentKind.g.cs" />
+    <Compile Include="DocumentKind\DocumentKindHandlers.cs" />
+    <Compile Include="DocumentKind\DocumentKindServerFunctions.cs" />
+    <Compile Include="DocumentRegister%40NumberFormatItems\DocumentRegisterNumberFormatItems.g.cs" />
+    <Compile Include="DocumentRegister\DocumentRegister.g.cs" />
+    <Compile Include="DocumentRegister\DocumentRegisterHandlers.cs" />
+    <Compile Include="DocumentRegister\DocumentRegisterServerFunctions.cs" />
+    <Compile Include="DocumentSendAction\DocumentSendAction.g.cs" />
+    <Compile Include="DocumentSendAction\DocumentSendActionHandlers.cs" />
+    <Compile Include="DocumentSendAction\DocumentSendActionServerFunctions.cs" />
+    <Compile Include="DocumentTemplate%40BusinessUnits\DocumentTemplateBusinessUnits.g.cs" />
+    <Compile Include="DocumentTemplate%40Departments\DocumentTemplateDepartments.g.cs" />
+    <Compile Include="DocumentTemplate%40DocumentKinds\DocumentTemplateDocumentKinds.g.cs" />
+    <Compile Include="DocumentTemplate%40Versions\DocumentTemplateVersions.g.cs" />
+    <Compile Include="DocumentTemplate\DocumentTemplate.g.cs" />
+    <Compile Include="DocumentTemplate\DocumentTemplateHandlers.cs" />
+    <Compile Include="DocumentTemplate\DocumentTemplateServerFunctions.cs" />
+    <Compile Include="DocumentType\DocumentType.g.cs" />
+    <Compile Include="DocumentType\DocumentTypeHandlers.cs" />
+    <Compile Include="DocumentType\DocumentTypeServerFunctions.cs" />
+    <Compile Include="ExchangeDocument%40Tracking\ExchangeDocumentTracking.g.cs" />
+    <Compile Include="ExchangeDocument%40Versions\ExchangeDocumentVersions.g.cs" />
+    <Compile Include="ExchangeDocument\ExchangeDocument.g.cs" />
+    <Compile Include="ExchangeDocument\ExchangeDocumentHandlers.cs" />
+    <Compile Include="ExchangeDocument\ExchangeDocumentServerFunctions.cs" />
+    <Compile Include="FileRetentionPeriod\FileRetentionPeriod.g.cs" />
+    <Compile Include="FileRetentionPeriod\FileRetentionPeriodHandlers.cs" />
+    <Compile Include="FileRetentionPeriod\FileRetentionPeriodServerFunctions.cs" />
+    <Compile Include="FormalizedPowerOfAttorney%40Tracking\FormalizedPowerOfAttorneyTracking.g.cs" />
+    <Compile Include="FormalizedPowerOfAttorney%40Versions\FormalizedPowerOfAttorneyVersions.g.cs" />
+    <Compile Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorney.g.cs" />
+    <Compile Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorneyHandlers.cs" />
+    <Compile Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorneyServerFunctions.cs" />
+    <Compile Include="FreeApprovalAssignment\FreeApprovalAssignment.g.cs" />
+    <Compile Include="FreeApprovalAssignment\FreeApprovalAssignmentHandlers.cs" />
+    <Compile Include="FreeApprovalAssignment\FreeApprovalAssignmentServerFunctions.cs" />
+    <Compile Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignment.g.cs" />
+    <Compile Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignmentHandlers.cs" />
+    <Compile Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignmentServerFunctions.cs" />
+    <Compile Include="FreeApprovalNotification\FreeApprovalNotification.g.cs" />
+    <Compile Include="FreeApprovalNotification\FreeApprovalNotificationHandlers.cs" />
+    <Compile Include="FreeApprovalNotification\FreeApprovalNotificationServerFunctions.cs" />
+    <Compile Include="FreeApprovalReworkAssignment%40Approvers\FreeApprovalReworkAssignmentApprovers.g.cs" />
+    <Compile Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignment.g.cs" />
+    <Compile Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignmentHandlers.cs" />
+    <Compile Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignmentServerFunctions.cs" />
+    <Compile Include="FreeApprovalTask%40AddedAddenda\FreeApprovalTaskAddedAddenda.g.cs" />
+    <Compile Include="FreeApprovalTask%40Approvers\FreeApprovalTaskApprovers.g.cs" />
+    <Compile Include="FreeApprovalTask%40Observers\FreeApprovalTaskObservers.g.cs" />
+    <Compile Include="FreeApprovalTask%40RemovedAddenda\FreeApprovalTaskRemovedAddenda.g.cs" />
+    <Compile Include="FreeApprovalTask\FreeApprovalTask.g.cs" />
+    <Compile Include="FreeApprovalTask\FreeApprovalTaskBlockHandlers.cs" />
+    <Compile Include="FreeApprovalTask\FreeApprovalTaskHandlers.cs" />
+    <Compile Include="FreeApprovalTask\FreeApprovalTaskRouteHandlers.cs" />
+    <Compile Include="FreeApprovalTask\FreeApprovalTaskServerFunctions.cs" />
+    <Compile Include="IncomingDocumentBase%40Addressees\IncomingDocumentBaseAddressees.g.cs" />
+    <Compile Include="IncomingDocumentBase%40Tracking\IncomingDocumentBaseTracking.g.cs" />
+    <Compile Include="IncomingDocumentBase%40Versions\IncomingDocumentBaseVersions.g.cs" />
+    <Compile Include="IncomingDocumentBase\IncomingDocumentBase.g.cs" />
+    <Compile Include="IncomingDocumentBase\IncomingDocumentBaseHandlers.cs" />
+    <Compile Include="IncomingDocumentBase\IncomingDocumentBaseServerFunctions.cs" />
+    <Compile Include="InternalDocumentBase%40Tracking\InternalDocumentBaseTracking.g.cs" />
+    <Compile Include="InternalDocumentBase%40Versions\InternalDocumentBaseVersions.g.cs" />
+    <Compile Include="InternalDocumentBase\InternalDocumentBase.g.cs" />
+    <Compile Include="InternalDocumentBase\InternalDocumentBaseHandlers.cs" />
+    <Compile Include="InternalDocumentBase\InternalDocumentBaseServerFunctions.cs" />
+    <Compile Include="MailDeliveryMethod\MailDeliveryMethod.g.cs" />
+    <Compile Include="MailDeliveryMethod\MailDeliveryMethodHandlers.cs" />
+    <Compile Include="MailDeliveryMethod\MailDeliveryMethodServerFunctions.cs" />
+    <Compile Include="Memo%40Addressees\MemoAddressees.g.cs" />
+    <Compile Include="Memo%40Tracking\MemoTracking.g.cs" />
+    <Compile Include="Memo%40Versions\MemoVersions.g.cs" />
+    <Compile Include="Memo\Memo.g.cs" />
+    <Compile Include="Memo\MemoHandlers.cs" />
+    <Compile Include="Memo\MemoServerFunctions.cs" />
+    <Compile Include="MinutesBase%40Tracking\MinutesBaseTracking.g.cs" />
+    <Compile Include="MinutesBase%40Versions\MinutesBaseVersions.g.cs" />
+    <Compile Include="MinutesBase\MinutesBase.g.cs" />
+    <Compile Include="MinutesBase\MinutesBaseHandlers.cs" />
+    <Compile Include="MinutesBase\MinutesBaseServerFunctions.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleAsyncHandlers.cs" />
+    <Compile Include="ModuleBlockHandlers.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="ModuleJobs.cs" />
+    <Compile Include="ModuleServerFunctions.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="OfficialDocument%40Tracking\OfficialDocumentTracking.g.cs" />
+    <Compile Include="OfficialDocument%40Versions\OfficialDocumentVersions.g.cs" />
+    <Compile Include="OfficialDocument\OfficialDocument.g.cs" />
+    <Compile Include="OfficialDocument\OfficialDocumentHandlers.cs" />
+    <Compile Include="OfficialDocument\OfficialDocumentServerFunctions.cs" />
+    <Compile Include="OutgoingDocumentBase%40Addressees\OutgoingDocumentBaseAddressees.g.cs" />
+    <Compile Include="OutgoingDocumentBase%40Tracking\OutgoingDocumentBaseTracking.g.cs" />
+    <Compile Include="OutgoingDocumentBase%40Versions\OutgoingDocumentBaseVersions.g.cs" />
+    <Compile Include="OutgoingDocumentBase\OutgoingDocumentBase.g.cs" />
+    <Compile Include="OutgoingDocumentBase\OutgoingDocumentBaseHandlers.cs" />
+    <Compile Include="OutgoingDocumentBase\OutgoingDocumentBaseServerFunctions.cs" />
+    <Compile Include="PersonalSetting\PersonalSetting.g.cs" />
+    <Compile Include="PersonalSetting\PersonalSettingHandlers.cs" />
+    <Compile Include="PersonalSetting\PersonalSettingServerFunctions.cs" />
+    <Compile Include="PowerOfAttorney%40Tracking\PowerOfAttorneyTracking.g.cs" />
+    <Compile Include="PowerOfAttorney%40Versions\PowerOfAttorneyVersions.g.cs" />
+    <Compile Include="PowerOfAttorneyBase%40Tracking\PowerOfAttorneyBaseTracking.g.cs" />
+    <Compile Include="PowerOfAttorneyBase%40Versions\PowerOfAttorneyBaseVersions.g.cs" />
+    <Compile Include="PowerOfAttorneyBase\PowerOfAttorneyBase.g.cs" />
+    <Compile Include="PowerOfAttorneyBase\PowerOfAttorneyBaseHandlers.cs" />
+    <Compile Include="PowerOfAttorneyBase\PowerOfAttorneyBaseServerFunctions.cs" />
+    <Compile Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItem.g.cs" />
+    <Compile Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItemHandlers.cs" />
+    <Compile Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItemServerFunctions.cs" />
+    <Compile Include="PowerOfAttorneyRevocation%40Tracking\PowerOfAttorneyRevocationTracking.g.cs" />
+    <Compile Include="PowerOfAttorneyRevocation%40Versions\PowerOfAttorneyRevocationVersions.g.cs" />
+    <Compile Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocation.g.cs" />
+    <Compile Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocationHandlers.cs" />
+    <Compile Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocationServerFunctions.cs" />
+    <Compile Include="PowerOfAttorney\PowerOfAttorney.g.cs" />
+    <Compile Include="PowerOfAttorney\PowerOfAttorneyHandlers.cs" />
+    <Compile Include="PowerOfAttorney\PowerOfAttorneyServerFunctions.cs" />
+    <Compile Include="ProjectBase\ProjectBase.g.cs" />
+    <Compile Include="ProjectBase\ProjectBaseHandlers.cs" />
+    <Compile Include="ProjectBase\ProjectBaseServerFunctions.cs" />
+    <Compile Include="RegistrationGroup%40Departments\RegistrationGroupDepartments.g.cs" />
+    <Compile Include="RegistrationGroup%40RecipientLinks\RegistrationGroupRecipientLinks.g.cs" />
+    <Compile Include="RegistrationGroup\RegistrationGroup.g.cs" />
+    <Compile Include="RegistrationGroup\RegistrationGroupHandlers.cs" />
+    <Compile Include="RegistrationGroup\RegistrationGroupServerFunctions.cs" />
+    <Compile Include="RegistrationSetting%40BusinessUnits\RegistrationSettingBusinessUnits.g.cs" />
+    <Compile Include="RegistrationSetting%40Departments\RegistrationSettingDepartments.g.cs" />
+    <Compile Include="RegistrationSetting%40DocumentKinds\RegistrationSettingDocumentKinds.g.cs" />
+    <Compile Include="RegistrationSetting\RegistrationSetting.g.cs" />
+    <Compile Include="RegistrationSetting\RegistrationSettingHandlers.cs" />
+    <Compile Include="RegistrationSetting\RegistrationSettingServerFunctions.cs" />
+    <Compile Include="Reports\ApprovalRuleCardReport\ApprovalRuleCardReport.g.cs" />
+    <Compile Include="Reports\ApprovalRuleCardReport\ApprovalRuleCardReportHandlers.cs" />
+    <Compile Include="Reports\ApprovalRulesConsolidatedReport\ApprovalRulesConsolidatedReport.g.cs" />
+    <Compile Include="Reports\ApprovalRulesConsolidatedReport\ApprovalRulesConsolidatedReportHandlers.cs" />
+    <Compile Include="Reports\ApprovalSheetReport\ApprovalSheetReport.g.cs" />
+    <Compile Include="Reports\ApprovalSheetReport\ApprovalSheetReportHandlers.cs" />
+    <Compile Include="Reports\BarcodePageReport\BarcodePageReport.g.cs" />
+    <Compile Include="Reports\BarcodePageReport\BarcodePageReportHandlers.cs" />
+    <Compile Include="Reports\DepartmentsAssignmentCompletionReport\DepartmentsAssignmentCompletionReport.g.cs" />
+    <Compile Include="Reports\DepartmentsAssignmentCompletionReport\DepartmentsAssignmentCompletionReportHandlers.cs" />
+    <Compile Include="Reports\DistributionSheetReport\DistributionSheetReport.g.cs" />
+    <Compile Include="Reports\DistributionSheetReport\DistributionSheetReportHandlers.cs" />
+    <Compile Include="Reports\DocumentUsageReport\DocumentUsageReport.g.cs" />
+    <Compile Include="Reports\DocumentUsageReport\DocumentUsageReportHandlers.cs" />
+    <Compile Include="Reports\EmployeeAssignmentsReport\EmployeeAssignmentsReport.g.cs" />
+    <Compile Include="Reports\EmployeeAssignmentsReport\EmployeeAssignmentsReportHandlers.cs" />
+    <Compile Include="Reports\EmployeesAssignmentCompletionReport\EmployeesAssignmentCompletionReport.g.cs" />
+    <Compile Include="Reports\EmployeesAssignmentCompletionReport\EmployeesAssignmentCompletionReportHandlers.cs" />
+    <Compile Include="Reports\EnvelopeC4Report\EnvelopeC4Report.g.cs" />
+    <Compile Include="Reports\EnvelopeC4Report\EnvelopeC4ReportHandlers.cs" />
+    <Compile Include="Reports\EnvelopeC5Report\EnvelopeC5Report.g.cs" />
+    <Compile Include="Reports\EnvelopeC5Report\EnvelopeC5ReportHandlers.cs" />
+    <Compile Include="Reports\EnvelopeC65Report\EnvelopeC65Report.g.cs" />
+    <Compile Include="Reports\EnvelopeC65Report\EnvelopeC65ReportHandlers.cs" />
+    <Compile Include="Reports\EnvelopeE65Report\EnvelopeE65Report.g.cs" />
+    <Compile Include="Reports\EnvelopeE65Report\EnvelopeE65ReportHandlers.cs" />
+    <Compile Include="Reports\ExchangeOrderReport\ExchangeOrderReport.g.cs" />
+    <Compile Include="Reports\ExchangeOrderReport\ExchangeOrderReportHandlers.cs" />
+    <Compile Include="Reports\ExchangeServiceDocumentReport\ExchangeServiceDocumentReport.g.cs" />
+    <Compile Include="Reports\ExchangeServiceDocumentReport\ExchangeServiceDocumentReportHandlers.cs" />
+    <Compile Include="Reports\MailRegisterReport\MailRegisterReport.g.cs" />
+    <Compile Include="Reports\MailRegisterReport\MailRegisterReportHandlers.cs" />
+    <Compile Include="Reports\RegistrationSettingReport\RegistrationSettingReport.g.cs" />
+    <Compile Include="Reports\RegistrationSettingReport\RegistrationSettingReportHandlers.cs" />
+    <Compile Include="Reports\SkippedNumbersReport\SkippedNumbersReport.g.cs" />
+    <Compile Include="Reports\SkippedNumbersReport\SkippedNumbersReportHandlers.cs" />
+    <Compile Include="RetentionPolicy%40DocumentKinds\RetentionPolicyDocumentKinds.g.cs" />
+    <Compile Include="RetentionPolicy\RetentionPolicy.g.cs" />
+    <Compile Include="RetentionPolicy\RetentionPolicyHandlers.cs" />
+    <Compile Include="RetentionPolicy\RetentionPolicyServerFunctions.cs" />
+    <Compile Include="SignatureSetting%40BusinessUnits\SignatureSettingBusinessUnits.g.cs" />
+    <Compile Include="SignatureSetting%40Categories\SignatureSettingCategories.g.cs" />
+    <Compile Include="SignatureSetting%40Departments\SignatureSettingDepartments.g.cs" />
+    <Compile Include="SignatureSetting%40DocumentKinds\SignatureSettingDocumentKinds.g.cs" />
+    <Compile Include="SignatureSetting\SignatureSetting.g.cs" />
+    <Compile Include="SignatureSetting\SignatureSettingHandlers.cs" />
+    <Compile Include="SignatureSetting\SignatureSettingServerFunctions.cs" />
+    <Compile Include="SimpleDocument%40Tracking\SimpleDocumentTracking.g.cs" />
+    <Compile Include="SimpleDocument%40Versions\SimpleDocumentVersions.g.cs" />
+    <Compile Include="SimpleDocument\SimpleDocument.g.cs" />
+    <Compile Include="SimpleDocument\SimpleDocumentHandlers.cs" />
+    <Compile Include="SimpleDocument\SimpleDocumentServerFunctions.cs" />
+    <Compile Include="SmartProcessingSetting%40AdditionalClassifiers\SmartProcessingSettingAdditionalClassifiers.g.cs" />
+    <Compile Include="SmartProcessingSetting%40CaptureSources\SmartProcessingSettingCaptureSources.g.cs" />
+    <Compile Include="SmartProcessingSetting%40ProcessingRules\SmartProcessingSettingProcessingRules.g.cs" />
+    <Compile Include="SmartProcessingSetting\SmartProcessingSetting.g.cs" />
+    <Compile Include="SmartProcessingSetting\SmartProcessingSettingHandlers.cs" />
+    <Compile Include="SmartProcessingSetting\SmartProcessingSettingServerFunctions.cs" />
+    <Compile Include="StampSetting%40BusinessUnits\StampSettingBusinessUnits.g.cs" />
+    <Compile Include="StampSetting\StampSetting.g.cs" />
+    <Compile Include="StampSetting\StampSettingHandlers.cs" />
+    <Compile Include="StampSetting\StampSettingServerFunctions.cs" />
+    <Compile Include="StoragePolicy%40DocumentKinds\StoragePolicyDocumentKinds.g.cs" />
+    <Compile Include="StoragePolicyBase%40DocumentKinds\StoragePolicyBaseDocumentKinds.g.cs" />
+    <Compile Include="StoragePolicyBase\StoragePolicyBase.g.cs" />
+    <Compile Include="StoragePolicyBase\StoragePolicyBaseHandlers.cs" />
+    <Compile Include="StoragePolicyBase\StoragePolicyBaseServerFunctions.cs" />
+    <Compile Include="StoragePolicy\StoragePolicy.g.cs" />
+    <Compile Include="StoragePolicy\StoragePolicyHandlers.cs" />
+    <Compile Include="StoragePolicy\StoragePolicyServerFunctions.cs" />
+    <Compile Include="Topic\Topic.g.cs" />
+    <Compile Include="Topic\TopicHandlers.cs" />
+    <Compile Include="Topic\TopicServerFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItemQueries.xml" />
+    <EmbeddedResource Include="AccessRightsRule\AccessRightsRuleQueries.xml" />
+    <EmbeddedResource Include="AccountingDocumentBase\AccountingDocumentBaseQueries.xml" />
+    <EmbeddedResource Include="Addendum\AddendumQueries.xml" />
+    <EmbeddedResource Include="ApprovalAssignment\ApprovalAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalCheckingAssignment\ApprovalCheckingAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalConvertPdfStage\ApprovalConvertPdfStageQueries.xml" />
+    <EmbeddedResource Include="ApprovalExecutionAssignment\ApprovalExecutionAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItemQueries.xml" />
+    <EmbeddedResource Include="ApprovalFunctionStageBase\ApprovalFunctionStageBaseQueries.xml" />
+    <EmbeddedResource Include="ApprovalManagerAssignment\ApprovalManagerAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalNotification\ApprovalNotificationQueries.xml" />
+    <EmbeddedResource Include="ApprovalPrintingAssignment\ApprovalPrintingAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStageQueries.xml" />
+    <EmbeddedResource Include="ApprovalReviewAssignment\ApprovalReviewAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalReviewTaskStage\ApprovalReviewTaskStageQueries.xml" />
+    <EmbeddedResource Include="ApprovalReworkAssignment\ApprovalReworkAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalRoleBase\ApprovalRoleBaseQueries.xml" />
+    <EmbeddedResource Include="ApprovalRole\ApprovalRoleQueries.xml" />
+    <EmbeddedResource Include="ApprovalRuleBase\ApprovalRuleBaseQueries.xml" />
+    <EmbeddedResource Include="ApprovalRule\ApprovalRuleQueries.xml" />
+    <EmbeddedResource Include="ApprovalSendingAssignment\ApprovalSendingAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalSigningAssignment\ApprovalSigningAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalSimpleAssignment\ApprovalSimpleAssignmentQueries.xml" />
+    <EmbeddedResource Include="ApprovalSimpleNotification\ApprovalSimpleNotificationQueries.xml" />
+    <EmbeddedResource Include="ApprovalStageBase\ApprovalStageBaseQueries.xml" />
+    <EmbeddedResource Include="ApprovalStage\ApprovalStageQueries.xml" />
+    <EmbeddedResource Include="ApprovalTask\ApprovalTaskQueries.xml" />
+    <EmbeddedResource Include="ApprovalTask\ApprovalTaskScheme.V2.xml" />
+    <EmbeddedResource Include="ApprovalTask\ApprovalTaskScheme.V3.xml" />
+    <EmbeddedResource Include="ApprovalTask\ApprovalTaskScheme.V4.xml" />
+    <EmbeddedResource Include="ApprovalTask\ApprovalTaskScheme.V5.xml" />
+    <EmbeddedResource Include="ApprovalTask\ApprovalTaskScheme.xml" />
+    <EmbeddedResource Include="CaseFile\CaseFileQueries.xml" />
+    <EmbeddedResource Include="CheckReturnAssignment\CheckReturnAssignmentQueries.xml" />
+    <EmbeddedResource Include="CheckReturnCheckAssignment\CheckReturnCheckAssignmentQueries.xml" />
+    <EmbeddedResource Include="CheckReturnTask\CheckReturnTaskQueries.xml" />
+    <EmbeddedResource Include="CheckReturnTask\CheckReturnTaskScheme.xml" />
+    <EmbeddedResource Include="ConditionBase\ConditionBaseQueries.xml" />
+    <EmbeddedResource Include="Condition\ConditionQueries.xml" />
+    <EmbeddedResource Include="ContractualDocumentBase\ContractualDocumentBaseQueries.xml" />
+    <EmbeddedResource Include="CounterpartyDocument\CounterpartyDocumentQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\DeadlineExtensionNotificationQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTaskQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTaskScheme.xml" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentQueries.xml" />
+    <EmbeddedResource Include="DistributionList\DistributionListQueries.xml" />
+    <EmbeddedResource Include="DocumentComparisonInfo\DocumentComparisonInfoQueries.xml" />
+    <EmbeddedResource Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItemQueries.xml" />
+    <EmbeddedResource Include="DocumentGroupBase\DocumentGroupBaseQueries.xml" />
+    <EmbeddedResource Include="DocumentKind\DocumentKindQueries.xml" />
+    <EmbeddedResource Include="DocumentRegister\DocumentRegisterQueries.xml" />
+    <EmbeddedResource Include="DocumentSendAction\DocumentSendActionQueries.xml" />
+    <EmbeddedResource Include="DocumentTemplate\DocumentTemplateQueries.xml" />
+    <EmbeddedResource Include="DocumentType\DocumentTypeQueries.xml" />
+    <EmbeddedResource Include="ExchangeDocument\ExchangeDocumentQueries.xml" />
+    <EmbeddedResource Include="FileRetentionPeriod\FileRetentionPeriodQueries.xml" />
+    <EmbeddedResource Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorneyQueries.xml" />
+    <EmbeddedResource Include="FreeApprovalAssignment\FreeApprovalAssignmentQueries.xml" />
+    <EmbeddedResource Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignmentQueries.xml" />
+    <EmbeddedResource Include="FreeApprovalNotification\FreeApprovalNotificationQueries.xml" />
+    <EmbeddedResource Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignmentQueries.xml" />
+    <EmbeddedResource Include="FreeApprovalTask\FreeApprovalTaskQueries.xml" />
+    <EmbeddedResource Include="FreeApprovalTask\FreeApprovalTaskScheme.V2.xml" />
+    <EmbeddedResource Include="FreeApprovalTask\FreeApprovalTaskScheme.V3.xml" />
+    <EmbeddedResource Include="FreeApprovalTask\FreeApprovalTaskScheme.xml" />
+    <EmbeddedResource Include="IncomingDocumentBase\IncomingDocumentBaseQueries.xml" />
+    <EmbeddedResource Include="InternalDocumentBase\InternalDocumentBaseQueries.xml" />
+    <EmbeddedResource Include="MailDeliveryMethod\MailDeliveryMethodQueries.xml" />
+    <EmbeddedResource Include="Memo\MemoQueries.xml" />
+    <EmbeddedResource Include="MinutesBase\MinutesBaseQueries.xml" />
+    <EmbeddedResource Include="ModuleQueries.xml" />
+    <EmbeddedResource Include="OfficialDocument\OfficialDocumentQueries.xml" />
+    <EmbeddedResource Include="OutgoingDocumentBase\OutgoingDocumentBaseQueries.xml" />
+    <EmbeddedResource Include="PersonalSetting\PersonalSettingQueries.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyBase\PowerOfAttorneyBaseQueries.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItemQueries.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocationQueries.xml" />
+    <EmbeddedResource Include="PowerOfAttorney\PowerOfAttorneyQueries.xml" />
+    <EmbeddedResource Include="ProjectBase\ProjectBaseQueries.xml" />
+    <EmbeddedResource Include="RegistrationGroup\RegistrationGroupQueries.xml" />
+    <EmbeddedResource Include="RegistrationSetting\RegistrationSettingQueries.xml" />
+    <EmbeddedResource Include="Reports\ApprovalRuleCardReport\ApprovalRuleCardReport.frx" />
+    <EmbeddedResource Include="Reports\ApprovalRuleCardReport\ApprovalRuleCardReportQueries.xml" />
+    <EmbeddedResource Include="Reports\ApprovalRulesConsolidatedReport\ApprovalRulesConsolidatedReport.frx" />
+    <EmbeddedResource Include="Reports\ApprovalRulesConsolidatedReport\ApprovalRulesConsolidatedReportQueries.xml" />
+    <EmbeddedResource Include="Reports\ApprovalSheetReport\ApprovalSheetReport.frx" />
+    <EmbeddedResource Include="Reports\ApprovalSheetReport\ApprovalSheetReportQueries.xml" />
+    <EmbeddedResource Include="Reports\BarcodePageReport\BarcodePageReport.frx" />
+    <EmbeddedResource Include="Reports\BarcodePageReport\BarcodePageReportQueries.xml" />
+    <EmbeddedResource Include="Reports\DepartmentsAssignmentCompletionReport\DepartmentsAssignmentCompletionReport.frx" />
+    <EmbeddedResource Include="Reports\DepartmentsAssignmentCompletionReport\DepartmentsAssignmentCompletionReportQueries.xml" />
+    <EmbeddedResource Include="Reports\DistributionSheetReport\DistributionSheetReport.frx" />
+    <EmbeddedResource Include="Reports\DistributionSheetReport\DistributionSheetReportQueries.xml" />
+    <EmbeddedResource Include="Reports\DocumentUsageReport\DocumentUsageReport.frx" />
+    <EmbeddedResource Include="Reports\DocumentUsageReport\DocumentUsageReportQueries.xml" />
+    <EmbeddedResource Include="Reports\EmployeeAssignmentsReport\EmployeeAssignmentsReport.frx" />
+    <EmbeddedResource Include="Reports\EmployeeAssignmentsReport\EmployeeAssignmentsReportQueries.xml" />
+    <EmbeddedResource Include="Reports\EmployeesAssignmentCompletionReport\EmployeesAssignmentCompletionReport.frx" />
+    <EmbeddedResource Include="Reports\EmployeesAssignmentCompletionReport\EmployeesAssignmentCompletionReportQueries.xml" />
+    <EmbeddedResource Include="Reports\EnvelopeC4Report\EnvelopeC4Report.frx" />
+    <EmbeddedResource Include="Reports\EnvelopeC4Report\EnvelopeC4ReportQueries.xml" />
+    <EmbeddedResource Include="Reports\EnvelopeC5Report\EnvelopeC5Report.frx" />
+    <EmbeddedResource Include="Reports\EnvelopeC5Report\EnvelopeC5ReportQueries.xml" />
+    <EmbeddedResource Include="Reports\EnvelopeC65Report\EnvelopeC65Report.frx" />
+    <EmbeddedResource Include="Reports\EnvelopeC65Report\EnvelopeC65ReportQueries.xml" />
+    <EmbeddedResource Include="Reports\EnvelopeE65Report\EnvelopeE65Report.frx" />
+    <EmbeddedResource Include="Reports\EnvelopeE65Report\EnvelopeE65ReportQueries.xml" />
+    <EmbeddedResource Include="Reports\ExchangeOrderReport\ExchangeOrderReport.frx" />
+    <EmbeddedResource Include="Reports\ExchangeOrderReport\ExchangeOrderReportQueries.xml" />
+    <EmbeddedResource Include="Reports\ExchangeServiceDocumentReport\ExchangeServiceDocumentReport.frx" />
+    <EmbeddedResource Include="Reports\ExchangeServiceDocumentReport\ExchangeServiceDocumentReportQueries.xml" />
+    <EmbeddedResource Include="Reports\MailRegisterReport\MailRegisterReport.frx" />
+    <EmbeddedResource Include="Reports\MailRegisterReport\MailRegisterReportQueries.xml" />
+    <EmbeddedResource Include="Reports\RegistrationSettingReport\RegistrationSettingReport.frx" />
+    <EmbeddedResource Include="Reports\RegistrationSettingReport\RegistrationSettingReportQueries.xml" />
+    <EmbeddedResource Include="Reports\SkippedNumbersReport\SkippedNumbersReport.frx" />
+    <EmbeddedResource Include="Reports\SkippedNumbersReport\SkippedNumbersReportQueries.xml" />
+    <EmbeddedResource Include="RetentionPolicy\RetentionPolicyQueries.xml" />
+    <EmbeddedResource Include="SignatureSetting\SignatureSettingQueries.xml" />
+    <EmbeddedResource Include="SimpleDocument\SimpleDocumentQueries.xml" />
+    <EmbeddedResource Include="SmartProcessingSetting\SmartProcessingSettingQueries.xml" />
+    <EmbeddedResource Include="StampSetting\StampSettingQueries.xml" />
+    <EmbeddedResource Include="StoragePolicyBase\StoragePolicyBaseQueries.xml" />
+    <EmbeddedResource Include="StoragePolicy\StoragePolicyQueries.xml" />
+    <EmbeddedResource Include="Topic\TopicQueries.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

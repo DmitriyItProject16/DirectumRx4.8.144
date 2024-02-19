@@ -1,0 +1,70 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Parties.Client">
+
+    <DataTemplate DataType="{x:Type local:BankCollectionPresenter`1}">
+      <local:BankCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:BankPresenter`1}">
+        <local:BankView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CompanyCollectionPresenter`1}">
+      <local:CompanyCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CompanyPresenter`1}">
+        <local:CompanyView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CompanyBaseCollectionPresenter`1}">
+      <local:CompanyBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CompanyBasePresenter`1}">
+        <local:CompanyBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContactCollectionPresenter`1}">
+      <local:ContactCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContactPresenter`1}">
+        <local:ContactView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CounterpartyCollectionPresenter`1}">
+      <local:CounterpartyCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CounterpartyPresenter`1}">
+        <local:CounterpartyView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CounterpartyKindCollectionPresenter`1}">
+      <local:CounterpartyKindCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CounterpartyKindPresenter`1}">
+        <local:CounterpartyKindView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DueDiligenceWebsiteCollectionPresenter`1}">
+      <local:DueDiligenceWebsiteCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DueDiligenceWebsitePresenter`1}">
+        <local:DueDiligenceWebsiteView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:IdentityDocumentKindCollectionPresenter`1}">
+      <local:IdentityDocumentKindCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:IdentityDocumentKindPresenter`1}">
+        <local:IdentityDocumentKindView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:PersonCollectionPresenter`1}">
+      <local:PersonCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:PersonPresenter`1}">
+        <local:PersonView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

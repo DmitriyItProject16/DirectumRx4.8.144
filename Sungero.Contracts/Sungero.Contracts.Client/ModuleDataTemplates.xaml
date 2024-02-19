@@ -1,0 +1,84 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Contracts.Client">
+
+    <DataTemplate DataType="{x:Type local:ApprovalIncInvoicePaidStageCollectionPresenter`1}">
+      <local:ApprovalIncInvoicePaidStageCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalIncInvoicePaidStagePresenter`1}">
+        <local:ApprovalIncInvoicePaidStageView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractCollectionPresenter`1}">
+      <local:ContractCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractPresenter`1}">
+        <local:ContractView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractApprovalRoleCollectionPresenter`1}">
+      <local:ContractApprovalRoleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractApprovalRolePresenter`1}">
+        <local:ContractApprovalRoleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractBaseCollectionPresenter`1}">
+      <local:ContractBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractBasePresenter`1}">
+        <local:ContractBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractCategoryCollectionPresenter`1}">
+      <local:ContractCategoryCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractCategoryPresenter`1}">
+        <local:ContractCategoryView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractConditionCollectionPresenter`1}">
+      <local:ContractConditionCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractConditionPresenter`1}">
+        <local:ContractConditionView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractsApprovalRuleCollectionPresenter`1}">
+      <local:ContractsApprovalRuleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractsApprovalRulePresenter`1}">
+        <local:ContractsApprovalRuleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractualDocumentCollectionPresenter`1}">
+      <local:ContractualDocumentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractualDocumentPresenter`1}">
+        <local:ContractualDocumentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:IncomingInvoiceCollectionPresenter`1}">
+      <local:IncomingInvoiceCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:IncomingInvoicePresenter`1}">
+        <local:IncomingInvoiceView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:OutgoingInvoiceCollectionPresenter`1}">
+      <local:OutgoingInvoiceCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:OutgoingInvoicePresenter`1}">
+        <local:OutgoingInvoiceView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:SupAgreementCollectionPresenter`1}">
+      <local:SupAgreementCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:SupAgreementPresenter`1}">
+        <local:SupAgreementView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{fb53984e-0041-fbd0-339e-02d94358a08d}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.RecordManagement.Server</RootNamespace>
+    <AssemblyName>Sungero.RecordManagement.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\FastReport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Server">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Server">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Server\Sungero.Docflow.Server.csproj">
+      <Project>{4fbfe066-29ab-5455-15f9-1e22f5e7d449}</Project>
+      <Name>Sungero.Docflow.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Server\Sungero.ExchangeCore.Server.csproj">
+      <Project>{9d7a4505-eca5-87c4-ab95-f89d01c6b77f}</Project>
+      <Name>Sungero.ExchangeCore.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Blocks">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Blocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignment.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentHandlers.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentServerFunctions.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotification.g.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationHandlers.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationServerFunctions.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignment.g.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentHandlers.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentServerFunctions.cs" />
+    <Compile Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipants.g.cs" />
+    <Compile Include="AcquaintanceList%40Participants\AcquaintanceListParticipants.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceList.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListHandlers.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListServerFunctions.cs" />
+    <Compile Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Observers\AcquaintanceTaskObservers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformers.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployees.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipant.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantHandlers.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantServerFunctions.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTask.g.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskBlockHandlers.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskHandlers.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskRouteHandlers.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskServerFunctions.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignment.g.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentHandlers.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentServerFunctions.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotification.g.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationHandlers.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationServerFunctions.cs" />
+    <Compile Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemParts.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTask.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskBlockHandlers.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskHandlers.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskRouteHandlers.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskServerFunctions.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotification.g.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationHandlers.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationServerFunctions.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfo.g.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoHandlers.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoServerFunctions.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignment.g.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentHandlers.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentServerFunctions.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotification.g.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationHandlers.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationServerFunctions.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItem.g.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemHandlers.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemServerFunctions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CompanyDirective%40Tracking\CompanyDirectiveTracking.g.cs" />
+    <Compile Include="CompanyDirective%40Versions\CompanyDirectiveVersions.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirective.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveHandlers.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveServerFunctions.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.g.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentHandlers.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentServerFunctions.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotification.g.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationHandlers.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationServerFunctions.cs" />
+    <Compile Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTask.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskBlockHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskRouteHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskServerFunctions.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.g.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentHandlers.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentServerFunctions.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignment.g.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentHandlers.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentServerFunctions.cs" />
+    <Compile Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddressees.g.cs" />
+    <Compile Include="DocumentReviewTask%40Observers\DocumentReviewTaskObservers.g.cs" />
+    <Compile Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObservers.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTask.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskBlockHandlers.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskHandlers.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskRouteHandlers.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskServerFunctions.cs" />
+    <Compile Include="IncomingLetter%40Addressees\IncomingLetterAddressees.g.cs" />
+    <Compile Include="IncomingLetter%40Tracking\IncomingLetterTracking.g.cs" />
+    <Compile Include="IncomingLetter%40Versions\IncomingLetterVersions.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetter.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterHandlers.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterServerFunctions.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleAsyncHandlers.cs" />
+    <Compile Include="ModuleBlockHandlers.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="ModuleJobs.cs" />
+    <Compile Include="ModuleServerFunctions.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="Order%40Tracking\OrderTracking.g.cs" />
+    <Compile Include="Order%40Versions\OrderVersions.g.cs" />
+    <Compile Include="OrderBase%40Tracking\OrderBaseTracking.g.cs" />
+    <Compile Include="OrderBase%40Versions\OrderBaseVersions.g.cs" />
+    <Compile Include="OrderBase\OrderBase.g.cs" />
+    <Compile Include="OrderBase\OrderBaseHandlers.cs" />
+    <Compile Include="OrderBase\OrderBaseServerFunctions.cs" />
+    <Compile Include="Order\Order.g.cs" />
+    <Compile Include="Order\OrderHandlers.cs" />
+    <Compile Include="Order\OrderServerFunctions.cs" />
+    <Compile Include="OutgoingLetter%40Addressees\OutgoingLetterAddressees.g.cs" />
+    <Compile Include="OutgoingLetter%40Tracking\OutgoingLetterTracking.g.cs" />
+    <Compile Include="OutgoingLetter%40Versions\OutgoingLetterVersions.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetter.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterHandlers.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterServerFunctions.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignment.g.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentHandlers.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentServerFunctions.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSetting.g.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingHandlers.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingServerFunctions.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignment.g.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentHandlers.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentServerFunctions.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignment.g.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentHandlers.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentServerFunctions.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.g.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportHandlers.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReport.g.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReportHandlers.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReport.g.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReportHandlers.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.g.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportHandlers.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReport.g.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReportHandlers.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReport.g.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReportHandlers.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportHandlers.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportHandlers.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReport.g.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReportHandlers.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.g.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportHandlers.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotification.g.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationHandlers.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationServerFunctions.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignment.g.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentHandlers.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentServerFunctions.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignment.g.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentHandlers.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentServerFunctions.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotification.g.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationHandlers.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationServerFunctions.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotification.g.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationHandlers.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationServerFunctions.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignment.g.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentHandlers.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentServerFunctions.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignment.g.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentHandlers.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentServerFunctions.cs" />
+    <Compile Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObservers.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTask.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskBlockHandlers.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskHandlers.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskRouteHandlers.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskServerFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.RecordManagement.Shared\Sungero.RecordManagement.Shared.csproj">
+      <Project>{583eac27-2e4e-f739-59f1-2e38e60a5495}</Project>
+      <Name>Sungero.RecordManagement.Shared</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AcquaintanceAssignment\AcquaintanceAssignmentQueries.xml" />
+    <EmbeddedResource Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationQueries.xml" />
+    <EmbeddedResource Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentQueries.xml" />
+    <EmbeddedResource Include="AcquaintanceList\AcquaintanceListQueries.xml" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantQueries.xml" />
+    <EmbeddedResource Include="AcquaintanceTask\AcquaintanceTaskQueries.xml" />
+    <EmbeddedResource Include="AcquaintanceTask\AcquaintanceTaskScheme.V2.xml" />
+    <EmbeddedResource Include="AcquaintanceTask\AcquaintanceTaskScheme.xml" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentQueries.xml" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\ActionItemExecutionNotificationQueries.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTaskQueries.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTaskScheme.V2.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTaskScheme.V3.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTaskScheme.V4.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTaskScheme.xml" />
+    <EmbeddedResource Include="ActionItemObserversNotification\ActionItemObserversNotificationQueries.xml" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\ActionItemPredictionInfoQueries.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentQueries.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationQueries.xml" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemQueries.xml" />
+    <EmbeddedResource Include="CompanyDirective\CompanyDirectiveQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\DeadlineExtensionNotificationQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTaskQueries.xml" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTaskScheme.xml" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentQueries.xml" />
+    <EmbeddedResource Include="DocumentReviewAssignment\DocumentReviewAssignmentQueries.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTaskQueries.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTaskScheme.V3.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTaskScheme.V4.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTaskScheme.V5.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTaskScheme.xml" />
+    <EmbeddedResource Include="IncomingLetter\IncomingLetterQueries.xml" />
+    <EmbeddedResource Include="ModuleQueries.xml" />
+    <EmbeddedResource Include="OrderBase\OrderBaseQueries.xml" />
+    <EmbeddedResource Include="Order\OrderQueries.xml" />
+    <EmbeddedResource Include="OutgoingLetter\OutgoingLetterQueries.xml" />
+    <EmbeddedResource Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentQueries.xml" />
+    <EmbeddedResource Include="RecordManagementSetting\RecordManagementSettingQueries.xml" />
+    <EmbeddedResource Include="ReportRequestAssignment\ReportRequestAssignmentQueries.xml" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentQueries.xml" />
+    <EmbeddedResource Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.frx" />
+    <EmbeddedResource Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportQueries.xml" />
+    <EmbeddedResource Include="Reports\AcquaintanceReport\AcquaintanceReport.frx" />
+    <EmbeddedResource Include="Reports\AcquaintanceReport\AcquaintanceReportQueries.xml" />
+    <EmbeddedResource Include="Reports\ActionItemPrintReport\ActionItemPrintReport.frx" />
+    <EmbeddedResource Include="Reports\ActionItemPrintReport\ActionItemPrintReportQueries.xml" />
+    <EmbeddedResource Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.frx" />
+    <EmbeddedResource Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportQueries.xml" />
+    <EmbeddedResource Include="Reports\DocumentReturnReport\DocumentReturnReport.frx" />
+    <EmbeddedResource Include="Reports\DocumentReturnReport\DocumentReturnReportQueries.xml" />
+    <EmbeddedResource Include="Reports\DraftResolutionReport\DraftResolutionReport.frx" />
+    <EmbeddedResource Include="Reports\DraftResolutionReport\DraftResolutionReportQueries.xml" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.frx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportQueries.xml" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.frx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportQueries.xml" />
+    <EmbeddedResource Include="Reports\InternalDocumentsReport\InternalDocumentsReport.frx" />
+    <EmbeddedResource Include="Reports\InternalDocumentsReport\InternalDocumentsReportQueries.xml" />
+    <EmbeddedResource Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.frx" />
+    <EmbeddedResource Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportQueries.xml" />
+    <EmbeddedResource Include="ReviewClerkNotification\ReviewClerkNotificationQueries.xml" />
+    <EmbeddedResource Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentQueries.xml" />
+    <EmbeddedResource Include="ReviewManagerAssignment\ReviewManagerAssignmentQueries.xml" />
+    <EmbeddedResource Include="ReviewObserverNotification\ReviewObserverNotificationQueries.xml" />
+    <EmbeddedResource Include="ReviewObserversNotification\ReviewObserversNotificationQueries.xml" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\ReviewResolutionAssignmentQueries.xml" />
+    <EmbeddedResource Include="ReviewReworkAssignment\ReviewReworkAssignmentQueries.xml" />
+    <EmbeddedResource Include="StatusReportRequestTask\StatusReportRequestTaskQueries.xml" />
+    <EmbeddedResource Include="StatusReportRequestTask\StatusReportRequestTaskScheme.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

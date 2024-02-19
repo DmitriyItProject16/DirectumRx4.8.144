@@ -1,0 +1,77 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Projects.Client">
+
+    <DataTemplate DataType="{x:Type local:ProjectCollectionPresenter`1}">
+      <local:ProjectCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectPresenter`1}">
+        <local:ProjectView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectApprovalRoleCollectionPresenter`1}">
+      <local:ProjectApprovalRoleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectApprovalRolePresenter`1}">
+        <local:ProjectApprovalRoleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectCoreCollectionPresenter`1}">
+      <local:ProjectCoreCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectCorePresenter`1}">
+        <local:ProjectCoreView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectDocumentCollectionPresenter`1}">
+      <local:ProjectDocumentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectDocumentPresenter`1}">
+        <local:ProjectDocumentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectDocumentRightsQueueItemCollectionPresenter`1}">
+      <local:ProjectDocumentRightsQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectDocumentRightsQueueItemPresenter`1}">
+        <local:ProjectDocumentRightsQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectKindCollectionPresenter`1}">
+      <local:ProjectKindCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectKindPresenter`1}">
+        <local:ProjectKindView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectMemberRightsQueueItemCollectionPresenter`1}">
+      <local:ProjectMemberRightsQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectMemberRightsQueueItemPresenter`1}">
+        <local:ProjectMemberRightsQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectQueueItemBaseCollectionPresenter`1}">
+      <local:ProjectQueueItemBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectQueueItemBasePresenter`1}">
+        <local:ProjectQueueItemBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectRightsQueueItemCollectionPresenter`1}">
+      <local:ProjectRightsQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectRightsQueueItemPresenter`1}">
+        <local:ProjectRightsQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectTeamCollectionPresenter`1}">
+      <local:ProjectTeamCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectTeamPresenter`1}">
+        <local:ProjectTeamView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

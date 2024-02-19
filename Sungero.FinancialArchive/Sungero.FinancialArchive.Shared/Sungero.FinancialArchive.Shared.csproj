@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{55f77a26-6d0f-9f09-2299-f0ba6e4597fc}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.FinancialArchive.Shared</RootNamespace>
+    <AssemblyName>Sungero.FinancialArchive.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ContractStatement%40Tracking\ContractStatementTracking.g.cs" />
+    <Compile Include="ContractStatement%40Versions\ContractStatementVersions.g.cs" />
+    <Compile Include="ContractStatement\ContractStatement.g.cs" />
+    <Compile Include="ContractStatement\ContractStatementConstants.cs" />
+    <Compile Include="ContractStatement\ContractStatementHandlers.cs" />
+    <Compile Include="ContractStatement\ContractStatementSharedFunctions.cs" />
+    <Compile Include="ContractStatement\ContractStatementStructures.cs" />
+    <Compile Include="ContractStatement\ContractStatementStructures.g.cs" />
+    <Compile Include="IncomingTaxInvoice%40Tracking\IncomingTaxInvoiceTracking.g.cs" />
+    <Compile Include="IncomingTaxInvoice%40Versions\IncomingTaxInvoiceVersions.g.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoice.g.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceConstants.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceHandlers.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceSharedFunctions.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceStructures.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="OutgoingTaxInvoice%40Tracking\OutgoingTaxInvoiceTracking.g.cs" />
+    <Compile Include="OutgoingTaxInvoice%40Versions\OutgoingTaxInvoiceVersions.g.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoice.g.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceConstants.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceHandlers.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceSharedFunctions.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceStructures.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceStructures.g.cs" />
+    <Compile Include="Reports\FinArchiveExportReport\FinArchiveExportReport.g.cs" />
+    <Compile Include="Reports\FinArchiveExportReport\FinArchiveExportReportConstants.cs" />
+    <Compile Include="Reports\FinArchiveExportReport\FinArchiveExportReportStructures.cs" />
+    <Compile Include="Reports\FinArchiveExportReport\FinArchiveExportReportStructures.g.cs" />
+    <Compile Include="UniversalTransferDocument%40Tracking\UniversalTransferDocumentTracking.g.cs" />
+    <Compile Include="UniversalTransferDocument%40Versions\UniversalTransferDocumentVersions.g.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocument.g.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentConstants.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentHandlers.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentSharedFunctions.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentStructures.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentStructures.g.cs" />
+    <Compile Include="Waybill%40Tracking\WaybillTracking.g.cs" />
+    <Compile Include="Waybill%40Versions\WaybillVersions.g.cs" />
+    <Compile Include="Waybill\Waybill.g.cs" />
+    <Compile Include="Waybill\WaybillConstants.cs" />
+    <Compile Include="Waybill\WaybillHandlers.cs" />
+    <Compile Include="Waybill\WaybillSharedFunctions.cs" />
+    <Compile Include="Waybill\WaybillStructures.cs" />
+    <Compile Include="Waybill\WaybillStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContractStatement%40Tracking\ContractStatementTracking.resx" />
+    <EmbeddedResource Include="ContractStatement%40Tracking\ContractStatementTracking.ru.resx" />
+    <EmbeddedResource Include="ContractStatement%40Tracking\ContractStatementTrackingSystem.resx" />
+    <EmbeddedResource Include="ContractStatement%40Tracking\ContractStatementTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="ContractStatement%40Tracking\obj\ContractStatementTracking.mtd" />
+    <EmbeddedResource Include="ContractStatement%40Versions\ContractStatementVersions.resx" />
+    <EmbeddedResource Include="ContractStatement%40Versions\ContractStatementVersions.ru.resx" />
+    <EmbeddedResource Include="ContractStatement%40Versions\ContractStatementVersionsSystem.resx" />
+    <EmbeddedResource Include="ContractStatement%40Versions\ContractStatementVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractStatement%40Versions\obj\ContractStatementVersions.mtd" />
+    <EmbeddedResource Include="ContractStatement\ContractStatement.resx" />
+    <EmbeddedResource Include="ContractStatement\ContractStatement.ru.resx" />
+    <EmbeddedResource Include="ContractStatement\ContractStatementSystem.resx" />
+    <EmbeddedResource Include="ContractStatement\ContractStatementSystem.ru.resx" />
+    <EmbeddedResource Include="ContractStatement\obj\ContractStatement.mtd" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Tracking\IncomingTaxInvoiceTracking.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Tracking\IncomingTaxInvoiceTracking.ru.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Tracking\IncomingTaxInvoiceTrackingSystem.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Tracking\IncomingTaxInvoiceTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Tracking\obj\IncomingTaxInvoiceTracking.mtd" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Versions\IncomingTaxInvoiceVersions.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Versions\IncomingTaxInvoiceVersions.ru.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Versions\IncomingTaxInvoiceVersionsSystem.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Versions\IncomingTaxInvoiceVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice%40Versions\obj\IncomingTaxInvoiceVersions.mtd" />
+    <EmbeddedResource Include="IncomingTaxInvoice\IncomingTaxInvoice.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice\IncomingTaxInvoice.ru.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice\IncomingTaxInvoiceSystem.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice\IncomingTaxInvoiceSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingTaxInvoice\obj\IncomingTaxInvoice.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Tracking\obj\OutgoingTaxInvoiceTracking.mtd" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Tracking\OutgoingTaxInvoiceTracking.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Tracking\OutgoingTaxInvoiceTracking.ru.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Tracking\OutgoingTaxInvoiceTrackingSystem.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Tracking\OutgoingTaxInvoiceTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Versions\obj\OutgoingTaxInvoiceVersions.mtd" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Versions\OutgoingTaxInvoiceVersions.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Versions\OutgoingTaxInvoiceVersions.ru.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Versions\OutgoingTaxInvoiceVersionsSystem.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice%40Versions\OutgoingTaxInvoiceVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice\obj\OutgoingTaxInvoice.mtd" />
+    <EmbeddedResource Include="OutgoingTaxInvoice\OutgoingTaxInvoice.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice\OutgoingTaxInvoice.ru.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice\OutgoingTaxInvoiceSystem.resx" />
+    <EmbeddedResource Include="OutgoingTaxInvoice\OutgoingTaxInvoiceSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\FinArchiveExportReport\FinArchiveExportReport.mtd" />
+    <EmbeddedResource Include="Reports\FinArchiveExportReport\FinArchiveExportReport.resx" />
+    <EmbeddedResource Include="Reports\FinArchiveExportReport\FinArchiveExportReport.ru.resx" />
+    <EmbeddedResource Include="Reports\FinArchiveExportReport\FinArchiveExportReportSystem.resx" />
+    <EmbeddedResource Include="Reports\FinArchiveExportReport\FinArchiveExportReportSystem.ru.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Tracking\obj\UniversalTransferDocumentTracking.mtd" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Tracking\UniversalTransferDocumentTracking.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Tracking\UniversalTransferDocumentTracking.ru.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Tracking\UniversalTransferDocumentTrackingSystem.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Tracking\UniversalTransferDocumentTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Versions\obj\UniversalTransferDocumentVersions.mtd" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Versions\UniversalTransferDocumentVersions.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Versions\UniversalTransferDocumentVersions.ru.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Versions\UniversalTransferDocumentVersionsSystem.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument%40Versions\UniversalTransferDocumentVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument\obj\UniversalTransferDocument.mtd" />
+    <EmbeddedResource Include="UniversalTransferDocument\UniversalTransferDocument.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument\UniversalTransferDocument.ru.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument\UniversalTransferDocumentSystem.resx" />
+    <EmbeddedResource Include="UniversalTransferDocument\UniversalTransferDocumentSystem.ru.resx" />
+    <EmbeddedResource Include="Waybill%40Tracking\obj\WaybillTracking.mtd" />
+    <EmbeddedResource Include="Waybill%40Tracking\WaybillTracking.resx" />
+    <EmbeddedResource Include="Waybill%40Tracking\WaybillTracking.ru.resx" />
+    <EmbeddedResource Include="Waybill%40Tracking\WaybillTrackingSystem.resx" />
+    <EmbeddedResource Include="Waybill%40Tracking\WaybillTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="Waybill%40Versions\obj\WaybillVersions.mtd" />
+    <EmbeddedResource Include="Waybill%40Versions\WaybillVersions.resx" />
+    <EmbeddedResource Include="Waybill%40Versions\WaybillVersions.ru.resx" />
+    <EmbeddedResource Include="Waybill%40Versions\WaybillVersionsSystem.resx" />
+    <EmbeddedResource Include="Waybill%40Versions\WaybillVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="Waybill\obj\Waybill.mtd" />
+    <EmbeddedResource Include="Waybill\Waybill.resx" />
+    <EmbeddedResource Include="Waybill\Waybill.ru.resx" />
+    <EmbeddedResource Include="Waybill\WaybillSystem.resx" />
+    <EmbeddedResource Include="Waybill\WaybillSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

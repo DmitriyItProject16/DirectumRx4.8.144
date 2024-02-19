@@ -1,0 +1,581 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Docflow.Client">
+
+    <DataTemplate DataType="{x:Type local:AccessRightsBulkQueueItemCollectionPresenter`1}">
+      <local:AccessRightsBulkQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AccessRightsBulkQueueItemPresenter`1}">
+        <local:AccessRightsBulkQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AccessRightsRuleCollectionPresenter`1}">
+      <local:AccessRightsRuleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AccessRightsRulePresenter`1}">
+        <local:AccessRightsRuleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AccountingDocumentBaseCollectionPresenter`1}">
+      <local:AccountingDocumentBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AccountingDocumentBasePresenter`1}">
+        <local:AccountingDocumentBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AddendumCollectionPresenter`1}">
+      <local:AddendumCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AddendumPresenter`1}">
+        <local:AddendumView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalAssignmentCollectionPresenter`1}">
+      <local:ApprovalAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalAssignmentPresenter`1}">
+        <local:ApprovalAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalCheckingAssignmentCollectionPresenter`1}">
+      <local:ApprovalCheckingAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalCheckingAssignmentPresenter`1}">
+        <local:ApprovalCheckingAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalCheckReturnAssignmentCollectionPresenter`1}">
+      <local:ApprovalCheckReturnAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalCheckReturnAssignmentPresenter`1}">
+        <local:ApprovalCheckReturnAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalConvertPdfStageCollectionPresenter`1}">
+      <local:ApprovalConvertPdfStageCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalConvertPdfStagePresenter`1}">
+        <local:ApprovalConvertPdfStageView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalExecutionAssignmentCollectionPresenter`1}">
+      <local:ApprovalExecutionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalExecutionAssignmentPresenter`1}">
+        <local:ApprovalExecutionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalFunctionQueueItemCollectionPresenter`1}">
+      <local:ApprovalFunctionQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalFunctionQueueItemPresenter`1}">
+        <local:ApprovalFunctionQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalFunctionStageBaseCollectionPresenter`1}">
+      <local:ApprovalFunctionStageBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalFunctionStageBasePresenter`1}">
+        <local:ApprovalFunctionStageBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalManagerAssignmentCollectionPresenter`1}">
+      <local:ApprovalManagerAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalManagerAssignmentPresenter`1}">
+        <local:ApprovalManagerAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalNotificationCollectionPresenter`1}">
+      <local:ApprovalNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalNotificationPresenter`1}">
+        <local:ApprovalNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalPrintingAssignmentCollectionPresenter`1}">
+      <local:ApprovalPrintingAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalPrintingAssignmentPresenter`1}">
+        <local:ApprovalPrintingAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalRegistrationAssignmentCollectionPresenter`1}">
+      <local:ApprovalRegistrationAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalRegistrationAssignmentPresenter`1}">
+        <local:ApprovalRegistrationAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalRegistrationFtsStageCollectionPresenter`1}">
+      <local:ApprovalRegistrationFtsStageCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalRegistrationFtsStagePresenter`1}">
+        <local:ApprovalRegistrationFtsStageView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalReviewAssignmentCollectionPresenter`1}">
+      <local:ApprovalReviewAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalReviewAssignmentPresenter`1}">
+        <local:ApprovalReviewAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalReviewTaskStageCollectionPresenter`1}">
+      <local:ApprovalReviewTaskStageCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalReviewTaskStagePresenter`1}">
+        <local:ApprovalReviewTaskStageView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalReworkAssignmentCollectionPresenter`1}">
+      <local:ApprovalReworkAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalReworkAssignmentPresenter`1}">
+        <local:ApprovalReworkAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalRoleCollectionPresenter`1}">
+      <local:ApprovalRoleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalRolePresenter`1}">
+        <local:ApprovalRoleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalRoleBaseCollectionPresenter`1}">
+      <local:ApprovalRoleBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalRoleBasePresenter`1}">
+        <local:ApprovalRoleBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalRuleCollectionPresenter`1}">
+      <local:ApprovalRuleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalRulePresenter`1}">
+        <local:ApprovalRuleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalRuleBaseCollectionPresenter`1}">
+      <local:ApprovalRuleBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalRuleBasePresenter`1}">
+        <local:ApprovalRuleBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalSendingAssignmentCollectionPresenter`1}">
+      <local:ApprovalSendingAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalSendingAssignmentPresenter`1}">
+        <local:ApprovalSendingAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalSigningAssignmentCollectionPresenter`1}">
+      <local:ApprovalSigningAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalSigningAssignmentPresenter`1}">
+        <local:ApprovalSigningAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalSimpleAssignmentCollectionPresenter`1}">
+      <local:ApprovalSimpleAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalSimpleAssignmentPresenter`1}">
+        <local:ApprovalSimpleAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalSimpleNotificationCollectionPresenter`1}">
+      <local:ApprovalSimpleNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalSimpleNotificationPresenter`1}">
+        <local:ApprovalSimpleNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalStageCollectionPresenter`1}">
+      <local:ApprovalStageCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalStagePresenter`1}">
+        <local:ApprovalStageView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalStageBaseCollectionPresenter`1}">
+      <local:ApprovalStageBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalStageBasePresenter`1}">
+        <local:ApprovalStageBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ApprovalTaskCollectionPresenter`1}">
+      <local:ApprovalTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ApprovalTaskPresenter`1}">
+        <local:ApprovalTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CaseFileCollectionPresenter`1}">
+      <local:CaseFileCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CaseFilePresenter`1}">
+        <local:CaseFileView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CheckReturnAssignmentCollectionPresenter`1}">
+      <local:CheckReturnAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CheckReturnAssignmentPresenter`1}">
+        <local:CheckReturnAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CheckReturnCheckAssignmentCollectionPresenter`1}">
+      <local:CheckReturnCheckAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CheckReturnCheckAssignmentPresenter`1}">
+        <local:CheckReturnCheckAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CheckReturnTaskCollectionPresenter`1}">
+      <local:CheckReturnTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CheckReturnTaskPresenter`1}">
+        <local:CheckReturnTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ConditionCollectionPresenter`1}">
+      <local:ConditionCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ConditionPresenter`1}">
+        <local:ConditionView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ConditionBaseCollectionPresenter`1}">
+      <local:ConditionBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ConditionBasePresenter`1}">
+        <local:ConditionBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ContractualDocumentBaseCollectionPresenter`1}">
+      <local:ContractualDocumentBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractualDocumentBasePresenter`1}">
+        <local:ContractualDocumentBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CounterpartyDocumentCollectionPresenter`1}">
+      <local:CounterpartyDocumentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CounterpartyDocumentPresenter`1}">
+        <local:CounterpartyDocumentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineExtensionAssignmentCollectionPresenter`1}">
+      <local:DeadlineExtensionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineExtensionAssignmentPresenter`1}">
+        <local:DeadlineExtensionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineExtensionNotificationCollectionPresenter`1}">
+      <local:DeadlineExtensionNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineExtensionNotificationPresenter`1}">
+        <local:DeadlineExtensionNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineExtensionTaskCollectionPresenter`1}">
+      <local:DeadlineExtensionTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineExtensionTaskPresenter`1}">
+        <local:DeadlineExtensionTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineRejectionAssignmentCollectionPresenter`1}">
+      <local:DeadlineRejectionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineRejectionAssignmentPresenter`1}">
+        <local:DeadlineRejectionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DistributionListCollectionPresenter`1}">
+      <local:DistributionListCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DistributionListPresenter`1}">
+        <local:DistributionListView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentComparisonInfoCollectionPresenter`1}">
+      <local:DocumentComparisonInfoCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentComparisonInfoPresenter`1}">
+        <local:DocumentComparisonInfoView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentFullTextSearchQueueItemCollectionPresenter`1}">
+      <local:DocumentFullTextSearchQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentFullTextSearchQueueItemPresenter`1}">
+        <local:DocumentFullTextSearchQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentGroupBaseCollectionPresenter`1}">
+      <local:DocumentGroupBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentGroupBasePresenter`1}">
+        <local:DocumentGroupBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentKindCollectionPresenter`1}">
+      <local:DocumentKindCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentKindPresenter`1}">
+        <local:DocumentKindView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentRegisterCollectionPresenter`1}">
+      <local:DocumentRegisterCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentRegisterPresenter`1}">
+        <local:DocumentRegisterView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentSendActionCollectionPresenter`1}">
+      <local:DocumentSendActionCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentSendActionPresenter`1}">
+        <local:DocumentSendActionView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentTemplateCollectionPresenter`1}">
+      <local:DocumentTemplateCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentTemplatePresenter`1}">
+        <local:DocumentTemplateView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentTypeCollectionPresenter`1}">
+      <local:DocumentTypeCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentTypePresenter`1}">
+        <local:DocumentTypeView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ExchangeDocumentCollectionPresenter`1}">
+      <local:ExchangeDocumentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ExchangeDocumentPresenter`1}">
+        <local:ExchangeDocumentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:FileRetentionPeriodCollectionPresenter`1}">
+      <local:FileRetentionPeriodCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:FileRetentionPeriodPresenter`1}">
+        <local:FileRetentionPeriodView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:FormalizedPowerOfAttorneyCollectionPresenter`1}">
+      <local:FormalizedPowerOfAttorneyCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:FormalizedPowerOfAttorneyPresenter`1}">
+        <local:FormalizedPowerOfAttorneyView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:FreeApprovalAssignmentCollectionPresenter`1}">
+      <local:FreeApprovalAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:FreeApprovalAssignmentPresenter`1}">
+        <local:FreeApprovalAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:FreeApprovalFinishAssignmentCollectionPresenter`1}">
+      <local:FreeApprovalFinishAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:FreeApprovalFinishAssignmentPresenter`1}">
+        <local:FreeApprovalFinishAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:FreeApprovalNotificationCollectionPresenter`1}">
+      <local:FreeApprovalNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:FreeApprovalNotificationPresenter`1}">
+        <local:FreeApprovalNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:FreeApprovalReworkAssignmentCollectionPresenter`1}">
+      <local:FreeApprovalReworkAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:FreeApprovalReworkAssignmentPresenter`1}">
+        <local:FreeApprovalReworkAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:FreeApprovalTaskCollectionPresenter`1}">
+      <local:FreeApprovalTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:FreeApprovalTaskPresenter`1}">
+        <local:FreeApprovalTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:IncomingDocumentBaseCollectionPresenter`1}">
+      <local:IncomingDocumentBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:IncomingDocumentBasePresenter`1}">
+        <local:IncomingDocumentBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:InternalDocumentBaseCollectionPresenter`1}">
+      <local:InternalDocumentBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:InternalDocumentBasePresenter`1}">
+        <local:InternalDocumentBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:MailDeliveryMethodCollectionPresenter`1}">
+      <local:MailDeliveryMethodCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:MailDeliveryMethodPresenter`1}">
+        <local:MailDeliveryMethodView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:MemoCollectionPresenter`1}">
+      <local:MemoCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:MemoPresenter`1}">
+        <local:MemoView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:MinutesBaseCollectionPresenter`1}">
+      <local:MinutesBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:MinutesBasePresenter`1}">
+        <local:MinutesBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:OfficialDocumentCollectionPresenter`1}">
+      <local:OfficialDocumentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:OfficialDocumentPresenter`1}">
+        <local:OfficialDocumentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:OutgoingDocumentBaseCollectionPresenter`1}">
+      <local:OutgoingDocumentBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:OutgoingDocumentBasePresenter`1}">
+        <local:OutgoingDocumentBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:PersonalSettingCollectionPresenter`1}">
+      <local:PersonalSettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:PersonalSettingPresenter`1}">
+        <local:PersonalSettingView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:PowerOfAttorneyCollectionPresenter`1}">
+      <local:PowerOfAttorneyCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:PowerOfAttorneyPresenter`1}">
+        <local:PowerOfAttorneyView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:PowerOfAttorneyBaseCollectionPresenter`1}">
+      <local:PowerOfAttorneyBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:PowerOfAttorneyBasePresenter`1}">
+        <local:PowerOfAttorneyBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:PowerOfAttorneyQueueItemCollectionPresenter`1}">
+      <local:PowerOfAttorneyQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:PowerOfAttorneyQueueItemPresenter`1}">
+        <local:PowerOfAttorneyQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:PowerOfAttorneyRevocationCollectionPresenter`1}">
+      <local:PowerOfAttorneyRevocationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:PowerOfAttorneyRevocationPresenter`1}">
+        <local:PowerOfAttorneyRevocationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ProjectBaseCollectionPresenter`1}">
+      <local:ProjectBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ProjectBasePresenter`1}">
+        <local:ProjectBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:RegistrationGroupCollectionPresenter`1}">
+      <local:RegistrationGroupCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:RegistrationGroupPresenter`1}">
+        <local:RegistrationGroupView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:RegistrationSettingCollectionPresenter`1}">
+      <local:RegistrationSettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:RegistrationSettingPresenter`1}">
+        <local:RegistrationSettingView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:RetentionPolicyCollectionPresenter`1}">
+      <local:RetentionPolicyCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:RetentionPolicyPresenter`1}">
+        <local:RetentionPolicyView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:SignatureSettingCollectionPresenter`1}">
+      <local:SignatureSettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:SignatureSettingPresenter`1}">
+        <local:SignatureSettingView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:SimpleDocumentCollectionPresenter`1}">
+      <local:SimpleDocumentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:SimpleDocumentPresenter`1}">
+        <local:SimpleDocumentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:SmartProcessingSettingCollectionPresenter`1}">
+      <local:SmartProcessingSettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:SmartProcessingSettingPresenter`1}">
+        <local:SmartProcessingSettingView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:StampSettingCollectionPresenter`1}">
+      <local:StampSettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:StampSettingPresenter`1}">
+        <local:StampSettingView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:StoragePolicyCollectionPresenter`1}">
+      <local:StoragePolicyCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:StoragePolicyPresenter`1}">
+        <local:StoragePolicyView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:StoragePolicyBaseCollectionPresenter`1}">
+      <local:StoragePolicyBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:StoragePolicyBasePresenter`1}">
+        <local:StoragePolicyBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:TopicCollectionPresenter`1}">
+      <local:TopicCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:TopicPresenter`1}">
+        <local:TopicView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

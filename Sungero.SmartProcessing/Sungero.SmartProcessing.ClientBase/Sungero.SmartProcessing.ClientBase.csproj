@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{0302d96e-2abd-d088-172a-b74a4a09bb64}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.SmartProcessing.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.SmartProcessing.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BlobPackage%40Blobs\BlobPackageBlobs.g.cs" />
+    <Compile Include="BlobPackage%40CC\BlobPackageCC.g.cs" />
+    <Compile Include="BlobPackage%40To\BlobPackageTo.g.cs" />
+    <Compile Include="BlobPackage\BlobPackage.g.cs" />
+    <Compile Include="BlobPackage\BlobPackageActions.cs" />
+    <Compile Include="BlobPackage\BlobPackageClientFunctions.cs" />
+    <Compile Include="BlobPackage\BlobPackageHandlers.cs" />
+    <Compile Include="Blob\Blob.g.cs" />
+    <Compile Include="Blob\BlobActions.cs" />
+    <Compile Include="Blob\BlobClientFunctions.cs" />
+    <Compile Include="Blob\BlobHandlers.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItem.g.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemActions.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemClientFunctions.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="RepackingSession%40Errors\RepackingSessionErrors.g.cs" />
+    <Compile Include="RepackingSession%40NewDocuments\RepackingSessionNewDocuments.g.cs" />
+    <Compile Include="RepackingSession%40OriginalDocuments\RepackingSessionOriginalDocuments.g.cs" />
+    <Compile Include="RepackingSession\RepackingSession.g.cs" />
+    <Compile Include="RepackingSession\RepackingSessionActions.cs" />
+    <Compile Include="RepackingSession\RepackingSessionClientFunctions.cs" />
+    <Compile Include="RepackingSession\RepackingSessionHandlers.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignment.g.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentActions.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentClientFunctions.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentHandlers.cs" />
+    <Compile Include="VerificationTask%40Observers\VerificationTaskObservers.g.cs" />
+    <Compile Include="VerificationTask\VerificationTask.g.cs" />
+    <Compile Include="VerificationTask\VerificationTaskActions.cs" />
+    <Compile Include="VerificationTask\VerificationTaskClientFunctions.cs" />
+    <Compile Include="VerificationTask\VerificationTaskHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.ArioExtensions">
+      <HintPath>..\Sungero.SmartProcessing.Libraries\ArioExtensions\Sungero.ArioExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>..\Sungero.SmartProcessing.Libraries\RepackingServiceExtensions\JWT.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.RepackingServiceExtensions">
+      <HintPath>..\Sungero.SmartProcessing.Libraries\RepackingServiceExtensions\Sungero.RepackingServiceExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ConfigSettings">
+      <HintPath>..\Sungero.SmartProcessing.Libraries\ConfigSettings\ConfigSettings.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.SmartProcessing.Shared\Sungero.SmartProcessing.Shared.csproj">
+      <Project>{5cf128ac-4483-a7cf-2f83-819adb8ac944}</Project>
+      <Name>Sungero.SmartProcessing.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlobPackage\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="BlobPackage\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="BlobPackage\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Blob\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Blob\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Blob\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ExtractTextQueueItem\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ExtractTextQueueItem\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ExtractTextQueueItem\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="RepackingSession\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="RepackingSession\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="RepackingSession\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="VerificationAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="VerificationTask\Generated\DefaultCardView.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ExtractTextQueueItem\Icons\Action_ShowExtractedText_large_3f47e3f063764233bdb1d5e8f97b1235.png" />
+    <Resource Include="ExtractTextQueueItem\Icons\Action_ShowExtractedText_large_3f47e3f063764233bdb1d5e8f97b1235.svg" />
+    <Resource Include="ExtractTextQueueItem\Icons\Action_ShowExtractedText_small_3f47e3f063764233bdb1d5e8f97b1235.png" />
+    <Resource Include="ExtractTextQueueItem\Icons\Action_ShowExtractedText_small_3f47e3f063764233bdb1d5e8f97b1235.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_Complete_large_b48ead08fdc94199a00078dd3655d05a.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_Complete_large_b48ead08fdc94199a00078dd3655d05a.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_Complete_small_b48ead08fdc94199a00078dd3655d05a.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_Complete_small_b48ead08fdc94199a00078dd3655d05a.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_DeleteDocuments_large_4953acf33cef4d109b9b2135e36f8eaa.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_DeleteDocuments_large_4953acf33cef4d109b9b2135e36f8eaa.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_DeleteDocuments_small_4953acf33cef4d109b9b2135e36f8eaa.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_DeleteDocuments_small_4953acf33cef4d109b9b2135e36f8eaa.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_Forward_large_e604b86f445845ef89472b650ded9fdb.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_Forward_large_e604b86f445845ef89472b650ded9fdb.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_Forward_small_e604b86f445845ef89472b650ded9fdb.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_Forward_small_e604b86f445845ef89472b650ded9fdb.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_Repacking_large_11d108539091414e8f1d82a0379ebef3.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_Repacking_large_11d108539091414e8f1d82a0379ebef3.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_Repacking_small_11d108539091414e8f1d82a0379ebef3.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_Repacking_small_11d108539091414e8f1d82a0379ebef3.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForApproval_large_06ca46dc66d74de8902e6a5334d8fa9a.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForApproval_large_06ca46dc66d74de8902e6a5334d8fa9a.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForApproval_small_06ca46dc66d74de8902e6a5334d8fa9a.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForApproval_small_06ca46dc66d74de8902e6a5334d8fa9a.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForExecution_large_d9143f64e9cf46dbb98f98b29d309ccb.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForExecution_large_d9143f64e9cf46dbb98f98b29d309ccb.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForExecution_small_d9143f64e9cf46dbb98f98b29d309ccb.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForExecution_small_d9143f64e9cf46dbb98f98b29d309ccb.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForFreeApproval_large_d88ffe303fdd4b9ca289d2fd87bc8049.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForFreeApproval_large_d88ffe303fdd4b9ca289d2fd87bc8049.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForFreeApproval_small_8e5038dad4e84da8a6dee81da50ec168.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForFreeApproval_small_8e5038dad4e84da8a6dee81da50ec168.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForFreeApproval_small_d88ffe303fdd4b9ca289d2fd87bc8049.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForFreeApproval_small_d88ffe303fdd4b9ca289d2fd87bc8049.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForReview_large_2444b27b1b974ffa8e169f34228ea6d9.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForReview_large_2444b27b1b974ffa8e169f34228ea6d9.svg" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForReview_small_2444b27b1b974ffa8e169f34228ea6d9.png" />
+    <Resource Include="VerificationAssignment\Icons\Action_SendForReview_small_2444b27b1b974ffa8e169f34228ea6d9.svg" />
+    <Resource Include="VerificationAssignment\Icons\Ribbon_DocumentProcessing_e7175b58e6f54aa79774c779fd9a0680.png" />
+    <Resource Include="VerificationAssignment\Icons\Ribbon_DocumentProcessing_e7175b58e6f54aa79774c779fd9a0680.svg" />
+    <Resource Include="VerificationAssignment\Icons\Ribbon_DocumentProcessing_small_e7175b58e6f54aa79774c779fd9a0680.png" />
+    <Resource Include="VerificationAssignment\Icons\Ribbon_DocumentProcessing_small_e7175b58e6f54aa79774c779fd9a0680.svg" />
+    <Resource Include="VerificationTask\Icons\VerificationTask.ico" />
+    <Resource Include="VerificationTask\Icons\VerificationTask.svg" />
+    <Resource Include="VerificationTask\Icons\VerificationTask_large.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

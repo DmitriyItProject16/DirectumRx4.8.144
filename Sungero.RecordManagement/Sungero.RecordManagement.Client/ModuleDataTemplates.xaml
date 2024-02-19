@@ -1,0 +1,266 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.RecordManagement.Client">
+
+    <DataTemplate DataType="{x:Type local:AcquaintanceAssignmentCollectionPresenter`1}">
+      <local:AcquaintanceAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AcquaintanceAssignmentPresenter`1}">
+        <local:AcquaintanceAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AcquaintanceCompleteNotificationCollectionPresenter`1}">
+      <local:AcquaintanceCompleteNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AcquaintanceCompleteNotificationPresenter`1}">
+        <local:AcquaintanceCompleteNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AcquaintanceFinishAssignmentCollectionPresenter`1}">
+      <local:AcquaintanceFinishAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AcquaintanceFinishAssignmentPresenter`1}">
+        <local:AcquaintanceFinishAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AcquaintanceListCollectionPresenter`1}">
+      <local:AcquaintanceListCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AcquaintanceListPresenter`1}">
+        <local:AcquaintanceListView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AcquaintanceTaskCollectionPresenter`1}">
+      <local:AcquaintanceTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AcquaintanceTaskPresenter`1}">
+        <local:AcquaintanceTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:AcquaintanceTaskParticipantCollectionPresenter`1}">
+      <local:AcquaintanceTaskParticipantCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:AcquaintanceTaskParticipantPresenter`1}">
+        <local:AcquaintanceTaskParticipantView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemExecutionAssignmentCollectionPresenter`1}">
+      <local:ActionItemExecutionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemExecutionAssignmentPresenter`1}">
+        <local:ActionItemExecutionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemExecutionNotificationCollectionPresenter`1}">
+      <local:ActionItemExecutionNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemExecutionNotificationPresenter`1}">
+        <local:ActionItemExecutionNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemExecutionTaskCollectionPresenter`1}">
+      <local:ActionItemExecutionTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemExecutionTaskPresenter`1}">
+        <local:ActionItemExecutionTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemObserversNotificationCollectionPresenter`1}">
+      <local:ActionItemObserversNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemObserversNotificationPresenter`1}">
+        <local:ActionItemObserversNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemPredictionInfoCollectionPresenter`1}">
+      <local:ActionItemPredictionInfoCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemPredictionInfoPresenter`1}">
+        <local:ActionItemPredictionInfoView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemSupervisorAssignmentCollectionPresenter`1}">
+      <local:ActionItemSupervisorAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemSupervisorAssignmentPresenter`1}">
+        <local:ActionItemSupervisorAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemSupervisorNotificationCollectionPresenter`1}">
+      <local:ActionItemSupervisorNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemSupervisorNotificationPresenter`1}">
+        <local:ActionItemSupervisorNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ActionItemTrainQueueItemCollectionPresenter`1}">
+      <local:ActionItemTrainQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ActionItemTrainQueueItemPresenter`1}">
+        <local:ActionItemTrainQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CompanyDirectiveCollectionPresenter`1}">
+      <local:CompanyDirectiveCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CompanyDirectivePresenter`1}">
+        <local:CompanyDirectiveView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineExtensionAssignmentCollectionPresenter`1}">
+      <local:DeadlineExtensionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineExtensionAssignmentPresenter`1}">
+        <local:DeadlineExtensionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineExtensionNotificationCollectionPresenter`1}">
+      <local:DeadlineExtensionNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineExtensionNotificationPresenter`1}">
+        <local:DeadlineExtensionNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineExtensionTaskCollectionPresenter`1}">
+      <local:DeadlineExtensionTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineExtensionTaskPresenter`1}">
+        <local:DeadlineExtensionTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DeadlineRejectionAssignmentCollectionPresenter`1}">
+      <local:DeadlineRejectionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DeadlineRejectionAssignmentPresenter`1}">
+        <local:DeadlineRejectionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentReviewAssignmentCollectionPresenter`1}">
+      <local:DocumentReviewAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentReviewAssignmentPresenter`1}">
+        <local:DocumentReviewAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DocumentReviewTaskCollectionPresenter`1}">
+      <local:DocumentReviewTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DocumentReviewTaskPresenter`1}">
+        <local:DocumentReviewTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:IncomingLetterCollectionPresenter`1}">
+      <local:IncomingLetterCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:IncomingLetterPresenter`1}">
+        <local:IncomingLetterView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:OrderCollectionPresenter`1}">
+      <local:OrderCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:OrderPresenter`1}">
+        <local:OrderView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:OrderBaseCollectionPresenter`1}">
+      <local:OrderBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:OrderBasePresenter`1}">
+        <local:OrderBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:OutgoingLetterCollectionPresenter`1}">
+      <local:OutgoingLetterCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:OutgoingLetterPresenter`1}">
+        <local:OutgoingLetterView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:PreparingDraftResolutionAssignmentCollectionPresenter`1}">
+      <local:PreparingDraftResolutionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:PreparingDraftResolutionAssignmentPresenter`1}">
+        <local:PreparingDraftResolutionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:RecordManagementSettingCollectionPresenter`1}">
+      <local:RecordManagementSettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:RecordManagementSettingPresenter`1}">
+        <local:RecordManagementSettingView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReportRequestAssignmentCollectionPresenter`1}">
+      <local:ReportRequestAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReportRequestAssignmentPresenter`1}">
+        <local:ReportRequestAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReportRequestCheckAssignmentCollectionPresenter`1}">
+      <local:ReportRequestCheckAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReportRequestCheckAssignmentPresenter`1}">
+        <local:ReportRequestCheckAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReviewClerkNotificationCollectionPresenter`1}">
+      <local:ReviewClerkNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReviewClerkNotificationPresenter`1}">
+        <local:ReviewClerkNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReviewDraftResolutionAssignmentCollectionPresenter`1}">
+      <local:ReviewDraftResolutionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReviewDraftResolutionAssignmentPresenter`1}">
+        <local:ReviewDraftResolutionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReviewManagerAssignmentCollectionPresenter`1}">
+      <local:ReviewManagerAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReviewManagerAssignmentPresenter`1}">
+        <local:ReviewManagerAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReviewObserverNotificationCollectionPresenter`1}">
+      <local:ReviewObserverNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReviewObserverNotificationPresenter`1}">
+        <local:ReviewObserverNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReviewObserversNotificationCollectionPresenter`1}">
+      <local:ReviewObserversNotificationCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReviewObserversNotificationPresenter`1}">
+        <local:ReviewObserversNotificationView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReviewResolutionAssignmentCollectionPresenter`1}">
+      <local:ReviewResolutionAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReviewResolutionAssignmentPresenter`1}">
+        <local:ReviewResolutionAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReviewReworkAssignmentCollectionPresenter`1}">
+      <local:ReviewReworkAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReviewReworkAssignmentPresenter`1}">
+        <local:ReviewReworkAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:StatusReportRequestTaskCollectionPresenter`1}">
+      <local:StatusReportRequestTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:StatusReportRequestTaskPresenter`1}">
+        <local:StatusReportRequestTaskView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

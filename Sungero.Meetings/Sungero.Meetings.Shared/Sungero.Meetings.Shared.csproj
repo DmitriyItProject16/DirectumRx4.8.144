@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{93c0f95b-512f-d5c3-c17d-c3dfef959151}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Meetings.Shared</RootNamespace>
+    <AssemblyName>Sungero.Meetings.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Agenda%40Tracking\AgendaTracking.g.cs" />
+    <Compile Include="Agenda%40Versions\AgendaVersions.g.cs" />
+    <Compile Include="Agenda\Agenda.g.cs" />
+    <Compile Include="Agenda\AgendaConstants.cs" />
+    <Compile Include="Agenda\AgendaHandlers.cs" />
+    <Compile Include="Agenda\AgendaSharedFunctions.cs" />
+    <Compile Include="Agenda\AgendaStructures.cs" />
+    <Compile Include="Agenda\AgendaStructures.g.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Meeting%40Members\MeetingMembers.g.cs" />
+    <Compile Include="Meeting\Meeting.g.cs" />
+    <Compile Include="Meeting\MeetingConstants.cs" />
+    <Compile Include="Meeting\MeetingHandlers.cs" />
+    <Compile Include="Meeting\MeetingSharedFunctions.cs" />
+    <Compile Include="Meeting\MeetingStructures.cs" />
+    <Compile Include="Meeting\MeetingStructures.g.cs" />
+    <Compile Include="Minutes%40Tracking\MinutesTracking.g.cs" />
+    <Compile Include="Minutes%40Versions\MinutesVersions.g.cs" />
+    <Compile Include="Minutes\Minutes.g.cs" />
+    <Compile Include="Minutes\MinutesConstants.cs" />
+    <Compile Include="Minutes\MinutesHandlers.cs" />
+    <Compile Include="Minutes\MinutesSharedFunctions.cs" />
+    <Compile Include="Minutes\MinutesStructures.cs" />
+    <Compile Include="Minutes\MinutesStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agenda%40Tracking\AgendaTracking.resx" />
+    <EmbeddedResource Include="Agenda%40Tracking\AgendaTracking.ru.resx" />
+    <EmbeddedResource Include="Agenda%40Tracking\AgendaTrackingSystem.resx" />
+    <EmbeddedResource Include="Agenda%40Tracking\AgendaTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="Agenda%40Tracking\obj\AgendaTracking.mtd" />
+    <EmbeddedResource Include="Agenda%40Versions\AgendaVersions.resx" />
+    <EmbeddedResource Include="Agenda%40Versions\AgendaVersions.ru.resx" />
+    <EmbeddedResource Include="Agenda%40Versions\AgendaVersionsSystem.resx" />
+    <EmbeddedResource Include="Agenda%40Versions\AgendaVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="Agenda%40Versions\obj\AgendaVersions.mtd" />
+    <EmbeddedResource Include="Agenda\Agenda.resx" />
+    <EmbeddedResource Include="Agenda\Agenda.ru.resx" />
+    <EmbeddedResource Include="Agenda\AgendaSystem.resx" />
+    <EmbeddedResource Include="Agenda\AgendaSystem.ru.resx" />
+    <EmbeddedResource Include="Agenda\obj\Agenda.mtd" />
+    <EmbeddedResource Include="Meeting%40Members\MeetingMembers.resx" />
+    <EmbeddedResource Include="Meeting%40Members\MeetingMembers.ru.resx" />
+    <EmbeddedResource Include="Meeting%40Members\MeetingMembersSystem.resx" />
+    <EmbeddedResource Include="Meeting%40Members\MeetingMembersSystem.ru.resx" />
+    <EmbeddedResource Include="Meeting%40Members\obj\MeetingMembers.mtd" />
+    <EmbeddedResource Include="Meeting\Meeting.resx" />
+    <EmbeddedResource Include="Meeting\Meeting.ru.resx" />
+    <EmbeddedResource Include="Meeting\MeetingSystem.resx" />
+    <EmbeddedResource Include="Meeting\MeetingSystem.ru.resx" />
+    <EmbeddedResource Include="Meeting\obj\Meeting.mtd" />
+    <EmbeddedResource Include="Minutes%40Tracking\MinutesTracking.resx" />
+    <EmbeddedResource Include="Minutes%40Tracking\MinutesTracking.ru.resx" />
+    <EmbeddedResource Include="Minutes%40Tracking\MinutesTrackingSystem.resx" />
+    <EmbeddedResource Include="Minutes%40Tracking\MinutesTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="Minutes%40Tracking\obj\MinutesTracking.mtd" />
+    <EmbeddedResource Include="Minutes%40Versions\MinutesVersions.resx" />
+    <EmbeddedResource Include="Minutes%40Versions\MinutesVersions.ru.resx" />
+    <EmbeddedResource Include="Minutes%40Versions\MinutesVersionsSystem.resx" />
+    <EmbeddedResource Include="Minutes%40Versions\MinutesVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="Minutes%40Versions\obj\MinutesVersions.mtd" />
+    <EmbeddedResource Include="Minutes\Minutes.resx" />
+    <EmbeddedResource Include="Minutes\Minutes.ru.resx" />
+    <EmbeddedResource Include="Minutes\MinutesSystem.resx" />
+    <EmbeddedResource Include="Minutes\MinutesSystem.ru.resx" />
+    <EmbeddedResource Include="Minutes\obj\Minutes.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,49 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Exchange.Client">
+
+    <DataTemplate DataType="{x:Type local:CancellationAgreementCollectionPresenter`1}">
+      <local:CancellationAgreementCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CancellationAgreementPresenter`1}">
+        <local:CancellationAgreementView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ExchangeDocumentInfoCollectionPresenter`1}">
+      <local:ExchangeDocumentInfoCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ExchangeDocumentInfoPresenter`1}">
+        <local:ExchangeDocumentInfoView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ExchangeDocumentProcessingAssignmentCollectionPresenter`1}">
+      <local:ExchangeDocumentProcessingAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ExchangeDocumentProcessingAssignmentPresenter`1}">
+        <local:ExchangeDocumentProcessingAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ExchangeDocumentProcessingTaskCollectionPresenter`1}">
+      <local:ExchangeDocumentProcessingTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ExchangeDocumentProcessingTaskPresenter`1}">
+        <local:ExchangeDocumentProcessingTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReceiptNotificationSendingAssignmentCollectionPresenter`1}">
+      <local:ReceiptNotificationSendingAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReceiptNotificationSendingAssignmentPresenter`1}">
+        <local:ReceiptNotificationSendingAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ReceiptNotificationSendingTaskCollectionPresenter`1}">
+      <local:ReceiptNotificationSendingTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ReceiptNotificationSendingTaskPresenter`1}">
+        <local:ReceiptNotificationSendingTaskView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{189f3bd9-a58f-11b5-3b8a-f57d5cd8d540}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Projects.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.Projects.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="Project%40Classifier\ProjectClassifier.g.cs" />
+    <Compile Include="Project%40TeamMembers\ProjectTeamMembers.g.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRole.g.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleActions.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleClientFunctions.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleHandlers.cs" />
+    <Compile Include="ProjectCore%40Classifier\ProjectCoreClassifier.g.cs" />
+    <Compile Include="ProjectCore%40TeamMembers\ProjectCoreTeamMembers.g.cs" />
+    <Compile Include="ProjectCore\ProjectCore.g.cs" />
+    <Compile Include="ProjectCore\ProjectCoreActions.cs" />
+    <Compile Include="ProjectCore\ProjectCoreClientFunctions.cs" />
+    <Compile Include="ProjectCore\ProjectCoreHandlers.cs" />
+    <Compile Include="ProjectDocument%40Tracking\ProjectDocumentTracking.g.cs" />
+    <Compile Include="ProjectDocument%40Versions\ProjectDocumentVersions.g.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItem.g.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemActions.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemClientFunctions.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemHandlers.cs" />
+    <Compile Include="ProjectDocument\ProjectDocument.g.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentActions.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentClientFunctions.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentHandlers.cs" />
+    <Compile Include="ProjectKind\ProjectKind.g.cs" />
+    <Compile Include="ProjectKind\ProjectKindActions.cs" />
+    <Compile Include="ProjectKind\ProjectKindClientFunctions.cs" />
+    <Compile Include="ProjectKind\ProjectKindHandlers.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItem.g.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemActions.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemClientFunctions.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemHandlers.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBase.g.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseActions.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseClientFunctions.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseHandlers.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItem.g.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemActions.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemClientFunctions.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemHandlers.cs" />
+    <Compile Include="ProjectTeam%40RecipientLinks\ProjectTeamRecipientLinks.g.cs" />
+    <Compile Include="ProjectTeam\ProjectTeam.g.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamActions.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamClientFunctions.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamHandlers.cs" />
+    <Compile Include="Project\Project.g.cs" />
+    <Compile Include="Project\ProjectActions.cs" />
+    <Compile Include="Project\ProjectClientFunctions.cs" />
+    <Compile Include="Project\ProjectHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Projects.Shared\Sungero.Projects.Shared.csproj">
+      <Project>{677518a7-c698-bd5c-3fc7-5a0a8195cedb}</Project>
+      <Name>Sungero.Projects.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\GroupIconDocuments_494e3180b02a422bbe85018c24d6cea7.png" />
+    <Resource Include="Icons\GroupIconDocuments_494e3180b02a422bbe85018c24d6cea7.svg" />
+    <Resource Include="Icons\GroupIconLinks_821917ab51b3452e997e47752771a991.png" />
+    <Resource Include="Icons\GroupIconLinks_821917ab51b3452e997e47752771a991.svg" />
+    <Resource Include="Icons\GroupIconProjects_c4d7f2f423bd4ce99d44deb8a8630d9d.png" />
+    <Resource Include="Icons\GroupIconProjects_c4d7f2f423bd4ce99d44deb8a8630d9d.svg" />
+    <Resource Include="Icons\GroupIconSettings_424630f089e0461786a166e670f6232e.png" />
+    <Resource Include="Icons\GroupIconSettings_424630f089e0461786a166e670f6232e.svg" />
+    <Resource Include="Icons\ProjectDocuments_81fa363f766c423b818ae48efe57c3d4.ico" />
+    <Resource Include="Icons\ProjectDocuments_81fa363f766c423b818ae48efe57c3d4.svg" />
+    <Resource Include="Icons\ProjectDocuments_large_81fa363f766c423b818ae48efe57c3d4.svg" />
+    <Resource Include="ProjectCore\Icons\Action_CloseProject_large_7fef1558986444a3ab98c387d75b7346.png" />
+    <Resource Include="ProjectCore\Icons\Action_CloseProject_large_7fef1558986444a3ab98c387d75b7346.svg" />
+    <Resource Include="ProjectCore\Icons\Action_CloseProject_small_7fef1558986444a3ab98c387d75b7346.png" />
+    <Resource Include="ProjectCore\Icons\Action_CloseProject_small_7fef1558986444a3ab98c387d75b7346.svg" />
+    <Resource Include="ProjectCore\Icons\Action_CreateProjectDocument_large_69d1ae54fb4a45da9dc65ce0f33b350a.png" />
+    <Resource Include="ProjectCore\Icons\Action_CreateProjectDocument_large_69d1ae54fb4a45da9dc65ce0f33b350a.svg" />
+    <Resource Include="ProjectCore\Icons\Action_CreateProjectDocument_small_69d1ae54fb4a45da9dc65ce0f33b350a.png" />
+    <Resource Include="ProjectCore\Icons\Action_CreateProjectDocument_small_69d1ae54fb4a45da9dc65ce0f33b350a.svg" />
+    <Resource Include="ProjectCore\Icons\Action_ReopenProject_large_f6c3a2fd1c754fab85362b91de4e5ddf.png" />
+    <Resource Include="ProjectCore\Icons\Action_ReopenProject_large_f6c3a2fd1c754fab85362b91de4e5ddf.svg" />
+    <Resource Include="ProjectCore\Icons\Action_ReopenProject_small_f6c3a2fd1c754fab85362b91de4e5ddf.png" />
+    <Resource Include="ProjectCore\Icons\Action_ReopenProject_small_f6c3a2fd1c754fab85362b91de4e5ddf.svg" />
+    <Resource Include="ProjectCore\Icons\Action_ShowDocuments_large_ab1500334c3d4516900632363ba117a2.png" />
+    <Resource Include="ProjectCore\Icons\Action_ShowDocuments_large_ab1500334c3d4516900632363ba117a2.svg" />
+    <Resource Include="ProjectCore\Icons\Action_ShowDocuments_small_ab1500334c3d4516900632363ba117a2.png" />
+    <Resource Include="ProjectCore\Icons\Action_ShowDocuments_small_ab1500334c3d4516900632363ba117a2.svg" />
+    <Resource Include="ProjectCore\Icons\Action_ShowFolder_large_12e86bdca66d4255937a2a315d1ba6a3.png" />
+    <Resource Include="ProjectCore\Icons\Action_ShowFolder_large_12e86bdca66d4255937a2a315d1ba6a3.svg" />
+    <Resource Include="ProjectCore\Icons\Action_ShowFolder_small_12e86bdca66d4255937a2a315d1ba6a3.png" />
+    <Resource Include="ProjectCore\Icons\Action_ShowFolder_small_12e86bdca66d4255937a2a315d1ba6a3.svg" />
+    <Resource Include="ProjectCore\Icons\ProjectCore.ico" />
+    <Resource Include="ProjectCore\Icons\ProjectCore.svg" />
+    <Resource Include="ProjectCore\Icons\ProjectCore_large.svg" />
+    <Resource Include="ProjectCore\Icons\Ribbon_ProjectActions_a2fbbc635813445c9b2695d6c1ed0f1e.png" />
+    <Resource Include="ProjectCore\Icons\Ribbon_ProjectActions_a2fbbc635813445c9b2695d6c1ed0f1e.svg" />
+    <Resource Include="ProjectCore\Icons\Ribbon_ProjectActions_small_a2fbbc635813445c9b2695d6c1ed0f1e.png" />
+    <Resource Include="ProjectCore\Icons\Ribbon_ProjectActions_small_a2fbbc635813445c9b2695d6c1ed0f1e.svg" />
+    <Resource Include="ProjectCore\Icons\Ribbon_Project_44d591cd3c8c4b96b2bda9e7d909ba65.png" />
+    <Resource Include="ProjectCore\Icons\Ribbon_Project_44d591cd3c8c4b96b2bda9e7d909ba65.svg" />
+    <Resource Include="ProjectCore\Icons\Ribbon_Project_small_44d591cd3c8c4b96b2bda9e7d909ba65.png" />
+    <Resource Include="ProjectCore\Icons\Ribbon_Project_small_44d591cd3c8c4b96b2bda9e7d909ba65.svg" />
+    <Resource Include="ProjectDocument\Icons\ProjectDocument.ico" />
+    <Resource Include="ProjectDocument\Icons\ProjectDocument.svg" />
+    <Resource Include="ProjectDocument\Icons\ProjectDocument_large.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="81fa363f-766c-423b-818a-e48efe57c3d4.xml" />
+    <EmbeddedResource Include="ProjectCore\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ProjectCore\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ProjectCore\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ProjectDocument\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ProjectDocument\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ProjectKind\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ProjectKind\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ProjectKind\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

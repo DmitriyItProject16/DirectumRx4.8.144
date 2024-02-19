@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{913448dc-cfc4-386d-5c5a-bf9119e4dfc8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Parties.Shared</RootNamespace>
+    <AssemblyName>Sungero.Parties.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Bank%40ExchangeBoxes\BankExchangeBoxes.g.cs" />
+    <Compile Include="Bank\Bank.g.cs" />
+    <Compile Include="Bank\BankConstants.cs" />
+    <Compile Include="Bank\BankHandlers.cs" />
+    <Compile Include="Bank\BankSharedFunctions.cs" />
+    <Compile Include="Bank\BankStructures.cs" />
+    <Compile Include="Bank\BankStructures.g.cs" />
+    <Compile Include="Company%40ExchangeBoxes\CompanyExchangeBoxes.g.cs" />
+    <Compile Include="CompanyBase%40ExchangeBoxes\CompanyBaseExchangeBoxes.g.cs" />
+    <Compile Include="CompanyBase\CompanyBase.g.cs" />
+    <Compile Include="CompanyBase\CompanyBaseConstants.cs" />
+    <Compile Include="CompanyBase\CompanyBaseHandlers.cs" />
+    <Compile Include="CompanyBase\CompanyBaseSharedFunctions.cs" />
+    <Compile Include="CompanyBase\CompanyBaseStructures.cs" />
+    <Compile Include="CompanyBase\CompanyBaseStructures.g.cs" />
+    <Compile Include="Company\Company.g.cs" />
+    <Compile Include="Company\CompanyConstants.cs" />
+    <Compile Include="Company\CompanyHandlers.cs" />
+    <Compile Include="Company\CompanySharedFunctions.cs" />
+    <Compile Include="Company\CompanyStructures.cs" />
+    <Compile Include="Company\CompanyStructures.g.cs" />
+    <Compile Include="Contact\Contact.g.cs" />
+    <Compile Include="Contact\ContactConstants.cs" />
+    <Compile Include="Contact\ContactHandlers.cs" />
+    <Compile Include="Contact\ContactSharedFunctions.cs" />
+    <Compile Include="Contact\ContactStructures.cs" />
+    <Compile Include="Contact\ContactStructures.g.cs" />
+    <Compile Include="Counterparty%40ExchangeBoxes\CounterpartyExchangeBoxes.g.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKind.g.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindConstants.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindHandlers.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindSharedFunctions.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindStructures.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindStructures.g.cs" />
+    <Compile Include="Counterparty\Counterparty.g.cs" />
+    <Compile Include="Counterparty\CounterpartyConstants.cs" />
+    <Compile Include="Counterparty\CounterpartyHandlers.cs" />
+    <Compile Include="Counterparty\CounterpartySharedFunctions.cs" />
+    <Compile Include="Counterparty\CounterpartyStructures.cs" />
+    <Compile Include="Counterparty\CounterpartyStructures.g.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsite.g.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteConstants.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteHandlers.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteSharedFunctions.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteStructures.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteStructures.g.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKind.g.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindConstants.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindHandlers.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindSharedFunctions.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindStructures.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="Person%40ExchangeBoxes\PersonExchangeBoxes.g.cs" />
+    <Compile Include="Person\Person.g.cs" />
+    <Compile Include="Person\PersonConstants.cs" />
+    <Compile Include="Person\PersonHandlers.cs" />
+    <Compile Include="Person\PersonSharedFunctions.cs" />
+    <Compile Include="Person\PersonStructures.cs" />
+    <Compile Include="Person\PersonStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bank%40ExchangeBoxes\BankExchangeBoxes.resx" />
+    <EmbeddedResource Include="Bank%40ExchangeBoxes\BankExchangeBoxes.ru.resx" />
+    <EmbeddedResource Include="Bank%40ExchangeBoxes\BankExchangeBoxesSystem.resx" />
+    <EmbeddedResource Include="Bank%40ExchangeBoxes\BankExchangeBoxesSystem.ru.resx" />
+    <EmbeddedResource Include="Bank%40ExchangeBoxes\obj\BankExchangeBoxes.mtd" />
+    <EmbeddedResource Include="Bank\Bank.resx" />
+    <EmbeddedResource Include="Bank\Bank.ru.resx" />
+    <EmbeddedResource Include="Bank\BankSystem.resx" />
+    <EmbeddedResource Include="Bank\BankSystem.ru.resx" />
+    <EmbeddedResource Include="Bank\obj\Bank.mtd" />
+    <EmbeddedResource Include="Company%40ExchangeBoxes\CompanyExchangeBoxes.resx" />
+    <EmbeddedResource Include="Company%40ExchangeBoxes\CompanyExchangeBoxes.ru.resx" />
+    <EmbeddedResource Include="Company%40ExchangeBoxes\CompanyExchangeBoxesSystem.resx" />
+    <EmbeddedResource Include="Company%40ExchangeBoxes\CompanyExchangeBoxesSystem.ru.resx" />
+    <EmbeddedResource Include="Company%40ExchangeBoxes\obj\CompanyExchangeBoxes.mtd" />
+    <EmbeddedResource Include="CompanyBase%40ExchangeBoxes\CompanyBaseExchangeBoxes.resx" />
+    <EmbeddedResource Include="CompanyBase%40ExchangeBoxes\CompanyBaseExchangeBoxes.ru.resx" />
+    <EmbeddedResource Include="CompanyBase%40ExchangeBoxes\CompanyBaseExchangeBoxesSystem.resx" />
+    <EmbeddedResource Include="CompanyBase%40ExchangeBoxes\CompanyBaseExchangeBoxesSystem.ru.resx" />
+    <EmbeddedResource Include="CompanyBase%40ExchangeBoxes\obj\CompanyBaseExchangeBoxes.mtd" />
+    <EmbeddedResource Include="CompanyBase\CompanyBase.resx" />
+    <EmbeddedResource Include="CompanyBase\CompanyBase.ru.resx" />
+    <EmbeddedResource Include="CompanyBase\CompanyBaseSystem.resx" />
+    <EmbeddedResource Include="CompanyBase\CompanyBaseSystem.ru.resx" />
+    <EmbeddedResource Include="CompanyBase\obj\CompanyBase.mtd" />
+    <EmbeddedResource Include="Company\Company.resx" />
+    <EmbeddedResource Include="Company\Company.ru.resx" />
+    <EmbeddedResource Include="Company\CompanySystem.resx" />
+    <EmbeddedResource Include="Company\CompanySystem.ru.resx" />
+    <EmbeddedResource Include="Company\obj\Company.mtd" />
+    <EmbeddedResource Include="Contact\Contact.resx" />
+    <EmbeddedResource Include="Contact\Contact.ru.resx" />
+    <EmbeddedResource Include="Contact\ContactSystem.resx" />
+    <EmbeddedResource Include="Contact\ContactSystem.ru.resx" />
+    <EmbeddedResource Include="Contact\obj\Contact.mtd" />
+    <EmbeddedResource Include="Counterparty%40ExchangeBoxes\CounterpartyExchangeBoxes.resx" />
+    <EmbeddedResource Include="Counterparty%40ExchangeBoxes\CounterpartyExchangeBoxes.ru.resx" />
+    <EmbeddedResource Include="Counterparty%40ExchangeBoxes\CounterpartyExchangeBoxesSystem.resx" />
+    <EmbeddedResource Include="Counterparty%40ExchangeBoxes\CounterpartyExchangeBoxesSystem.ru.resx" />
+    <EmbeddedResource Include="Counterparty%40ExchangeBoxes\obj\CounterpartyExchangeBoxes.mtd" />
+    <EmbeddedResource Include="CounterpartyKind\CounterpartyKind.resx" />
+    <EmbeddedResource Include="CounterpartyKind\CounterpartyKind.ru.resx" />
+    <EmbeddedResource Include="CounterpartyKind\CounterpartyKindSystem.resx" />
+    <EmbeddedResource Include="CounterpartyKind\CounterpartyKindSystem.ru.resx" />
+    <EmbeddedResource Include="CounterpartyKind\obj\CounterpartyKind.mtd" />
+    <EmbeddedResource Include="Counterparty\Counterparty.resx" />
+    <EmbeddedResource Include="Counterparty\Counterparty.ru.resx" />
+    <EmbeddedResource Include="Counterparty\CounterpartySystem.resx" />
+    <EmbeddedResource Include="Counterparty\CounterpartySystem.ru.resx" />
+    <EmbeddedResource Include="Counterparty\obj\Counterparty.mtd" />
+    <EmbeddedResource Include="DueDiligenceWebsite\DueDiligenceWebsite.resx" />
+    <EmbeddedResource Include="DueDiligenceWebsite\DueDiligenceWebsite.ru.resx" />
+    <EmbeddedResource Include="DueDiligenceWebsite\DueDiligenceWebsiteSystem.resx" />
+    <EmbeddedResource Include="DueDiligenceWebsite\DueDiligenceWebsiteSystem.ru.resx" />
+    <EmbeddedResource Include="DueDiligenceWebsite\obj\DueDiligenceWebsite.mtd" />
+    <EmbeddedResource Include="IdentityDocumentKind\IdentityDocumentKind.resx" />
+    <EmbeddedResource Include="IdentityDocumentKind\IdentityDocumentKind.ru.resx" />
+    <EmbeddedResource Include="IdentityDocumentKind\IdentityDocumentKindSystem.resx" />
+    <EmbeddedResource Include="IdentityDocumentKind\IdentityDocumentKindSystem.ru.resx" />
+    <EmbeddedResource Include="IdentityDocumentKind\obj\IdentityDocumentKind.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="Person%40ExchangeBoxes\obj\PersonExchangeBoxes.mtd" />
+    <EmbeddedResource Include="Person%40ExchangeBoxes\PersonExchangeBoxes.resx" />
+    <EmbeddedResource Include="Person%40ExchangeBoxes\PersonExchangeBoxes.ru.resx" />
+    <EmbeddedResource Include="Person%40ExchangeBoxes\PersonExchangeBoxesSystem.resx" />
+    <EmbeddedResource Include="Person%40ExchangeBoxes\PersonExchangeBoxesSystem.ru.resx" />
+    <EmbeddedResource Include="Person\obj\Person.mtd" />
+    <EmbeddedResource Include="Person\Person.resx" />
+    <EmbeddedResource Include="Person\Person.ru.resx" />
+    <EmbeddedResource Include="Person\PersonSystem.resx" />
+    <EmbeddedResource Include="Person\PersonSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,13 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "Name": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Рассмотрение одноадресное ",
+    "ru-RU": "Рассмотрение документа одним адресатом"
+  },
+  "Description": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Рассмотрение документа руководителем с возможностью предварительной подготовки проекта резолюции помощником руководителя.",
+    "ru-RU": "Рассмотрение документа руководителем с возможностью предварительной подготовки проекта резолюции помощником руководителя"
+  }
+}

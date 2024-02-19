@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{c415cdcf-6766-d4ca-2067-dc2043937c87}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.RecordManagement.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.RecordManagement.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignment.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentActions.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentClientFunctions.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentHandlers.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotification.g.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationActions.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationClientFunctions.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationHandlers.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignment.g.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentActions.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentClientFunctions.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentHandlers.cs" />
+    <Compile Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipants.g.cs" />
+    <Compile Include="AcquaintanceList%40Participants\AcquaintanceListParticipants.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceList.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListActions.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListClientFunctions.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListHandlers.cs" />
+    <Compile Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Observers\AcquaintanceTaskObservers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformers.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployees.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipant.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantActions.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantClientFunctions.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantHandlers.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTask.g.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskActions.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskClientFunctions.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskHandlers.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignment.g.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentActions.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentClientFunctions.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentHandlers.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotification.g.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationActions.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationClientFunctions.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationHandlers.cs" />
+    <Compile Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemParts.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTask.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskActions.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskClientFunctions.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskHandlers.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotification.g.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationActions.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationClientFunctions.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationHandlers.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfo.g.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoActions.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoClientFunctions.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoHandlers.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignment.g.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentActions.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentClientFunctions.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentHandlers.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotification.g.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationActions.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationClientFunctions.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationHandlers.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItem.g.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemActions.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemClientFunctions.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemHandlers.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CompanyDirective%40Tracking\CompanyDirectiveTracking.g.cs" />
+    <Compile Include="CompanyDirective%40Versions\CompanyDirectiveVersions.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirective.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveActions.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveClientFunctions.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveHandlers.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.g.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentActions.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentClientFunctions.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentHandlers.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotification.g.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationActions.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationClientFunctions.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTask.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskActions.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskClientFunctions.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskHandlers.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.g.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentActions.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentClientFunctions.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentHandlers.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignment.g.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentActions.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentClientFunctions.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentHandlers.cs" />
+    <Compile Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddressees.g.cs" />
+    <Compile Include="DocumentReviewTask%40Observers\DocumentReviewTaskObservers.g.cs" />
+    <Compile Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObservers.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTask.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskActions.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskClientFunctions.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskHandlers.cs" />
+    <Compile Include="IncomingLetter%40Addressees\IncomingLetterAddressees.g.cs" />
+    <Compile Include="IncomingLetter%40Tracking\IncomingLetterTracking.g.cs" />
+    <Compile Include="IncomingLetter%40Versions\IncomingLetterVersions.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetter.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterActions.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterClientFunctions.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="Order%40Tracking\OrderTracking.g.cs" />
+    <Compile Include="Order%40Versions\OrderVersions.g.cs" />
+    <Compile Include="OrderBase%40Tracking\OrderBaseTracking.g.cs" />
+    <Compile Include="OrderBase%40Versions\OrderBaseVersions.g.cs" />
+    <Compile Include="OrderBase\OrderBase.g.cs" />
+    <Compile Include="OrderBase\OrderBaseActions.cs" />
+    <Compile Include="OrderBase\OrderBaseClientFunctions.cs" />
+    <Compile Include="OrderBase\OrderBaseHandlers.cs" />
+    <Compile Include="Order\Order.g.cs" />
+    <Compile Include="Order\OrderActions.cs" />
+    <Compile Include="Order\OrderClientFunctions.cs" />
+    <Compile Include="Order\OrderHandlers.cs" />
+    <Compile Include="OutgoingLetter%40Addressees\OutgoingLetterAddressees.g.cs" />
+    <Compile Include="OutgoingLetter%40Tracking\OutgoingLetterTracking.g.cs" />
+    <Compile Include="OutgoingLetter%40Versions\OutgoingLetterVersions.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetter.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterActions.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterClientFunctions.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterHandlers.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignment.g.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentActions.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentClientFunctions.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentHandlers.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSetting.g.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingActions.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingClientFunctions.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingHandlers.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignment.g.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentActions.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentClientFunctions.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentHandlers.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignment.g.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentActions.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentClientFunctions.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentHandlers.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.g.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportHandlers.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReport.g.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReportHandlers.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReport.g.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReportHandlers.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.g.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportHandlers.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReport.g.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReportHandlers.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReport.g.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReportHandlers.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportHandlers.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportHandlers.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReport.g.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReportHandlers.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.g.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportHandlers.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotification.g.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationActions.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationClientFunctions.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationHandlers.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignment.g.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentActions.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentClientFunctions.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentHandlers.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignment.g.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentActions.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentClientFunctions.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentHandlers.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotification.g.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationActions.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationClientFunctions.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationHandlers.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotification.g.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationActions.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationClientFunctions.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationHandlers.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignment.g.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentActions.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentClientFunctions.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentHandlers.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignment.g.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentActions.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentClientFunctions.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentHandlers.cs" />
+    <Compile Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObservers.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTask.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskActions.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskClientFunctions.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.RecordManagement.Shared\Sungero.RecordManagement.Shared.csproj">
+      <Project>{583eac27-2e4e-f739-59f1-2e38e60a5495}</Project>
+      <Name>Sungero.RecordManagement.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AcquaintanceAssignment\Icons\Action_Acquainted_large_5ab5a85915bb4b649bdf60acc1375a2b.png" />
+    <Resource Include="AcquaintanceAssignment\Icons\Action_Acquainted_large_5ab5a85915bb4b649bdf60acc1375a2b.svg" />
+    <Resource Include="AcquaintanceAssignment\Icons\Action_Acquainted_small_5ab5a85915bb4b649bdf60acc1375a2b.png" />
+    <Resource Include="AcquaintanceAssignment\Icons\Action_Acquainted_small_5ab5a85915bb4b649bdf60acc1375a2b.svg" />
+    <Resource Include="AcquaintanceAssignment\Icons\Action_ExtendDeadline_large_345b3b5bb0304fd3b2b83dcb7a1e32c5.png" />
+    <Resource Include="AcquaintanceAssignment\Icons\Action_ExtendDeadline_large_345b3b5bb0304fd3b2b83dcb7a1e32c5.svg" />
+    <Resource Include="AcquaintanceAssignment\Icons\Action_ExtendDeadline_small_345b3b5bb0304fd3b2b83dcb7a1e32c5.png" />
+    <Resource Include="AcquaintanceAssignment\Icons\Action_ExtendDeadline_small_345b3b5bb0304fd3b2b83dcb7a1e32c5.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_Complete_large_9c0d092df38242eda1e1d998d9fa794a.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_Complete_large_9c0d092df38242eda1e1d998d9fa794a.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_Complete_small_9c0d092df38242eda1e1d998d9fa794a.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_Complete_small_9c0d092df38242eda1e1d998d9fa794a.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ExtendDeadline_large_97dc3953411544f08f1b660a48b38a47.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ExtendDeadline_large_97dc3953411544f08f1b660a48b38a47.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ExtendDeadline_small_97dc3953411544f08f1b660a48b38a47.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ExtendDeadline_small_97dc3953411544f08f1b660a48b38a47.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ShowAcquaintanceReport_large_e117790735eb45f494f88691b6d7748b.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ShowAcquaintanceReport_large_e117790735eb45f494f88691b6d7748b.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ShowAcquaintanceReport_small_e117790735eb45f494f88691b6d7748b.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Action_ShowAcquaintanceReport_small_e117790735eb45f494f88691b6d7748b.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Ribbon_DeadlineGroup_6104be22144b49128868bb1dae3f7f37.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Ribbon_DeadlineGroup_6104be22144b49128868bb1dae3f7f37.svg" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Ribbon_DeadlineGroup_small_6104be22144b49128868bb1dae3f7f37.png" />
+    <Resource Include="AcquaintanceFinishAssignment\Icons\Ribbon_DeadlineGroup_small_6104be22144b49128868bb1dae3f7f37.svg" />
+    <Resource Include="AcquaintanceList\Icons\AcquaintanceList.ico" />
+    <Resource Include="AcquaintanceList\Icons\AcquaintanceList.svg" />
+    <Resource Include="AcquaintanceList\Icons\AcquaintanceList_large.svg" />
+    <Resource Include="AcquaintanceTask\Icons\AcquaintanceTask.ico" />
+    <Resource Include="AcquaintanceTask\Icons\AcquaintanceTask.svg" />
+    <Resource Include="AcquaintanceTask\Icons\AcquaintanceTask_large.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ExcludeFromAcquaintance_large_8d158da6937742e099ec70284be1cab1.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ExcludeFromAcquaintance_large_8d158da6937742e099ec70284be1cab1.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ExcludeFromAcquaintance_small_8d158da6937742e099ec70284be1cab1.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ExcludeFromAcquaintance_small_8d158da6937742e099ec70284be1cab1.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_FillFromAcquaintanceList_large_8c58cf967e5d46c697ac1a648d0de826.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_FillFromAcquaintanceList_large_8c58cf967e5d46c697ac1a648d0de826.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_FillFromAcquaintanceList_small_8c58cf967e5d46c697ac1a648d0de826.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_FillFromAcquaintanceList_small_8c58cf967e5d46c697ac1a648d0de826.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_SaveAcquaintanceList_large_58e4049375e94db281cbcb34ca2348f0.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_SaveAcquaintanceList_large_58e4049375e94db281cbcb34ca2348f0.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_SaveAcquaintanceList_small_58e4049375e94db281cbcb34ca2348f0.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_SaveAcquaintanceList_small_58e4049375e94db281cbcb34ca2348f0.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceFormReport_large_a5268e6e62334f0cb9560937a30e0bdb.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceFormReport_large_a5268e6e62334f0cb9560937a30e0bdb.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceFormReport_small_a5268e6e62334f0cb9560937a30e0bdb.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceFormReport_small_a5268e6e62334f0cb9560937a30e0bdb.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceReport_large_b049c64845204c3ab744a3912292f913.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceReport_large_b049c64845204c3ab744a3912292f913.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceReport_small_b049c64845204c3ab744a3912292f913.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowAcquaintanceReport_small_b049c64845204c3ab744a3912292f913.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowNotAutomatedEmployees_large_1f108835c7ec4e33840befefb7b923f9.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowNotAutomatedEmployees_large_1f108835c7ec4e33840befefb7b923f9.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowNotAutomatedEmployees_small_1f108835c7ec4e33840befefb7b923f9.png" />
+    <Resource Include="AcquaintanceTask\Icons\Action_ShowNotAutomatedEmployees_small_1f108835c7ec4e33840befefb7b923f9.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Ribbon_EmployeesCommands_e5ed64437c164470a71c95af72753ef5.png" />
+    <Resource Include="AcquaintanceTask\Icons\Ribbon_EmployeesCommands_e5ed64437c164470a71c95af72753ef5.svg" />
+    <Resource Include="AcquaintanceTask\Icons\Ribbon_EmployeesCommands_small_e5ed64437c164470a71c95af72753ef5.png" />
+    <Resource Include="AcquaintanceTask\Icons\Ribbon_EmployeesCommands_small_e5ed64437c164470a71c95af72753ef5.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateChildActionItem_large_331ce81d0e6d465e9228bab46e3bbbbe.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateChildActionItem_large_331ce81d0e6d465e9228bab46e3bbbbe.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateChildActionItem_small_331ce81d0e6d465e9228bab46e3bbbbe.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateChildActionItem_small_331ce81d0e6d465e9228bab46e3bbbbe.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateReplyLetter_large_f48ab832ec614044b1b58366c4348568.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateReplyLetter_large_f48ab832ec614044b1b58366c4348568.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateReplyLetter_small_f48ab832ec614044b1b58366c4348568.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_CreateReplyLetter_small_f48ab832ec614044b1b58366c4348568.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Done_large_ad5a100f115e4bbcb73695feb1b42bf4.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Done_large_ad5a100f115e4bbcb73695feb1b42bf4.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Done_small_ad5a100f115e4bbcb73695feb1b42bf4.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Done_small_ad5a100f115e4bbcb73695feb1b42bf4.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_ExtendDeadline_large_75b4cc12e37b4bc38a8effde97f46ff0.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_ExtendDeadline_large_75b4cc12e37b4bc38a8effde97f46ff0.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_ExtendDeadline_small_75b4cc12e37b4bc38a8effde97f46ff0.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_ExtendDeadline_small_75b4cc12e37b4bc38a8effde97f46ff0.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Forwarded_large_644e4caf430343ceadff35adef1bfad3.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Forwarded_large_644e4caf430343ceadff35adef1bfad3.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Forwarded_small_644e4caf430343ceadff35adef1bfad3.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_Forwarded_small_644e4caf430343ceadff35adef1bfad3.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_PrintActionItem_large_bf474fdca8cd4bb283bca94b5ce88e55.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_PrintActionItem_large_bf474fdca8cd4bb283bca94b5ce88e55.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_PrintActionItem_small_bf474fdca8cd4bb283bca94b5ce88e55.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_PrintActionItem_small_bf474fdca8cd4bb283bca94b5ce88e55.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_RequireReport_large_3f421d17faa943548db161a73e2ac31f.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_RequireReport_large_3f421d17faa943548db161a73e2ac31f.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_RequireReport_small_3f421d17faa943548db161a73e2ac31f.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Action_RequireReport_small_3f421d17faa943548db161a73e2ac31f.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_AsgGroup_ac82503a7a4749d0b90c9bb512c4559c.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_AsgGroup_ac82503a7a4749d0b90c9bb512c4559c.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_AsgGroup_small_ac82503a7a4749d0b90c9bb512c4559c.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_AsgGroup_small_ac82503a7a4749d0b90c9bb512c4559c.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_DocumentPackage_c42b6a36d87e4fa3989efe1564655efd.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_DocumentPackage_c42b6a36d87e4fa3989efe1564655efd.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_DocumentPackage_small_c42b6a36d87e4fa3989efe1564655efd.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_DocumentPackage_small_c42b6a36d87e4fa3989efe1564655efd.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_JobControl_255d43b227b947ffb228e46610369804.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_JobControl_255d43b227b947ffb228e46610369804.svg" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_JobControl_small_255d43b227b947ffb228e46610369804.png" />
+    <Resource Include="ActionItemExecutionAssignment\Icons\Ribbon_JobControl_small_255d43b227b947ffb228e46610369804.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\ActionItemExecutionTask.ico" />
+    <Resource Include="ActionItemExecutionTask\Icons\ActionItemExecutionTask.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\ActionItemExecutionTask_large.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddCompoundActionItemPart_large_bd22a1813b88497b98b36c5eff4a57ac.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddCompoundActionItemPart_large_bd22a1813b88497b98b36c5eff4a57ac.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddCompoundActionItemPart_small_bd22a1813b88497b98b36c5eff4a57ac.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddCompoundActionItemPart_small_bd22a1813b88497b98b36c5eff4a57ac.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddPerformer_large_242eaf084ae7452bb2f9725cb56831d4.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddPerformer_large_242eaf084ae7452bb2f9725cb56831d4.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddPerformer_small_242eaf084ae7452bb2f9725cb56831d4.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_AddPerformer_small_242eaf084ae7452bb2f9725cb56831d4.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeActionItem_large_9d67a1ebed104813a4ce476dc1a66739.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeActionItem_large_9d67a1ebed104813a4ce476dc1a66739.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeActionItem_small_9d67a1ebed104813a4ce476dc1a66739.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeActionItem_small_9d67a1ebed104813a4ce476dc1a66739.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeCompoundActionItemPart_large_6404f8391b584c8e8e2af81e132dabef.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeCompoundActionItemPart_large_6404f8391b584c8e8e2af81e132dabef.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeCompoundActionItemPart_small_6404f8391b584c8e8e2af81e132dabef.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_ChangeCompoundActionItemPart_small_6404f8391b584c8e8e2af81e132dabef.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_FollowUpExecution_large_56ac8798c7f642cfa406e6dfd8a84d42.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_FollowUpExecution_large_56ac8798c7f642cfa406e6dfd8a84d42.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_FollowUpExecution_small_56ac8798c7f642cfa406e6dfd8a84d42.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_FollowUpExecution_small_56ac8798c7f642cfa406e6dfd8a84d42.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_RequireReport_large_20dcc20765544429b0c939b75cc6d6bf.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_RequireReport_large_20dcc20765544429b0c939b75cc6d6bf.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_RequireReport_small_20dcc20765544429b0c939b75cc6d6bf.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Action_RequireReport_small_20dcc20765544429b0c939b75cc6d6bf.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_ComponentResolution_large_977f7789881e4b50b1dba56b360e4f24.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_ComponentResolution_large_977f7789881e4b50b1dba56b360e4f24.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_ComponentResolution_small_977f7789881e4b50b1dba56b360e4f24.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_ComponentResolution_small_977f7789881e4b50b1dba56b360e4f24.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobControl_c778f982723e4c83bc617862643c532e.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobControl_c778f982723e4c83bc617862643c532e.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobControl_small_c778f982723e4c83bc617862643c532e.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobControl_small_c778f982723e4c83bc617862643c532e.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobView_5a79eb10149e456ba4674e8010afdc07.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobView_5a79eb10149e456ba4674e8010afdc07.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobView_small_5a79eb10149e456ba4674e8010afdc07.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_JobView_small_5a79eb10149e456ba4674e8010afdc07.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_Reports_e26275e99782434080be5d59bf67d1ec.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_Reports_e26275e99782434080be5d59bf67d1ec.svg" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_Reports_small_e26275e99782434080be5d59bf67d1ec.png" />
+    <Resource Include="ActionItemExecutionTask\Icons\Ribbon_Reports_small_e26275e99782434080be5d59bf67d1ec.svg" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Agree_large_fd9f94558f81420b9acc828cb6d2f3a8.png" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Agree_large_fd9f94558f81420b9acc828cb6d2f3a8.svg" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Agree_small_fd9f94558f81420b9acc828cb6d2f3a8.png" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Agree_small_fd9f94558f81420b9acc828cb6d2f3a8.svg" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_ForRework_large_df2d87988ed1466183cfd0cc09ddb0de.png" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_ForRework_large_df2d87988ed1466183cfd0cc09ddb0de.svg" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_ForRework_small_df2d87988ed1466183cfd0cc09ddb0de.png" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_ForRework_small_df2d87988ed1466183cfd0cc09ddb0de.svg" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Forwarded_large_1781529926e248d6a51d5045b998d92e.png" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Forwarded_large_1781529926e248d6a51d5045b998d92e.svg" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Forwarded_small_1781529926e248d6a51d5045b998d92e.png" />
+    <Resource Include="ActionItemSupervisorAssignment\Icons\Action_Forwarded_small_1781529926e248d6a51d5045b998d92e.svg" />
+    <Resource Include="CompanyDirective\Icons\CompanyDirective.ico" />
+    <Resource Include="CompanyDirective\Icons\CompanyDirective.svg" />
+    <Resource Include="CompanyDirective\Icons\CompanyDirective_large.svg" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_Accept_large_e01eab1d9f5f46468ecdc0477251e91b.png" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_Accept_large_e01eab1d9f5f46468ecdc0477251e91b.svg" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_Accept_small_e01eab1d9f5f46468ecdc0477251e91b.png" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_Accept_small_e01eab1d9f5f46468ecdc0477251e91b.svg" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_ForRework_large_1f1fea55910349eab016b506d2838cf7.png" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_ForRework_large_1f1fea55910349eab016b506d2838cf7.svg" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_ForRework_small_1f1fea55910349eab016b506d2838cf7.png" />
+    <Resource Include="DeadlineExtensionAssignment\Icons\Action_ForRework_small_1f1fea55910349eab016b506d2838cf7.svg" />
+    <Resource Include="DeadlineExtensionTask\Icons\DeadlineExtensionTask.ico" />
+    <Resource Include="DeadlineExtensionTask\Icons\DeadlineExtensionTask.svg" />
+    <Resource Include="DeadlineExtensionTask\Icons\DeadlineExtensionTask_large.svg" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_Accept_large_beacb7e398744c2e8f65df3fd2d125fb.png" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_Accept_large_beacb7e398744c2e8f65df3fd2d125fb.svg" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_Accept_small_beacb7e398744c2e8f65df3fd2d125fb.png" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_Accept_small_beacb7e398744c2e8f65df3fd2d125fb.svg" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_ForRework_large_32b0154e79c74e02b33f3ca9fd1fb68c.png" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_ForRework_large_32b0154e79c74e02b33f3ca9fd1fb68c.svg" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_ForRework_small_32b0154e79c74e02b33f3ca9fd1fb68c.png" />
+    <Resource Include="DeadlineRejectionAssignment\Icons\Action_ForRework_small_32b0154e79c74e02b33f3ca9fd1fb68c.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ActionItemsSent_large_efd122c49bde4e54a053c1e87a044416.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ActionItemsSent_large_efd122c49bde4e54a053c1e87a044416.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ActionItemsSent_small_efd122c49bde4e54a053c1e87a044416.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ActionItemsSent_small_efd122c49bde4e54a053c1e87a044416.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_CreateActionItem_large_41cd26abf37c4c40961b03687718f207.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_CreateActionItem_large_41cd26abf37c4c40961b03687718f207.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_CreateActionItem_small_41cd26abf37c4c40961b03687718f207.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_CreateActionItem_small_41cd26abf37c4c40961b03687718f207.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DocsRework_large_69ab8bfc19dd4a4b879e18e41946a47f.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DocsRework_large_69ab8bfc19dd4a4b879e18e41946a47f.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DocsRework_small_69ab8bfc19dd4a4b879e18e41946a47f.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DocsRework_small_69ab8bfc19dd4a4b879e18e41946a47f.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResApprove_large_b6cbb45ae6a5442fb330c8fb25ec6896.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResApprove_large_b6cbb45ae6a5442fb330c8fb25ec6896.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResApprove_small_b6cbb45ae6a5442fb330c8fb25ec6896.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResApprove_small_b6cbb45ae6a5442fb330c8fb25ec6896.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResRework_large_c2996fb76d2d45db92865ed4d7f76acf.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResRework_large_c2996fb76d2d45db92865ed4d7f76acf.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResRework_small_c2996fb76d2d45db92865ed4d7f76acf.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_DraftResRework_small_c2996fb76d2d45db92865ed4d7f76acf.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Forward_large_15a894ef15aa4baea5d27d25aee7dbaf.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Forward_large_15a894ef15aa4baea5d27d25aee7dbaf.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Forward_small_15a894ef15aa4baea5d27d25aee7dbaf.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Forward_small_15a894ef15aa4baea5d27d25aee7dbaf.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Informed_large_4f331b4201e44912bb8adcfcdc6398f1.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Informed_large_4f331b4201e44912bb8adcfcdc6398f1.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Informed_small_4f331b4201e44912bb8adcfcdc6398f1.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_Informed_small_4f331b4201e44912bb8adcfcdc6398f1.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ResPassed_large_e828e83364a444608582922497b89ed9.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ResPassed_large_e828e83364a444608582922497b89ed9.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ResPassed_small_e828e83364a444608582922497b89ed9.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Action_ResPassed_small_e828e83364a444608582922497b89ed9.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Ribbon_ExecutionGroup_51c9ce715f444738a32b31f11e937385.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Ribbon_ExecutionGroup_51c9ce715f444738a32b31f11e937385.svg" />
+    <Resource Include="DocumentReviewAssignment\Icons\Ribbon_ExecutionGroup_small_51c9ce715f444738a32b31f11e937385.png" />
+    <Resource Include="DocumentReviewAssignment\Icons\Ribbon_ExecutionGroup_small_51c9ce715f444738a32b31f11e937385.svg" />
+    <Resource Include="DocumentReviewTask\Icons\Action_AddResolution_large_585488cbd8444d59999b6a157b2d8a7d.png" />
+    <Resource Include="DocumentReviewTask\Icons\Action_AddResolution_large_585488cbd8444d59999b6a157b2d8a7d.svg" />
+    <Resource Include="DocumentReviewTask\Icons\Action_AddResolution_small_585488cbd8444d59999b6a157b2d8a7d.png" />
+    <Resource Include="DocumentReviewTask\Icons\Action_AddResolution_small_585488cbd8444d59999b6a157b2d8a7d.svg" />
+    <Resource Include="DocumentReviewTask\Icons\DocumentReviewTask.ico" />
+    <Resource Include="DocumentReviewTask\Icons\DocumentReviewTask.svg" />
+    <Resource Include="DocumentReviewTask\Icons\DocumentReviewTask_large.svg" />
+    <Resource Include="Icons\ActionItems_4b30b2be330e42bd833c7ecf19b32e12.ico" />
+    <Resource Include="Icons\ActionItems_4b30b2be330e42bd833c7ecf19b32e12.svg" />
+    <Resource Include="Icons\ActionItems_large_4b30b2be330e42bd833c7ecf19b32e12.svg" />
+    <Resource Include="Icons\ForExecution_c21fa108157041558a0c0d04957bc72b.ico" />
+    <Resource Include="Icons\ForExecution_c21fa108157041558a0c0d04957bc72b.svg" />
+    <Resource Include="Icons\ForExecution_large_c21fa108157041558a0c0d04957bc72b.svg" />
+    <Resource Include="IncomingLetter\Icons\Action_ShowDuplicates_large_d9e7abc7644c42acaa2862a226bfc8a2.png" />
+    <Resource Include="IncomingLetter\Icons\Action_ShowDuplicates_large_d9e7abc7644c42acaa2862a226bfc8a2.svg" />
+    <Resource Include="IncomingLetter\Icons\Action_ShowDuplicates_small_d9e7abc7644c42acaa2862a226bfc8a2.png" />
+    <Resource Include="IncomingLetter\Icons\Action_ShowDuplicates_small_d9e7abc7644c42acaa2862a226bfc8a2.svg" />
+    <Resource Include="IncomingLetter\Icons\IncomingLetter.ico" />
+    <Resource Include="IncomingLetter\Icons\IncomingLetter.svg" />
+    <Resource Include="IncomingLetter\Icons\IncomingLetter_large.svg" />
+    <Resource Include="IncomingLetter\Icons\Ribbon_Duplicates_be8c33f93d2a44989bcd19dc22887183.png" />
+    <Resource Include="IncomingLetter\Icons\Ribbon_Duplicates_be8c33f93d2a44989bcd19dc22887183.svg" />
+    <Resource Include="IncomingLetter\Icons\Ribbon_Duplicates_small_be8c33f93d2a44989bcd19dc22887183.png" />
+    <Resource Include="IncomingLetter\Icons\Ribbon_Duplicates_small_be8c33f93d2a44989bcd19dc22887183.svg" />
+    <Resource Include="OrderBase\Icons\OrderBase.ico" />
+    <Resource Include="OrderBase\Icons\OrderBase.svg" />
+    <Resource Include="OrderBase\Icons\OrderBase_large.svg" />
+    <Resource Include="OutgoingLetter\Icons\OutgoingLetter.ico" />
+    <Resource Include="OutgoingLetter\Icons\OutgoingLetter.svg" />
+    <Resource Include="OutgoingLetter\Icons\OutgoingLetter_large.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Abort_large_09ae6381e8774065877f0e3c9c33df81.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Abort_large_09ae6381e8774065877f0e3c9c33df81.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Abort_small_09ae6381e8774065877f0e3c9c33df81.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Abort_small_09ae6381e8774065877f0e3c9c33df81.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddAssignment_large_5dfaa00003064b6f882709bf9fc759f7.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddAssignment_large_5dfaa00003064b6f882709bf9fc759f7.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddAssignment_small_5dfaa00003064b6f882709bf9fc759f7.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddAssignment_small_5dfaa00003064b6f882709bf9fc759f7.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddResolution_large_dc6c6596b53847babff7682d1e2c9feb.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddResolution_large_dc6c6596b53847babff7682d1e2c9feb.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddResolution_small_dc6c6596b53847babff7682d1e2c9feb.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_AddResolution_small_dc6c6596b53847babff7682d1e2c9feb.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Explored_large_d8b7e2bcbe604385bffe99aab2319dbb.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Explored_large_d8b7e2bcbe604385bffe99aab2319dbb.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Explored_small_d8b7e2bcbe604385bffe99aab2319dbb.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Explored_small_d8b7e2bcbe604385bffe99aab2319dbb.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_ForRework_large_9a95e21176004fbe930f9f73e304017d.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_ForRework_large_9a95e21176004fbe930f9f73e304017d.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_ForRework_small_9a95e21176004fbe930f9f73e304017d.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_ForRework_small_9a95e21176004fbe930f9f73e304017d.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Forward_large_387f36e5842242bd90bff64e903132f6.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Forward_large_387f36e5842242bd90bff64e903132f6.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Forward_small_387f36e5842242bd90bff64e903132f6.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Forward_small_387f36e5842242bd90bff64e903132f6.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_large_20a1c08a41f34237a96a48dc2bcb8acc.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_large_20a1c08a41f34237a96a48dc2bcb8acc.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_large_5808dd0de1a74b578d2c78237a3f3127.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_large_5808dd0de1a74b578d2c78237a3f3127.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_small_20a1c08a41f34237a96a48dc2bcb8acc.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_small_20a1c08a41f34237a96a48dc2bcb8acc.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_small_5808dd0de1a74b578d2c78237a3f3127.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_PrintResolution_small_5808dd0de1a74b578d2c78237a3f3127.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Redirect_large_387f36e5842242bd90bff64e903132f6.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Redirect_large_387f36e5842242bd90bff64e903132f6.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Redirect_small_387f36e5842242bd90bff64e903132f6.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_Redirect_small_387f36e5842242bd90bff64e903132f6.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_large_059605c27c394a02b47a10fb8676f6d9.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_large_059605c27c394a02b47a10fb8676f6d9.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_large_aafe6d0b744f4fd5a6542a61874c90b8.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_large_aafe6d0b744f4fd5a6542a61874c90b8.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_small_059605c27c394a02b47a10fb8676f6d9.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_small_059605c27c394a02b47a10fb8676f6d9.svg" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_small_aafe6d0b744f4fd5a6542a61874c90b8.png" />
+    <Resource Include="PreparingDraftResolutionAssignment\Icons\Action_SendForReview_small_aafe6d0b744f4fd5a6542a61874c90b8.svg" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_Done_large_a1d2d893f7a247b797f47784fde08c0c.png" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_Done_large_a1d2d893f7a247b797f47784fde08c0c.svg" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_Done_small_a1d2d893f7a247b797f47784fde08c0c.png" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_Done_small_a1d2d893f7a247b797f47784fde08c0c.svg" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_ExtendDeadline_large_40cbef7171eb4bb5a991f6821c717c12.png" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_ExtendDeadline_large_40cbef7171eb4bb5a991f6821c717c12.svg" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_ExtendDeadline_small_40cbef7171eb4bb5a991f6821c717c12.png" />
+    <Resource Include="ReportRequestAssignment\Icons\Action_ExtendDeadline_small_40cbef7171eb4bb5a991f6821c717c12.svg" />
+    <Resource Include="ReportRequestAssignment\Icons\Ribbon_DeadlineGroup_65bebb113ca44f0992c06d6539d63f31.png" />
+    <Resource Include="ReportRequestAssignment\Icons\Ribbon_DeadlineGroup_65bebb113ca44f0992c06d6539d63f31.svg" />
+    <Resource Include="ReportRequestAssignment\Icons\Ribbon_DeadlineGroup_small_65bebb113ca44f0992c06d6539d63f31.png" />
+    <Resource Include="ReportRequestAssignment\Icons\Ribbon_DeadlineGroup_small_65bebb113ca44f0992c06d6539d63f31.svg" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_Accept_large_5ed5a0967a6e4461b5d383441c913e81.png" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_Accept_large_5ed5a0967a6e4461b5d383441c913e81.svg" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_Accept_small_5ed5a0967a6e4461b5d383441c913e81.png" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_Accept_small_5ed5a0967a6e4461b5d383441c913e81.svg" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_ForRework_large_43b9178038fb47c88781f6594781a824.png" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_ForRework_large_43b9178038fb47c88781f6594781a824.svg" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_ForRework_small_43b9178038fb47c88781f6594781a824.png" />
+    <Resource Include="ReportRequestCheckAssignment\Icons\Action_ForRework_small_43b9178038fb47c88781f6594781a824.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_AddResolution_large_7e77d9f54cd54309a56dd51ccf08c0fd.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_AddResolution_large_7e77d9f54cd54309a56dd51ccf08c0fd.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_AddResolution_small_7e77d9f54cd54309a56dd51ccf08c0fd.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_AddResolution_small_7e77d9f54cd54309a56dd51ccf08c0fd.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_ForExecution_large_ce30270feff5474fae50685ec200c808.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_ForExecution_large_ce30270feff5474fae50685ec200c808.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_ForExecution_small_ce30270feff5474fae50685ec200c808.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_ForExecution_small_ce30270feff5474fae50685ec200c808.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Forward_large_16b27dab0f1f4e81ab7468bffceb33a6.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Forward_large_16b27dab0f1f4e81ab7468bffceb33a6.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Forward_small_16b27dab0f1f4e81ab7468bffceb33a6.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Forward_small_16b27dab0f1f4e81ab7468bffceb33a6.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Informed_large_ad84875152004869b2530dc921ac03fa.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Informed_large_ad84875152004869b2530dc921ac03fa.svg" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Informed_small_ad84875152004869b2530dc921ac03fa.png" />
+    <Resource Include="ReviewDraftResolutionAssignment\Icons\Action_Informed_small_ad84875152004869b2530dc921ac03fa.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddAssignment_large_ed0be2bed92a4ef68c797d0af586742b.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddAssignment_large_ed0be2bed92a4ef68c797d0af586742b.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddAssignment_small_ed0be2bed92a4ef68c797d0af586742b.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddAssignment_small_ed0be2bed92a4ef68c797d0af586742b.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddResolution_large_d0871b1b30b44e87989e8627315c6ae5.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddResolution_large_d0871b1b30b44e87989e8627315c6ae5.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddResolution_small_d0871b1b30b44e87989e8627315c6ae5.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_AddResolution_small_d0871b1b30b44e87989e8627315c6ae5.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_CreateActionItem_large_91f51f916ab54aab9a42a465b6fcf396.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_CreateActionItem_large_91f51f916ab54aab9a42a465b6fcf396.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_CreateActionItem_small_91f51f916ab54aab9a42a465b6fcf396.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_CreateActionItem_small_91f51f916ab54aab9a42a465b6fcf396.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Explored_large_4ce7178655eb4140b0b5ec5e075f2da9.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Explored_large_4ce7178655eb4140b0b5ec5e075f2da9.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Explored_small_4ce7178655eb4140b0b5ec5e075f2da9.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Explored_small_4ce7178655eb4140b0b5ec5e075f2da9.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_ForRework_large_d2b14dc29b1c40779c06c34ee4c562d8.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_ForRework_large_d2b14dc29b1c40779c06c34ee4c562d8.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_ForRework_small_d2b14dc29b1c40779c06c34ee4c562d8.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_ForRework_small_d2b14dc29b1c40779c06c34ee4c562d8.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Forward_large_02ae645df93d4584ba5206515af843bb.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Forward_large_02ae645df93d4584ba5206515af843bb.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Forward_small_02ae645df93d4584ba5206515af843bb.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Action_Forward_small_02ae645df93d4584ba5206515af843bb.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Ribbon_ExecutionGroup_c7c36fb17d2f4a9bae8336b3d2413f01.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Ribbon_ExecutionGroup_c7c36fb17d2f4a9bae8336b3d2413f01.svg" />
+    <Resource Include="ReviewManagerAssignment\Icons\Ribbon_ExecutionGroup_small_c7c36fb17d2f4a9bae8336b3d2413f01.png" />
+    <Resource Include="ReviewManagerAssignment\Icons\Ribbon_ExecutionGroup_small_c7c36fb17d2f4a9bae8336b3d2413f01.svg" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_AddAssignment_large_2a035a2a76e540e88814d7cf45a9f48c.png" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_AddAssignment_large_2a035a2a76e540e88814d7cf45a9f48c.svg" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_AddAssignment_small_2a035a2a76e540e88814d7cf45a9f48c.png" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_AddAssignment_small_2a035a2a76e540e88814d7cf45a9f48c.svg" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_CreateActionItem_large_dd935e654d634649b35f2ad87a5e68ea.png" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_CreateActionItem_large_dd935e654d634649b35f2ad87a5e68ea.svg" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_CreateActionItem_small_dd935e654d634649b35f2ad87a5e68ea.png" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Action_CreateActionItem_small_dd935e654d634649b35f2ad87a5e68ea.svg" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Ribbon_ExecutionGroup_14539f027c71477d875e4f42937b6f0a.png" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Ribbon_ExecutionGroup_14539f027c71477d875e4f42937b6f0a.svg" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Ribbon_ExecutionGroup_small_14539f027c71477d875e4f42937b6f0a.png" />
+    <Resource Include="ReviewResolutionAssignment\Icons\Ribbon_ExecutionGroup_small_14539f027c71477d875e4f42937b6f0a.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Abort_large_de94d5ea2cc144228603245605cd861e.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Abort_large_de94d5ea2cc144228603245605cd861e.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Abort_small_de94d5ea2cc144228603245605cd861e.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Abort_small_de94d5ea2cc144228603245605cd861e.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_AddResolution1_large_9e444530f6ce4eadbadca90e9aa1fe67.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_AddResolution1_large_9e444530f6ce4eadbadca90e9aa1fe67.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_AddResolution1_small_9e444530f6ce4eadbadca90e9aa1fe67.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_AddResolution1_small_9e444530f6ce4eadbadca90e9aa1fe67.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Forward_large_a58b74c784a040d19dc268bb32277e73.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Forward_large_a58b74c784a040d19dc268bb32277e73.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Forward_small_a58b74c784a040d19dc268bb32277e73.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_Forward_small_a58b74c784a040d19dc268bb32277e73.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_PrintResolution_large_8c1b3a71bf934225a484e8aefa761bd9.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_PrintResolution_large_8c1b3a71bf934225a484e8aefa761bd9.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_PrintResolution_small_8c1b3a71bf934225a484e8aefa761bd9.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_PrintResolution_small_8c1b3a71bf934225a484e8aefa761bd9.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_SendForReview_large_f2351a1f59364e629c377d9ac48c9e67.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_SendForReview_large_f2351a1f59364e629c377d9ac48c9e67.svg" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_SendForReview_small_f2351a1f59364e629c377d9ac48c9e67.png" />
+    <Resource Include="ReviewReworkAssignment\Icons\Action_SendForReview_small_f2351a1f59364e629c377d9ac48c9e67.svg" />
+    <Resource Include="StatusReportRequestTask\Icons\StatusReportRequestTask.ico" />
+    <Resource Include="StatusReportRequestTask\Icons\StatusReportRequestTask.svg" />
+    <Resource Include="StatusReportRequestTask\Icons\StatusReportRequestTask_large.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="4b30b2be-330e-42bd-833c-7ecf19b32e12.xml" />
+    <EmbeddedResource Include="AcquaintanceAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="AcquaintanceList\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="AcquaintanceList\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="AcquaintanceList\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="AcquaintanceTask\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="AcquaintanceTask\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemExecutionTask\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ActionItemObserversNotification\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemObserversNotification\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemObserversNotification\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="c21fa108-1570-4155-8a0c-0d04957bc72b.xml" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionTask\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionTask\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="DeadlineExtensionTask\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="DocumentReviewAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="DocumentReviewTask\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="IncomingLetter\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="IncomingLetter\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="IncomingLetter\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="OrderBase\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="OrderBase\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="OrderBase\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Order\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Order\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Order\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="OutgoingLetter\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="OutgoingLetter\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="OutgoingLetter\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="RecordManagementSetting\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="RecordManagementSetting\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="RecordManagementSetting\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ReportRequestAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReportRequestAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ReportRequestAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ReviewClerkNotification\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReviewClerkNotification\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ReviewClerkNotification\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ReviewDraftResolutionAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReviewManagerAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReviewManagerAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ReviewManagerAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ReviewObserverNotification\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReviewObserverNotification\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ReviewObserverNotification\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ReviewObserversNotification\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReviewObserversNotification\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ReviewObserversNotification\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="StatusReportRequestTask\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="StatusReportRequestTask\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="StatusReportRequestTask\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

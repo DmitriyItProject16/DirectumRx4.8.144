@@ -1,0 +1,63 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Company.Client">
+
+    <DataTemplate DataType="{x:Type local:BusinessUnitCollectionPresenter`1}">
+      <local:BusinessUnitCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:BusinessUnitPresenter`1}">
+        <local:BusinessUnitView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DepartmentCollectionPresenter`1}">
+      <local:DepartmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DepartmentPresenter`1}">
+        <local:DepartmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:EmployeeCollectionPresenter`1}">
+      <local:EmployeeCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:EmployeePresenter`1}">
+        <local:EmployeeView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:JobTitleCollectionPresenter`1}">
+      <local:JobTitleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:JobTitlePresenter`1}">
+        <local:JobTitleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ManagersAssistantCollectionPresenter`1}">
+      <local:ManagersAssistantCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ManagersAssistantPresenter`1}">
+        <local:ManagersAssistantView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ManagersAssistantBaseCollectionPresenter`1}">
+      <local:ManagersAssistantBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ManagersAssistantBasePresenter`1}">
+        <local:ManagersAssistantBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:VisibilityRuleCollectionPresenter`1}">
+      <local:VisibilityRuleCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:VisibilityRulePresenter`1}">
+        <local:VisibilityRuleView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:VisibilitySettingCollectionPresenter`1}">
+      <local:VisibilitySettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:VisibilitySettingPresenter`1}">
+        <local:VisibilitySettingView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

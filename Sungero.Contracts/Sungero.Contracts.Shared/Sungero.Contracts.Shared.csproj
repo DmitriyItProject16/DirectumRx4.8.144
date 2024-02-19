@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{e422cc5f-fbe2-2410-bdb0-9cddf74407ac}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Contracts.Shared</RootNamespace>
+    <AssemblyName>Sungero.Contracts.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStage.g.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageConstants.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageHandlers.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageSharedFunctions.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageStructures.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageStructures.g.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Contract%40Stages\ContractStages.g.cs" />
+    <Compile Include="Contract%40Tracking\ContractTracking.g.cs" />
+    <Compile Include="Contract%40Versions\ContractVersions.g.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRole.g.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleConstants.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleHandlers.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleSharedFunctions.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleStructures.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleStructures.g.cs" />
+    <Compile Include="ContractBase%40Stages\ContractBaseStages.g.cs" />
+    <Compile Include="ContractBase%40Tracking\ContractBaseTracking.g.cs" />
+    <Compile Include="ContractBase%40Versions\ContractBaseVersions.g.cs" />
+    <Compile Include="ContractBase\ContractBase.g.cs" />
+    <Compile Include="ContractBase\ContractBaseConstants.cs" />
+    <Compile Include="ContractBase\ContractBaseHandlers.cs" />
+    <Compile Include="ContractBase\ContractBaseSharedFunctions.cs" />
+    <Compile Include="ContractBase\ContractBaseStructures.cs" />
+    <Compile Include="ContractBase\ContractBaseStructures.g.cs" />
+    <Compile Include="ContractCategory%40DocumentKinds\ContractCategoryDocumentKinds.g.cs" />
+    <Compile Include="ContractCategory\ContractCategory.g.cs" />
+    <Compile Include="ContractCategory\ContractCategoryConstants.cs" />
+    <Compile Include="ContractCategory\ContractCategoryHandlers.cs" />
+    <Compile Include="ContractCategory\ContractCategorySharedFunctions.cs" />
+    <Compile Include="ContractCategory\ContractCategoryStructures.cs" />
+    <Compile Include="ContractCategory\ContractCategoryStructures.g.cs" />
+    <Compile Include="ContractCondition%40ConditionDocumentKinds\ContractConditionConditionDocumentKinds.g.cs" />
+    <Compile Include="ContractCondition%40Currencies\ContractConditionCurrencies.g.cs" />
+    <Compile Include="ContractCondition%40DeliveryMethods\ContractConditionDeliveryMethods.g.cs" />
+    <Compile Include="ContractCondition%40DocumentKinds\ContractConditionDocumentKinds.g.cs" />
+    <Compile Include="ContractCondition\ContractCondition.g.cs" />
+    <Compile Include="ContractCondition\ContractConditionConstants.cs" />
+    <Compile Include="ContractCondition\ContractConditionHandlers.cs" />
+    <Compile Include="ContractCondition\ContractConditionSharedFunctions.cs" />
+    <Compile Include="ContractCondition\ContractConditionStructures.cs" />
+    <Compile Include="ContractCondition\ContractConditionStructures.g.cs" />
+    <Compile Include="ContractsApprovalRule%40BusinessUnits\ContractsApprovalRuleBusinessUnits.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Conditions\ContractsApprovalRuleConditions.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Departments\ContractsApprovalRuleDepartments.g.cs" />
+    <Compile Include="ContractsApprovalRule%40DocumentGroups\ContractsApprovalRuleDocumentGroups.g.cs" />
+    <Compile Include="ContractsApprovalRule%40DocumentKinds\ContractsApprovalRuleDocumentKinds.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Stages\ContractsApprovalRuleStages.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Transitions\ContractsApprovalRuleTransitions.g.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRule.g.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleConstants.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleHandlers.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleSharedFunctions.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleStructures.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleStructures.g.cs" />
+    <Compile Include="ContractualDocument%40Milestones\ContractualDocumentMilestones.g.cs" />
+    <Compile Include="ContractualDocument%40Tracking\ContractualDocumentTracking.g.cs" />
+    <Compile Include="ContractualDocument%40Versions\ContractualDocumentVersions.g.cs" />
+    <Compile Include="ContractualDocument\ContractualDocument.g.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentConstants.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentHandlers.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentSharedFunctions.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentStructures.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentStructures.g.cs" />
+    <Compile Include="Contract\Contract.g.cs" />
+    <Compile Include="Contract\ContractConstants.cs" />
+    <Compile Include="Contract\ContractHandlers.cs" />
+    <Compile Include="Contract\ContractSharedFunctions.cs" />
+    <Compile Include="Contract\ContractStructures.cs" />
+    <Compile Include="Contract\ContractStructures.g.cs" />
+    <Compile Include="IncomingInvoice%40Tracking\IncomingInvoiceTracking.g.cs" />
+    <Compile Include="IncomingInvoice%40Versions\IncomingInvoiceVersions.g.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoice.g.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceConstants.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceHandlers.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceSharedFunctions.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceStructures.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="OutgoingInvoice%40Tracking\OutgoingInvoiceTracking.g.cs" />
+    <Compile Include="OutgoingInvoice%40Versions\OutgoingInvoiceVersions.g.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoice.g.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceConstants.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceHandlers.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceSharedFunctions.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceStructures.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceStructures.g.cs" />
+    <Compile Include="SupAgreement%40Stages\SupAgreementStages.g.cs" />
+    <Compile Include="SupAgreement%40Tracking\SupAgreementTracking.g.cs" />
+    <Compile Include="SupAgreement%40Versions\SupAgreementVersions.g.cs" />
+    <Compile Include="SupAgreement\SupAgreement.g.cs" />
+    <Compile Include="SupAgreement\SupAgreementConstants.cs" />
+    <Compile Include="SupAgreement\SupAgreementHandlers.cs" />
+    <Compile Include="SupAgreement\SupAgreementSharedFunctions.cs" />
+    <Compile Include="SupAgreement\SupAgreementStructures.cs" />
+    <Compile Include="SupAgreement\SupAgreementStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStage.resx" />
+    <EmbeddedResource Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStage.ru.resx" />
+    <EmbeddedResource Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageSystem.resx" />
+    <EmbeddedResource Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageSystem.ru.resx" />
+    <EmbeddedResource Include="ApprovalIncInvoicePaidStage\obj\ApprovalIncInvoicePaidStage.mtd" />
+    <EmbeddedResource Include="Contract%40Stages\ContractStages.resx" />
+    <EmbeddedResource Include="Contract%40Stages\ContractStages.ru.resx" />
+    <EmbeddedResource Include="Contract%40Stages\ContractStagesSystem.resx" />
+    <EmbeddedResource Include="Contract%40Stages\ContractStagesSystem.ru.resx" />
+    <EmbeddedResource Include="Contract%40Stages\obj\ContractStages.mtd" />
+    <EmbeddedResource Include="Contract%40Tracking\ContractTracking.resx" />
+    <EmbeddedResource Include="Contract%40Tracking\ContractTracking.ru.resx" />
+    <EmbeddedResource Include="Contract%40Tracking\ContractTrackingSystem.resx" />
+    <EmbeddedResource Include="Contract%40Tracking\ContractTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="Contract%40Tracking\obj\ContractTracking.mtd" />
+    <EmbeddedResource Include="Contract%40Versions\ContractVersions.resx" />
+    <EmbeddedResource Include="Contract%40Versions\ContractVersions.ru.resx" />
+    <EmbeddedResource Include="Contract%40Versions\ContractVersionsSystem.resx" />
+    <EmbeddedResource Include="Contract%40Versions\ContractVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="Contract%40Versions\obj\ContractVersions.mtd" />
+    <EmbeddedResource Include="ContractApprovalRole\ContractApprovalRole.resx" />
+    <EmbeddedResource Include="ContractApprovalRole\ContractApprovalRole.ru.resx" />
+    <EmbeddedResource Include="ContractApprovalRole\ContractApprovalRoleSystem.resx" />
+    <EmbeddedResource Include="ContractApprovalRole\ContractApprovalRoleSystem.ru.resx" />
+    <EmbeddedResource Include="ContractApprovalRole\obj\ContractApprovalRole.mtd" />
+    <EmbeddedResource Include="ContractBase%40Stages\ContractBaseStages.resx" />
+    <EmbeddedResource Include="ContractBase%40Stages\ContractBaseStages.ru.resx" />
+    <EmbeddedResource Include="ContractBase%40Stages\ContractBaseStagesSystem.resx" />
+    <EmbeddedResource Include="ContractBase%40Stages\ContractBaseStagesSystem.ru.resx" />
+    <EmbeddedResource Include="ContractBase%40Stages\obj\ContractBaseStages.mtd" />
+    <EmbeddedResource Include="ContractBase%40Tracking\ContractBaseTracking.resx" />
+    <EmbeddedResource Include="ContractBase%40Tracking\ContractBaseTracking.ru.resx" />
+    <EmbeddedResource Include="ContractBase%40Tracking\ContractBaseTrackingSystem.resx" />
+    <EmbeddedResource Include="ContractBase%40Tracking\ContractBaseTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="ContractBase%40Tracking\obj\ContractBaseTracking.mtd" />
+    <EmbeddedResource Include="ContractBase%40Versions\ContractBaseVersions.resx" />
+    <EmbeddedResource Include="ContractBase%40Versions\ContractBaseVersions.ru.resx" />
+    <EmbeddedResource Include="ContractBase%40Versions\ContractBaseVersionsSystem.resx" />
+    <EmbeddedResource Include="ContractBase%40Versions\ContractBaseVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractBase%40Versions\obj\ContractBaseVersions.mtd" />
+    <EmbeddedResource Include="ContractBase\ContractBase.resx" />
+    <EmbeddedResource Include="ContractBase\ContractBase.ru.resx" />
+    <EmbeddedResource Include="ContractBase\ContractBaseSystem.resx" />
+    <EmbeddedResource Include="ContractBase\ContractBaseSystem.ru.resx" />
+    <EmbeddedResource Include="ContractBase\obj\ContractBase.mtd" />
+    <EmbeddedResource Include="ContractCategory%40DocumentKinds\ContractCategoryDocumentKinds.resx" />
+    <EmbeddedResource Include="ContractCategory%40DocumentKinds\ContractCategoryDocumentKinds.ru.resx" />
+    <EmbeddedResource Include="ContractCategory%40DocumentKinds\ContractCategoryDocumentKindsSystem.resx" />
+    <EmbeddedResource Include="ContractCategory%40DocumentKinds\ContractCategoryDocumentKindsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractCategory%40DocumentKinds\obj\ContractCategoryDocumentKinds.mtd" />
+    <EmbeddedResource Include="ContractCategory\ContractCategory.resx" />
+    <EmbeddedResource Include="ContractCategory\ContractCategory.ru.resx" />
+    <EmbeddedResource Include="ContractCategory\ContractCategorySystem.resx" />
+    <EmbeddedResource Include="ContractCategory\ContractCategorySystem.ru.resx" />
+    <EmbeddedResource Include="ContractCategory\obj\ContractCategory.mtd" />
+    <EmbeddedResource Include="ContractCondition%40ConditionDocumentKinds\ContractConditionConditionDocumentKinds.resx" />
+    <EmbeddedResource Include="ContractCondition%40ConditionDocumentKinds\ContractConditionConditionDocumentKinds.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40ConditionDocumentKinds\ContractConditionConditionDocumentKindsSystem.resx" />
+    <EmbeddedResource Include="ContractCondition%40ConditionDocumentKinds\ContractConditionConditionDocumentKindsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40ConditionDocumentKinds\obj\ContractConditionConditionDocumentKinds.mtd" />
+    <EmbeddedResource Include="ContractCondition%40Currencies\ContractConditionCurrencies.resx" />
+    <EmbeddedResource Include="ContractCondition%40Currencies\ContractConditionCurrencies.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40Currencies\ContractConditionCurrenciesSystem.resx" />
+    <EmbeddedResource Include="ContractCondition%40Currencies\ContractConditionCurrenciesSystem.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40Currencies\obj\ContractConditionCurrencies.mtd" />
+    <EmbeddedResource Include="ContractCondition%40DeliveryMethods\ContractConditionDeliveryMethods.resx" />
+    <EmbeddedResource Include="ContractCondition%40DeliveryMethods\ContractConditionDeliveryMethods.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40DeliveryMethods\ContractConditionDeliveryMethodsSystem.resx" />
+    <EmbeddedResource Include="ContractCondition%40DeliveryMethods\ContractConditionDeliveryMethodsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40DeliveryMethods\obj\ContractConditionDeliveryMethods.mtd" />
+    <EmbeddedResource Include="ContractCondition%40DocumentKinds\ContractConditionDocumentKinds.resx" />
+    <EmbeddedResource Include="ContractCondition%40DocumentKinds\ContractConditionDocumentKinds.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40DocumentKinds\ContractConditionDocumentKindsSystem.resx" />
+    <EmbeddedResource Include="ContractCondition%40DocumentKinds\ContractConditionDocumentKindsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractCondition%40DocumentKinds\obj\ContractConditionDocumentKinds.mtd" />
+    <EmbeddedResource Include="ContractCondition\ContractCondition.resx" />
+    <EmbeddedResource Include="ContractCondition\ContractCondition.ru.resx" />
+    <EmbeddedResource Include="ContractCondition\ContractConditionSystem.resx" />
+    <EmbeddedResource Include="ContractCondition\ContractConditionSystem.ru.resx" />
+    <EmbeddedResource Include="ContractCondition\obj\ContractCondition.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule%40BusinessUnits\ContractsApprovalRuleBusinessUnits.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40BusinessUnits\ContractsApprovalRuleBusinessUnits.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40BusinessUnits\ContractsApprovalRuleBusinessUnitsSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40BusinessUnits\ContractsApprovalRuleBusinessUnitsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40BusinessUnits\obj\ContractsApprovalRuleBusinessUnits.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Conditions\ContractsApprovalRuleConditions.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Conditions\ContractsApprovalRuleConditions.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Conditions\ContractsApprovalRuleConditionsSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Conditions\ContractsApprovalRuleConditionsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Conditions\obj\ContractsApprovalRuleConditions.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Departments\ContractsApprovalRuleDepartments.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Departments\ContractsApprovalRuleDepartments.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Departments\ContractsApprovalRuleDepartmentsSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Departments\ContractsApprovalRuleDepartmentsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Departments\obj\ContractsApprovalRuleDepartments.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentGroups\ContractsApprovalRuleDocumentGroups.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentGroups\ContractsApprovalRuleDocumentGroups.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentGroups\ContractsApprovalRuleDocumentGroupsSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentGroups\ContractsApprovalRuleDocumentGroupsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentGroups\obj\ContractsApprovalRuleDocumentGroups.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentKinds\ContractsApprovalRuleDocumentKinds.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentKinds\ContractsApprovalRuleDocumentKinds.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentKinds\ContractsApprovalRuleDocumentKindsSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentKinds\ContractsApprovalRuleDocumentKindsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40DocumentKinds\obj\ContractsApprovalRuleDocumentKinds.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Stages\ContractsApprovalRuleStages.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Stages\ContractsApprovalRuleStages.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Stages\ContractsApprovalRuleStagesSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Stages\ContractsApprovalRuleStagesSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Stages\obj\ContractsApprovalRuleStages.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Transitions\ContractsApprovalRuleTransitions.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Transitions\ContractsApprovalRuleTransitions.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Transitions\ContractsApprovalRuleTransitionsSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Transitions\ContractsApprovalRuleTransitionsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule%40Transitions\obj\ContractsApprovalRuleTransitions.mtd" />
+    <EmbeddedResource Include="ContractsApprovalRule\ContractsApprovalRule.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule\ContractsApprovalRule.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule\ContractsApprovalRuleSystem.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule\ContractsApprovalRuleSystem.ru.resx" />
+    <EmbeddedResource Include="ContractsApprovalRule\obj\ContractsApprovalRule.mtd" />
+    <EmbeddedResource Include="ContractualDocument%40Milestones\ContractualDocumentMilestones.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Milestones\ContractualDocumentMilestones.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Milestones\ContractualDocumentMilestonesSystem.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Milestones\ContractualDocumentMilestonesSystem.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Milestones\obj\ContractualDocumentMilestones.mtd" />
+    <EmbeddedResource Include="ContractualDocument%40Tracking\ContractualDocumentTracking.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Tracking\ContractualDocumentTracking.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Tracking\ContractualDocumentTrackingSystem.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Tracking\ContractualDocumentTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Tracking\obj\ContractualDocumentTracking.mtd" />
+    <EmbeddedResource Include="ContractualDocument%40Versions\ContractualDocumentVersions.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Versions\ContractualDocumentVersions.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Versions\ContractualDocumentVersionsSystem.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Versions\ContractualDocumentVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument%40Versions\obj\ContractualDocumentVersions.mtd" />
+    <EmbeddedResource Include="ContractualDocument\ContractualDocument.resx" />
+    <EmbeddedResource Include="ContractualDocument\ContractualDocument.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument\ContractualDocumentSystem.resx" />
+    <EmbeddedResource Include="ContractualDocument\ContractualDocumentSystem.ru.resx" />
+    <EmbeddedResource Include="ContractualDocument\obj\ContractualDocument.mtd" />
+    <EmbeddedResource Include="Contract\Contract.resx" />
+    <EmbeddedResource Include="Contract\Contract.ru.resx" />
+    <EmbeddedResource Include="Contract\ContractSystem.resx" />
+    <EmbeddedResource Include="Contract\ContractSystem.ru.resx" />
+    <EmbeddedResource Include="Contract\obj\Contract.mtd" />
+    <EmbeddedResource Include="IncomingInvoice%40Tracking\IncomingInvoiceTracking.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Tracking\IncomingInvoiceTracking.ru.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Tracking\IncomingInvoiceTrackingSystem.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Tracking\IncomingInvoiceTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Tracking\obj\IncomingInvoiceTracking.mtd" />
+    <EmbeddedResource Include="IncomingInvoice%40Versions\IncomingInvoiceVersions.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Versions\IncomingInvoiceVersions.ru.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Versions\IncomingInvoiceVersionsSystem.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Versions\IncomingInvoiceVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingInvoice%40Versions\obj\IncomingInvoiceVersions.mtd" />
+    <EmbeddedResource Include="IncomingInvoice\IncomingInvoice.resx" />
+    <EmbeddedResource Include="IncomingInvoice\IncomingInvoice.ru.resx" />
+    <EmbeddedResource Include="IncomingInvoice\IncomingInvoiceSystem.resx" />
+    <EmbeddedResource Include="IncomingInvoice\IncomingInvoiceSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingInvoice\obj\IncomingInvoice.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Tracking\obj\OutgoingInvoiceTracking.mtd" />
+    <EmbeddedResource Include="OutgoingInvoice%40Tracking\OutgoingInvoiceTracking.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Tracking\OutgoingInvoiceTracking.ru.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Tracking\OutgoingInvoiceTrackingSystem.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Tracking\OutgoingInvoiceTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Versions\obj\OutgoingInvoiceVersions.mtd" />
+    <EmbeddedResource Include="OutgoingInvoice%40Versions\OutgoingInvoiceVersions.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Versions\OutgoingInvoiceVersions.ru.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Versions\OutgoingInvoiceVersionsSystem.resx" />
+    <EmbeddedResource Include="OutgoingInvoice%40Versions\OutgoingInvoiceVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingInvoice\obj\OutgoingInvoice.mtd" />
+    <EmbeddedResource Include="OutgoingInvoice\OutgoingInvoice.resx" />
+    <EmbeddedResource Include="OutgoingInvoice\OutgoingInvoice.ru.resx" />
+    <EmbeddedResource Include="OutgoingInvoice\OutgoingInvoiceSystem.resx" />
+    <EmbeddedResource Include="OutgoingInvoice\OutgoingInvoiceSystem.ru.resx" />
+    <EmbeddedResource Include="SupAgreement%40Stages\obj\SupAgreementStages.mtd" />
+    <EmbeddedResource Include="SupAgreement%40Stages\SupAgreementStages.resx" />
+    <EmbeddedResource Include="SupAgreement%40Stages\SupAgreementStages.ru.resx" />
+    <EmbeddedResource Include="SupAgreement%40Stages\SupAgreementStagesSystem.resx" />
+    <EmbeddedResource Include="SupAgreement%40Stages\SupAgreementStagesSystem.ru.resx" />
+    <EmbeddedResource Include="SupAgreement%40Tracking\obj\SupAgreementTracking.mtd" />
+    <EmbeddedResource Include="SupAgreement%40Tracking\SupAgreementTracking.resx" />
+    <EmbeddedResource Include="SupAgreement%40Tracking\SupAgreementTracking.ru.resx" />
+    <EmbeddedResource Include="SupAgreement%40Tracking\SupAgreementTrackingSystem.resx" />
+    <EmbeddedResource Include="SupAgreement%40Tracking\SupAgreementTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="SupAgreement%40Versions\obj\SupAgreementVersions.mtd" />
+    <EmbeddedResource Include="SupAgreement%40Versions\SupAgreementVersions.resx" />
+    <EmbeddedResource Include="SupAgreement%40Versions\SupAgreementVersions.ru.resx" />
+    <EmbeddedResource Include="SupAgreement%40Versions\SupAgreementVersionsSystem.resx" />
+    <EmbeddedResource Include="SupAgreement%40Versions\SupAgreementVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="SupAgreement\obj\SupAgreement.mtd" />
+    <EmbeddedResource Include="SupAgreement\SupAgreement.resx" />
+    <EmbeddedResource Include="SupAgreement\SupAgreement.ru.resx" />
+    <EmbeddedResource Include="SupAgreement\SupAgreementSystem.resx" />
+    <EmbeddedResource Include="SupAgreement\SupAgreementSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

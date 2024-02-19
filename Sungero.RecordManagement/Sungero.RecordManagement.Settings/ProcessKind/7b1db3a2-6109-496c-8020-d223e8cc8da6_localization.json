@@ -1,0 +1,103 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "Subject_SE_23": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Document review completed: {0}",
+    "ru-RU": "Завершено рассмотрение: {0}"
+  },
+  "ThreadSubject_SE_23": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Notice about document review completion",
+    "ru-RU": "Уведомление о завершении рассмотрения"
+  },
+  "ThreadSubject_SE_55": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "ru-RU": "Уведомление о завершении рассмотрения",
+    "default": "Notice about document review completion"
+  },
+  "Subject_SE_55": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Document review completed: {0}",
+    "ru-RU": "Завершено рассмотрение: {0}"
+  },
+  "Subject_SE_16": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Informed: {0}",
+    "ru-RU": "Принято к сведению: {0}"
+  },
+  "ThreadSubject_SE_16": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Notice about document review completion",
+    "ru-RU": "Уведомление о завершении рассмотрения"
+  },
+  "ThreadSubject_SE_15": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "ru-RU": "Уведомление о завершении рассмотрения",
+    "default": "Notice about document review completion"
+  },
+  "Subject_SE_15": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Document review completed: {0}",
+    "ru-RU": "Завершено рассмотрение: {0}"
+  },
+  "Subject_SE_26": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Create action item: {0}",
+    "ru-RU": "Создайте поручение: {0}"
+  },
+  "Subject_SE_12": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Prepare draft resolution for addressee {0}: {1}",
+    "ru-RU": "Подготовьте проект резолюции, адресат {0}: {1}"
+  },
+  "Subject_SE_28": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Rework draft resolution for addressee {0}: {1}",
+    "ru-RU": "Доработайте проект резолюции, адресат {0}: {1}"
+  },
+  "ThreadSubject_SE_28": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Rework draft resolution",
+    "ru-RU": "Доработка проекта резолюции"
+  },
+  "Subject_SE_41": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Rework: {0}",
+    "ru-RU": "Доработайте: {0}"
+  },
+  "Subject_SE_9": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Rework: {0}",
+    "ru-RU": "Доработайте: {0}"
+  },
+  "Subject_SE_2": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Document review started: {0}",
+    "ru-RU": "Начато рассмотрение: {0}"
+  },
+  "ThreadSubject_SE_2": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Notice about document review start",
+    "ru-RU": "Уведомление о начале рассмотрения"
+  },
+  "Subject_SE_8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Review document: {0}",
+    "ru-RU": "Рассмотрите: {0}"
+  },
+  "ThreadSubject_SE_8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Review document by manager",
+    "ru-RU": "Рассмотрение руководителем"
+  },
+  "Subject_SE_47": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Review document: {0}",
+    "ru-RU": "Рассмотрите: {0}"
+  },
+  "ThreadSubject_SE_47": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Review document by manager",
+    "ru-RU": "Рассмотрение руководителем"
+  }
+}

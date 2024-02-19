@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.ExchangeCore.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.ExchangeCore.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItem.g.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemActions.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemClientFunctions.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemHandlers.cs" />
+    <Compile Include="BoxBase\BoxBase.g.cs" />
+    <Compile Include="BoxBase\BoxBaseActions.cs" />
+    <Compile Include="BoxBase\BoxBaseClientFunctions.cs" />
+    <Compile Include="BoxBase\BoxBaseHandlers.cs" />
+    <Compile Include="BusinessUnitBox%40ExchangeServiceCertificates\BusinessUnitBoxExchangeServiceCertificates.g.cs" />
+    <Compile Include="BusinessUnitBox%40FormalizedPoAInfos\BusinessUnitBoxFormalizedPoAInfos.g.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBox.g.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxActions.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxClientFunctions.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignment.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentActions.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentClientFunctions.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask%40Observers\CounterpartyConflictProcessingTaskObservers.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTask.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskActions.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskClientFunctions.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskHandlers.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBox.g.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxActions.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxClientFunctions.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxHandlers.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItem.g.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemActions.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemClientFunctions.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemHandlers.cs" />
+    <Compile Include="DepartmentBox\DepartmentBox.g.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxActions.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxClientFunctions.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxHandlers.cs" />
+    <Compile Include="ExchangeService\ExchangeService.g.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceActions.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceClientFunctions.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceHandlers.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSession.g.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionActions.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionClientFunctions.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionHandlers.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignment.g.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentActions.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentClientFunctions.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentHandlers.cs" />
+    <Compile Include="IncomingInvitationTask%40Observers\IncomingInvitationTaskObservers.g.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTask.g.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskActions.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskClientFunctions.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskHandlers.cs" />
+    <Compile Include="MessageQueueItem%40Documents\MessageQueueItemDocuments.g.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItem.g.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemActions.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemClientFunctions.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="QueueItemBase\QueueItemBase.g.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseActions.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseClientFunctions.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DiadocApi">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\DiadocApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eds.Api.Public">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\Eds.Api.Public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Diadoc">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Client.Diadoc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Sbis">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Client.Sbis.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Sphere">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Client.Sphere.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.ClientApi">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.ClientApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Common">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BoxBase\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="BoxBase\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="BoxBase\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="BusinessUnitBox\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="BusinessUnitBox\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="CounterpartyQueueItem\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="CounterpartyQueueItem\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ExchangeService\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ExchangeService\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ExchangeService\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="MessageQueueItem\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="MessageQueueItem\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="QueueItemBase\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="QueueItemBase\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="QueueItemBase\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BusinessUnitBox\Icons\Action_CheckConnection_large_7297eee14b2c4974b12be910144c57f5.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_CheckConnection_large_7297eee14b2c4974b12be910144c57f5.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_CheckConnection_small_7297eee14b2c4974b12be910144c57f5.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_CheckConnection_small_7297eee14b2c4974b12be910144c57f5.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_FindDocument_large_266778df5f744eda8634959af71eca10.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_FindDocument_large_266778df5f744eda8634959af71eca10.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_FindDocument_small_266778df5f744eda8634959af71eca10.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_FindDocument_small_266778df5f744eda8634959af71eca10.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_Login_large_d552baf1ef5a4d6c8c5ef016ac430d07.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_Login_large_d552baf1ef5a4d6c8c5ef016ac430d07.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_Login_small_d552baf1ef5a4d6c8c5ef016ac430d07.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_Login_small_d552baf1ef5a4d6c8c5ef016ac430d07.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_OpenLogonUrl_large_644aae0e310841dd9b6998081e4a45b7.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_OpenLogonUrl_large_644aae0e310841dd9b6998081e4a45b7.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_OpenLogonUrl_small_644aae0e310841dd9b6998081e4a45b7.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_OpenLogonUrl_small_644aae0e310841dd9b6998081e4a45b7.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_ShowMessageQueueItem_large_2d3861c2fa7a401687ac41923d599eee.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_ShowMessageQueueItem_large_2d3861c2fa7a401687ac41923d599eee.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Action_ShowMessageQueueItem_small_2d3861c2fa7a401687ac41923d599eee.png" />
+    <Resource Include="BusinessUnitBox\Icons\Action_ShowMessageQueueItem_small_2d3861c2fa7a401687ac41923d599eee.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeService_45f3d368c63844c0a209fbf500249fed.png" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeService_45f3d368c63844c0a209fbf500249fed.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeService_small_45f3d368c63844c0a209fbf500249fed.png" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeService_small_45f3d368c63844c0a209fbf500249fed.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeSettings_2744af0ebdef48e08aab2ca277524d31.png" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeSettings_2744af0ebdef48e08aab2ca277524d31.svg" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeSettings_small_2744af0ebdef48e08aab2ca277524d31.png" />
+    <Resource Include="BusinessUnitBox\Icons\Ribbon_ExchangeSettings_small_2744af0ebdef48e08aab2ca277524d31.svg" />
+    <Resource Include="CounterpartyConflictProcessingAssignment\Icons\Action_Complete_large_e7008e00fa9940a39df01e99964a6501.png" />
+    <Resource Include="CounterpartyConflictProcessingAssignment\Icons\Action_Complete_large_e7008e00fa9940a39df01e99964a6501.svg" />
+    <Resource Include="CounterpartyConflictProcessingAssignment\Icons\Action_Complete_small_e7008e00fa9940a39df01e99964a6501.png" />
+    <Resource Include="CounterpartyConflictProcessingAssignment\Icons\Action_Complete_small_e7008e00fa9940a39df01e99964a6501.svg" />
+    <Resource Include="CounterpartyDepartmentBox\Icons\CounterpartyDepartmentBox.ico" />
+    <Resource Include="CounterpartyDepartmentBox\Icons\CounterpartyDepartmentBox.svg" />
+    <Resource Include="CounterpartyDepartmentBox\Icons\CounterpartyDepartmentBox_large.svg" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Accept_large_db48d95e71364d16b644d0e821bdaae7.png" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Accept_large_db48d95e71364d16b644d0e821bdaae7.svg" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Accept_small_db48d95e71364d16b644d0e821bdaae7.png" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Accept_small_db48d95e71364d16b644d0e821bdaae7.svg" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Reject_large_fcd59122ad34498e9193a5b5003d71ab.png" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Reject_large_fcd59122ad34498e9193a5b5003d71ab.svg" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Reject_small_fcd59122ad34498e9193a5b5003d71ab.png" />
+    <Resource Include="IncomingInvitationAssignment\Icons\Action_Reject_small_fcd59122ad34498e9193a5b5003d71ab.svg" />
+    <Resource Include="MessageQueueItem\Icons\Action_DoSuspended_large_7cf02e77fc044767ae1569e77c4ef8f5.png" />
+    <Resource Include="MessageQueueItem\Icons\Action_DoSuspended_large_7cf02e77fc044767ae1569e77c4ef8f5.svg" />
+    <Resource Include="MessageQueueItem\Icons\Action_DoSuspended_small_7cf02e77fc044767ae1569e77c4ef8f5.png" />
+    <Resource Include="MessageQueueItem\Icons\Action_DoSuspended_small_7cf02e77fc044767ae1569e77c4ef8f5.svg" />
+    <Resource Include="MessageQueueItem\Icons\Action_OpenInExchangeService_large_5a3ac6ce4cdf40a6bd3c1ee13f1a7486.png" />
+    <Resource Include="MessageQueueItem\Icons\Action_OpenInExchangeService_large_5a3ac6ce4cdf40a6bd3c1ee13f1a7486.svg" />
+    <Resource Include="MessageQueueItem\Icons\Action_OpenInExchangeService_small_5a3ac6ce4cdf40a6bd3c1ee13f1a7486.png" />
+    <Resource Include="MessageQueueItem\Icons\Action_OpenInExchangeService_small_5a3ac6ce4cdf40a6bd3c1ee13f1a7486.svg" />
+    <Resource Include="MessageQueueItem\Icons\Action_Resume_large_3f6d69984ec042e38118c00737c97e1d.png" />
+    <Resource Include="MessageQueueItem\Icons\Action_Resume_large_3f6d69984ec042e38118c00737c97e1d.svg" />
+    <Resource Include="MessageQueueItem\Icons\Action_Resume_small_3f6d69984ec042e38118c00737c97e1d.png" />
+    <Resource Include="MessageQueueItem\Icons\Action_Resume_small_3f6d69984ec042e38118c00737c97e1d.svg" />
+    <Resource Include="MessageQueueItem\Icons\Ribbon_ProcessingCommands_456f978ecdcb437d832520ebd92974f2.png" />
+    <Resource Include="MessageQueueItem\Icons\Ribbon_ProcessingCommands_456f978ecdcb437d832520ebd92974f2.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

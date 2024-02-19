@@ -1,0 +1,13 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "Name": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Составное поручение",
+    "ru-RU": "Составное поручение"
+  },
+  "Description": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Составное поручение для выполнения работ несколькими равноправными исполнителями независимо друг от друга",
+    "ru-RU": "Составное поручение для выполнения работ несколькими равноправными исполнителями независимо друг от друга"
+  }
+}

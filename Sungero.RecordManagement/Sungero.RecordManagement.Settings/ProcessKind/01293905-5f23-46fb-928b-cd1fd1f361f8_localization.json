@@ -1,0 +1,18 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "Subject_SE_4": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Document review started: {0}",
+    "ru-RU": "Начато рассмотрение: {0}"
+  },
+  "ThreadSubject_SE_4": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "ru-RU": "Уведомление о начале рассмотрения",
+    "default": "Notice about document review start"
+  },
+  "ThreadSubject_SE_8": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "{0}",
+    "ru-RU": "{0}"
+  }
+}

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{1a98e534-713d-6f5b-edc6-8030e7e9742b}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.FinancialArchive.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.FinancialArchive.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ContractStatement%40Tracking\ContractStatementTracking.g.cs" />
+    <Compile Include="ContractStatement%40Versions\ContractStatementVersions.g.cs" />
+    <Compile Include="ContractStatement\ContractStatement.g.cs" />
+    <Compile Include="ContractStatement\ContractStatementActions.cs" />
+    <Compile Include="ContractStatement\ContractStatementClientFunctions.cs" />
+    <Compile Include="ContractStatement\ContractStatementHandlers.cs" />
+    <Compile Include="IncomingTaxInvoice%40Tracking\IncomingTaxInvoiceTracking.g.cs" />
+    <Compile Include="IncomingTaxInvoice%40Versions\IncomingTaxInvoiceVersions.g.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoice.g.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceActions.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceClientFunctions.cs" />
+    <Compile Include="IncomingTaxInvoice\IncomingTaxInvoiceHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="OutgoingTaxInvoice%40Tracking\OutgoingTaxInvoiceTracking.g.cs" />
+    <Compile Include="OutgoingTaxInvoice%40Versions\OutgoingTaxInvoiceVersions.g.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoice.g.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceActions.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceClientFunctions.cs" />
+    <Compile Include="OutgoingTaxInvoice\OutgoingTaxInvoiceHandlers.cs" />
+    <Compile Include="Reports\FinArchiveExportReport\FinArchiveExportReport.g.cs" />
+    <Compile Include="Reports\FinArchiveExportReport\FinArchiveExportReportHandlers.cs" />
+    <Compile Include="UniversalTransferDocument%40Tracking\UniversalTransferDocumentTracking.g.cs" />
+    <Compile Include="UniversalTransferDocument%40Versions\UniversalTransferDocumentVersions.g.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocument.g.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentActions.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentClientFunctions.cs" />
+    <Compile Include="UniversalTransferDocument\UniversalTransferDocumentHandlers.cs" />
+    <Compile Include="Waybill%40Tracking\WaybillTracking.g.cs" />
+    <Compile Include="Waybill%40Versions\WaybillVersions.g.cs" />
+    <Compile Include="Waybill\Waybill.g.cs" />
+    <Compile Include="Waybill\WaybillActions.cs" />
+    <Compile Include="Waybill\WaybillClientFunctions.cs" />
+    <Compile Include="Waybill\WaybillHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.FinancialArchive.Shared\Sungero.FinancialArchive.Shared.csproj">
+      <Project>{55f77a26-6d0f-9f09-2299-f0ba6e4597fc}</Project>
+      <Name>Sungero.FinancialArchive.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ContractStatement\Icons\Action_CreateCoverLetter_large_004ef5ffeb294d33a5f73848c33c8ad2.png" />
+    <Resource Include="ContractStatement\Icons\Action_CreateCoverLetter_large_004ef5ffeb294d33a5f73848c33c8ad2.svg" />
+    <Resource Include="ContractStatement\Icons\Action_CreateCoverLetter_small_004ef5ffeb294d33a5f73848c33c8ad2.png" />
+    <Resource Include="ContractStatement\Icons\Action_CreateCoverLetter_small_004ef5ffeb294d33a5f73848c33c8ad2.svg" />
+    <Resource Include="ContractStatement\Icons\Action_ShowDuplicates_large_60d2879cd6f54ac5b52422aef818825e.png" />
+    <Resource Include="ContractStatement\Icons\Action_ShowDuplicates_large_60d2879cd6f54ac5b52422aef818825e.svg" />
+    <Resource Include="ContractStatement\Icons\Action_ShowDuplicates_small_60d2879cd6f54ac5b52422aef818825e.png" />
+    <Resource Include="ContractStatement\Icons\Action_ShowDuplicates_small_60d2879cd6f54ac5b52422aef818825e.svg" />
+    <Resource Include="ContractStatement\Icons\ContractStatement.ico" />
+    <Resource Include="ContractStatement\Icons\ContractStatement.svg" />
+    <Resource Include="ContractStatement\Icons\ContractStatement_large.svg" />
+    <Resource Include="ContractStatement\Icons\Ribbon_Duplicates_501146f840a049b3b1b1aa15c4c1260d.png" />
+    <Resource Include="ContractStatement\Icons\Ribbon_Duplicates_501146f840a049b3b1b1aa15c4c1260d.svg" />
+    <Resource Include="ContractStatement\Icons\Ribbon_Duplicates_small_501146f840a049b3b1b1aa15c4c1260d.png" />
+    <Resource Include="ContractStatement\Icons\Ribbon_Duplicates_small_501146f840a049b3b1b1aa15c4c1260d.svg" />
+    <Resource Include="IncomingTaxInvoice\Icons\IncomingTaxInvoice.ico" />
+    <Resource Include="IncomingTaxInvoice\Icons\IncomingTaxInvoice.svg" />
+    <Resource Include="IncomingTaxInvoice\Icons\IncomingTaxInvoice_large.svg" />
+    <Resource Include="OutgoingTaxInvoice\Icons\OutgoingTaxInvoice.ico" />
+    <Resource Include="OutgoingTaxInvoice\Icons\OutgoingTaxInvoice.svg" />
+    <Resource Include="OutgoingTaxInvoice\Icons\OutgoingTaxInvoice_large.svg" />
+    <Resource Include="UniversalTransferDocument\Icons\UniversalTransferDocument.ico" />
+    <Resource Include="UniversalTransferDocument\Icons\UniversalTransferDocument.svg" />
+    <Resource Include="UniversalTransferDocument\Icons\UniversalTransferDocument_large.svg" />
+    <Resource Include="Waybill\Icons\Waybill.ico" />
+    <Resource Include="Waybill\Icons\Waybill.svg" />
+    <Resource Include="Waybill\Icons\Waybill_large.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContractStatement\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ContractStatement\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ContractStatement\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="IncomingTaxInvoice\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="OutgoingTaxInvoice\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="UniversalTransferDocument\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Waybill\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Waybill\Generated\DefaultCollectionView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

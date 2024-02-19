@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{5cf128ac-4483-a7cf-2f83-819adb8ac944}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.SmartProcessing.Shared</RootNamespace>
+    <AssemblyName>Sungero.SmartProcessing.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BlobPackage%40Blobs\BlobPackageBlobs.g.cs" />
+    <Compile Include="BlobPackage%40CC\BlobPackageCC.g.cs" />
+    <Compile Include="BlobPackage%40To\BlobPackageTo.g.cs" />
+    <Compile Include="BlobPackage\BlobPackage.g.cs" />
+    <Compile Include="BlobPackage\BlobPackageConstants.cs" />
+    <Compile Include="BlobPackage\BlobPackageHandlers.cs" />
+    <Compile Include="BlobPackage\BlobPackageSharedFunctions.cs" />
+    <Compile Include="BlobPackage\BlobPackageStructures.cs" />
+    <Compile Include="BlobPackage\BlobPackageStructures.g.cs" />
+    <Compile Include="Blob\Blob.g.cs" />
+    <Compile Include="Blob\BlobConstants.cs" />
+    <Compile Include="Blob\BlobHandlers.cs" />
+    <Compile Include="Blob\BlobSharedFunctions.cs" />
+    <Compile Include="Blob\BlobStructures.cs" />
+    <Compile Include="Blob\BlobStructures.g.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItem.g.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemConstants.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemHandlers.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemSharedFunctions.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemStructures.cs" />
+    <Compile Include="ExtractTextQueueItem\ExtractTextQueueItemStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="RepackingSession%40Errors\RepackingSessionErrors.g.cs" />
+    <Compile Include="RepackingSession%40NewDocuments\RepackingSessionNewDocuments.g.cs" />
+    <Compile Include="RepackingSession%40OriginalDocuments\RepackingSessionOriginalDocuments.g.cs" />
+    <Compile Include="RepackingSession\RepackingSession.g.cs" />
+    <Compile Include="RepackingSession\RepackingSessionConstants.cs" />
+    <Compile Include="RepackingSession\RepackingSessionHandlers.cs" />
+    <Compile Include="RepackingSession\RepackingSessionSharedFunctions.cs" />
+    <Compile Include="RepackingSession\RepackingSessionStructures.cs" />
+    <Compile Include="RepackingSession\RepackingSessionStructures.g.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignment.g.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentConstants.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentHandlers.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentSharedFunctions.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentStructures.cs" />
+    <Compile Include="VerificationAssignment\VerificationAssignmentStructures.g.cs" />
+    <Compile Include="VerificationTask%40Observers\VerificationTaskObservers.g.cs" />
+    <Compile Include="VerificationTask\VerificationTask.g.cs" />
+    <Compile Include="VerificationTask\VerificationTaskConstants.cs" />
+    <Compile Include="VerificationTask\VerificationTaskHandlers.cs" />
+    <Compile Include="VerificationTask\VerificationTaskSharedFunctions.cs" />
+    <Compile Include="VerificationTask\VerificationTaskStructures.cs" />
+    <Compile Include="VerificationTask\VerificationTaskStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlobPackage%40Blobs\BlobPackageBlobs.resx" />
+    <EmbeddedResource Include="BlobPackage%40Blobs\BlobPackageBlobs.ru.resx" />
+    <EmbeddedResource Include="BlobPackage%40Blobs\BlobPackageBlobsSystem.resx" />
+    <EmbeddedResource Include="BlobPackage%40Blobs\BlobPackageBlobsSystem.ru.resx" />
+    <EmbeddedResource Include="BlobPackage%40Blobs\obj\BlobPackageBlobs.mtd" />
+    <EmbeddedResource Include="BlobPackage%40CC\BlobPackageCC.resx" />
+    <EmbeddedResource Include="BlobPackage%40CC\BlobPackageCC.ru.resx" />
+    <EmbeddedResource Include="BlobPackage%40CC\BlobPackageCCSystem.resx" />
+    <EmbeddedResource Include="BlobPackage%40CC\BlobPackageCCSystem.ru.resx" />
+    <EmbeddedResource Include="BlobPackage%40CC\obj\BlobPackageCC.mtd" />
+    <EmbeddedResource Include="BlobPackage%40To\BlobPackageTo.resx" />
+    <EmbeddedResource Include="BlobPackage%40To\BlobPackageTo.ru.resx" />
+    <EmbeddedResource Include="BlobPackage%40To\BlobPackageToSystem.resx" />
+    <EmbeddedResource Include="BlobPackage%40To\BlobPackageToSystem.ru.resx" />
+    <EmbeddedResource Include="BlobPackage%40To\obj\BlobPackageTo.mtd" />
+    <EmbeddedResource Include="BlobPackage\BlobPackage.resx" />
+    <EmbeddedResource Include="BlobPackage\BlobPackage.ru.resx" />
+    <EmbeddedResource Include="BlobPackage\BlobPackageSystem.resx" />
+    <EmbeddedResource Include="BlobPackage\BlobPackageSystem.ru.resx" />
+    <EmbeddedResource Include="BlobPackage\obj\BlobPackage.mtd" />
+    <EmbeddedResource Include="Blob\Blob.resx" />
+    <EmbeddedResource Include="Blob\Blob.ru.resx" />
+    <EmbeddedResource Include="Blob\BlobSystem.resx" />
+    <EmbeddedResource Include="Blob\BlobSystem.ru.resx" />
+    <EmbeddedResource Include="Blob\obj\Blob.mtd" />
+    <EmbeddedResource Include="ExtractTextQueueItem\ExtractTextQueueItem.resx" />
+    <EmbeddedResource Include="ExtractTextQueueItem\ExtractTextQueueItem.ru.resx" />
+    <EmbeddedResource Include="ExtractTextQueueItem\ExtractTextQueueItemSystem.resx" />
+    <EmbeddedResource Include="ExtractTextQueueItem\ExtractTextQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="ExtractTextQueueItem\obj\ExtractTextQueueItem.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="RepackingSession%40Errors\obj\RepackingSessionErrors.mtd" />
+    <EmbeddedResource Include="RepackingSession%40Errors\RepackingSessionErrors.resx" />
+    <EmbeddedResource Include="RepackingSession%40Errors\RepackingSessionErrors.ru.resx" />
+    <EmbeddedResource Include="RepackingSession%40Errors\RepackingSessionErrorsSystem.resx" />
+    <EmbeddedResource Include="RepackingSession%40Errors\RepackingSessionErrorsSystem.ru.resx" />
+    <EmbeddedResource Include="RepackingSession%40NewDocuments\obj\RepackingSessionNewDocuments.mtd" />
+    <EmbeddedResource Include="RepackingSession%40NewDocuments\RepackingSessionNewDocuments.resx" />
+    <EmbeddedResource Include="RepackingSession%40NewDocuments\RepackingSessionNewDocuments.ru.resx" />
+    <EmbeddedResource Include="RepackingSession%40NewDocuments\RepackingSessionNewDocumentsSystem.resx" />
+    <EmbeddedResource Include="RepackingSession%40NewDocuments\RepackingSessionNewDocumentsSystem.ru.resx" />
+    <EmbeddedResource Include="RepackingSession%40OriginalDocuments\obj\RepackingSessionOriginalDocuments.mtd" />
+    <EmbeddedResource Include="RepackingSession%40OriginalDocuments\RepackingSessionOriginalDocuments.resx" />
+    <EmbeddedResource Include="RepackingSession%40OriginalDocuments\RepackingSessionOriginalDocuments.ru.resx" />
+    <EmbeddedResource Include="RepackingSession%40OriginalDocuments\RepackingSessionOriginalDocumentsSystem.resx" />
+    <EmbeddedResource Include="RepackingSession%40OriginalDocuments\RepackingSessionOriginalDocumentsSystem.ru.resx" />
+    <EmbeddedResource Include="RepackingSession\obj\RepackingSession.mtd" />
+    <EmbeddedResource Include="RepackingSession\RepackingSession.resx" />
+    <EmbeddedResource Include="RepackingSession\RepackingSession.ru.resx" />
+    <EmbeddedResource Include="RepackingSession\RepackingSessionSystem.resx" />
+    <EmbeddedResource Include="RepackingSession\RepackingSessionSystem.ru.resx" />
+    <EmbeddedResource Include="VerificationAssignment\obj\VerificationAssignment.mtd" />
+    <EmbeddedResource Include="VerificationAssignment\VerificationAssignment.resx" />
+    <EmbeddedResource Include="VerificationAssignment\VerificationAssignment.ru.resx" />
+    <EmbeddedResource Include="VerificationAssignment\VerificationAssignmentSystem.resx" />
+    <EmbeddedResource Include="VerificationAssignment\VerificationAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="VerificationTask%40Observers\obj\VerificationTaskObservers.mtd" />
+    <EmbeddedResource Include="VerificationTask%40Observers\VerificationTaskObservers.resx" />
+    <EmbeddedResource Include="VerificationTask%40Observers\VerificationTaskObservers.ru.resx" />
+    <EmbeddedResource Include="VerificationTask%40Observers\VerificationTaskObserversSystem.resx" />
+    <EmbeddedResource Include="VerificationTask%40Observers\VerificationTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="VerificationTask\obj\VerificationTask.mtd" />
+    <EmbeddedResource Include="VerificationTask\VerificationTask.resx" />
+    <EmbeddedResource Include="VerificationTask\VerificationTask.ru.resx" />
+    <EmbeddedResource Include="VerificationTask\VerificationTaskSystem.resx" />
+    <EmbeddedResource Include="VerificationTask\VerificationTaskSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

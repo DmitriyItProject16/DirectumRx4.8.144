@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{39d743bb-a69f-1df6-1611-bae0b605b22d}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Company.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.Company.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BusinessUnit%40RecipientLinks\BusinessUnitRecipientLinks.g.cs" />
+    <Compile Include="BusinessUnit\BusinessUnit.g.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitActions.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitClientFunctions.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitHandlers.cs" />
+    <Compile Include="Department%40RecipientLinks\DepartmentRecipientLinks.g.cs" />
+    <Compile Include="Department\Department.g.cs" />
+    <Compile Include="Department\DepartmentActions.cs" />
+    <Compile Include="Department\DepartmentClientFunctions.cs" />
+    <Compile Include="Department\DepartmentHandlers.cs" />
+    <Compile Include="Employee\Employee.g.cs" />
+    <Compile Include="Employee\EmployeeActions.cs" />
+    <Compile Include="Employee\EmployeeClientFunctions.cs" />
+    <Compile Include="Employee\EmployeeHandlers.cs" />
+    <Compile Include="JobTitle\JobTitle.g.cs" />
+    <Compile Include="JobTitle\JobTitleActions.cs" />
+    <Compile Include="JobTitle\JobTitleClientFunctions.cs" />
+    <Compile Include="JobTitle\JobTitleHandlers.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBase.g.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseActions.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseClientFunctions.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseHandlers.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistant.g.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantActions.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantClientFunctions.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReport.g.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportHandlers.cs" />
+    <Compile Include="VisibilityRule%40ExcludedMembers\VisibilityRuleExcludedMembers.g.cs" />
+    <Compile Include="VisibilityRule%40Recipients\VisibilityRuleRecipients.g.cs" />
+    <Compile Include="VisibilityRule%40VisibleMembers\VisibilityRuleVisibleMembers.g.cs" />
+    <Compile Include="VisibilityRule\VisibilityRule.g.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleActions.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleClientFunctions.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleHandlers.cs" />
+    <Compile Include="VisibilitySetting%40HiddenRecipients\VisibilitySettingHiddenRecipients.g.cs" />
+    <Compile Include="VisibilitySetting%40UnrestrictedRecipients\VisibilitySettingUnrestrictedRecipients.g.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySetting.g.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingActions.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingClientFunctions.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Company.Shared\Sungero.Company.Shared.csproj">
+      <Project>{af9415f0-4a31-b29a-c7df-b3945cce7c99}</Project>
+      <Name>Sungero.Company.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BusinessUnit\Icons\BusinessUnit.ico" />
+    <Resource Include="BusinessUnit\Icons\BusinessUnit.svg" />
+    <Resource Include="BusinessUnit\Icons\BusinessUnit_large.svg" />
+    <Resource Include="Department\Icons\Department.ico" />
+    <Resource Include="Department\Icons\Department.svg" />
+    <Resource Include="Department\Icons\Department_large.svg" />
+    <Resource Include="Employee\Icons\Action_OpenCertificatesList_large_7113d42b83344d28b29de48b39d62d05.png" />
+    <Resource Include="Employee\Icons\Action_OpenCertificatesList_large_7113d42b83344d28b29de48b39d62d05.svg" />
+    <Resource Include="Employee\Icons\Action_OpenCertificatesList_small_7113d42b83344d28b29de48b39d62d05.png" />
+    <Resource Include="Employee\Icons\Action_OpenCertificatesList_small_7113d42b83344d28b29de48b39d62d05.svg" />
+    <Resource Include="Employee\Icons\Action_ShowRespondingDocuments_large_db67764e144c4ecd972240f0ab353843.png" />
+    <Resource Include="Employee\Icons\Action_ShowRespondingDocuments_large_db67764e144c4ecd972240f0ab353843.svg" />
+    <Resource Include="Employee\Icons\Action_ShowRespondingDocuments_small_db67764e144c4ecd972240f0ab353843.png" />
+    <Resource Include="Employee\Icons\Action_ShowRespondingDocuments_small_db67764e144c4ecd972240f0ab353843.svg" />
+    <Resource Include="Employee\Icons\Action_ShowResponsibilitiesReport_large_63a2738f29634990b4941639ffbd7e7f.png" />
+    <Resource Include="Employee\Icons\Action_ShowResponsibilitiesReport_large_63a2738f29634990b4941639ffbd7e7f.svg" />
+    <Resource Include="Employee\Icons\Action_ShowResponsibilitiesReport_small_63a2738f29634990b4941639ffbd7e7f.png" />
+    <Resource Include="Employee\Icons\Action_ShowResponsibilitiesReport_small_63a2738f29634990b4941639ffbd7e7f.svg" />
+    <Resource Include="Employee\Icons\DefaultImagePhoto_950f0404424d4db98ac332797b41f5ed.png" />
+    <Resource Include="Employee\Icons\Employee.ico" />
+    <Resource Include="Employee\Icons\Employee.svg" />
+    <Resource Include="Employee\Icons\Employee_large.svg" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_73f21febd46c4be2b622e4daddf13d73.png" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_73f21febd46c4be2b622e4daddf13d73.svg" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_8b9eb5a62596447abbfd678b758f620d.png" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_8b9eb5a62596447abbfd678b758f620d.svg" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_small_73f21febd46c4be2b622e4daddf13d73.png" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_small_73f21febd46c4be2b622e4daddf13d73.svg" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_small_8b9eb5a62596447abbfd678b758f620d.png" />
+    <Resource Include="Employee\Icons\Ribbon_Documents_small_8b9eb5a62596447abbfd678b758f620d.svg" />
+    <Resource Include="Icons\GroupIconEmployees_81281d6c7b9342fabf28103d0e3419e3.png" />
+    <Resource Include="Icons\GroupIconEmployees_81281d6c7b9342fabf28103d0e3419e3.svg" />
+    <Resource Include="Icons\GroupIconIntegration_7ec69dbae05646e18b62c3f460b22884.png" />
+    <Resource Include="Icons\GroupIconIntegration_7ec69dbae05646e18b62c3f460b22884.svg" />
+    <Resource Include="Icons\GroupIconLinks_741ff20346fc4676b6d7a474dd9fefa4.png" />
+    <Resource Include="Icons\GroupIconLinks_741ff20346fc4676b6d7a474dd9fefa4.svg" />
+    <Resource Include="Icons\GroupIconOrganizationalStructure_9778efad0f26415086b0b539e9fa468f.png" />
+    <Resource Include="Icons\GroupIconOrganizationalStructure_9778efad0f26415086b0b539e9fa468f.svg" />
+    <Resource Include="JobTitle\Icons\JobTitle.ico" />
+    <Resource Include="JobTitle\Icons\JobTitle.svg" />
+    <Resource Include="JobTitle\Icons\JobTitle_large.svg" />
+    <Resource Include="ManagersAssistant\Icons\ManagersAssistant.ico" />
+    <Resource Include="ManagersAssistant\Icons\ManagersAssistant.svg" />
+    <Resource Include="ManagersAssistant\Icons\ManagersAssistant_large.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="163d6b95-01e0-4da2-88b0-46ff0864a45d.xml" />
+    <EmbeddedResource Include="BusinessUnit\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="BusinessUnit\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="BusinessUnit\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Department\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Department\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Department\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Employee\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Employee\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Employee\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="JobTitle\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="JobTitle\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="JobTitle\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ManagersAssistantBase\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ManagersAssistantBase\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ManagersAssistantBase\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ManagersAssistant\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ManagersAssistant\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ManagersAssistant\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="VisibilityRule\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="VisibilityRule\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="VisibilityRule\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="VisibilitySetting\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="VisibilitySetting\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="VisibilitySetting\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

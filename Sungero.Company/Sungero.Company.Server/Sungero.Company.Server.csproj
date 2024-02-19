@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{c36c690d-80af-e203-2f8a-6e569e99d49b}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Company.Server</RootNamespace>
+    <AssemblyName>Sungero.Company.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\FastReport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Server">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Server">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BusinessUnit%40RecipientLinks\BusinessUnitRecipientLinks.g.cs" />
+    <Compile Include="BusinessUnit\BusinessUnit.g.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitHandlers.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitServerFunctions.cs" />
+    <Compile Include="Department%40RecipientLinks\DepartmentRecipientLinks.g.cs" />
+    <Compile Include="Department\Department.g.cs" />
+    <Compile Include="Department\DepartmentHandlers.cs" />
+    <Compile Include="Department\DepartmentServerFunctions.cs" />
+    <Compile Include="Employee\Employee.g.cs" />
+    <Compile Include="Employee\EmployeeHandlers.cs" />
+    <Compile Include="Employee\EmployeeServerFunctions.cs" />
+    <Compile Include="JobTitle\JobTitle.g.cs" />
+    <Compile Include="JobTitle\JobTitleHandlers.cs" />
+    <Compile Include="JobTitle\JobTitleServerFunctions.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBase.g.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseHandlers.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseServerFunctions.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistant.g.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantHandlers.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantServerFunctions.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleAsyncHandlers.cs" />
+    <Compile Include="ModuleBlockHandlers.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="ModuleJobs.cs" />
+    <Compile Include="ModuleServerFunctions.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReport.g.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportHandlers.cs" />
+    <Compile Include="VisibilityRule%40ExcludedMembers\VisibilityRuleExcludedMembers.g.cs" />
+    <Compile Include="VisibilityRule%40Recipients\VisibilityRuleRecipients.g.cs" />
+    <Compile Include="VisibilityRule%40VisibleMembers\VisibilityRuleVisibleMembers.g.cs" />
+    <Compile Include="VisibilityRule\VisibilityRule.g.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleHandlers.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleServerFunctions.cs" />
+    <Compile Include="VisibilitySetting%40HiddenRecipients\VisibilitySettingHiddenRecipients.g.cs" />
+    <Compile Include="VisibilitySetting%40UnrestrictedRecipients\VisibilitySettingUnrestrictedRecipients.g.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySetting.g.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingHandlers.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingServerFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Company.Shared\Sungero.Company.Shared.csproj">
+      <Project>{af9415f0-4a31-b29a-c7df-b3945cce7c99}</Project>
+      <Name>Sungero.Company.Shared</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessUnit\BusinessUnitQueries.xml" />
+    <EmbeddedResource Include="Department\DepartmentQueries.xml" />
+    <EmbeddedResource Include="Employee\EmployeeQueries.xml" />
+    <EmbeddedResource Include="JobTitle\JobTitleQueries.xml" />
+    <EmbeddedResource Include="ManagersAssistantBase\ManagersAssistantBaseQueries.xml" />
+    <EmbeddedResource Include="ManagersAssistant\ManagersAssistantQueries.xml" />
+    <EmbeddedResource Include="ModuleQueries.xml" />
+    <EmbeddedResource Include="Reports\ResponsibilitiesReport\ResponsibilitiesReport.frx" />
+    <EmbeddedResource Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportQueries.xml" />
+    <EmbeddedResource Include="VisibilityRule\VisibilityRuleQueries.xml" />
+    <EmbeddedResource Include="VisibilitySetting\VisibilitySettingQueries.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

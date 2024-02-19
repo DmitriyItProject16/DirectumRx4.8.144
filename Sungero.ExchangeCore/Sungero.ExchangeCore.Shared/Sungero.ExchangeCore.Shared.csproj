@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{02b9b526-7200-af51-5141-610a0c6241a7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.ExchangeCore.Shared</RootNamespace>
+    <AssemblyName>Sungero.ExchangeCore.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItem.g.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemConstants.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemHandlers.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemSharedFunctions.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemStructures.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemStructures.g.cs" />
+    <Compile Include="BoxBase\BoxBase.g.cs" />
+    <Compile Include="BoxBase\BoxBaseConstants.cs" />
+    <Compile Include="BoxBase\BoxBaseHandlers.cs" />
+    <Compile Include="BoxBase\BoxBaseSharedFunctions.cs" />
+    <Compile Include="BoxBase\BoxBaseStructures.cs" />
+    <Compile Include="BoxBase\BoxBaseStructures.g.cs" />
+    <Compile Include="BusinessUnitBox%40ExchangeServiceCertificates\BusinessUnitBoxExchangeServiceCertificates.g.cs" />
+    <Compile Include="BusinessUnitBox%40FormalizedPoAInfos\BusinessUnitBoxFormalizedPoAInfos.g.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBox.g.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxConstants.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxHandlers.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxSharedFunctions.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxStructures.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxStructures.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignment.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentConstants.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentSharedFunctions.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentStructures.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentStructures.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask%40Observers\CounterpartyConflictProcessingTaskObservers.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTask.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskConstants.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskSharedFunctions.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskStructures.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskStructures.g.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBox.g.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxConstants.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxHandlers.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxSharedFunctions.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxStructures.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxStructures.g.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItem.g.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemConstants.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemHandlers.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemSharedFunctions.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemStructures.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemStructures.g.cs" />
+    <Compile Include="DepartmentBox\DepartmentBox.g.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxConstants.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxHandlers.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxSharedFunctions.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxStructures.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxStructures.g.cs" />
+    <Compile Include="ExchangeService\ExchangeService.g.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceConstants.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceHandlers.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceSharedFunctions.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceStructures.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceStructures.g.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSession.g.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionConstants.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionHandlers.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionSharedFunctions.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionStructures.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionStructures.g.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignment.g.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentConstants.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentHandlers.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentSharedFunctions.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentStructures.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentStructures.g.cs" />
+    <Compile Include="IncomingInvitationTask%40Observers\IncomingInvitationTaskObservers.g.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTask.g.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskConstants.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskHandlers.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskSharedFunctions.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskStructures.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskStructures.g.cs" />
+    <Compile Include="MessageQueueItem%40Documents\MessageQueueItemDocuments.g.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItem.g.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemConstants.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemHandlers.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemSharedFunctions.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemStructures.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="QueueItemBase\QueueItemBase.g.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseConstants.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseHandlers.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseSharedFunctions.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseStructures.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BodyConverterQueueItem\BodyConverterQueueItem.resx" />
+    <EmbeddedResource Include="BodyConverterQueueItem\BodyConverterQueueItem.ru.resx" />
+    <EmbeddedResource Include="BodyConverterQueueItem\BodyConverterQueueItemSystem.resx" />
+    <EmbeddedResource Include="BodyConverterQueueItem\BodyConverterQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="BodyConverterQueueItem\obj\BodyConverterQueueItem.mtd" />
+    <EmbeddedResource Include="BoxBase\BoxBase.resx" />
+    <EmbeddedResource Include="BoxBase\BoxBase.ru.resx" />
+    <EmbeddedResource Include="BoxBase\BoxBaseSystem.resx" />
+    <EmbeddedResource Include="BoxBase\BoxBaseSystem.ru.resx" />
+    <EmbeddedResource Include="BoxBase\obj\BoxBase.mtd" />
+    <EmbeddedResource Include="BusinessUnitBox%40ExchangeServiceCertificates\BusinessUnitBoxExchangeServiceCertificates.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40ExchangeServiceCertificates\BusinessUnitBoxExchangeServiceCertificates.ru.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40ExchangeServiceCertificates\BusinessUnitBoxExchangeServiceCertificatesSystem.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40ExchangeServiceCertificates\BusinessUnitBoxExchangeServiceCertificatesSystem.ru.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40ExchangeServiceCertificates\obj\BusinessUnitBoxExchangeServiceCertificates.mtd" />
+    <EmbeddedResource Include="BusinessUnitBox%40FormalizedPoAInfos\BusinessUnitBoxFormalizedPoAInfos.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40FormalizedPoAInfos\BusinessUnitBoxFormalizedPoAInfos.ru.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40FormalizedPoAInfos\BusinessUnitBoxFormalizedPoAInfosSystem.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40FormalizedPoAInfos\BusinessUnitBoxFormalizedPoAInfosSystem.ru.resx" />
+    <EmbeddedResource Include="BusinessUnitBox%40FormalizedPoAInfos\obj\BusinessUnitBoxFormalizedPoAInfos.mtd" />
+    <EmbeddedResource Include="BusinessUnitBox\BusinessUnitBox.resx" />
+    <EmbeddedResource Include="BusinessUnitBox\BusinessUnitBox.ru.resx" />
+    <EmbeddedResource Include="BusinessUnitBox\BusinessUnitBoxSystem.resx" />
+    <EmbeddedResource Include="BusinessUnitBox\BusinessUnitBoxSystem.ru.resx" />
+    <EmbeddedResource Include="BusinessUnitBox\obj\BusinessUnitBox.mtd" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignment.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignment.ru.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentSystem.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingAssignment\obj\CounterpartyConflictProcessingAssignment.mtd" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask%40Observers\CounterpartyConflictProcessingTaskObservers.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask%40Observers\CounterpartyConflictProcessingTaskObservers.ru.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask%40Observers\CounterpartyConflictProcessingTaskObserversSystem.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask%40Observers\CounterpartyConflictProcessingTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask%40Observers\obj\CounterpartyConflictProcessingTaskObservers.mtd" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTask.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTask.ru.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskSystem.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskSystem.ru.resx" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask\obj\CounterpartyConflictProcessingTask.mtd" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\CounterpartyDepartmentBox.resx" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\CounterpartyDepartmentBox.ru.resx" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxSystem.resx" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxSystem.ru.resx" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\obj\CounterpartyDepartmentBox.mtd" />
+    <EmbeddedResource Include="CounterpartyQueueItem\CounterpartyQueueItem.resx" />
+    <EmbeddedResource Include="CounterpartyQueueItem\CounterpartyQueueItem.ru.resx" />
+    <EmbeddedResource Include="CounterpartyQueueItem\CounterpartyQueueItemSystem.resx" />
+    <EmbeddedResource Include="CounterpartyQueueItem\CounterpartyQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="CounterpartyQueueItem\obj\CounterpartyQueueItem.mtd" />
+    <EmbeddedResource Include="DepartmentBox\DepartmentBox.resx" />
+    <EmbeddedResource Include="DepartmentBox\DepartmentBox.ru.resx" />
+    <EmbeddedResource Include="DepartmentBox\DepartmentBoxSystem.resx" />
+    <EmbeddedResource Include="DepartmentBox\DepartmentBoxSystem.ru.resx" />
+    <EmbeddedResource Include="DepartmentBox\obj\DepartmentBox.mtd" />
+    <EmbeddedResource Include="ExchangeService\ExchangeService.resx" />
+    <EmbeddedResource Include="ExchangeService\ExchangeService.ru.resx" />
+    <EmbeddedResource Include="ExchangeService\ExchangeServiceSystem.resx" />
+    <EmbeddedResource Include="ExchangeService\ExchangeServiceSystem.ru.resx" />
+    <EmbeddedResource Include="ExchangeService\obj\ExchangeService.mtd" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSession.resx" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSession.ru.resx" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionSystem.resx" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionSystem.ru.resx" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\obj\HistoricalMessagesDownloadSession.mtd" />
+    <EmbeddedResource Include="IncomingInvitationAssignment\IncomingInvitationAssignment.resx" />
+    <EmbeddedResource Include="IncomingInvitationAssignment\IncomingInvitationAssignment.ru.resx" />
+    <EmbeddedResource Include="IncomingInvitationAssignment\IncomingInvitationAssignmentSystem.resx" />
+    <EmbeddedResource Include="IncomingInvitationAssignment\IncomingInvitationAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingInvitationAssignment\obj\IncomingInvitationAssignment.mtd" />
+    <EmbeddedResource Include="IncomingInvitationTask%40Observers\IncomingInvitationTaskObservers.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask%40Observers\IncomingInvitationTaskObservers.ru.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask%40Observers\IncomingInvitationTaskObserversSystem.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask%40Observers\IncomingInvitationTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask%40Observers\obj\IncomingInvitationTaskObservers.mtd" />
+    <EmbeddedResource Include="IncomingInvitationTask\IncomingInvitationTask.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask\IncomingInvitationTask.ru.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask\IncomingInvitationTaskSystem.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask\IncomingInvitationTaskSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingInvitationTask\obj\IncomingInvitationTask.mtd" />
+    <EmbeddedResource Include="MessageQueueItem%40Documents\MessageQueueItemDocuments.resx" />
+    <EmbeddedResource Include="MessageQueueItem%40Documents\MessageQueueItemDocuments.ru.resx" />
+    <EmbeddedResource Include="MessageQueueItem%40Documents\MessageQueueItemDocumentsSystem.resx" />
+    <EmbeddedResource Include="MessageQueueItem%40Documents\MessageQueueItemDocumentsSystem.ru.resx" />
+    <EmbeddedResource Include="MessageQueueItem%40Documents\obj\MessageQueueItemDocuments.mtd" />
+    <EmbeddedResource Include="MessageQueueItem\MessageQueueItem.resx" />
+    <EmbeddedResource Include="MessageQueueItem\MessageQueueItem.ru.resx" />
+    <EmbeddedResource Include="MessageQueueItem\MessageQueueItemSystem.resx" />
+    <EmbeddedResource Include="MessageQueueItem\MessageQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="MessageQueueItem\obj\MessageQueueItem.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="QueueItemBase\obj\QueueItemBase.mtd" />
+    <EmbeddedResource Include="QueueItemBase\QueueItemBase.resx" />
+    <EmbeddedResource Include="QueueItemBase\QueueItemBase.ru.resx" />
+    <EmbeddedResource Include="QueueItemBase\QueueItemBaseSystem.resx" />
+    <EmbeddedResource Include="QueueItemBase\QueueItemBaseSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{42bab8ee-7a17-822b-8260-e4fa8bde6fa1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Exchange.Server</RootNamespace>
+    <AssemblyName>Sungero.Exchange.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sungero.Workflow.Blocks">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Blocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DiadocApi">
+      <HintPath>..\Sungero.Exchange.Libraries\DCX\DiadocApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eds.Api.Public">
+      <HintPath>..\Sungero.Exchange.Libraries\DCX\Eds.Api.Public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Diadoc">
+      <HintPath>..\Sungero.Exchange.Libraries\DCX\NpoComputer.DCX.Client.Diadoc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Sbis">
+      <HintPath>..\Sungero.Exchange.Libraries\DCX\NpoComputer.DCX.Client.Sbis.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Sphere">
+      <HintPath>..\Sungero.Exchange.Libraries\DCX\NpoComputer.DCX.Client.Sphere.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.ClientApi">
+      <HintPath>..\Sungero.Exchange.Libraries\DCX\NpoComputer.DCX.ClientApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Common">
+      <HintPath>..\Sungero.Exchange.Libraries\DCX\NpoComputer.DCX.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Server">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Server">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Server\Sungero.Docflow.Server.csproj">
+      <Project>{4fbfe066-29ab-5455-15f9-1e22f5e7d449}</Project>
+      <Name>Sungero.Docflow.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Server\Sungero.ExchangeCore.Server.csproj">
+      <Project>{9d7a4505-eca5-87c4-ab95-f89d01c6b77f}</Project>
+      <Name>Sungero.ExchangeCore.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CancellationAgreement%40Tracking\CancellationAgreementTracking.g.cs" />
+    <Compile Include="CancellationAgreement%40Versions\CancellationAgreementVersions.g.cs" />
+    <Compile Include="CancellationAgreement\CancellationAgreement.g.cs" />
+    <Compile Include="CancellationAgreement\CancellationAgreementHandlers.cs" />
+    <Compile Include="CancellationAgreement\CancellationAgreementServerFunctions.cs" />
+    <Compile Include="ExchangeDocumentInfo%40ServiceDocuments\ExchangeDocumentInfoServiceDocuments.g.cs" />
+    <Compile Include="ExchangeDocumentInfo\ExchangeDocumentInfo.g.cs" />
+    <Compile Include="ExchangeDocumentInfo\ExchangeDocumentInfoHandlers.cs" />
+    <Compile Include="ExchangeDocumentInfo\ExchangeDocumentInfoServerFunctions.cs" />
+    <Compile Include="ExchangeDocumentProcessingAssignment\ExchangeDocumentProcessingAssignment.g.cs" />
+    <Compile Include="ExchangeDocumentProcessingAssignment\ExchangeDocumentProcessingAssignmentHandlers.cs" />
+    <Compile Include="ExchangeDocumentProcessingAssignment\ExchangeDocumentProcessingAssignmentServerFunctions.cs" />
+    <Compile Include="ExchangeDocumentProcessingTask%40Observers\ExchangeDocumentProcessingTaskObservers.g.cs" />
+    <Compile Include="ExchangeDocumentProcessingTask\ExchangeDocumentProcessingTask.g.cs" />
+    <Compile Include="ExchangeDocumentProcessingTask\ExchangeDocumentProcessingTaskBlockHandlers.cs" />
+    <Compile Include="ExchangeDocumentProcessingTask\ExchangeDocumentProcessingTaskHandlers.cs" />
+    <Compile Include="ExchangeDocumentProcessingTask\ExchangeDocumentProcessingTaskRouteHandlers.cs" />
+    <Compile Include="ExchangeDocumentProcessingTask\ExchangeDocumentProcessingTaskServerFunctions.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleAsyncHandlers.cs" />
+    <Compile Include="ModuleBlockHandlers.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="ModuleJobs.cs" />
+    <Compile Include="ModuleServerFunctions.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="ReceiptNotificationSendingAssignment\ReceiptNotificationSendingAssignment.g.cs" />
+    <Compile Include="ReceiptNotificationSendingAssignment\ReceiptNotificationSendingAssignmentHandlers.cs" />
+    <Compile Include="ReceiptNotificationSendingAssignment\ReceiptNotificationSendingAssignmentServerFunctions.cs" />
+    <Compile Include="ReceiptNotificationSendingTask%40Observers\ReceiptNotificationSendingTaskObservers.g.cs" />
+    <Compile Include="ReceiptNotificationSendingTask\ReceiptNotificationSendingTask.g.cs" />
+    <Compile Include="ReceiptNotificationSendingTask\ReceiptNotificationSendingTaskBlockHandlers.cs" />
+    <Compile Include="ReceiptNotificationSendingTask\ReceiptNotificationSendingTaskHandlers.cs" />
+    <Compile Include="ReceiptNotificationSendingTask\ReceiptNotificationSendingTaskRouteHandlers.cs" />
+    <Compile Include="ReceiptNotificationSendingTask\ReceiptNotificationSendingTaskServerFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Exchange.Shared\Sungero.Exchange.Shared.csproj">
+      <Project>{2cc269b4-0747-7f46-8a2d-1198547da7e6}</Project>
+      <Name>Sungero.Exchange.Shared</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CancellationAgreement\CancellationAgreementQueries.xml" />
+    <EmbeddedResource Include="ExchangeDocumentInfo\ExchangeDocumentInfoQueries.xml" />
+    <EmbeddedResource Include="ExchangeDocumentProcessingAssignment\ExchangeDocumentProcessingAssignmentQueries.xml" />
+    <EmbeddedResource Include="ExchangeDocumentProcessingTask\ExchangeDocumentProcessingTaskQueries.xml" />
+    <EmbeddedResource Include="ExchangeDocumentProcessingTask\ExchangeDocumentProcessingTaskScheme.xml" />
+    <EmbeddedResource Include="ModuleQueries.xml" />
+    <EmbeddedResource Include="ReceiptNotificationSendingAssignment\ReceiptNotificationSendingAssignmentQueries.xml" />
+    <EmbeddedResource Include="ReceiptNotificationSendingTask\ReceiptNotificationSendingTaskQueries.xml" />
+    <EmbeddedResource Include="ReceiptNotificationSendingTask\ReceiptNotificationSendingTaskScheme.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

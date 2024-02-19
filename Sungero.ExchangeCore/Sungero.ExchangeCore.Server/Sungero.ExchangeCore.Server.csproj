@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{9d7a4505-eca5-87c4-ab95-f89d01c6b77f}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.ExchangeCore.Server</RootNamespace>
+    <AssemblyName>Sungero.ExchangeCore.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sungero.Workflow.Blocks">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Blocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DiadocApi">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\DiadocApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Eds.Api.Public">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\Eds.Api.Public.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Diadoc">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Client.Diadoc.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Sbis">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Client.Sbis.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Client.Sphere">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Client.Sphere.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.ClientApi">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.ClientApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DCX.Common">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\DCX\NpoComputer.DCX.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NpoComputer.DpadCP.Converter">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\Dpad\NpoComputer.DpadCP.Converter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NumToWords">
+      <HintPath>..\Sungero.ExchangeCore.Libraries\Dpad\NumToWords.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Server">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Server">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItem.g.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemHandlers.cs" />
+    <Compile Include="BodyConverterQueueItem\BodyConverterQueueItemServerFunctions.cs" />
+    <Compile Include="BoxBase\BoxBase.g.cs" />
+    <Compile Include="BoxBase\BoxBaseHandlers.cs" />
+    <Compile Include="BoxBase\BoxBaseServerFunctions.cs" />
+    <Compile Include="BusinessUnitBox%40ExchangeServiceCertificates\BusinessUnitBoxExchangeServiceCertificates.g.cs" />
+    <Compile Include="BusinessUnitBox%40FormalizedPoAInfos\BusinessUnitBoxFormalizedPoAInfos.g.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBox.g.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxHandlers.cs" />
+    <Compile Include="BusinessUnitBox\BusinessUnitBoxServerFunctions.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignment.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentServerFunctions.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask%40Observers\CounterpartyConflictProcessingTaskObservers.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTask.g.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskBlockHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskRouteHandlers.cs" />
+    <Compile Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskServerFunctions.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBox.g.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxHandlers.cs" />
+    <Compile Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxServerFunctions.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItem.g.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemHandlers.cs" />
+    <Compile Include="CounterpartyQueueItem\CounterpartyQueueItemServerFunctions.cs" />
+    <Compile Include="DepartmentBox\DepartmentBox.g.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxHandlers.cs" />
+    <Compile Include="DepartmentBox\DepartmentBoxServerFunctions.cs" />
+    <Compile Include="ExchangeService\ExchangeService.g.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceHandlers.cs" />
+    <Compile Include="ExchangeService\ExchangeServiceServerFunctions.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSession.g.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionHandlers.cs" />
+    <Compile Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionServerFunctions.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignment.g.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentHandlers.cs" />
+    <Compile Include="IncomingInvitationAssignment\IncomingInvitationAssignmentServerFunctions.cs" />
+    <Compile Include="IncomingInvitationTask%40Observers\IncomingInvitationTaskObservers.g.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTask.g.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskBlockHandlers.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskHandlers.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskRouteHandlers.cs" />
+    <Compile Include="IncomingInvitationTask\IncomingInvitationTaskServerFunctions.cs" />
+    <Compile Include="MessageQueueItem%40Documents\MessageQueueItemDocuments.g.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItem.g.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemHandlers.cs" />
+    <Compile Include="MessageQueueItem\MessageQueueItemServerFunctions.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleAsyncHandlers.cs" />
+    <Compile Include="ModuleBlockHandlers.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="ModuleJobs.cs" />
+    <Compile Include="ModuleServerFunctions.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="QueueItemBase\QueueItemBase.g.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseHandlers.cs" />
+    <Compile Include="QueueItemBase\QueueItemBaseServerFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BodyConverterQueueItem\BodyConverterQueueItemQueries.xml" />
+    <EmbeddedResource Include="BoxBase\BoxBaseQueries.xml" />
+    <EmbeddedResource Include="BusinessUnitBox\BusinessUnitBoxQueries.xml" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingAssignment\CounterpartyConflictProcessingAssignmentQueries.xml" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskQueries.xml" />
+    <EmbeddedResource Include="CounterpartyConflictProcessingTask\CounterpartyConflictProcessingTaskScheme.xml" />
+    <EmbeddedResource Include="CounterpartyDepartmentBox\CounterpartyDepartmentBoxQueries.xml" />
+    <EmbeddedResource Include="CounterpartyQueueItem\CounterpartyQueueItemQueries.xml" />
+    <EmbeddedResource Include="DepartmentBox\DepartmentBoxQueries.xml" />
+    <EmbeddedResource Include="ExchangeService\ExchangeServiceQueries.xml" />
+    <EmbeddedResource Include="HistoricalMessagesDownloadSession\HistoricalMessagesDownloadSessionQueries.xml" />
+    <EmbeddedResource Include="IncomingInvitationAssignment\IncomingInvitationAssignmentQueries.xml" />
+    <EmbeddedResource Include="IncomingInvitationTask\IncomingInvitationTaskQueries.xml" />
+    <EmbeddedResource Include="IncomingInvitationTask\IncomingInvitationTaskScheme.xml" />
+    <EmbeddedResource Include="MessageQueueItem\MessageQueueItemQueries.xml" />
+    <EmbeddedResource Include="ModuleQueries.xml" />
+    <EmbeddedResource Include="QueueItemBase\QueueItemBaseQueries.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

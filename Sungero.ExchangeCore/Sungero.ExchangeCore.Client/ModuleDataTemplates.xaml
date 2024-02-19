@@ -1,0 +1,105 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.ExchangeCore.Client">
+
+    <DataTemplate DataType="{x:Type local:BodyConverterQueueItemCollectionPresenter`1}">
+      <local:BodyConverterQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:BodyConverterQueueItemPresenter`1}">
+        <local:BodyConverterQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:BoxBaseCollectionPresenter`1}">
+      <local:BoxBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:BoxBasePresenter`1}">
+        <local:BoxBaseView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:BusinessUnitBoxCollectionPresenter`1}">
+      <local:BusinessUnitBoxCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:BusinessUnitBoxPresenter`1}">
+        <local:BusinessUnitBoxView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CounterpartyConflictProcessingAssignmentCollectionPresenter`1}">
+      <local:CounterpartyConflictProcessingAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CounterpartyConflictProcessingAssignmentPresenter`1}">
+        <local:CounterpartyConflictProcessingAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CounterpartyConflictProcessingTaskCollectionPresenter`1}">
+      <local:CounterpartyConflictProcessingTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CounterpartyConflictProcessingTaskPresenter`1}">
+        <local:CounterpartyConflictProcessingTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CounterpartyDepartmentBoxCollectionPresenter`1}">
+      <local:CounterpartyDepartmentBoxCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CounterpartyDepartmentBoxPresenter`1}">
+        <local:CounterpartyDepartmentBoxView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CounterpartyQueueItemCollectionPresenter`1}">
+      <local:CounterpartyQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CounterpartyQueueItemPresenter`1}">
+        <local:CounterpartyQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:DepartmentBoxCollectionPresenter`1}">
+      <local:DepartmentBoxCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:DepartmentBoxPresenter`1}">
+        <local:DepartmentBoxView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ExchangeServiceCollectionPresenter`1}">
+      <local:ExchangeServiceCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ExchangeServicePresenter`1}">
+        <local:ExchangeServiceView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:HistoricalMessagesDownloadSessionCollectionPresenter`1}">
+      <local:HistoricalMessagesDownloadSessionCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:HistoricalMessagesDownloadSessionPresenter`1}">
+        <local:HistoricalMessagesDownloadSessionView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:IncomingInvitationAssignmentCollectionPresenter`1}">
+      <local:IncomingInvitationAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:IncomingInvitationAssignmentPresenter`1}">
+        <local:IncomingInvitationAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:IncomingInvitationTaskCollectionPresenter`1}">
+      <local:IncomingInvitationTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:IncomingInvitationTaskPresenter`1}">
+        <local:IncomingInvitationTaskView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:MessageQueueItemCollectionPresenter`1}">
+      <local:MessageQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:MessageQueueItemPresenter`1}">
+        <local:MessageQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:QueueItemBaseCollectionPresenter`1}">
+      <local:QueueItemBaseCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:QueueItemBasePresenter`1}">
+        <local:QueueItemBaseView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

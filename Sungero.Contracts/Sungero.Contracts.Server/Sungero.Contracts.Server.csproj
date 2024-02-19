@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{6bd3afa1-f367-f0d0-fe33-2a4498d4dc1f}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Contracts.Server</RootNamespace>
+    <AssemblyName>Sungero.Contracts.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Security">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Server">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.Jobs">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.Jobs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Agent.AsyncHandlers">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Agent.AsyncHandlers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Server">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Server">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Server.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Server\Sungero.Docflow.Server.csproj">
+      <Project>{4fbfe066-29ab-5455-15f9-1e22f5e7d449}</Project>
+      <Name>Sungero.Docflow.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Server\Sungero.ExchangeCore.Server.csproj">
+      <Project>{9d7a4505-eca5-87c4-ab95-f89d01c6b77f}</Project>
+      <Name>Sungero.ExchangeCore.Server</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStage.g.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageHandlers.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageServerFunctions.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Contract%40Stages\ContractStages.g.cs" />
+    <Compile Include="Contract%40Tracking\ContractTracking.g.cs" />
+    <Compile Include="Contract%40Versions\ContractVersions.g.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRole.g.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleHandlers.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleServerFunctions.cs" />
+    <Compile Include="ContractBase%40Stages\ContractBaseStages.g.cs" />
+    <Compile Include="ContractBase%40Tracking\ContractBaseTracking.g.cs" />
+    <Compile Include="ContractBase%40Versions\ContractBaseVersions.g.cs" />
+    <Compile Include="ContractBase\ContractBase.g.cs" />
+    <Compile Include="ContractBase\ContractBaseHandlers.cs" />
+    <Compile Include="ContractBase\ContractBaseServerFunctions.cs" />
+    <Compile Include="ContractCategory%40DocumentKinds\ContractCategoryDocumentKinds.g.cs" />
+    <Compile Include="ContractCategory\ContractCategory.g.cs" />
+    <Compile Include="ContractCategory\ContractCategoryHandlers.cs" />
+    <Compile Include="ContractCategory\ContractCategoryServerFunctions.cs" />
+    <Compile Include="ContractCondition%40ConditionDocumentKinds\ContractConditionConditionDocumentKinds.g.cs" />
+    <Compile Include="ContractCondition%40Currencies\ContractConditionCurrencies.g.cs" />
+    <Compile Include="ContractCondition%40DeliveryMethods\ContractConditionDeliveryMethods.g.cs" />
+    <Compile Include="ContractCondition%40DocumentKinds\ContractConditionDocumentKinds.g.cs" />
+    <Compile Include="ContractCondition\ContractCondition.g.cs" />
+    <Compile Include="ContractCondition\ContractConditionHandlers.cs" />
+    <Compile Include="ContractCondition\ContractConditionServerFunctions.cs" />
+    <Compile Include="ContractsApprovalRule%40BusinessUnits\ContractsApprovalRuleBusinessUnits.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Conditions\ContractsApprovalRuleConditions.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Departments\ContractsApprovalRuleDepartments.g.cs" />
+    <Compile Include="ContractsApprovalRule%40DocumentGroups\ContractsApprovalRuleDocumentGroups.g.cs" />
+    <Compile Include="ContractsApprovalRule%40DocumentKinds\ContractsApprovalRuleDocumentKinds.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Stages\ContractsApprovalRuleStages.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Transitions\ContractsApprovalRuleTransitions.g.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRule.g.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleHandlers.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleServerFunctions.cs" />
+    <Compile Include="ContractualDocument%40Milestones\ContractualDocumentMilestones.g.cs" />
+    <Compile Include="ContractualDocument%40Tracking\ContractualDocumentTracking.g.cs" />
+    <Compile Include="ContractualDocument%40Versions\ContractualDocumentVersions.g.cs" />
+    <Compile Include="ContractualDocument\ContractualDocument.g.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentHandlers.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentServerFunctions.cs" />
+    <Compile Include="Contract\Contract.g.cs" />
+    <Compile Include="Contract\ContractHandlers.cs" />
+    <Compile Include="Contract\ContractServerFunctions.cs" />
+    <Compile Include="IncomingInvoice%40Tracking\IncomingInvoiceTracking.g.cs" />
+    <Compile Include="IncomingInvoice%40Versions\IncomingInvoiceVersions.g.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoice.g.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceHandlers.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceServerFunctions.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleAsyncHandlers.cs" />
+    <Compile Include="ModuleBlockHandlers.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleInitializer.cs" />
+    <Compile Include="ModuleJobs.cs" />
+    <Compile Include="ModuleServerFunctions.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="OutgoingInvoice%40Tracking\OutgoingInvoiceTracking.g.cs" />
+    <Compile Include="OutgoingInvoice%40Versions\OutgoingInvoiceVersions.g.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoice.g.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceHandlers.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceServerFunctions.cs" />
+    <Compile Include="SupAgreement%40Stages\SupAgreementStages.g.cs" />
+    <Compile Include="SupAgreement%40Tracking\SupAgreementTracking.g.cs" />
+    <Compile Include="SupAgreement%40Versions\SupAgreementVersions.g.cs" />
+    <Compile Include="SupAgreement\SupAgreement.g.cs" />
+    <Compile Include="SupAgreement\SupAgreementHandlers.cs" />
+    <Compile Include="SupAgreement\SupAgreementServerFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Contracts.Shared\Sungero.Contracts.Shared.csproj">
+      <Project>{e422cc5f-fbe2-2410-bdb0-9cddf74407ac}</Project>
+      <Name>Sungero.Contracts.Shared</Name>
+      <Private>FALSE</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageQueries.xml" />
+    <EmbeddedResource Include="ContractApprovalRole\ContractApprovalRoleQueries.xml" />
+    <EmbeddedResource Include="ContractBase\ContractBaseQueries.xml" />
+    <EmbeddedResource Include="ContractCategory\ContractCategoryQueries.xml" />
+    <EmbeddedResource Include="ContractCondition\ContractConditionQueries.xml" />
+    <EmbeddedResource Include="ContractsApprovalRule\ContractsApprovalRuleQueries.xml" />
+    <EmbeddedResource Include="ContractualDocument\ContractualDocumentQueries.xml" />
+    <EmbeddedResource Include="Contract\ContractQueries.xml" />
+    <EmbeddedResource Include="IncomingInvoice\IncomingInvoiceQueries.xml" />
+    <EmbeddedResource Include="ModuleQueries.xml" />
+    <EmbeddedResource Include="OutgoingInvoice\OutgoingInvoiceQueries.xml" />
+    <EmbeddedResource Include="SupAgreement\SupAgreementQueries.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

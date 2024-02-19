@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{583eac27-2e4e-f739-59f1-2e38e60a5495}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.RecordManagement.Shared</RootNamespace>
+    <AssemblyName>Sungero.RecordManagement.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignment.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentConstants.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentHandlers.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentSharedFunctions.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentStructures.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentStructures.g.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotification.g.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationConstants.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationHandlers.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationSharedFunctions.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationStructures.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationStructures.g.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignment.g.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentConstants.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentHandlers.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentSharedFunctions.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentStructures.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentStructures.g.cs" />
+    <Compile Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipants.g.cs" />
+    <Compile Include="AcquaintanceList%40Participants\AcquaintanceListParticipants.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceList.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListConstants.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListHandlers.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListSharedFunctions.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListStructures.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListStructures.g.cs" />
+    <Compile Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Observers\AcquaintanceTaskObservers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformers.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployees.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipant.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantConstants.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantHandlers.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantSharedFunctions.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantStructures.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantStructures.g.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTask.g.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskConstants.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskHandlers.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskSharedFunctions.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskStructures.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskStructures.g.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignment.g.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentConstants.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentHandlers.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentSharedFunctions.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentStructures.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentStructures.g.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotification.g.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationConstants.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationHandlers.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationSharedFunctions.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationStructures.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationStructures.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemParts.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTask.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskConstants.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskHandlers.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskSharedFunctions.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskStructures.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskStructures.g.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotification.g.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationConstants.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationHandlers.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationSharedFunctions.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationStructures.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationStructures.g.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfo.g.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoConstants.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoHandlers.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoSharedFunctions.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoStructures.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoStructures.g.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignment.g.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentConstants.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentHandlers.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentSharedFunctions.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentStructures.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentStructures.g.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotification.g.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationConstants.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationHandlers.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationSharedFunctions.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationStructures.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationStructures.g.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItem.g.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemConstants.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemHandlers.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemSharedFunctions.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemStructures.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemStructures.g.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CompanyDirective%40Tracking\CompanyDirectiveTracking.g.cs" />
+    <Compile Include="CompanyDirective%40Versions\CompanyDirectiveVersions.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirective.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveConstants.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveHandlers.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveSharedFunctions.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveStructures.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveStructures.g.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.g.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentConstants.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentHandlers.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentSharedFunctions.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentStructures.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentStructures.g.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotification.g.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationConstants.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationHandlers.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationSharedFunctions.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationStructures.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationStructures.g.cs" />
+    <Compile Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTask.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskConstants.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskHandlers.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskSharedFunctions.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskStructures.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskStructures.g.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.g.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentConstants.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentHandlers.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentSharedFunctions.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentStructures.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentStructures.g.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignment.g.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentConstants.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentHandlers.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentSharedFunctions.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentStructures.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentStructures.g.cs" />
+    <Compile Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddressees.g.cs" />
+    <Compile Include="DocumentReviewTask%40Observers\DocumentReviewTaskObservers.g.cs" />
+    <Compile Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObservers.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTask.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskConstants.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskHandlers.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskSharedFunctions.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskStructures.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskStructures.g.cs" />
+    <Compile Include="IncomingLetter%40Addressees\IncomingLetterAddressees.g.cs" />
+    <Compile Include="IncomingLetter%40Tracking\IncomingLetterTracking.g.cs" />
+    <Compile Include="IncomingLetter%40Versions\IncomingLetterVersions.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetter.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterConstants.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterHandlers.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterSharedFunctions.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterStructures.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="Order%40Tracking\OrderTracking.g.cs" />
+    <Compile Include="Order%40Versions\OrderVersions.g.cs" />
+    <Compile Include="OrderBase%40Tracking\OrderBaseTracking.g.cs" />
+    <Compile Include="OrderBase%40Versions\OrderBaseVersions.g.cs" />
+    <Compile Include="OrderBase\OrderBase.g.cs" />
+    <Compile Include="OrderBase\OrderBaseConstants.cs" />
+    <Compile Include="OrderBase\OrderBaseHandlers.cs" />
+    <Compile Include="OrderBase\OrderBaseSharedFunctions.cs" />
+    <Compile Include="OrderBase\OrderBaseStructures.cs" />
+    <Compile Include="OrderBase\OrderBaseStructures.g.cs" />
+    <Compile Include="Order\Order.g.cs" />
+    <Compile Include="Order\OrderConstants.cs" />
+    <Compile Include="Order\OrderHandlers.cs" />
+    <Compile Include="Order\OrderSharedFunctions.cs" />
+    <Compile Include="Order\OrderStructures.cs" />
+    <Compile Include="Order\OrderStructures.g.cs" />
+    <Compile Include="OutgoingLetter%40Addressees\OutgoingLetterAddressees.g.cs" />
+    <Compile Include="OutgoingLetter%40Tracking\OutgoingLetterTracking.g.cs" />
+    <Compile Include="OutgoingLetter%40Versions\OutgoingLetterVersions.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetter.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterConstants.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterHandlers.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterSharedFunctions.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterStructures.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterStructures.g.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignment.g.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentConstants.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentHandlers.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentSharedFunctions.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentStructures.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentStructures.g.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSetting.g.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingConstants.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingHandlers.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingSharedFunctions.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingStructures.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingStructures.g.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignment.g.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentConstants.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentHandlers.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentSharedFunctions.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentStructures.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentStructures.g.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignment.g.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentConstants.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentHandlers.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentSharedFunctions.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentStructures.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentStructures.g.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.g.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportConstants.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportStructures.cs" />
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportStructures.g.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReport.g.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReportConstants.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReportStructures.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReportStructures.g.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReport.g.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReportConstants.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReportStructures.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReportStructures.g.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.g.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportConstants.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportStructures.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportStructures.g.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReport.g.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReportConstants.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReportStructures.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReportStructures.g.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReport.g.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReportConstants.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReportStructures.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReportStructures.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportConstants.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportStructures.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportStructures.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportConstants.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportStructures.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportStructures.g.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReport.g.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReportConstants.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReportStructures.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReportStructures.g.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.g.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportConstants.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportStructures.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportStructures.g.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotification.g.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationConstants.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationHandlers.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationSharedFunctions.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationStructures.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationStructures.g.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignment.g.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentConstants.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentHandlers.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentSharedFunctions.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentStructures.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentStructures.g.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignment.g.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentConstants.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentHandlers.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentSharedFunctions.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentStructures.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentStructures.g.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotification.g.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationConstants.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationHandlers.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationSharedFunctions.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationStructures.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationStructures.g.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotification.g.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationConstants.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationHandlers.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationSharedFunctions.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationStructures.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationStructures.g.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignment.g.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentConstants.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentHandlers.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentSharedFunctions.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentStructures.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentStructures.g.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignment.g.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentConstants.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentHandlers.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentSharedFunctions.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentStructures.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentStructures.g.cs" />
+    <Compile Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObservers.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTask.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskConstants.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskHandlers.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskSharedFunctions.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskStructures.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersions.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersions.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersionsSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment%40AcquaintanceVersions\obj\AcquaintanceAssignmentAcquaintanceVersions.mtd" />
+    <EmbeddedResource Include="AcquaintanceAssignment\AcquaintanceAssignment.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment\AcquaintanceAssignment.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment\AcquaintanceAssignmentSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment\AcquaintanceAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceAssignment\obj\AcquaintanceAssignment.mtd" />
+    <EmbeddedResource Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotification.resx" />
+    <EmbeddedResource Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotification.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceCompleteNotification\obj\AcquaintanceCompleteNotification.mtd" />
+    <EmbeddedResource Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignment.resx" />
+    <EmbeddedResource Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignment.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceFinishAssignment\obj\AcquaintanceFinishAssignment.mtd" />
+    <EmbeddedResource Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipants.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipants.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipantsSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipantsSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40ExcludedParticipants\obj\AcquaintanceListExcludedParticipants.mtd" />
+    <EmbeddedResource Include="AcquaintanceList%40Participants\AcquaintanceListParticipants.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40Participants\AcquaintanceListParticipants.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40Participants\AcquaintanceListParticipantsSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40Participants\AcquaintanceListParticipantsSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceList%40Participants\obj\AcquaintanceListParticipants.mtd" />
+    <EmbeddedResource Include="AcquaintanceList\AcquaintanceList.resx" />
+    <EmbeddedResource Include="AcquaintanceList\AcquaintanceList.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceList\AcquaintanceListSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceList\AcquaintanceListSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceList\obj\AcquaintanceList.mtd" />
+    <EmbeddedResource Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersions.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersions.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersionsSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40AcquaintanceVersions\obj\AcquaintanceTaskAcquaintanceVersions.mtd" />
+    <EmbeddedResource Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformers.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformers.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformersSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformersSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40ExcludedPerformers\obj\AcquaintanceTaskExcludedPerformers.mtd" />
+    <EmbeddedResource Include="AcquaintanceTask%40Observers\AcquaintanceTaskObservers.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Observers\AcquaintanceTaskObservers.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Observers\AcquaintanceTaskObserversSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Observers\AcquaintanceTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Observers\obj\AcquaintanceTaskObservers.mtd" />
+    <EmbeddedResource Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformers.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformers.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformersSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformersSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask%40Performers\obj\AcquaintanceTaskPerformers.mtd" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployees.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployees.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployeesSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployeesSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant%40Employees\obj\AcquaintanceTaskParticipantEmployees.mtd" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipant.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipant.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTaskParticipant\obj\AcquaintanceTaskParticipant.mtd" />
+    <EmbeddedResource Include="AcquaintanceTask\AcquaintanceTask.resx" />
+    <EmbeddedResource Include="AcquaintanceTask\AcquaintanceTask.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask\AcquaintanceTaskSystem.resx" />
+    <EmbeddedResource Include="AcquaintanceTask\AcquaintanceTaskSystem.ru.resx" />
+    <EmbeddedResource Include="AcquaintanceTask\obj\AcquaintanceTask.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\ActionItemExecutionAssignment.resx" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\ActionItemExecutionAssignment.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionAssignment\obj\ActionItemExecutionAssignment.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\ActionItemExecutionNotification.resx" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\ActionItemExecutionNotification.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\ActionItemExecutionNotificationSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\ActionItemExecutionNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionNotification\obj\ActionItemExecutionNotification.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObservers.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObservers.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObserversSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObserversSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemObservers\obj\ActionItemExecutionTaskActionItemObservers.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemParts.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemParts.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemPartsSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemPartsSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40ActionItemParts\obj\ActionItemExecutionTaskActionItemParts.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddenda.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddenda.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddendaSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddendaSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40AddedAddenda\obj\ActionItemExecutionTaskAddedAddenda.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssignees.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssignees.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssigneesSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssigneesSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40CoAssignees\obj\ActionItemExecutionTaskCoAssignees.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObservers.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObservers.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObserversSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40Observers\obj\ActionItemExecutionTaskObservers.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssignees.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssignees.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssigneesSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssigneesSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40PartsCoAssignees\obj\ActionItemExecutionTaskPartsCoAssignees.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddenda.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddenda.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddendaSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddendaSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask%40RemovedAddenda\obj\ActionItemExecutionTaskRemovedAddenda.mtd" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTask.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTask.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTaskSystem.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask\ActionItemExecutionTaskSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemExecutionTask\obj\ActionItemExecutionTask.mtd" />
+    <EmbeddedResource Include="ActionItemObserversNotification\ActionItemObserversNotification.resx" />
+    <EmbeddedResource Include="ActionItemObserversNotification\ActionItemObserversNotification.ru.resx" />
+    <EmbeddedResource Include="ActionItemObserversNotification\ActionItemObserversNotificationSystem.resx" />
+    <EmbeddedResource Include="ActionItemObserversNotification\ActionItemObserversNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemObserversNotification\obj\ActionItemObserversNotification.mtd" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\ActionItemPredictionInfo.resx" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\ActionItemPredictionInfo.ru.resx" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\ActionItemPredictionInfoSystem.resx" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\ActionItemPredictionInfoSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemPredictionInfo\obj\ActionItemPredictionInfo.mtd" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignment.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignment.ru.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentSystem.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorAssignment\obj\ActionItemSupervisorAssignment.mtd" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\ActionItemSupervisorNotification.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\ActionItemSupervisorNotification.ru.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationSystem.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemSupervisorNotification\obj\ActionItemSupervisorNotification.mtd" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\ActionItemTrainQueueItem.resx" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\ActionItemTrainQueueItem.ru.resx" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemSystem.resx" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="ActionItemTrainQueueItem\obj\ActionItemTrainQueueItem.mtd" />
+    <EmbeddedResource Include="CompanyDirective%40Tracking\CompanyDirectiveTracking.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Tracking\CompanyDirectiveTracking.ru.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Tracking\CompanyDirectiveTrackingSystem.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Tracking\CompanyDirectiveTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Tracking\obj\CompanyDirectiveTracking.mtd" />
+    <EmbeddedResource Include="CompanyDirective%40Versions\CompanyDirectiveVersions.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Versions\CompanyDirectiveVersions.ru.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Versions\CompanyDirectiveVersionsSystem.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Versions\CompanyDirectiveVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="CompanyDirective%40Versions\obj\CompanyDirectiveVersions.mtd" />
+    <EmbeddedResource Include="CompanyDirective\CompanyDirective.resx" />
+    <EmbeddedResource Include="CompanyDirective\CompanyDirective.ru.resx" />
+    <EmbeddedResource Include="CompanyDirective\CompanyDirectiveSystem.resx" />
+    <EmbeddedResource Include="CompanyDirective\CompanyDirectiveSystem.ru.resx" />
+    <EmbeddedResource Include="CompanyDirective\obj\CompanyDirective.mtd" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.resx" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentSystem.resx" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionAssignment\obj\DeadlineExtensionAssignment.mtd" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\DeadlineExtensionNotification.resx" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\DeadlineExtensionNotification.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\DeadlineExtensionNotificationSystem.resx" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\DeadlineExtensionNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionNotification\obj\DeadlineExtensionNotification.mtd" />
+    <EmbeddedResource Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObserversSystem.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask%40Observers\obj\DeadlineExtensionTaskObservers.mtd" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTask.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTask.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTaskSystem.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask\DeadlineExtensionTaskSystem.ru.resx" />
+    <EmbeddedResource Include="DeadlineExtensionTask\obj\DeadlineExtensionTask.mtd" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.resx" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.ru.resx" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentSystem.resx" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="DeadlineRejectionAssignment\obj\DeadlineRejectionAssignment.mtd" />
+    <EmbeddedResource Include="DocumentReviewAssignment\DocumentReviewAssignment.resx" />
+    <EmbeddedResource Include="DocumentReviewAssignment\DocumentReviewAssignment.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewAssignment\DocumentReviewAssignmentSystem.resx" />
+    <EmbeddedResource Include="DocumentReviewAssignment\DocumentReviewAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewAssignment\obj\DocumentReviewAssignment.mtd" />
+    <EmbeddedResource Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddenda.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddenda.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddendaSystem.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddendaSystem.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40AddedAddenda\obj\DocumentReviewTaskAddedAddenda.mtd" />
+    <EmbeddedResource Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddressees.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddressees.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddresseesSystem.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddresseesSystem.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Addressees\obj\DocumentReviewTaskAddressees.mtd" />
+    <EmbeddedResource Include="DocumentReviewTask%40Observers\DocumentReviewTaskObservers.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Observers\DocumentReviewTaskObservers.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Observers\DocumentReviewTaskObserversSystem.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Observers\DocumentReviewTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40Observers\obj\DocumentReviewTaskObservers.mtd" />
+    <EmbeddedResource Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddenda.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddenda.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddendaSystem.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddendaSystem.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40RemovedAddenda\obj\DocumentReviewTaskRemovedAddenda.mtd" />
+    <EmbeddedResource Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObservers.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObservers.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObserversSystem.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObserversSystem.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask%40ResolutionObservers\obj\DocumentReviewTaskResolutionObservers.mtd" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTask.resx" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTask.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTaskSystem.resx" />
+    <EmbeddedResource Include="DocumentReviewTask\DocumentReviewTaskSystem.ru.resx" />
+    <EmbeddedResource Include="DocumentReviewTask\obj\DocumentReviewTask.mtd" />
+    <EmbeddedResource Include="IncomingLetter%40Addressees\IncomingLetterAddressees.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Addressees\IncomingLetterAddressees.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Addressees\IncomingLetterAddresseesSystem.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Addressees\IncomingLetterAddresseesSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Addressees\obj\IncomingLetterAddressees.mtd" />
+    <EmbeddedResource Include="IncomingLetter%40Tracking\IncomingLetterTracking.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Tracking\IncomingLetterTracking.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Tracking\IncomingLetterTrackingSystem.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Tracking\IncomingLetterTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Tracking\obj\IncomingLetterTracking.mtd" />
+    <EmbeddedResource Include="IncomingLetter%40Versions\IncomingLetterVersions.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Versions\IncomingLetterVersions.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Versions\IncomingLetterVersionsSystem.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Versions\IncomingLetterVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter%40Versions\obj\IncomingLetterVersions.mtd" />
+    <EmbeddedResource Include="IncomingLetter\IncomingLetter.resx" />
+    <EmbeddedResource Include="IncomingLetter\IncomingLetter.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter\IncomingLetterSystem.resx" />
+    <EmbeddedResource Include="IncomingLetter\IncomingLetterSystem.ru.resx" />
+    <EmbeddedResource Include="IncomingLetter\obj\IncomingLetter.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="Order%40Tracking\obj\OrderTracking.mtd" />
+    <EmbeddedResource Include="Order%40Tracking\OrderTracking.resx" />
+    <EmbeddedResource Include="Order%40Tracking\OrderTracking.ru.resx" />
+    <EmbeddedResource Include="Order%40Tracking\OrderTrackingSystem.resx" />
+    <EmbeddedResource Include="Order%40Tracking\OrderTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="Order%40Versions\obj\OrderVersions.mtd" />
+    <EmbeddedResource Include="Order%40Versions\OrderVersions.resx" />
+    <EmbeddedResource Include="Order%40Versions\OrderVersions.ru.resx" />
+    <EmbeddedResource Include="Order%40Versions\OrderVersionsSystem.resx" />
+    <EmbeddedResource Include="Order%40Versions\OrderVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="OrderBase%40Tracking\obj\OrderBaseTracking.mtd" />
+    <EmbeddedResource Include="OrderBase%40Tracking\OrderBaseTracking.resx" />
+    <EmbeddedResource Include="OrderBase%40Tracking\OrderBaseTracking.ru.resx" />
+    <EmbeddedResource Include="OrderBase%40Tracking\OrderBaseTrackingSystem.resx" />
+    <EmbeddedResource Include="OrderBase%40Tracking\OrderBaseTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="OrderBase%40Versions\obj\OrderBaseVersions.mtd" />
+    <EmbeddedResource Include="OrderBase%40Versions\OrderBaseVersions.resx" />
+    <EmbeddedResource Include="OrderBase%40Versions\OrderBaseVersions.ru.resx" />
+    <EmbeddedResource Include="OrderBase%40Versions\OrderBaseVersionsSystem.resx" />
+    <EmbeddedResource Include="OrderBase%40Versions\OrderBaseVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="OrderBase\obj\OrderBase.mtd" />
+    <EmbeddedResource Include="OrderBase\OrderBase.resx" />
+    <EmbeddedResource Include="OrderBase\OrderBase.ru.resx" />
+    <EmbeddedResource Include="OrderBase\OrderBaseSystem.resx" />
+    <EmbeddedResource Include="OrderBase\OrderBaseSystem.ru.resx" />
+    <EmbeddedResource Include="Order\obj\Order.mtd" />
+    <EmbeddedResource Include="Order\Order.resx" />
+    <EmbeddedResource Include="Order\Order.ru.resx" />
+    <EmbeddedResource Include="Order\OrderSystem.resx" />
+    <EmbeddedResource Include="Order\OrderSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Addressees\obj\OutgoingLetterAddressees.mtd" />
+    <EmbeddedResource Include="OutgoingLetter%40Addressees\OutgoingLetterAddressees.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Addressees\OutgoingLetterAddressees.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Addressees\OutgoingLetterAddresseesSystem.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Addressees\OutgoingLetterAddresseesSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Tracking\obj\OutgoingLetterTracking.mtd" />
+    <EmbeddedResource Include="OutgoingLetter%40Tracking\OutgoingLetterTracking.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Tracking\OutgoingLetterTracking.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Tracking\OutgoingLetterTrackingSystem.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Tracking\OutgoingLetterTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Versions\obj\OutgoingLetterVersions.mtd" />
+    <EmbeddedResource Include="OutgoingLetter%40Versions\OutgoingLetterVersions.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Versions\OutgoingLetterVersions.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Versions\OutgoingLetterVersionsSystem.resx" />
+    <EmbeddedResource Include="OutgoingLetter%40Versions\OutgoingLetterVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter\obj\OutgoingLetter.mtd" />
+    <EmbeddedResource Include="OutgoingLetter\OutgoingLetter.resx" />
+    <EmbeddedResource Include="OutgoingLetter\OutgoingLetter.ru.resx" />
+    <EmbeddedResource Include="OutgoingLetter\OutgoingLetterSystem.resx" />
+    <EmbeddedResource Include="OutgoingLetter\OutgoingLetterSystem.ru.resx" />
+    <EmbeddedResource Include="PreparingDraftResolutionAssignment\obj\PreparingDraftResolutionAssignment.mtd" />
+    <EmbeddedResource Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignment.resx" />
+    <EmbeddedResource Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignment.ru.resx" />
+    <EmbeddedResource Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentSystem.resx" />
+    <EmbeddedResource Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="RecordManagementSetting\obj\RecordManagementSetting.mtd" />
+    <EmbeddedResource Include="RecordManagementSetting\RecordManagementSetting.resx" />
+    <EmbeddedResource Include="RecordManagementSetting\RecordManagementSetting.ru.resx" />
+    <EmbeddedResource Include="RecordManagementSetting\RecordManagementSettingSystem.resx" />
+    <EmbeddedResource Include="RecordManagementSetting\RecordManagementSettingSystem.ru.resx" />
+    <EmbeddedResource Include="ReportRequestAssignment\obj\ReportRequestAssignment.mtd" />
+    <EmbeddedResource Include="ReportRequestAssignment\ReportRequestAssignment.resx" />
+    <EmbeddedResource Include="ReportRequestAssignment\ReportRequestAssignment.ru.resx" />
+    <EmbeddedResource Include="ReportRequestAssignment\ReportRequestAssignmentSystem.resx" />
+    <EmbeddedResource Include="ReportRequestAssignment\ReportRequestAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\obj\ReportRequestCheckAssignment.mtd" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\ReportRequestCheckAssignment.resx" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\ReportRequestCheckAssignment.ru.resx" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentSystem.resx" />
+    <EmbeddedResource Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.mtd" />
+    <EmbeddedResource Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.ru.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportSystem.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceFormReport\AcquaintanceFormReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceReport\AcquaintanceReport.mtd" />
+    <EmbeddedResource Include="Reports\AcquaintanceReport\AcquaintanceReport.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceReport\AcquaintanceReport.ru.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceReport\AcquaintanceReportSystem.resx" />
+    <EmbeddedResource Include="Reports\AcquaintanceReport\AcquaintanceReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\ActionItemPrintReport\ActionItemPrintReport.mtd" />
+    <EmbeddedResource Include="Reports\ActionItemPrintReport\ActionItemPrintReport.resx" />
+    <EmbeddedResource Include="Reports\ActionItemPrintReport\ActionItemPrintReport.ru.resx" />
+    <EmbeddedResource Include="Reports\ActionItemPrintReport\ActionItemPrintReportSystem.resx" />
+    <EmbeddedResource Include="Reports\ActionItemPrintReport\ActionItemPrintReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.mtd" />
+    <EmbeddedResource Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.resx" />
+    <EmbeddedResource Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.ru.resx" />
+    <EmbeddedResource Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportSystem.resx" />
+    <EmbeddedResource Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\DocumentReturnReport\DocumentReturnReport.mtd" />
+    <EmbeddedResource Include="Reports\DocumentReturnReport\DocumentReturnReport.resx" />
+    <EmbeddedResource Include="Reports\DocumentReturnReport\DocumentReturnReport.ru.resx" />
+    <EmbeddedResource Include="Reports\DocumentReturnReport\DocumentReturnReportSystem.resx" />
+    <EmbeddedResource Include="Reports\DocumentReturnReport\DocumentReturnReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\DraftResolutionReport\DraftResolutionReport.mtd" />
+    <EmbeddedResource Include="Reports\DraftResolutionReport\DraftResolutionReport.resx" />
+    <EmbeddedResource Include="Reports\DraftResolutionReport\DraftResolutionReport.ru.resx" />
+    <EmbeddedResource Include="Reports\DraftResolutionReport\DraftResolutionReportSystem.resx" />
+    <EmbeddedResource Include="Reports\DraftResolutionReport\DraftResolutionReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.mtd" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.ru.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportSystem.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.mtd" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.ru.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportSystem.resx" />
+    <EmbeddedResource Include="Reports\IncomingDocumentsReport\IncomingDocumentsReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\InternalDocumentsReport\InternalDocumentsReport.mtd" />
+    <EmbeddedResource Include="Reports\InternalDocumentsReport\InternalDocumentsReport.resx" />
+    <EmbeddedResource Include="Reports\InternalDocumentsReport\InternalDocumentsReport.ru.resx" />
+    <EmbeddedResource Include="Reports\InternalDocumentsReport\InternalDocumentsReportSystem.resx" />
+    <EmbeddedResource Include="Reports\InternalDocumentsReport\InternalDocumentsReportSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.mtd" />
+    <EmbeddedResource Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.resx" />
+    <EmbeddedResource Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.ru.resx" />
+    <EmbeddedResource Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportSystem.resx" />
+    <EmbeddedResource Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReportSystem.ru.resx" />
+    <EmbeddedResource Include="ReviewClerkNotification\obj\ReviewClerkNotification.mtd" />
+    <EmbeddedResource Include="ReviewClerkNotification\ReviewClerkNotification.resx" />
+    <EmbeddedResource Include="ReviewClerkNotification\ReviewClerkNotification.ru.resx" />
+    <EmbeddedResource Include="ReviewClerkNotification\ReviewClerkNotificationSystem.resx" />
+    <EmbeddedResource Include="ReviewClerkNotification\ReviewClerkNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="ReviewDraftResolutionAssignment\obj\ReviewDraftResolutionAssignment.mtd" />
+    <EmbeddedResource Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignment.resx" />
+    <EmbeddedResource Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignment.ru.resx" />
+    <EmbeddedResource Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentSystem.resx" />
+    <EmbeddedResource Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="ReviewManagerAssignment\obj\ReviewManagerAssignment.mtd" />
+    <EmbeddedResource Include="ReviewManagerAssignment\ReviewManagerAssignment.resx" />
+    <EmbeddedResource Include="ReviewManagerAssignment\ReviewManagerAssignment.ru.resx" />
+    <EmbeddedResource Include="ReviewManagerAssignment\ReviewManagerAssignmentSystem.resx" />
+    <EmbeddedResource Include="ReviewManagerAssignment\ReviewManagerAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="ReviewObserverNotification\obj\ReviewObserverNotification.mtd" />
+    <EmbeddedResource Include="ReviewObserverNotification\ReviewObserverNotification.resx" />
+    <EmbeddedResource Include="ReviewObserverNotification\ReviewObserverNotification.ru.resx" />
+    <EmbeddedResource Include="ReviewObserverNotification\ReviewObserverNotificationSystem.resx" />
+    <EmbeddedResource Include="ReviewObserverNotification\ReviewObserverNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="ReviewObserversNotification\obj\ReviewObserversNotification.mtd" />
+    <EmbeddedResource Include="ReviewObserversNotification\ReviewObserversNotification.resx" />
+    <EmbeddedResource Include="ReviewObserversNotification\ReviewObserversNotification.ru.resx" />
+    <EmbeddedResource Include="ReviewObserversNotification\ReviewObserversNotificationSystem.resx" />
+    <EmbeddedResource Include="ReviewObserversNotification\ReviewObserversNotificationSystem.ru.resx" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\obj\ReviewResolutionAssignment.mtd" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\ReviewResolutionAssignment.resx" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\ReviewResolutionAssignment.ru.resx" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\ReviewResolutionAssignmentSystem.resx" />
+    <EmbeddedResource Include="ReviewResolutionAssignment\ReviewResolutionAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="ReviewReworkAssignment\obj\ReviewReworkAssignment.mtd" />
+    <EmbeddedResource Include="ReviewReworkAssignment\ReviewReworkAssignment.resx" />
+    <EmbeddedResource Include="ReviewReworkAssignment\ReviewReworkAssignment.ru.resx" />
+    <EmbeddedResource Include="ReviewReworkAssignment\ReviewReworkAssignmentSystem.resx" />
+    <EmbeddedResource Include="ReviewReworkAssignment\ReviewReworkAssignmentSystem.ru.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask%40Observers\obj\StatusReportRequestTaskObservers.mtd" />
+    <EmbeddedResource Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObservers.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObservers.ru.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObserversSystem.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObserversSystem.ru.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask\obj\StatusReportRequestTask.mtd" />
+    <EmbeddedResource Include="StatusReportRequestTask\StatusReportRequestTask.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask\StatusReportRequestTask.ru.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask\StatusReportRequestTaskSystem.resx" />
+    <EmbeddedResource Include="StatusReportRequestTask\StatusReportRequestTaskSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

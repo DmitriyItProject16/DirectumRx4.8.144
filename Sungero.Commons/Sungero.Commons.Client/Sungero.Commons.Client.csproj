@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{eecbba38-4442-70f3-8615-0712ddbbeaca}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Commons.Client</RootNamespace>
+    <AssemblyName>Sungero.Commons.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="City\City.g.cs" />
+    <Compile Include="City\CityCollectionView.xaml.cs">
+      <DependentUpon>CityCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="City\CityView.xaml.cs">
+      <DependentUpon>CityView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSession.g.cs" />
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSessionCollectionView.xaml.cs">
+      <DependentUpon>ClassifierTrainingSessionCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSessionView.xaml.cs">
+      <DependentUpon>ClassifierTrainingSessionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Country\Country.g.cs" />
+    <Compile Include="Country\CountryCollectionView.xaml.cs">
+      <DependentUpon>CountryCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Country\CountryView.xaml.cs">
+      <DependentUpon>CountryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Currency\Currency.g.cs" />
+    <Compile Include="Currency\CurrencyCollectionView.xaml.cs">
+      <DependentUpon>CurrencyCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Currency\CurrencyView.xaml.cs">
+      <DependentUpon>CurrencyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EntityRecognitionInfo%40AdditionalClassifiers\EntityRecognitionInfoAdditionalClassifiers.g.cs" />
+    <Compile Include="EntityRecognitionInfo%40Facts\EntityRecognitionInfoFacts.g.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfo.g.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfoCollectionView.xaml.cs">
+      <DependentUpon>EntityRecognitionInfoCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfoView.xaml.cs">
+      <DependentUpon>EntityRecognitionInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalEntityLink\ExternalEntityLink.g.cs" />
+    <Compile Include="ExternalEntityLink\ExternalEntityLinkCollectionView.xaml.cs">
+      <DependentUpon>ExternalEntityLinkCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalEntityLink\ExternalEntityLinkView.xaml.cs">
+      <DependentUpon>ExternalEntityLinkView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Module.g.cs" />
+    <Compile Include="Region\Region.g.cs" />
+    <Compile Include="Region\RegionCollectionView.xaml.cs">
+      <DependentUpon>RegionCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Region\RegionView.xaml.cs">
+      <DependentUpon>RegionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VatRate\VatRate.g.cs" />
+    <Compile Include="VatRate\VatRateCollectionView.xaml.cs">
+      <DependentUpon>VatRateCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VatRate\VatRateView.xaml.cs">
+      <DependentUpon>VatRateView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="City\CityCollectionView.xaml" />
+    <Page Include="City\CityView.xaml" />
+    <Page Include="ClassifierTrainingSession\ClassifierTrainingSessionCollectionView.xaml" />
+    <Page Include="ClassifierTrainingSession\ClassifierTrainingSessionView.xaml" />
+    <Page Include="Country\CountryCollectionView.xaml" />
+    <Page Include="Country\CountryView.xaml" />
+    <Page Include="Currency\CurrencyCollectionView.xaml" />
+    <Page Include="Currency\CurrencyView.xaml" />
+    <Page Include="EntityRecognitionInfo\EntityRecognitionInfoCollectionView.xaml" />
+    <Page Include="EntityRecognitionInfo\EntityRecognitionInfoView.xaml" />
+    <Page Include="ExternalEntityLink\ExternalEntityLinkCollectionView.xaml" />
+    <Page Include="ExternalEntityLink\ExternalEntityLinkView.xaml" />
+    <Page Include="ModuleDataTemplates.xaml" />
+    <Page Include="Region\RegionCollectionView.xaml" />
+    <Page Include="Region\RegionView.xaml" />
+    <Page Include="VatRate\VatRateCollectionView.xaml" />
+    <Page Include="VatRate\VatRateView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationUI" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Presentation">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommonLibrary.Controls">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GongSolutions.Wpf.DragDrop">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\GongSolutions.Wpf.DragDrop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Client">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Client">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.ElasticsearchExtensions">
+      <HintPath>..\Sungero.Commons.Libraries\ElasticsearchExtensions\Sungero.ElasticsearchExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Client">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.DirectumRX\Sungero.DirectumRX.ClientBase\Sungero.DirectumRX.ClientBase.csproj">
+      <Project>{d53ca45d-7343-e40a-a6c2-90a5f7c85244}</Project>
+      <Name>Sungero.DirectumRX.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Commons.Shared\Sungero.Commons.Shared.csproj">
+      <Project>{79272a15-375b-3543-336e-3db95d402659}</Project>
+      <Name>Sungero.Commons.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Commons.ClientBase\Sungero.Commons.ClientBase.csproj">
+      <Project>{9bf82d81-01c3-cf3a-a65d-f6aebeccb848}</Project>
+      <Name>Sungero.Commons.ClientBase</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

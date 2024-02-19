@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{45ec9e8c-aaf2-9721-d40c-894ee4329a70}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.RecordManagement.Client</RootNamespace>
+    <AssemblyName>Sungero.RecordManagement.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AcquaintanceAssignment%40AcquaintanceVersions\AcquaintanceAssignmentAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignment.g.cs" />
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentCollectionView.xaml.cs">
+      <DependentUpon>AcquaintanceAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceAssignment\AcquaintanceAssignmentView.xaml.cs">
+      <DependentUpon>AcquaintanceAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotification.g.cs" />
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationCollectionView.xaml.cs">
+      <DependentUpon>AcquaintanceCompleteNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationView.xaml.cs">
+      <DependentUpon>AcquaintanceCompleteNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignment.g.cs" />
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentCollectionView.xaml.cs">
+      <DependentUpon>AcquaintanceFinishAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentView.xaml.cs">
+      <DependentUpon>AcquaintanceFinishAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceList%40ExcludedParticipants\AcquaintanceListExcludedParticipants.g.cs" />
+    <Compile Include="AcquaintanceList%40Participants\AcquaintanceListParticipants.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceList.g.cs" />
+    <Compile Include="AcquaintanceList\AcquaintanceListCollectionView.xaml.cs">
+      <DependentUpon>AcquaintanceListCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceList\AcquaintanceListView.xaml.cs">
+      <DependentUpon>AcquaintanceListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceTask%40AcquaintanceVersions\AcquaintanceTaskAcquaintanceVersions.g.cs" />
+    <Compile Include="AcquaintanceTask%40ExcludedPerformers\AcquaintanceTaskExcludedPerformers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Observers\AcquaintanceTaskObservers.g.cs" />
+    <Compile Include="AcquaintanceTask%40Performers\AcquaintanceTaskPerformers.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant%40Employees\AcquaintanceTaskParticipantEmployees.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipant.g.cs" />
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantCollectionView.xaml.cs">
+      <DependentUpon>AcquaintanceTaskParticipantCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantView.xaml.cs">
+      <DependentUpon>AcquaintanceTaskParticipantView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceTask\AcquaintanceTask.g.cs" />
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskCollectionView.xaml.cs">
+      <DependentUpon>AcquaintanceTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AcquaintanceTask\AcquaintanceTaskView.xaml.cs">
+      <DependentUpon>AcquaintanceTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignment.g.cs" />
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ActionItemExecutionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentView.xaml.cs">
+      <DependentUpon>ActionItemExecutionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotification.g.cs" />
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationCollectionView.xaml.cs">
+      <DependentUpon>ActionItemExecutionNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemExecutionNotification\ActionItemExecutionNotificationView.xaml.cs">
+      <DependentUpon>ActionItemExecutionNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemExecutionTask%40ActionItemObservers\ActionItemExecutionTaskActionItemObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40ActionItemParts\ActionItemExecutionTaskActionItemParts.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40AddedAddenda\ActionItemExecutionTaskAddedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40CoAssignees\ActionItemExecutionTaskCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40Observers\ActionItemExecutionTaskObservers.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40PartsCoAssignees\ActionItemExecutionTaskPartsCoAssignees.g.cs" />
+    <Compile Include="ActionItemExecutionTask%40RemovedAddenda\ActionItemExecutionTaskRemovedAddenda.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTask.g.cs" />
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskCollectionView.xaml.cs">
+      <DependentUpon>ActionItemExecutionTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemExecutionTask\ActionItemExecutionTaskView.xaml.cs">
+      <DependentUpon>ActionItemExecutionTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotification.g.cs" />
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationCollectionView.xaml.cs">
+      <DependentUpon>ActionItemObserversNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemObserversNotification\ActionItemObserversNotificationView.xaml.cs">
+      <DependentUpon>ActionItemObserversNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfo.g.cs" />
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoCollectionView.xaml.cs">
+      <DependentUpon>ActionItemPredictionInfoCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemPredictionInfo\ActionItemPredictionInfoView.xaml.cs">
+      <DependentUpon>ActionItemPredictionInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignment.g.cs" />
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ActionItemSupervisorAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentView.xaml.cs">
+      <DependentUpon>ActionItemSupervisorAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotification.g.cs" />
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationCollectionView.xaml.cs">
+      <DependentUpon>ActionItemSupervisorNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationView.xaml.cs">
+      <DependentUpon>ActionItemSupervisorNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItem.g.cs" />
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemCollectionView.xaml.cs">
+      <DependentUpon>ActionItemTrainQueueItemCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemView.xaml.cs">
+      <DependentUpon>ActionItemTrainQueueItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CompanyDirective%40Tracking\CompanyDirectiveTracking.g.cs" />
+    <Compile Include="CompanyDirective%40Versions\CompanyDirectiveVersions.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirective.g.cs" />
+    <Compile Include="CompanyDirective\CompanyDirectiveCollectionView.xaml.cs">
+      <DependentUpon>CompanyDirectiveCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyDirective\CompanyDirectiveView.xaml.cs">
+      <DependentUpon>CompanyDirectiveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.g.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>DeadlineExtensionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentView.xaml.cs">
+      <DependentUpon>DeadlineExtensionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotification.g.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationCollectionView.xaml.cs">
+      <DependentUpon>DeadlineExtensionNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationView.xaml.cs">
+      <DependentUpon>DeadlineExtensionNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTask.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskCollectionView.xaml.cs">
+      <DependentUpon>DeadlineExtensionTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskView.xaml.cs">
+      <DependentUpon>DeadlineExtensionTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.g.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>DeadlineRejectionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentView.xaml.cs">
+      <DependentUpon>DeadlineRejectionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignment.g.cs" />
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentCollectionView.xaml.cs">
+      <DependentUpon>DocumentReviewAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentReviewAssignment\DocumentReviewAssignmentView.xaml.cs">
+      <DependentUpon>DocumentReviewAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentReviewTask%40AddedAddenda\DocumentReviewTaskAddedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40Addressees\DocumentReviewTaskAddressees.g.cs" />
+    <Compile Include="DocumentReviewTask%40Observers\DocumentReviewTaskObservers.g.cs" />
+    <Compile Include="DocumentReviewTask%40RemovedAddenda\DocumentReviewTaskRemovedAddenda.g.cs" />
+    <Compile Include="DocumentReviewTask%40ResolutionObservers\DocumentReviewTaskResolutionObservers.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTask.g.cs" />
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskCollectionView.xaml.cs">
+      <DependentUpon>DocumentReviewTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentReviewTask\DocumentReviewTaskView.xaml.cs">
+      <DependentUpon>DocumentReviewTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IncomingLetter%40Addressees\IncomingLetterAddressees.g.cs" />
+    <Compile Include="IncomingLetter%40Tracking\IncomingLetterTracking.g.cs" />
+    <Compile Include="IncomingLetter%40Versions\IncomingLetterVersions.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetter.g.cs" />
+    <Compile Include="IncomingLetter\IncomingLetterCollectionView.xaml.cs">
+      <DependentUpon>IncomingLetterCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IncomingLetter\IncomingLetterView.xaml.cs">
+      <DependentUpon>IncomingLetterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Module.g.cs" />
+    <Compile Include="Order%40Tracking\OrderTracking.g.cs" />
+    <Compile Include="Order%40Versions\OrderVersions.g.cs" />
+    <Compile Include="OrderBase%40Tracking\OrderBaseTracking.g.cs" />
+    <Compile Include="OrderBase%40Versions\OrderBaseVersions.g.cs" />
+    <Compile Include="OrderBase\OrderBase.g.cs" />
+    <Compile Include="OrderBase\OrderBaseCollectionView.xaml.cs">
+      <DependentUpon>OrderBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBase\OrderBaseView.xaml.cs">
+      <DependentUpon>OrderBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order.g.cs" />
+    <Compile Include="Order\OrderCollectionView.xaml.cs">
+      <DependentUpon>OrderCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Order\OrderView.xaml.cs">
+      <DependentUpon>OrderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OutgoingLetter%40Addressees\OutgoingLetterAddressees.g.cs" />
+    <Compile Include="OutgoingLetter%40Tracking\OutgoingLetterTracking.g.cs" />
+    <Compile Include="OutgoingLetter%40Versions\OutgoingLetterVersions.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetter.g.cs" />
+    <Compile Include="OutgoingLetter\OutgoingLetterCollectionView.xaml.cs">
+      <DependentUpon>OutgoingLetterCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OutgoingLetter\OutgoingLetterView.xaml.cs">
+      <DependentUpon>OutgoingLetterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignment.g.cs" />
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>PreparingDraftResolutionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentView.xaml.cs">
+      <DependentUpon>PreparingDraftResolutionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecordManagementSetting\RecordManagementSetting.g.cs" />
+    <Compile Include="RecordManagementSetting\RecordManagementSettingCollectionView.xaml.cs">
+      <DependentUpon>RecordManagementSettingCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RecordManagementSetting\RecordManagementSettingView.xaml.cs">
+      <DependentUpon>RecordManagementSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignment.g.cs" />
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ReportRequestAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportRequestAssignment\ReportRequestAssignmentView.xaml.cs">
+      <DependentUpon>ReportRequestAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignment.g.cs" />
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ReportRequestCheckAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentView.xaml.cs">
+      <DependentUpon>ReportRequestCheckAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AcquaintanceFormReport\AcquaintanceFormReport.g.cs" />
+    <Compile Include="Reports\AcquaintanceReport\AcquaintanceReport.g.cs" />
+    <Compile Include="Reports\ActionItemPrintReport\ActionItemPrintReport.g.cs" />
+    <Compile Include="Reports\ActionItemsExecutionReport\ActionItemsExecutionReport.g.cs" />
+    <Compile Include="Reports\DocumentReturnReport\DocumentReturnReport.g.cs" />
+    <Compile Include="Reports\DraftResolutionReport\DraftResolutionReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsProcessingReport\IncomingDocumentsProcessingReport.g.cs" />
+    <Compile Include="Reports\IncomingDocumentsReport\IncomingDocumentsReport.g.cs" />
+    <Compile Include="Reports\InternalDocumentsReport\InternalDocumentsReport.g.cs" />
+    <Compile Include="Reports\OutgoingDocumentsReport\OutgoingDocumentsReport.g.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotification.g.cs" />
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationCollectionView.xaml.cs">
+      <DependentUpon>ReviewClerkNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewClerkNotification\ReviewClerkNotificationView.xaml.cs">
+      <DependentUpon>ReviewClerkNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignment.g.cs" />
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ReviewDraftResolutionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentView.xaml.cs">
+      <DependentUpon>ReviewDraftResolutionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignment.g.cs" />
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ReviewManagerAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewManagerAssignment\ReviewManagerAssignmentView.xaml.cs">
+      <DependentUpon>ReviewManagerAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotification.g.cs" />
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationCollectionView.xaml.cs">
+      <DependentUpon>ReviewObserverNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewObserverNotification\ReviewObserverNotificationView.xaml.cs">
+      <DependentUpon>ReviewObserverNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotification.g.cs" />
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationCollectionView.xaml.cs">
+      <DependentUpon>ReviewObserversNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewObserversNotification\ReviewObserversNotificationView.xaml.cs">
+      <DependentUpon>ReviewObserversNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignment.g.cs" />
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ReviewResolutionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewResolutionAssignment\ReviewResolutionAssignmentView.xaml.cs">
+      <DependentUpon>ReviewResolutionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignment.g.cs" />
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ReviewReworkAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewReworkAssignment\ReviewReworkAssignmentView.xaml.cs">
+      <DependentUpon>ReviewReworkAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatusReportRequestTask%40Observers\StatusReportRequestTaskObservers.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTask.g.cs" />
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskCollectionView.xaml.cs">
+      <DependentUpon>StatusReportRequestTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatusReportRequestTask\StatusReportRequestTaskView.xaml.cs">
+      <DependentUpon>StatusReportRequestTaskView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AcquaintanceAssignment\AcquaintanceAssignmentCollectionView.xaml" />
+    <Page Include="AcquaintanceAssignment\AcquaintanceAssignmentView.xaml" />
+    <Page Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationCollectionView.xaml" />
+    <Page Include="AcquaintanceCompleteNotification\AcquaintanceCompleteNotificationView.xaml" />
+    <Page Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentCollectionView.xaml" />
+    <Page Include="AcquaintanceFinishAssignment\AcquaintanceFinishAssignmentView.xaml" />
+    <Page Include="AcquaintanceList\AcquaintanceListCollectionView.xaml" />
+    <Page Include="AcquaintanceList\AcquaintanceListView.xaml" />
+    <Page Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantCollectionView.xaml" />
+    <Page Include="AcquaintanceTaskParticipant\AcquaintanceTaskParticipantView.xaml" />
+    <Page Include="AcquaintanceTask\AcquaintanceTaskCollectionView.xaml" />
+    <Page Include="AcquaintanceTask\AcquaintanceTaskView.xaml" />
+    <Page Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentCollectionView.xaml" />
+    <Page Include="ActionItemExecutionAssignment\ActionItemExecutionAssignmentView.xaml" />
+    <Page Include="ActionItemExecutionNotification\ActionItemExecutionNotificationCollectionView.xaml" />
+    <Page Include="ActionItemExecutionNotification\ActionItemExecutionNotificationView.xaml" />
+    <Page Include="ActionItemExecutionTask\ActionItemExecutionTaskCollectionView.xaml" />
+    <Page Include="ActionItemExecutionTask\ActionItemExecutionTaskView.xaml" />
+    <Page Include="ActionItemObserversNotification\ActionItemObserversNotificationCollectionView.xaml" />
+    <Page Include="ActionItemObserversNotification\ActionItemObserversNotificationView.xaml" />
+    <Page Include="ActionItemPredictionInfo\ActionItemPredictionInfoCollectionView.xaml" />
+    <Page Include="ActionItemPredictionInfo\ActionItemPredictionInfoView.xaml" />
+    <Page Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentCollectionView.xaml" />
+    <Page Include="ActionItemSupervisorAssignment\ActionItemSupervisorAssignmentView.xaml" />
+    <Page Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationCollectionView.xaml" />
+    <Page Include="ActionItemSupervisorNotification\ActionItemSupervisorNotificationView.xaml" />
+    <Page Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemCollectionView.xaml" />
+    <Page Include="ActionItemTrainQueueItem\ActionItemTrainQueueItemView.xaml" />
+    <Page Include="CompanyDirective\CompanyDirectiveCollectionView.xaml" />
+    <Page Include="CompanyDirective\CompanyDirectiveView.xaml" />
+    <Page Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentCollectionView.xaml" />
+    <Page Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentView.xaml" />
+    <Page Include="DeadlineExtensionNotification\DeadlineExtensionNotificationCollectionView.xaml" />
+    <Page Include="DeadlineExtensionNotification\DeadlineExtensionNotificationView.xaml" />
+    <Page Include="DeadlineExtensionTask\DeadlineExtensionTaskCollectionView.xaml" />
+    <Page Include="DeadlineExtensionTask\DeadlineExtensionTaskView.xaml" />
+    <Page Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentCollectionView.xaml" />
+    <Page Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentView.xaml" />
+    <Page Include="DocumentReviewAssignment\DocumentReviewAssignmentCollectionView.xaml" />
+    <Page Include="DocumentReviewAssignment\DocumentReviewAssignmentView.xaml" />
+    <Page Include="DocumentReviewTask\DocumentReviewTaskCollectionView.xaml" />
+    <Page Include="DocumentReviewTask\DocumentReviewTaskView.xaml" />
+    <Page Include="IncomingLetter\IncomingLetterCollectionView.xaml" />
+    <Page Include="IncomingLetter\IncomingLetterView.xaml" />
+    <Page Include="ModuleDataTemplates.xaml" />
+    <Page Include="OrderBase\OrderBaseCollectionView.xaml" />
+    <Page Include="OrderBase\OrderBaseView.xaml" />
+    <Page Include="Order\OrderCollectionView.xaml" />
+    <Page Include="Order\OrderView.xaml" />
+    <Page Include="OutgoingLetter\OutgoingLetterCollectionView.xaml" />
+    <Page Include="OutgoingLetter\OutgoingLetterView.xaml" />
+    <Page Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentCollectionView.xaml" />
+    <Page Include="PreparingDraftResolutionAssignment\PreparingDraftResolutionAssignmentView.xaml" />
+    <Page Include="RecordManagementSetting\RecordManagementSettingCollectionView.xaml" />
+    <Page Include="RecordManagementSetting\RecordManagementSettingView.xaml" />
+    <Page Include="ReportRequestAssignment\ReportRequestAssignmentCollectionView.xaml" />
+    <Page Include="ReportRequestAssignment\ReportRequestAssignmentView.xaml" />
+    <Page Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentCollectionView.xaml" />
+    <Page Include="ReportRequestCheckAssignment\ReportRequestCheckAssignmentView.xaml" />
+    <Page Include="ReviewClerkNotification\ReviewClerkNotificationCollectionView.xaml" />
+    <Page Include="ReviewClerkNotification\ReviewClerkNotificationView.xaml" />
+    <Page Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentCollectionView.xaml" />
+    <Page Include="ReviewDraftResolutionAssignment\ReviewDraftResolutionAssignmentView.xaml" />
+    <Page Include="ReviewManagerAssignment\ReviewManagerAssignmentCollectionView.xaml" />
+    <Page Include="ReviewManagerAssignment\ReviewManagerAssignmentView.xaml" />
+    <Page Include="ReviewObserverNotification\ReviewObserverNotificationCollectionView.xaml" />
+    <Page Include="ReviewObserverNotification\ReviewObserverNotificationView.xaml" />
+    <Page Include="ReviewObserversNotification\ReviewObserversNotificationCollectionView.xaml" />
+    <Page Include="ReviewObserversNotification\ReviewObserversNotificationView.xaml" />
+    <Page Include="ReviewResolutionAssignment\ReviewResolutionAssignmentCollectionView.xaml" />
+    <Page Include="ReviewResolutionAssignment\ReviewResolutionAssignmentView.xaml" />
+    <Page Include="ReviewReworkAssignment\ReviewReworkAssignmentCollectionView.xaml" />
+    <Page Include="ReviewReworkAssignment\ReviewReworkAssignmentView.xaml" />
+    <Page Include="StatusReportRequestTask\StatusReportRequestTaskCollectionView.xaml" />
+    <Page Include="StatusReportRequestTask\StatusReportRequestTaskView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationUI" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Presentation">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommonLibrary.Controls">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GongSolutions.Wpf.DragDrop">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\GongSolutions.Wpf.DragDrop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Client">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Client">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Client">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Client">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Client">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.DirectumRX\Sungero.DirectumRX.ClientBase\Sungero.DirectumRX.ClientBase.csproj">
+      <Project>{d53ca45d-7343-e40a-a6c2-90a5f7c85244}</Project>
+      <Name>Sungero.DirectumRX.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Company\Sungero.Company.ClientBase\Sungero.Company.ClientBase.csproj">
+      <Project>{39d743bb-a69f-1df6-1611-bae0b605b22d}</Project>
+      <Name>Sungero.Company.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Intelligence\Sungero.Intelligence.ClientBase\Sungero.Intelligence.ClientBase.csproj">
+      <Project>{48fb374c-fe86-534d-6aa9-5b3f9e6cd150}</Project>
+      <Name>Sungero.Intelligence.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Parties\Sungero.Parties.ClientBase\Sungero.Parties.ClientBase.csproj">
+      <Project>{20ce99b8-f3ec-a3fc-3014-f9a2fb33c6ca}</Project>
+      <Name>Sungero.Parties.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Projects\Sungero.Projects.ClientBase\Sungero.Projects.ClientBase.csproj">
+      <Project>{189f3bd9-a58f-11b5-3b8a-f57d5cd8d540}</Project>
+      <Name>Sungero.Projects.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Commons\Sungero.Commons.ClientBase\Sungero.Commons.ClientBase.csproj">
+      <Project>{9bf82d81-01c3-cf3a-a65d-f6aebeccb848}</Project>
+      <Name>Sungero.Commons.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.PowerOfAttorneyCore\Sungero.PowerOfAttorneyCore.ClientBase\Sungero.PowerOfAttorneyCore.ClientBase.csproj">
+      <Project>{d47f3ab9-ae86-56e4-f641-7e17fa92057e}</Project>
+      <Name>Sungero.PowerOfAttorneyCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Client\Sungero.Docflow.Client.csproj">
+      <Project>{29e41de5-2837-acca-ceb7-cf77b4667660}</Project>
+      <Name>Sungero.Docflow.Client</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Client\Sungero.ExchangeCore.Client.csproj">
+      <Project>{bf30ce18-b987-454f-8d17-c02d6d081bf4}</Project>
+      <Name>Sungero.ExchangeCore.Client</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.RecordManagement.Shared\Sungero.RecordManagement.Shared.csproj">
+      <Project>{583eac27-2e4e-f739-59f1-2e38e60a5495}</Project>
+      <Name>Sungero.RecordManagement.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.RecordManagement.ClientBase\Sungero.RecordManagement.ClientBase.csproj">
+      <Project>{c415cdcf-6766-d4ca-2067-dc2043937c87}</Project>
+      <Name>Sungero.RecordManagement.ClientBase</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

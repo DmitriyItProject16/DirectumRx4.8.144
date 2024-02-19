@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{af9415f0-4a31-b29a-c7df-b3945cce7c99}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Company.Shared</RootNamespace>
+    <AssemblyName>Sungero.Company.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BusinessUnit%40RecipientLinks\BusinessUnitRecipientLinks.g.cs" />
+    <Compile Include="BusinessUnit\BusinessUnit.g.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitConstants.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitHandlers.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitSharedFunctions.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitStructures.cs" />
+    <Compile Include="BusinessUnit\BusinessUnitStructures.g.cs" />
+    <Compile Include="Department%40RecipientLinks\DepartmentRecipientLinks.g.cs" />
+    <Compile Include="Department\Department.g.cs" />
+    <Compile Include="Department\DepartmentConstants.cs" />
+    <Compile Include="Department\DepartmentHandlers.cs" />
+    <Compile Include="Department\DepartmentSharedFunctions.cs" />
+    <Compile Include="Department\DepartmentStructures.cs" />
+    <Compile Include="Department\DepartmentStructures.g.cs" />
+    <Compile Include="Employee\Employee.g.cs" />
+    <Compile Include="Employee\EmployeeConstants.cs" />
+    <Compile Include="Employee\EmployeeHandlers.cs" />
+    <Compile Include="Employee\EmployeeSharedFunctions.cs" />
+    <Compile Include="Employee\EmployeeStructures.cs" />
+    <Compile Include="Employee\EmployeeStructures.g.cs" />
+    <Compile Include="JobTitle\JobTitle.g.cs" />
+    <Compile Include="JobTitle\JobTitleConstants.cs" />
+    <Compile Include="JobTitle\JobTitleHandlers.cs" />
+    <Compile Include="JobTitle\JobTitleSharedFunctions.cs" />
+    <Compile Include="JobTitle\JobTitleStructures.cs" />
+    <Compile Include="JobTitle\JobTitleStructures.g.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBase.g.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseConstants.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseHandlers.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseSharedFunctions.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseStructures.cs" />
+    <Compile Include="ManagersAssistantBase\ManagersAssistantBaseStructures.g.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistant.g.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantConstants.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantHandlers.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantSharedFunctions.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantStructures.cs" />
+    <Compile Include="ManagersAssistant\ManagersAssistantStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReport.g.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportConstants.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportStructures.cs" />
+    <Compile Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportStructures.g.cs" />
+    <Compile Include="VisibilityRule%40ExcludedMembers\VisibilityRuleExcludedMembers.g.cs" />
+    <Compile Include="VisibilityRule%40Recipients\VisibilityRuleRecipients.g.cs" />
+    <Compile Include="VisibilityRule%40VisibleMembers\VisibilityRuleVisibleMembers.g.cs" />
+    <Compile Include="VisibilityRule\VisibilityRule.g.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleConstants.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleHandlers.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleSharedFunctions.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleStructures.cs" />
+    <Compile Include="VisibilityRule\VisibilityRuleStructures.g.cs" />
+    <Compile Include="VisibilitySetting%40HiddenRecipients\VisibilitySettingHiddenRecipients.g.cs" />
+    <Compile Include="VisibilitySetting%40UnrestrictedRecipients\VisibilitySettingUnrestrictedRecipients.g.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySetting.g.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingConstants.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingHandlers.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingSharedFunctions.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingStructures.cs" />
+    <Compile Include="VisibilitySetting\VisibilitySettingStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessUnit%40RecipientLinks\BusinessUnitRecipientLinks.resx" />
+    <EmbeddedResource Include="BusinessUnit%40RecipientLinks\BusinessUnitRecipientLinks.ru.resx" />
+    <EmbeddedResource Include="BusinessUnit%40RecipientLinks\BusinessUnitRecipientLinksSystem.resx" />
+    <EmbeddedResource Include="BusinessUnit%40RecipientLinks\BusinessUnitRecipientLinksSystem.ru.resx" />
+    <EmbeddedResource Include="BusinessUnit%40RecipientLinks\obj\BusinessUnitRecipientLinks.mtd" />
+    <EmbeddedResource Include="BusinessUnit\BusinessUnit.resx" />
+    <EmbeddedResource Include="BusinessUnit\BusinessUnit.ru.resx" />
+    <EmbeddedResource Include="BusinessUnit\BusinessUnitSystem.resx" />
+    <EmbeddedResource Include="BusinessUnit\BusinessUnitSystem.ru.resx" />
+    <EmbeddedResource Include="BusinessUnit\obj\BusinessUnit.mtd" />
+    <EmbeddedResource Include="Department%40RecipientLinks\DepartmentRecipientLinks.resx" />
+    <EmbeddedResource Include="Department%40RecipientLinks\DepartmentRecipientLinks.ru.resx" />
+    <EmbeddedResource Include="Department%40RecipientLinks\DepartmentRecipientLinksSystem.resx" />
+    <EmbeddedResource Include="Department%40RecipientLinks\DepartmentRecipientLinksSystem.ru.resx" />
+    <EmbeddedResource Include="Department%40RecipientLinks\obj\DepartmentRecipientLinks.mtd" />
+    <EmbeddedResource Include="Department\Department.resx" />
+    <EmbeddedResource Include="Department\Department.ru.resx" />
+    <EmbeddedResource Include="Department\DepartmentSystem.resx" />
+    <EmbeddedResource Include="Department\DepartmentSystem.ru.resx" />
+    <EmbeddedResource Include="Department\obj\Department.mtd" />
+    <EmbeddedResource Include="Employee\Employee.resx" />
+    <EmbeddedResource Include="Employee\Employee.ru.resx" />
+    <EmbeddedResource Include="Employee\EmployeeSystem.resx" />
+    <EmbeddedResource Include="Employee\EmployeeSystem.ru.resx" />
+    <EmbeddedResource Include="Employee\obj\Employee.mtd" />
+    <EmbeddedResource Include="JobTitle\JobTitle.resx" />
+    <EmbeddedResource Include="JobTitle\JobTitle.ru.resx" />
+    <EmbeddedResource Include="JobTitle\JobTitleSystem.resx" />
+    <EmbeddedResource Include="JobTitle\JobTitleSystem.ru.resx" />
+    <EmbeddedResource Include="JobTitle\obj\JobTitle.mtd" />
+    <EmbeddedResource Include="ManagersAssistantBase\ManagersAssistantBase.resx" />
+    <EmbeddedResource Include="ManagersAssistantBase\ManagersAssistantBase.ru.resx" />
+    <EmbeddedResource Include="ManagersAssistantBase\ManagersAssistantBaseSystem.resx" />
+    <EmbeddedResource Include="ManagersAssistantBase\ManagersAssistantBaseSystem.ru.resx" />
+    <EmbeddedResource Include="ManagersAssistantBase\obj\ManagersAssistantBase.mtd" />
+    <EmbeddedResource Include="ManagersAssistant\ManagersAssistant.resx" />
+    <EmbeddedResource Include="ManagersAssistant\ManagersAssistant.ru.resx" />
+    <EmbeddedResource Include="ManagersAssistant\ManagersAssistantSystem.resx" />
+    <EmbeddedResource Include="ManagersAssistant\ManagersAssistantSystem.ru.resx" />
+    <EmbeddedResource Include="ManagersAssistant\obj\ManagersAssistant.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="Reports\ResponsibilitiesReport\ResponsibilitiesReport.mtd" />
+    <EmbeddedResource Include="Reports\ResponsibilitiesReport\ResponsibilitiesReport.resx" />
+    <EmbeddedResource Include="Reports\ResponsibilitiesReport\ResponsibilitiesReport.ru.resx" />
+    <EmbeddedResource Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportSystem.resx" />
+    <EmbeddedResource Include="Reports\ResponsibilitiesReport\ResponsibilitiesReportSystem.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule%40ExcludedMembers\obj\VisibilityRuleExcludedMembers.mtd" />
+    <EmbeddedResource Include="VisibilityRule%40ExcludedMembers\VisibilityRuleExcludedMembers.resx" />
+    <EmbeddedResource Include="VisibilityRule%40ExcludedMembers\VisibilityRuleExcludedMembers.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule%40ExcludedMembers\VisibilityRuleExcludedMembersSystem.resx" />
+    <EmbeddedResource Include="VisibilityRule%40ExcludedMembers\VisibilityRuleExcludedMembersSystem.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule%40Recipients\obj\VisibilityRuleRecipients.mtd" />
+    <EmbeddedResource Include="VisibilityRule%40Recipients\VisibilityRuleRecipients.resx" />
+    <EmbeddedResource Include="VisibilityRule%40Recipients\VisibilityRuleRecipients.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule%40Recipients\VisibilityRuleRecipientsSystem.resx" />
+    <EmbeddedResource Include="VisibilityRule%40Recipients\VisibilityRuleRecipientsSystem.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule%40VisibleMembers\obj\VisibilityRuleVisibleMembers.mtd" />
+    <EmbeddedResource Include="VisibilityRule%40VisibleMembers\VisibilityRuleVisibleMembers.resx" />
+    <EmbeddedResource Include="VisibilityRule%40VisibleMembers\VisibilityRuleVisibleMembers.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule%40VisibleMembers\VisibilityRuleVisibleMembersSystem.resx" />
+    <EmbeddedResource Include="VisibilityRule%40VisibleMembers\VisibilityRuleVisibleMembersSystem.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule\obj\VisibilityRule.mtd" />
+    <EmbeddedResource Include="VisibilityRule\VisibilityRule.resx" />
+    <EmbeddedResource Include="VisibilityRule\VisibilityRule.ru.resx" />
+    <EmbeddedResource Include="VisibilityRule\VisibilityRuleSystem.resx" />
+    <EmbeddedResource Include="VisibilityRule\VisibilityRuleSystem.ru.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40HiddenRecipients\obj\VisibilitySettingHiddenRecipients.mtd" />
+    <EmbeddedResource Include="VisibilitySetting%40HiddenRecipients\VisibilitySettingHiddenRecipients.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40HiddenRecipients\VisibilitySettingHiddenRecipients.ru.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40HiddenRecipients\VisibilitySettingHiddenRecipientsSystem.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40HiddenRecipients\VisibilitySettingHiddenRecipientsSystem.ru.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40UnrestrictedRecipients\obj\VisibilitySettingUnrestrictedRecipients.mtd" />
+    <EmbeddedResource Include="VisibilitySetting%40UnrestrictedRecipients\VisibilitySettingUnrestrictedRecipients.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40UnrestrictedRecipients\VisibilitySettingUnrestrictedRecipients.ru.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40UnrestrictedRecipients\VisibilitySettingUnrestrictedRecipientsSystem.resx" />
+    <EmbeddedResource Include="VisibilitySetting%40UnrestrictedRecipients\VisibilitySettingUnrestrictedRecipientsSystem.ru.resx" />
+    <EmbeddedResource Include="VisibilitySetting\obj\VisibilitySetting.mtd" />
+    <EmbeddedResource Include="VisibilitySetting\VisibilitySetting.resx" />
+    <EmbeddedResource Include="VisibilitySetting\VisibilitySetting.ru.resx" />
+    <EmbeddedResource Include="VisibilitySetting\VisibilitySettingSystem.resx" />
+    <EmbeddedResource Include="VisibilitySetting\VisibilitySettingSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

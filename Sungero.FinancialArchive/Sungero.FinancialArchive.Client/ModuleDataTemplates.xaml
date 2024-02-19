@@ -1,0 +1,42 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.FinancialArchive.Client">
+
+    <DataTemplate DataType="{x:Type local:ContractStatementCollectionPresenter`1}">
+      <local:ContractStatementCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ContractStatementPresenter`1}">
+        <local:ContractStatementView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:IncomingTaxInvoiceCollectionPresenter`1}">
+      <local:IncomingTaxInvoiceCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:IncomingTaxInvoicePresenter`1}">
+        <local:IncomingTaxInvoiceView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:OutgoingTaxInvoiceCollectionPresenter`1}">
+      <local:OutgoingTaxInvoiceCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:OutgoingTaxInvoicePresenter`1}">
+        <local:OutgoingTaxInvoiceView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:UniversalTransferDocumentCollectionPresenter`1}">
+      <local:UniversalTransferDocumentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:UniversalTransferDocumentPresenter`1}">
+        <local:UniversalTransferDocumentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:WaybillCollectionPresenter`1}">
+      <local:WaybillCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:WaybillPresenter`1}">
+        <local:WaybillView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

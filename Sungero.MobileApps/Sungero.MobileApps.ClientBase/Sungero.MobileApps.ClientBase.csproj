@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{9f5a33ae-956c-e10f-4a9c-cf0ad7ae3d3b}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.MobileApps.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.MobileApps.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MobileAppSetting%40VisibleFolders\MobileAppSettingVisibleFolders.g.cs" />
+    <Compile Include="MobileAppSetting\MobileAppSetting.g.cs" />
+    <Compile Include="MobileAppSetting\MobileAppSettingActions.cs" />
+    <Compile Include="MobileAppSetting\MobileAppSettingClientFunctions.cs" />
+    <Compile Include="MobileAppSetting\MobileAppSettingHandlers.cs" />
+    <Compile Include="MobileDevice\MobileDevice.g.cs" />
+    <Compile Include="MobileDevice\MobileDeviceActions.cs" />
+    <Compile Include="MobileDevice\MobileDeviceClientFunctions.cs" />
+    <Compile Include="MobileDevice\MobileDeviceHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.MobileApps.Shared\Sungero.MobileApps.Shared.csproj">
+      <Project>{a9be7001-dde2-7a53-c473-0edd49948a4c}</Project>
+      <Name>Sungero.MobileApps.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MobileAppSetting\Icons\Action_AddFolder_large_008b69d9def647418200a204afee1448.png" />
+    <Resource Include="MobileAppSetting\Icons\Action_AddFolder_large_008b69d9def647418200a204afee1448.svg" />
+    <Resource Include="MobileAppSetting\Icons\Action_AddFolder_small_008b69d9def647418200a204afee1448.png" />
+    <Resource Include="MobileAppSetting\Icons\Action_AddFolder_small_008b69d9def647418200a204afee1448.svg" />
+    <Resource Include="MobileAppSetting\Icons\Action_Reset_large_67c5f308061f46fe937680752f10e466.png" />
+    <Resource Include="MobileAppSetting\Icons\Action_Reset_large_67c5f308061f46fe937680752f10e466.svg" />
+    <Resource Include="MobileAppSetting\Icons\Action_Reset_small_67c5f308061f46fe937680752f10e466.png" />
+    <Resource Include="MobileAppSetting\Icons\Action_Reset_small_67c5f308061f46fe937680752f10e466.svg" />
+    <Resource Include="MobileDevice\Icons\Action_DeleteData_large_8793af0fd8304a748d5bb14c215288f6.png" />
+    <Resource Include="MobileDevice\Icons\Action_DeleteData_large_8793af0fd8304a748d5bb14c215288f6.svg" />
+    <Resource Include="MobileDevice\Icons\Action_DeleteData_small_8793af0fd8304a748d5bb14c215288f6.png" />
+    <Resource Include="MobileDevice\Icons\Action_DeleteData_small_8793af0fd8304a748d5bb14c215288f6.svg" />
+    <Resource Include="MobileDevice\Icons\Action_ReloadData_large_f7a82463724140559c84ed528e5cd576.png" />
+    <Resource Include="MobileDevice\Icons\Action_ReloadData_large_f7a82463724140559c84ed528e5cd576.svg" />
+    <Resource Include="MobileDevice\Icons\Action_ReloadData_small_f7a82463724140559c84ed528e5cd576.png" />
+    <Resource Include="MobileDevice\Icons\Action_ReloadData_small_f7a82463724140559c84ed528e5cd576.svg" />
+    <Resource Include="MobileDevice\Icons\Action_RequestLogs_large_1ba985df54d4459eb40b55bd0a329e61.png" />
+    <Resource Include="MobileDevice\Icons\Action_RequestLogs_large_1ba985df54d4459eb40b55bd0a329e61.svg" />
+    <Resource Include="MobileDevice\Icons\Action_RequestLogs_small_1ba985df54d4459eb40b55bd0a329e61.png" />
+    <Resource Include="MobileDevice\Icons\Action_RequestLogs_small_1ba985df54d4459eb40b55bd0a329e61.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MobileAppSetting\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="MobileAppSetting\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="MobileAppSetting\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="MobileDevice\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="MobileDevice\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="MobileDevice\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

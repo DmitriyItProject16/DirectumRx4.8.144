@@ -1,0 +1,63 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.Commons.Client">
+
+    <DataTemplate DataType="{x:Type local:CityCollectionPresenter`1}">
+      <local:CityCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CityPresenter`1}">
+        <local:CityView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ClassifierTrainingSessionCollectionPresenter`1}">
+      <local:ClassifierTrainingSessionCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ClassifierTrainingSessionPresenter`1}">
+        <local:ClassifierTrainingSessionView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CountryCollectionPresenter`1}">
+      <local:CountryCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CountryPresenter`1}">
+        <local:CountryView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:CurrencyCollectionPresenter`1}">
+      <local:CurrencyCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:CurrencyPresenter`1}">
+        <local:CurrencyView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:EntityRecognitionInfoCollectionPresenter`1}">
+      <local:EntityRecognitionInfoCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:EntityRecognitionInfoPresenter`1}">
+        <local:EntityRecognitionInfoView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ExternalEntityLinkCollectionPresenter`1}">
+      <local:ExternalEntityLinkCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ExternalEntityLinkPresenter`1}">
+        <local:ExternalEntityLinkView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:RegionCollectionPresenter`1}">
+      <local:RegionCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:RegionPresenter`1}">
+        <local:RegionView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:VatRateCollectionPresenter`1}">
+      <local:VatRateCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:VatRatePresenter`1}">
+        <local:VatRateView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

@@ -1,0 +1,49 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.SmartProcessing.Client">
+
+    <DataTemplate DataType="{x:Type local:BlobCollectionPresenter`1}">
+      <local:BlobCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:BlobPresenter`1}">
+        <local:BlobView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:BlobPackageCollectionPresenter`1}">
+      <local:BlobPackageCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:BlobPackagePresenter`1}">
+        <local:BlobPackageView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:ExtractTextQueueItemCollectionPresenter`1}">
+      <local:ExtractTextQueueItemCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:ExtractTextQueueItemPresenter`1}">
+        <local:ExtractTextQueueItemView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:RepackingSessionCollectionPresenter`1}">
+      <local:RepackingSessionCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:RepackingSessionPresenter`1}">
+        <local:RepackingSessionView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:VerificationAssignmentCollectionPresenter`1}">
+      <local:VerificationAssignmentCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:VerificationAssignmentPresenter`1}">
+        <local:VerificationAssignmentView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:VerificationTaskCollectionPresenter`1}">
+      <local:VerificationTaskCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:VerificationTaskPresenter`1}">
+        <local:VerificationTaskView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{01eacb01-6c9d-06e5-c9e3-5010e80e7e62}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.ContractsUI.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.ContractsUI.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.ContractsUI.Shared\Sungero.ContractsUI.Shared.csproj">
+      <Project>{b7bece31-9217-3261-763c-3c339c0bd677}</Project>
+      <Name>Sungero.ContractsUI.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\ContractsAtContractors_7afd9b8ef2934984a75ec09f44b598a7.ico" />
+    <Resource Include="Icons\ContractsAtContractors_7afd9b8ef2934984a75ec09f44b598a7.svg" />
+    <Resource Include="Icons\ContractsAtContractors_large_7afd9b8ef2934984a75ec09f44b598a7.svg" />
+    <Resource Include="Icons\ContractsHistory_c09c7eeb59574631be80a589b8cfbec5.ico" />
+    <Resource Include="Icons\ContractsHistory_c09c7eeb59574631be80a589b8cfbec5.svg" />
+    <Resource Include="Icons\ContractsHistory_large_c09c7eeb59574631be80a589b8cfbec5.svg" />
+    <Resource Include="Icons\ContractsList_825bcdaaf676490f9ce83c95355a63d4.ico" />
+    <Resource Include="Icons\ContractsList_825bcdaaf676490f9ce83c95355a63d4.svg" />
+    <Resource Include="Icons\ContractsList_large_825bcdaaf676490f9ce83c95355a63d4.svg" />
+    <Resource Include="Icons\ExpiringSoonContracts_f7a4bbcf69d849c5a86e274fa1b1ce5f.ico" />
+    <Resource Include="Icons\ExpiringSoonContracts_f7a4bbcf69d849c5a86e274fa1b1ce5f.svg" />
+    <Resource Include="Icons\ExpiringSoonContracts_large_f7a4bbcf69d849c5a86e274fa1b1ce5f.svg" />
+    <Resource Include="Icons\GroupIconControl_74a832322ab34786b5d790dd4c6809b4.png" />
+    <Resource Include="Icons\GroupIconControl_74a832322ab34786b5d790dd4c6809b4.svg" />
+    <Resource Include="Icons\GroupIconDocuments_136b5b7b053a4ca18f0579af1fc2dffb.png" />
+    <Resource Include="Icons\GroupIconDocuments_136b5b7b053a4ca18f0579af1fc2dffb.svg" />
+    <Resource Include="Icons\GroupIconInvoices_9617fde5c46a4c849f694ae3c6fa12db.png" />
+    <Resource Include="Icons\GroupIconInvoices_9617fde5c46a4c849f694ae3c6fa12db.svg" />
+    <Resource Include="Icons\GroupIconLinkedInformation_ed4c55bfaeea46b2ac7fb1000bcf2423.png" />
+    <Resource Include="Icons\GroupIconLinkedInformation_ed4c55bfaeea46b2ac7fb1000bcf2423.svg" />
+    <Resource Include="Icons\GroupIconPowersOfAttorney_aff028e825194dcba8ab36cd0b777a17.png" />
+    <Resource Include="Icons\GroupIconPowersOfAttorney_aff028e825194dcba8ab36cd0b777a17.svg" />
+    <Resource Include="Icons\GroupIconSearch_3f655ea9b12d427d97de528d9966cab4.png" />
+    <Resource Include="Icons\GroupIconSearch_3f655ea9b12d427d97de528d9966cab4.svg" />
+    <Resource Include="Icons\IssuanceJournal_37d0e5465b384b60b6805ab862dcea47.ico" />
+    <Resource Include="Icons\IssuanceJournal_37d0e5465b384b60b6805ab862dcea47.svg" />
+    <Resource Include="Icons\IssuanceJournal_large_37d0e5465b384b60b6805ab862dcea47.svg" />
+    <Resource Include="Icons\PowerOfAttorneyList_aeac0a5131cb45089267e9a602186943.ico" />
+    <Resource Include="Icons\PowerOfAttorneyList_aeac0a5131cb45089267e9a602186943.svg" />
+    <Resource Include="Icons\PowerOfAttorneyList_large_aeac0a5131cb45089267e9a602186943.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="37d0e546-5b38-4b60-b680-5ab862dcea47.xml" />
+    <EmbeddedResource Include="7afd9b8e-f293-4984-a75e-c09f44b598a7.xml" />
+    <EmbeddedResource Include="825bcdaa-f676-490f-9ce8-3c95355a63d4.xml" />
+    <EmbeddedResource Include="aeac0a51-31cb-4508-9267-e9a602186943.xml" />
+    <EmbeddedResource Include="c09c7eeb-5957-4631-be80-a589b8cfbec5.xml" />
+    <EmbeddedResource Include="f7a4bbcf-69d8-49c5-a86e-274fa1b1ce5f.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

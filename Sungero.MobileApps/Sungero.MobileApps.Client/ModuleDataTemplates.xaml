@@ -1,0 +1,21 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:Sungero.MobileApps.Client">
+
+    <DataTemplate DataType="{x:Type local:MobileAppSettingCollectionPresenter`1}">
+      <local:MobileAppSettingCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:MobileAppSettingPresenter`1}">
+        <local:MobileAppSettingView />
+      </DataTemplate>
+
+    <DataTemplate DataType="{x:Type local:MobileDeviceCollectionPresenter`1}">
+      <local:MobileDeviceCollectionView />
+    </DataTemplate>  
+      <DataTemplate DataType="{x:Type local:MobileDevicePresenter`1}">
+        <local:MobileDeviceView />
+      </DataTemplate>
+
+
+</ResourceDictionary>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{8ab9e5d0-df57-c7d4-c402-cc0c1142a4a1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Contracts.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.Contracts.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStage.g.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageActions.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageClientFunctions.cs" />
+    <Compile Include="ApprovalIncInvoicePaidStage\ApprovalIncInvoicePaidStageHandlers.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Contract%40Stages\ContractStages.g.cs" />
+    <Compile Include="Contract%40Tracking\ContractTracking.g.cs" />
+    <Compile Include="Contract%40Versions\ContractVersions.g.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRole.g.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleActions.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleClientFunctions.cs" />
+    <Compile Include="ContractApprovalRole\ContractApprovalRoleHandlers.cs" />
+    <Compile Include="ContractBase%40Stages\ContractBaseStages.g.cs" />
+    <Compile Include="ContractBase%40Tracking\ContractBaseTracking.g.cs" />
+    <Compile Include="ContractBase%40Versions\ContractBaseVersions.g.cs" />
+    <Compile Include="ContractBase\ContractBase.g.cs" />
+    <Compile Include="ContractBase\ContractBaseActions.cs" />
+    <Compile Include="ContractBase\ContractBaseClientFunctions.cs" />
+    <Compile Include="ContractBase\ContractBaseHandlers.cs" />
+    <Compile Include="ContractCategory%40DocumentKinds\ContractCategoryDocumentKinds.g.cs" />
+    <Compile Include="ContractCategory\ContractCategory.g.cs" />
+    <Compile Include="ContractCategory\ContractCategoryActions.cs" />
+    <Compile Include="ContractCategory\ContractCategoryClientFunctions.cs" />
+    <Compile Include="ContractCategory\ContractCategoryHandlers.cs" />
+    <Compile Include="ContractCondition%40ConditionDocumentKinds\ContractConditionConditionDocumentKinds.g.cs" />
+    <Compile Include="ContractCondition%40Currencies\ContractConditionCurrencies.g.cs" />
+    <Compile Include="ContractCondition%40DeliveryMethods\ContractConditionDeliveryMethods.g.cs" />
+    <Compile Include="ContractCondition%40DocumentKinds\ContractConditionDocumentKinds.g.cs" />
+    <Compile Include="ContractCondition\ContractCondition.g.cs" />
+    <Compile Include="ContractCondition\ContractConditionActions.cs" />
+    <Compile Include="ContractCondition\ContractConditionClientFunctions.cs" />
+    <Compile Include="ContractCondition\ContractConditionHandlers.cs" />
+    <Compile Include="ContractsApprovalRule%40BusinessUnits\ContractsApprovalRuleBusinessUnits.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Conditions\ContractsApprovalRuleConditions.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Departments\ContractsApprovalRuleDepartments.g.cs" />
+    <Compile Include="ContractsApprovalRule%40DocumentGroups\ContractsApprovalRuleDocumentGroups.g.cs" />
+    <Compile Include="ContractsApprovalRule%40DocumentKinds\ContractsApprovalRuleDocumentKinds.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Stages\ContractsApprovalRuleStages.g.cs" />
+    <Compile Include="ContractsApprovalRule%40Transitions\ContractsApprovalRuleTransitions.g.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRule.g.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleActions.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleClientFunctions.cs" />
+    <Compile Include="ContractsApprovalRule\ContractsApprovalRuleHandlers.cs" />
+    <Compile Include="ContractualDocument%40Milestones\ContractualDocumentMilestones.g.cs" />
+    <Compile Include="ContractualDocument%40Tracking\ContractualDocumentTracking.g.cs" />
+    <Compile Include="ContractualDocument%40Versions\ContractualDocumentVersions.g.cs" />
+    <Compile Include="ContractualDocument\ContractualDocument.g.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentActions.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentClientFunctions.cs" />
+    <Compile Include="ContractualDocument\ContractualDocumentHandlers.cs" />
+    <Compile Include="Contract\Contract.g.cs" />
+    <Compile Include="Contract\ContractActions.cs" />
+    <Compile Include="Contract\ContractClientFunctions.cs" />
+    <Compile Include="Contract\ContractHandlers.cs" />
+    <Compile Include="IncomingInvoice%40Tracking\IncomingInvoiceTracking.g.cs" />
+    <Compile Include="IncomingInvoice%40Versions\IncomingInvoiceVersions.g.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoice.g.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceActions.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceClientFunctions.cs" />
+    <Compile Include="IncomingInvoice\IncomingInvoiceHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="OutgoingInvoice%40Tracking\OutgoingInvoiceTracking.g.cs" />
+    <Compile Include="OutgoingInvoice%40Versions\OutgoingInvoiceVersions.g.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoice.g.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceActions.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceClientFunctions.cs" />
+    <Compile Include="OutgoingInvoice\OutgoingInvoiceHandlers.cs" />
+    <Compile Include="SupAgreement%40Stages\SupAgreementStages.g.cs" />
+    <Compile Include="SupAgreement%40Tracking\SupAgreementTracking.g.cs" />
+    <Compile Include="SupAgreement%40Versions\SupAgreementVersions.g.cs" />
+    <Compile Include="SupAgreement\SupAgreement.g.cs" />
+    <Compile Include="SupAgreement\SupAgreementActions.cs" />
+    <Compile Include="SupAgreement\SupAgreementClientFunctions.cs" />
+    <Compile Include="SupAgreement\SupAgreementHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Contracts.Shared\Sungero.Contracts.Shared.csproj">
+      <Project>{e422cc5f-fbe2-2410-bdb0-9cddf74407ac}</Project>
+      <Name>Sungero.Contracts.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ContractBase\Icons\Action_CreateContractStatement_large_53d9a6188ada4ecbb5414b9f7d3d7279.png" />
+    <Resource Include="ContractBase\Icons\Action_CreateContractStatement_large_53d9a6188ada4ecbb5414b9f7d3d7279.svg" />
+    <Resource Include="ContractBase\Icons\Action_CreateContractStatement_small_53d9a6188ada4ecbb5414b9f7d3d7279.png" />
+    <Resource Include="ContractBase\Icons\Action_CreateContractStatement_small_53d9a6188ada4ecbb5414b9f7d3d7279.svg" />
+    <Resource Include="ContractBase\Icons\Action_CreateSupAgreement_large_f593f46981294bea826c72257ddfb257.png" />
+    <Resource Include="ContractBase\Icons\Action_CreateSupAgreement_large_f593f46981294bea826c72257ddfb257.svg" />
+    <Resource Include="ContractBase\Icons\Action_CreateSupAgreement_small_f593f46981294bea826c72257ddfb257.png" />
+    <Resource Include="ContractBase\Icons\Action_CreateSupAgreement_small_f593f46981294bea826c72257ddfb257.svg" />
+    <Resource Include="ContractBase\Icons\ContractBase.ico" />
+    <Resource Include="ContractBase\Icons\ContractBase.svg" />
+    <Resource Include="ContractBase\Icons\ContractBase_large.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateCoverLetter_large_fbd8dcdc155f4509b0d00623119ff53e.png" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateCoverLetter_large_fbd8dcdc155f4509b0d00623119ff53e.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateCoverLetter_small_fbd8dcdc155f4509b0d00623119ff53e.png" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateCoverLetter_small_fbd8dcdc155f4509b0d00623119ff53e.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateIncomingInvoice_large_451a34d6c92e4b5bb0184bfa0b39bd15.png" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateIncomingInvoice_large_451a34d6c92e4b5bb0184bfa0b39bd15.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateIncomingInvoice_small_451a34d6c92e4b5bb0184bfa0b39bd15.png" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateIncomingInvoice_small_451a34d6c92e4b5bb0184bfa0b39bd15.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateOutgoingInvoice_large_651aa94cc4e249fa8cc2fc95a0d35dcd.png" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateOutgoingInvoice_large_651aa94cc4e249fa8cc2fc95a0d35dcd.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateOutgoingInvoice_small_651aa94cc4e249fa8cc2fc95a0d35dcd.png" />
+    <Resource Include="ContractualDocument\Icons\Action_CreateOutgoingInvoice_small_651aa94cc4e249fa8cc2fc95a0d35dcd.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_ExportFinancialDocument_large_3641a9970fe343bb8be9265b73b1b5ad.png" />
+    <Resource Include="ContractualDocument\Icons\Action_ExportFinancialDocument_large_3641a9970fe343bb8be9265b73b1b5ad.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_ExportFinancialDocument_small_3641a9970fe343bb8be9265b73b1b5ad.png" />
+    <Resource Include="ContractualDocument\Icons\Action_ExportFinancialDocument_small_3641a9970fe343bb8be9265b73b1b5ad.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_ShowDuplicates_large_a2e3286b6ea348dfb676b6c3420db9fe.png" />
+    <Resource Include="ContractualDocument\Icons\Action_ShowDuplicates_large_a2e3286b6ea348dfb676b6c3420db9fe.svg" />
+    <Resource Include="ContractualDocument\Icons\Action_ShowDuplicates_small_a2e3286b6ea348dfb676b6c3420db9fe.png" />
+    <Resource Include="ContractualDocument\Icons\Action_ShowDuplicates_small_a2e3286b6ea348dfb676b6c3420db9fe.svg" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_Duplicates_c3a441642aa54e81baf0e87f33cc77c2.png" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_Duplicates_c3a441642aa54e81baf0e87f33cc77c2.svg" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_Duplicates_small_c3a441642aa54e81baf0e87f33cc77c2.png" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_Duplicates_small_c3a441642aa54e81baf0e87f33cc77c2.svg" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_0f45bd7ddffe4061b4e5aa4297e5c638.png" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_0f45bd7ddffe4061b4e5aa4297e5c638.svg" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_c2ca40971630428783508c207ebc3125.png" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_c2ca40971630428783508c207ebc3125.svg" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_small_0f45bd7ddffe4061b4e5aa4297e5c638.png" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_small_0f45bd7ddffe4061b4e5aa4297e5c638.svg" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_small_c2ca40971630428783508c207ebc3125.png" />
+    <Resource Include="ContractualDocument\Icons\Ribbon_ExportCommands_small_c2ca40971630428783508c207ebc3125.svg" />
+    <Resource Include="Contract\Icons\Ribbon_Document_small_4a907cb96ecf4b448c49f15701345890.png" />
+    <Resource Include="Contract\Icons\Ribbon_Document_small_4a907cb96ecf4b448c49f15701345890.svg" />
+    <Resource Include="Contract\Icons\Ribbon_Service_small_05ad0c012d1f4bcc8109289154d1f514.png" />
+    <Resource Include="Contract\Icons\Ribbon_Service_small_05ad0c012d1f4bcc8109289154d1f514.svg" />
+    <Resource Include="IncomingInvoice\Icons\Action_ShowDuplicates_large_5c163fe6d3be4d74880e0042eabc3c62.png" />
+    <Resource Include="IncomingInvoice\Icons\Action_ShowDuplicates_large_5c163fe6d3be4d74880e0042eabc3c62.svg" />
+    <Resource Include="IncomingInvoice\Icons\Action_ShowDuplicates_small_5c163fe6d3be4d74880e0042eabc3c62.png" />
+    <Resource Include="IncomingInvoice\Icons\Action_ShowDuplicates_small_5c163fe6d3be4d74880e0042eabc3c62.svg" />
+    <Resource Include="IncomingInvoice\Icons\IncomingInvoice.ico" />
+    <Resource Include="IncomingInvoice\Icons\IncomingInvoice.svg" />
+    <Resource Include="IncomingInvoice\Icons\IncomingInvoice_large.svg" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Document_small_24e430a269d442149f8641fa4fede315.png" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Document_small_24e430a269d442149f8641fa4fede315.svg" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Document_small_f96e51badcdf4421899122ab2960dd0e.png" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Document_small_f96e51badcdf4421899122ab2960dd0e.svg" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Duplicates_e1457845fda94e9e9e6772569ccd819b.png" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Duplicates_e1457845fda94e9e9e6772569ccd819b.svg" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Duplicates_small_e1457845fda94e9e9e6772569ccd819b.png" />
+    <Resource Include="IncomingInvoice\Icons\Ribbon_Duplicates_small_e1457845fda94e9e9e6772569ccd819b.svg" />
+    <Resource Include="OutgoingInvoice\Icons\OutgoingInvoice.ico" />
+    <Resource Include="OutgoingInvoice\Icons\OutgoingInvoice.svg" />
+    <Resource Include="OutgoingInvoice\Icons\OutgoingInvoice_large.svg" />
+    <Resource Include="SupAgreement\Icons\Action_CreateContractStatement_large_199169d54e52410ea574d6efa9968cf9.png" />
+    <Resource Include="SupAgreement\Icons\Action_CreateContractStatement_large_199169d54e52410ea574d6efa9968cf9.svg" />
+    <Resource Include="SupAgreement\Icons\Action_CreateContractStatement_small_199169d54e52410ea574d6efa9968cf9.png" />
+    <Resource Include="SupAgreement\Icons\Action_CreateContractStatement_small_199169d54e52410ea574d6efa9968cf9.svg" />
+    <Resource Include="SupAgreement\Icons\Ribbon_Document_small_cd3206675c1549d79ec6e91ac477e5d2.png" />
+    <Resource Include="SupAgreement\Icons\Ribbon_Document_small_cd3206675c1549d79ec6e91ac477e5d2.svg" />
+    <Resource Include="SupAgreement\Icons\Ribbon_Service_small_224f9e5e726b4e27b8d57190dc4f1c9a.png" />
+    <Resource Include="SupAgreement\Icons\Ribbon_Service_small_224f9e5e726b4e27b8d57190dc4f1c9a.svg" />
+    <Resource Include="SupAgreement\Icons\SupAgreement.ico" />
+    <Resource Include="SupAgreement\Icons\SupAgreement.svg" />
+    <Resource Include="SupAgreement\Icons\SupAgreement_large.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContractApprovalRole\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ContractBase\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ContractBase\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ContractBase\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ContractCategory\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ContractCategory\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ContractCategory\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ContractCondition\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ContractCondition\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ContractCondition\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ContractsApprovalRule\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ContractsApprovalRule\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ContractsApprovalRule\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="ContractualDocument\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="ContractualDocument\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="ContractualDocument\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Contract\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Contract\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Contract\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="IncomingInvoice\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="IncomingInvoice\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="IncomingInvoice\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="OutgoingInvoice\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="OutgoingInvoice\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="SupAgreement\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="SupAgreement\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="SupAgreement\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

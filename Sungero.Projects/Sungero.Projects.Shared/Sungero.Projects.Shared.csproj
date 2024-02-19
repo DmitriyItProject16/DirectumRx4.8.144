@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{677518a7-c698-bd5c-3fc7-5a0a8195cedb}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Projects.Shared</RootNamespace>
+    <AssemblyName>Sungero.Projects.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="Project%40Classifier\ProjectClassifier.g.cs" />
+    <Compile Include="Project%40TeamMembers\ProjectTeamMembers.g.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRole.g.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleConstants.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleHandlers.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleSharedFunctions.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleStructures.cs" />
+    <Compile Include="ProjectApprovalRole\ProjectApprovalRoleStructures.g.cs" />
+    <Compile Include="ProjectCore%40Classifier\ProjectCoreClassifier.g.cs" />
+    <Compile Include="ProjectCore%40TeamMembers\ProjectCoreTeamMembers.g.cs" />
+    <Compile Include="ProjectCore\ProjectCore.g.cs" />
+    <Compile Include="ProjectCore\ProjectCoreConstants.cs" />
+    <Compile Include="ProjectCore\ProjectCoreHandlers.cs" />
+    <Compile Include="ProjectCore\ProjectCoreSharedFunctions.cs" />
+    <Compile Include="ProjectCore\ProjectCoreStructures.cs" />
+    <Compile Include="ProjectCore\ProjectCoreStructures.g.cs" />
+    <Compile Include="ProjectDocument%40Tracking\ProjectDocumentTracking.g.cs" />
+    <Compile Include="ProjectDocument%40Versions\ProjectDocumentVersions.g.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItem.g.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemConstants.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemHandlers.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemSharedFunctions.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemStructures.cs" />
+    <Compile Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemStructures.g.cs" />
+    <Compile Include="ProjectDocument\ProjectDocument.g.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentConstants.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentHandlers.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentSharedFunctions.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentStructures.cs" />
+    <Compile Include="ProjectDocument\ProjectDocumentStructures.g.cs" />
+    <Compile Include="ProjectKind\ProjectKind.g.cs" />
+    <Compile Include="ProjectKind\ProjectKindConstants.cs" />
+    <Compile Include="ProjectKind\ProjectKindHandlers.cs" />
+    <Compile Include="ProjectKind\ProjectKindSharedFunctions.cs" />
+    <Compile Include="ProjectKind\ProjectKindStructures.cs" />
+    <Compile Include="ProjectKind\ProjectKindStructures.g.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItem.g.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemConstants.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemHandlers.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemSharedFunctions.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemStructures.cs" />
+    <Compile Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemStructures.g.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBase.g.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseConstants.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseHandlers.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseSharedFunctions.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseStructures.cs" />
+    <Compile Include="ProjectQueueItemBase\ProjectQueueItemBaseStructures.g.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItem.g.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemConstants.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemHandlers.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemSharedFunctions.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemStructures.cs" />
+    <Compile Include="ProjectRightsQueueItem\ProjectRightsQueueItemStructures.g.cs" />
+    <Compile Include="ProjectTeam%40RecipientLinks\ProjectTeamRecipientLinks.g.cs" />
+    <Compile Include="ProjectTeam\ProjectTeam.g.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamConstants.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamHandlers.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamSharedFunctions.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamStructures.cs" />
+    <Compile Include="ProjectTeam\ProjectTeamStructures.g.cs" />
+    <Compile Include="Project\Project.g.cs" />
+    <Compile Include="Project\ProjectConstants.cs" />
+    <Compile Include="Project\ProjectHandlers.cs" />
+    <Compile Include="Project\ProjectSharedFunctions.cs" />
+    <Compile Include="Project\ProjectStructures.cs" />
+    <Compile Include="Project\ProjectStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="Project%40Classifier\obj\ProjectClassifier.mtd" />
+    <EmbeddedResource Include="Project%40Classifier\ProjectClassifier.resx" />
+    <EmbeddedResource Include="Project%40Classifier\ProjectClassifier.ru.resx" />
+    <EmbeddedResource Include="Project%40Classifier\ProjectClassifierSystem.resx" />
+    <EmbeddedResource Include="Project%40Classifier\ProjectClassifierSystem.ru.resx" />
+    <EmbeddedResource Include="Project%40TeamMembers\obj\ProjectTeamMembers.mtd" />
+    <EmbeddedResource Include="Project%40TeamMembers\ProjectTeamMembers.resx" />
+    <EmbeddedResource Include="Project%40TeamMembers\ProjectTeamMembers.ru.resx" />
+    <EmbeddedResource Include="Project%40TeamMembers\ProjectTeamMembersSystem.resx" />
+    <EmbeddedResource Include="Project%40TeamMembers\ProjectTeamMembersSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectApprovalRole\obj\ProjectApprovalRole.mtd" />
+    <EmbeddedResource Include="ProjectApprovalRole\ProjectApprovalRole.resx" />
+    <EmbeddedResource Include="ProjectApprovalRole\ProjectApprovalRole.ru.resx" />
+    <EmbeddedResource Include="ProjectApprovalRole\ProjectApprovalRoleSystem.resx" />
+    <EmbeddedResource Include="ProjectApprovalRole\ProjectApprovalRoleSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectCore%40Classifier\obj\ProjectCoreClassifier.mtd" />
+    <EmbeddedResource Include="ProjectCore%40Classifier\ProjectCoreClassifier.resx" />
+    <EmbeddedResource Include="ProjectCore%40Classifier\ProjectCoreClassifier.ru.resx" />
+    <EmbeddedResource Include="ProjectCore%40Classifier\ProjectCoreClassifierSystem.resx" />
+    <EmbeddedResource Include="ProjectCore%40Classifier\ProjectCoreClassifierSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectCore%40TeamMembers\obj\ProjectCoreTeamMembers.mtd" />
+    <EmbeddedResource Include="ProjectCore%40TeamMembers\ProjectCoreTeamMembers.resx" />
+    <EmbeddedResource Include="ProjectCore%40TeamMembers\ProjectCoreTeamMembers.ru.resx" />
+    <EmbeddedResource Include="ProjectCore%40TeamMembers\ProjectCoreTeamMembersSystem.resx" />
+    <EmbeddedResource Include="ProjectCore%40TeamMembers\ProjectCoreTeamMembersSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectCore\obj\ProjectCore.mtd" />
+    <EmbeddedResource Include="ProjectCore\ProjectCore.resx" />
+    <EmbeddedResource Include="ProjectCore\ProjectCore.ru.resx" />
+    <EmbeddedResource Include="ProjectCore\ProjectCoreSystem.resx" />
+    <EmbeddedResource Include="ProjectCore\ProjectCoreSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Tracking\obj\ProjectDocumentTracking.mtd" />
+    <EmbeddedResource Include="ProjectDocument%40Tracking\ProjectDocumentTracking.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Tracking\ProjectDocumentTracking.ru.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Tracking\ProjectDocumentTrackingSystem.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Tracking\ProjectDocumentTrackingSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Versions\obj\ProjectDocumentVersions.mtd" />
+    <EmbeddedResource Include="ProjectDocument%40Versions\ProjectDocumentVersions.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Versions\ProjectDocumentVersions.ru.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Versions\ProjectDocumentVersionsSystem.resx" />
+    <EmbeddedResource Include="ProjectDocument%40Versions\ProjectDocumentVersionsSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectDocumentRightsQueueItem\obj\ProjectDocumentRightsQueueItem.mtd" />
+    <EmbeddedResource Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItem.resx" />
+    <EmbeddedResource Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItem.ru.resx" />
+    <EmbeddedResource Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemSystem.resx" />
+    <EmbeddedResource Include="ProjectDocumentRightsQueueItem\ProjectDocumentRightsQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectDocument\obj\ProjectDocument.mtd" />
+    <EmbeddedResource Include="ProjectDocument\ProjectDocument.resx" />
+    <EmbeddedResource Include="ProjectDocument\ProjectDocument.ru.resx" />
+    <EmbeddedResource Include="ProjectDocument\ProjectDocumentSystem.resx" />
+    <EmbeddedResource Include="ProjectDocument\ProjectDocumentSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectKind\obj\ProjectKind.mtd" />
+    <EmbeddedResource Include="ProjectKind\ProjectKind.resx" />
+    <EmbeddedResource Include="ProjectKind\ProjectKind.ru.resx" />
+    <EmbeddedResource Include="ProjectKind\ProjectKindSystem.resx" />
+    <EmbeddedResource Include="ProjectKind\ProjectKindSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectMemberRightsQueueItem\obj\ProjectMemberRightsQueueItem.mtd" />
+    <EmbeddedResource Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItem.resx" />
+    <EmbeddedResource Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItem.ru.resx" />
+    <EmbeddedResource Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemSystem.resx" />
+    <EmbeddedResource Include="ProjectMemberRightsQueueItem\ProjectMemberRightsQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectQueueItemBase\obj\ProjectQueueItemBase.mtd" />
+    <EmbeddedResource Include="ProjectQueueItemBase\ProjectQueueItemBase.resx" />
+    <EmbeddedResource Include="ProjectQueueItemBase\ProjectQueueItemBase.ru.resx" />
+    <EmbeddedResource Include="ProjectQueueItemBase\ProjectQueueItemBaseSystem.resx" />
+    <EmbeddedResource Include="ProjectQueueItemBase\ProjectQueueItemBaseSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectRightsQueueItem\obj\ProjectRightsQueueItem.mtd" />
+    <EmbeddedResource Include="ProjectRightsQueueItem\ProjectRightsQueueItem.resx" />
+    <EmbeddedResource Include="ProjectRightsQueueItem\ProjectRightsQueueItem.ru.resx" />
+    <EmbeddedResource Include="ProjectRightsQueueItem\ProjectRightsQueueItemSystem.resx" />
+    <EmbeddedResource Include="ProjectRightsQueueItem\ProjectRightsQueueItemSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectTeam%40RecipientLinks\obj\ProjectTeamRecipientLinks.mtd" />
+    <EmbeddedResource Include="ProjectTeam%40RecipientLinks\ProjectTeamRecipientLinks.resx" />
+    <EmbeddedResource Include="ProjectTeam%40RecipientLinks\ProjectTeamRecipientLinks.ru.resx" />
+    <EmbeddedResource Include="ProjectTeam%40RecipientLinks\ProjectTeamRecipientLinksSystem.resx" />
+    <EmbeddedResource Include="ProjectTeam%40RecipientLinks\ProjectTeamRecipientLinksSystem.ru.resx" />
+    <EmbeddedResource Include="ProjectTeam\obj\ProjectTeam.mtd" />
+    <EmbeddedResource Include="ProjectTeam\ProjectTeam.resx" />
+    <EmbeddedResource Include="ProjectTeam\ProjectTeam.ru.resx" />
+    <EmbeddedResource Include="ProjectTeam\ProjectTeamSystem.resx" />
+    <EmbeddedResource Include="ProjectTeam\ProjectTeamSystem.ru.resx" />
+    <EmbeddedResource Include="Project\obj\Project.mtd" />
+    <EmbeddedResource Include="Project\Project.resx" />
+    <EmbeddedResource Include="Project\Project.ru.resx" />
+    <EmbeddedResource Include="Project\ProjectSystem.resx" />
+    <EmbeddedResource Include="Project\ProjectSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

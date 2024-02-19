@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{79272a15-375b-3543-336e-3db95d402659}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Commons.Shared</RootNamespace>
+    <AssemblyName>Sungero.Commons.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="City\City.g.cs" />
+    <Compile Include="City\CityConstants.cs" />
+    <Compile Include="City\CityHandlers.cs" />
+    <Compile Include="City\CitySharedFunctions.cs" />
+    <Compile Include="City\CityStructures.cs" />
+    <Compile Include="City\CityStructures.g.cs" />
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSession.g.cs" />
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSessionConstants.cs" />
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSessionHandlers.cs" />
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSessionSharedFunctions.cs" />
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSessionStructures.cs" />
+    <Compile Include="ClassifierTrainingSession\ClassifierTrainingSessionStructures.g.cs" />
+    <Compile Include="Country\Country.g.cs" />
+    <Compile Include="Country\CountryConstants.cs" />
+    <Compile Include="Country\CountryHandlers.cs" />
+    <Compile Include="Country\CountrySharedFunctions.cs" />
+    <Compile Include="Country\CountryStructures.cs" />
+    <Compile Include="Country\CountryStructures.g.cs" />
+    <Compile Include="Currency\Currency.g.cs" />
+    <Compile Include="Currency\CurrencyConstants.cs" />
+    <Compile Include="Currency\CurrencyHandlers.cs" />
+    <Compile Include="Currency\CurrencySharedFunctions.cs" />
+    <Compile Include="Currency\CurrencyStructures.cs" />
+    <Compile Include="Currency\CurrencyStructures.g.cs" />
+    <Compile Include="EntityRecognitionInfo%40AdditionalClassifiers\EntityRecognitionInfoAdditionalClassifiers.g.cs" />
+    <Compile Include="EntityRecognitionInfo%40Facts\EntityRecognitionInfoFacts.g.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfo.g.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfoConstants.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfoHandlers.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfoSharedFunctions.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfoStructures.cs" />
+    <Compile Include="EntityRecognitionInfo\EntityRecognitionInfoStructures.g.cs" />
+    <Compile Include="ExternalEntityLink\ExternalEntityLink.g.cs" />
+    <Compile Include="ExternalEntityLink\ExternalEntityLinkConstants.cs" />
+    <Compile Include="ExternalEntityLink\ExternalEntityLinkHandlers.cs" />
+    <Compile Include="ExternalEntityLink\ExternalEntityLinkSharedFunctions.cs" />
+    <Compile Include="ExternalEntityLink\ExternalEntityLinkStructures.cs" />
+    <Compile Include="ExternalEntityLink\ExternalEntityLinkStructures.g.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleConstants.cs" />
+    <Compile Include="ModuleSharedFunctions.cs" />
+    <Compile Include="ModuleStructures.cs" />
+    <Compile Include="ModuleStructures.g.cs" />
+    <Compile Include="Region\Region.g.cs" />
+    <Compile Include="Region\RegionConstants.cs" />
+    <Compile Include="Region\RegionHandlers.cs" />
+    <Compile Include="Region\RegionSharedFunctions.cs" />
+    <Compile Include="Region\RegionStructures.cs" />
+    <Compile Include="Region\RegionStructures.g.cs" />
+    <Compile Include="VatRate\VatRate.g.cs" />
+    <Compile Include="VatRate\VatRateConstants.cs" />
+    <Compile Include="VatRate\VatRateHandlers.cs" />
+    <Compile Include="VatRate\VatRateSharedFunctions.cs" />
+    <Compile Include="VatRate\VatRateStructures.cs" />
+    <Compile Include="VatRate\VatRateStructures.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="City\City.resx" />
+    <EmbeddedResource Include="City\City.ru.resx" />
+    <EmbeddedResource Include="City\CitySystem.resx" />
+    <EmbeddedResource Include="City\CitySystem.ru.resx" />
+    <EmbeddedResource Include="City\obj\City.mtd" />
+    <EmbeddedResource Include="ClassifierTrainingSession\ClassifierTrainingSession.resx" />
+    <EmbeddedResource Include="ClassifierTrainingSession\ClassifierTrainingSession.ru.resx" />
+    <EmbeddedResource Include="ClassifierTrainingSession\ClassifierTrainingSessionSystem.resx" />
+    <EmbeddedResource Include="ClassifierTrainingSession\ClassifierTrainingSessionSystem.ru.resx" />
+    <EmbeddedResource Include="ClassifierTrainingSession\obj\ClassifierTrainingSession.mtd" />
+    <EmbeddedResource Include="Country\Country.resx" />
+    <EmbeddedResource Include="Country\Country.ru.resx" />
+    <EmbeddedResource Include="Country\CountrySystem.resx" />
+    <EmbeddedResource Include="Country\CountrySystem.ru.resx" />
+    <EmbeddedResource Include="Country\obj\Country.mtd" />
+    <EmbeddedResource Include="Currency\Currency.resx" />
+    <EmbeddedResource Include="Currency\Currency.ru.resx" />
+    <EmbeddedResource Include="Currency\CurrencySystem.resx" />
+    <EmbeddedResource Include="Currency\CurrencySystem.ru.resx" />
+    <EmbeddedResource Include="Currency\obj\Currency.mtd" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40AdditionalClassifiers\EntityRecognitionInfoAdditionalClassifiers.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40AdditionalClassifiers\EntityRecognitionInfoAdditionalClassifiers.ru.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40AdditionalClassifiers\EntityRecognitionInfoAdditionalClassifiersSystem.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40AdditionalClassifiers\EntityRecognitionInfoAdditionalClassifiersSystem.ru.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40AdditionalClassifiers\obj\EntityRecognitionInfoAdditionalClassifiers.mtd" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40Facts\EntityRecognitionInfoFacts.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40Facts\EntityRecognitionInfoFacts.ru.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40Facts\EntityRecognitionInfoFactsSystem.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40Facts\EntityRecognitionInfoFactsSystem.ru.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo%40Facts\obj\EntityRecognitionInfoFacts.mtd" />
+    <EmbeddedResource Include="EntityRecognitionInfo\EntityRecognitionInfo.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo\EntityRecognitionInfo.ru.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo\EntityRecognitionInfoSystem.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo\EntityRecognitionInfoSystem.ru.resx" />
+    <EmbeddedResource Include="EntityRecognitionInfo\obj\EntityRecognitionInfo.mtd" />
+    <EmbeddedResource Include="ExternalEntityLink\ExternalEntityLink.resx" />
+    <EmbeddedResource Include="ExternalEntityLink\ExternalEntityLink.ru.resx" />
+    <EmbeddedResource Include="ExternalEntityLink\ExternalEntityLinkSystem.resx" />
+    <EmbeddedResource Include="ExternalEntityLink\ExternalEntityLinkSystem.ru.resx" />
+    <EmbeddedResource Include="ExternalEntityLink\obj\ExternalEntityLink.mtd" />
+    <EmbeddedResource Include="Module.resx" />
+    <EmbeddedResource Include="Module.ru.resx" />
+    <EmbeddedResource Include="ModuleSystem.resx" />
+    <EmbeddedResource Include="ModuleSystem.ru.resx" />
+    <EmbeddedResource Include="Region\obj\Region.mtd" />
+    <EmbeddedResource Include="Region\Region.resx" />
+    <EmbeddedResource Include="Region\Region.ru.resx" />
+    <EmbeddedResource Include="Region\RegionSystem.resx" />
+    <EmbeddedResource Include="Region\RegionSystem.ru.resx" />
+    <EmbeddedResource Include="VatRate\obj\VatRate.mtd" />
+    <EmbeddedResource Include="VatRate\VatRate.resx" />
+    <EmbeddedResource Include="VatRate\VatRate.ru.resx" />
+    <EmbeddedResource Include="VatRate\VatRateSystem.resx" />
+    <EmbeddedResource Include="VatRate\VatRateSystem.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Module.mtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

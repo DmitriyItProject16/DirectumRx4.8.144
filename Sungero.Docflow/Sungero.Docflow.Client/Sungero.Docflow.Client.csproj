@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{29e41de5-2837-acca-ceb7-cf77b4667660}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Docflow.Client</RootNamespace>
+    <AssemblyName>Sungero.Docflow.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItem.g.cs" />
+    <Compile Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItemCollectionView.xaml.cs">
+      <DependentUpon>AccessRightsBulkQueueItemCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItemView.xaml.cs">
+      <DependentUpon>AccessRightsBulkQueueItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRightsRule%40BusinessUnits\AccessRightsRuleBusinessUnits.g.cs" />
+    <Compile Include="AccessRightsRule%40Departments\AccessRightsRuleDepartments.g.cs" />
+    <Compile Include="AccessRightsRule%40DocumentGroups\AccessRightsRuleDocumentGroups.g.cs" />
+    <Compile Include="AccessRightsRule%40DocumentKinds\AccessRightsRuleDocumentKinds.g.cs" />
+    <Compile Include="AccessRightsRule%40Members\AccessRightsRuleMembers.g.cs" />
+    <Compile Include="AccessRightsRule\AccessRightsRule.g.cs" />
+    <Compile Include="AccessRightsRule\AccessRightsRuleCollectionView.xaml.cs">
+      <DependentUpon>AccessRightsRuleCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRightsRule\AccessRightsRuleView.xaml.cs">
+      <DependentUpon>AccessRightsRuleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDocumentBase%40Tracking\AccountingDocumentBaseTracking.g.cs" />
+    <Compile Include="AccountingDocumentBase%40Versions\AccountingDocumentBaseVersions.g.cs" />
+    <Compile Include="AccountingDocumentBase\AccountingDocumentBase.g.cs" />
+    <Compile Include="AccountingDocumentBase\AccountingDocumentBaseCollectionView.xaml.cs">
+      <DependentUpon>AccountingDocumentBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AccountingDocumentBase\AccountingDocumentBaseView.xaml.cs">
+      <DependentUpon>AccountingDocumentBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Addendum%40Tracking\AddendumTracking.g.cs" />
+    <Compile Include="Addendum%40Versions\AddendumVersions.g.cs" />
+    <Compile Include="Addendum\Addendum.g.cs" />
+    <Compile Include="Addendum\AddendumCollectionView.xaml.cs">
+      <DependentUpon>AddendumCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Addendum\AddendumView.xaml.cs">
+      <DependentUpon>AddendumView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalAssignment\ApprovalAssignment.g.cs" />
+    <Compile Include="ApprovalAssignment\ApprovalAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalAssignment\ApprovalAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalCheckingAssignment\ApprovalCheckingAssignment.g.cs" />
+    <Compile Include="ApprovalCheckingAssignment\ApprovalCheckingAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalCheckingAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalCheckingAssignment\ApprovalCheckingAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalCheckingAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignment.g.cs" />
+    <Compile Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalCheckReturnAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalCheckReturnAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalConvertPdfStage\ApprovalConvertPdfStage.g.cs" />
+    <Compile Include="ApprovalConvertPdfStage\ApprovalConvertPdfStageCollectionView.xaml.cs">
+      <DependentUpon>ApprovalConvertPdfStageCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalConvertPdfStage\ApprovalConvertPdfStageView.xaml.cs">
+      <DependentUpon>ApprovalConvertPdfStageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalExecutionAssignment%40CollapsedStagesTypesExe\ApprovalExecutionAssignmentCollapsedStagesTypesExe.g.cs" />
+    <Compile Include="ApprovalExecutionAssignment\ApprovalExecutionAssignment.g.cs" />
+    <Compile Include="ApprovalExecutionAssignment\ApprovalExecutionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalExecutionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalExecutionAssignment\ApprovalExecutionAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalExecutionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItem.g.cs" />
+    <Compile Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItemCollectionView.xaml.cs">
+      <DependentUpon>ApprovalFunctionQueueItemCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItemView.xaml.cs">
+      <DependentUpon>ApprovalFunctionQueueItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalFunctionStageBase\ApprovalFunctionStageBase.g.cs" />
+    <Compile Include="ApprovalFunctionStageBase\ApprovalFunctionStageBaseCollectionView.xaml.cs">
+      <DependentUpon>ApprovalFunctionStageBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalFunctionStageBase\ApprovalFunctionStageBaseView.xaml.cs">
+      <DependentUpon>ApprovalFunctionStageBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalManagerAssignment%40AddApprovers\ApprovalManagerAssignmentAddApprovers.g.cs" />
+    <Compile Include="ApprovalManagerAssignment%40Addressees\ApprovalManagerAssignmentAddressees.g.cs" />
+    <Compile Include="ApprovalManagerAssignment\ApprovalManagerAssignment.g.cs" />
+    <Compile Include="ApprovalManagerAssignment\ApprovalManagerAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalManagerAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalManagerAssignment\ApprovalManagerAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalManagerAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalNotification\ApprovalNotification.g.cs" />
+    <Compile Include="ApprovalNotification\ApprovalNotificationCollectionView.xaml.cs">
+      <DependentUpon>ApprovalNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalNotification\ApprovalNotificationView.xaml.cs">
+      <DependentUpon>ApprovalNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalPrintingAssignment%40CollapsedStagesTypesPr\ApprovalPrintingAssignmentCollapsedStagesTypesPr.g.cs" />
+    <Compile Include="ApprovalPrintingAssignment\ApprovalPrintingAssignment.g.cs" />
+    <Compile Include="ApprovalPrintingAssignment\ApprovalPrintingAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalPrintingAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalPrintingAssignment\ApprovalPrintingAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalPrintingAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRegistrationAssignment%40CollapsedStagesTypesReg\ApprovalRegistrationAssignmentCollapsedStagesTypesReg.g.cs" />
+    <Compile Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignment.g.cs" />
+    <Compile Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalRegistrationAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalRegistrationAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStage.g.cs" />
+    <Compile Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStageCollectionView.xaml.cs">
+      <DependentUpon>ApprovalRegistrationFtsStageCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStageView.xaml.cs">
+      <DependentUpon>ApprovalRegistrationFtsStageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalReviewAssignment%40CollapsedStagesTypesRe\ApprovalReviewAssignmentCollapsedStagesTypesRe.g.cs" />
+    <Compile Include="ApprovalReviewAssignment\ApprovalReviewAssignment.g.cs" />
+    <Compile Include="ApprovalReviewAssignment\ApprovalReviewAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalReviewAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalReviewAssignment\ApprovalReviewAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalReviewAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalReviewTaskStage\ApprovalReviewTaskStage.g.cs" />
+    <Compile Include="ApprovalReviewTaskStage\ApprovalReviewTaskStageCollectionView.xaml.cs">
+      <DependentUpon>ApprovalReviewTaskStageCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalReviewTaskStage\ApprovalReviewTaskStageView.xaml.cs">
+      <DependentUpon>ApprovalReviewTaskStageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalReworkAssignment%40AddApprovers\ApprovalReworkAssignmentAddApprovers.g.cs" />
+    <Compile Include="ApprovalReworkAssignment%40Addressees\ApprovalReworkAssignmentAddressees.g.cs" />
+    <Compile Include="ApprovalReworkAssignment%40Approvers\ApprovalReworkAssignmentApprovers.g.cs" />
+    <Compile Include="ApprovalReworkAssignment%40RegApprovers\ApprovalReworkAssignmentRegApprovers.g.cs" />
+    <Compile Include="ApprovalReworkAssignment\ApprovalReworkAssignment.g.cs" />
+    <Compile Include="ApprovalReworkAssignment\ApprovalReworkAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalReworkAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalReworkAssignment\ApprovalReworkAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalReworkAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRoleBase\ApprovalRoleBase.g.cs" />
+    <Compile Include="ApprovalRoleBase\ApprovalRoleBaseCollectionView.xaml.cs">
+      <DependentUpon>ApprovalRoleBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRoleBase\ApprovalRoleBaseView.xaml.cs">
+      <DependentUpon>ApprovalRoleBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRole\ApprovalRole.g.cs" />
+    <Compile Include="ApprovalRole\ApprovalRoleCollectionView.xaml.cs">
+      <DependentUpon>ApprovalRoleCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRole\ApprovalRoleView.xaml.cs">
+      <DependentUpon>ApprovalRoleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRule%40BusinessUnits\ApprovalRuleBusinessUnits.g.cs" />
+    <Compile Include="ApprovalRule%40Conditions\ApprovalRuleConditions.g.cs" />
+    <Compile Include="ApprovalRule%40Departments\ApprovalRuleDepartments.g.cs" />
+    <Compile Include="ApprovalRule%40DocumentGroups\ApprovalRuleDocumentGroups.g.cs" />
+    <Compile Include="ApprovalRule%40DocumentKinds\ApprovalRuleDocumentKinds.g.cs" />
+    <Compile Include="ApprovalRule%40Stages\ApprovalRuleStages.g.cs" />
+    <Compile Include="ApprovalRule%40Transitions\ApprovalRuleTransitions.g.cs" />
+    <Compile Include="ApprovalRuleBase%40BusinessUnits\ApprovalRuleBaseBusinessUnits.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Conditions\ApprovalRuleBaseConditions.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Departments\ApprovalRuleBaseDepartments.g.cs" />
+    <Compile Include="ApprovalRuleBase%40DocumentGroups\ApprovalRuleBaseDocumentGroups.g.cs" />
+    <Compile Include="ApprovalRuleBase%40DocumentKinds\ApprovalRuleBaseDocumentKinds.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Stages\ApprovalRuleBaseStages.g.cs" />
+    <Compile Include="ApprovalRuleBase%40Transitions\ApprovalRuleBaseTransitions.g.cs" />
+    <Compile Include="ApprovalRuleBase\ApprovalRuleBase.g.cs" />
+    <Compile Include="ApprovalRuleBase\ApprovalRuleBaseCollectionView.xaml.cs">
+      <DependentUpon>ApprovalRuleBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRuleBase\ApprovalRuleBaseView.xaml.cs">
+      <DependentUpon>ApprovalRuleBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRule\ApprovalRule.g.cs" />
+    <Compile Include="ApprovalRule\ApprovalRuleCollectionView.xaml.cs">
+      <DependentUpon>ApprovalRuleCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalRule\ApprovalRuleView.xaml.cs">
+      <DependentUpon>ApprovalRuleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSendingAssignment%40CollapsedStagesTypesSen\ApprovalSendingAssignmentCollapsedStagesTypesSen.g.cs" />
+    <Compile Include="ApprovalSendingAssignment\ApprovalSendingAssignment.g.cs" />
+    <Compile Include="ApprovalSendingAssignment\ApprovalSendingAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalSendingAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSendingAssignment\ApprovalSendingAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalSendingAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSigningAssignment%40CollapsedStagesTypesSig\ApprovalSigningAssignmentCollapsedStagesTypesSig.g.cs" />
+    <Compile Include="ApprovalSigningAssignment\ApprovalSigningAssignment.g.cs" />
+    <Compile Include="ApprovalSigningAssignment\ApprovalSigningAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalSigningAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSigningAssignment\ApprovalSigningAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalSigningAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSimpleAssignment\ApprovalSimpleAssignment.g.cs" />
+    <Compile Include="ApprovalSimpleAssignment\ApprovalSimpleAssignmentCollectionView.xaml.cs">
+      <DependentUpon>ApprovalSimpleAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSimpleAssignment\ApprovalSimpleAssignmentView.xaml.cs">
+      <DependentUpon>ApprovalSimpleAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSimpleNotification\ApprovalSimpleNotification.g.cs" />
+    <Compile Include="ApprovalSimpleNotification\ApprovalSimpleNotificationCollectionView.xaml.cs">
+      <DependentUpon>ApprovalSimpleNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalSimpleNotification\ApprovalSimpleNotificationView.xaml.cs">
+      <DependentUpon>ApprovalSimpleNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalStage%40ApprovalRoles\ApprovalStageApprovalRoles.g.cs" />
+    <Compile Include="ApprovalStage%40Recipients\ApprovalStageRecipients.g.cs" />
+    <Compile Include="ApprovalStageBase\ApprovalStageBase.g.cs" />
+    <Compile Include="ApprovalStageBase\ApprovalStageBaseCollectionView.xaml.cs">
+      <DependentUpon>ApprovalStageBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalStageBase\ApprovalStageBaseView.xaml.cs">
+      <DependentUpon>ApprovalStageBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalStage\ApprovalStage.g.cs" />
+    <Compile Include="ApprovalStage\ApprovalStageCollectionView.xaml.cs">
+      <DependentUpon>ApprovalStageCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalStage\ApprovalStageView.xaml.cs">
+      <DependentUpon>ApprovalStageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalTask%40AddApproversExpanded\ApprovalTaskAddApproversExpanded.g.cs" />
+    <Compile Include="ApprovalTask%40AddApprovers\ApprovalTaskAddApprovers.g.cs" />
+    <Compile Include="ApprovalTask%40AddedAddenda\ApprovalTaskAddedAddenda.g.cs" />
+    <Compile Include="ApprovalTask%40Addressees\ApprovalTaskAddressees.g.cs" />
+    <Compile Include="ApprovalTask%40Observers\ApprovalTaskObservers.g.cs" />
+    <Compile Include="ApprovalTask%40RemovedAddenda\ApprovalTaskRemovedAddenda.g.cs" />
+    <Compile Include="ApprovalTask%40ReqApprovers\ApprovalTaskReqApprovers.g.cs" />
+    <Compile Include="ApprovalTask%40RevokedDocumentsRights\ApprovalTaskRevokedDocumentsRights.g.cs" />
+    <Compile Include="ApprovalTask\ApprovalTask.g.cs" />
+    <Compile Include="ApprovalTask\ApprovalTaskCollectionView.xaml.cs">
+      <DependentUpon>ApprovalTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovalTask\ApprovalTaskView.xaml.cs">
+      <DependentUpon>ApprovalTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CaseFile\CaseFile.g.cs" />
+    <Compile Include="CaseFile\CaseFileCollectionView.xaml.cs">
+      <DependentUpon>CaseFileCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CaseFile\CaseFileView.xaml.cs">
+      <DependentUpon>CaseFileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckReturnAssignment\CheckReturnAssignment.g.cs" />
+    <Compile Include="CheckReturnAssignment\CheckReturnAssignmentCollectionView.xaml.cs">
+      <DependentUpon>CheckReturnAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckReturnAssignment\CheckReturnAssignmentView.xaml.cs">
+      <DependentUpon>CheckReturnAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckReturnCheckAssignment\CheckReturnCheckAssignment.g.cs" />
+    <Compile Include="CheckReturnCheckAssignment\CheckReturnCheckAssignmentCollectionView.xaml.cs">
+      <DependentUpon>CheckReturnCheckAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckReturnCheckAssignment\CheckReturnCheckAssignmentView.xaml.cs">
+      <DependentUpon>CheckReturnCheckAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckReturnTask%40Observers\CheckReturnTaskObservers.g.cs" />
+    <Compile Include="CheckReturnTask\CheckReturnTask.g.cs" />
+    <Compile Include="CheckReturnTask\CheckReturnTaskCollectionView.xaml.cs">
+      <DependentUpon>CheckReturnTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckReturnTask\CheckReturnTaskView.xaml.cs">
+      <DependentUpon>CheckReturnTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Condition%40Addressees\ConditionAddressees.g.cs" />
+    <Compile Include="Condition%40ConditionDocumentKinds\ConditionConditionDocumentKinds.g.cs" />
+    <Compile Include="Condition%40Currencies\ConditionCurrencies.g.cs" />
+    <Compile Include="Condition%40DeliveryMethods\ConditionDeliveryMethods.g.cs" />
+    <Compile Include="Condition%40DocumentKinds\ConditionDocumentKinds.g.cs" />
+    <Compile Include="ConditionBase%40ConditionDocumentKinds\ConditionBaseConditionDocumentKinds.g.cs" />
+    <Compile Include="ConditionBase%40Currencies\ConditionBaseCurrencies.g.cs" />
+    <Compile Include="ConditionBase%40DeliveryMethods\ConditionBaseDeliveryMethods.g.cs" />
+    <Compile Include="ConditionBase%40DocumentKinds\ConditionBaseDocumentKinds.g.cs" />
+    <Compile Include="ConditionBase\ConditionBase.g.cs" />
+    <Compile Include="ConditionBase\ConditionBaseCollectionView.xaml.cs">
+      <DependentUpon>ConditionBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionBase\ConditionBaseView.xaml.cs">
+      <DependentUpon>ConditionBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Condition\Condition.g.cs" />
+    <Compile Include="Condition\ConditionCollectionView.xaml.cs">
+      <DependentUpon>ConditionCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Condition\ConditionView.xaml.cs">
+      <DependentUpon>ConditionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContractualDocumentBase%40Tracking\ContractualDocumentBaseTracking.g.cs" />
+    <Compile Include="ContractualDocumentBase%40Versions\ContractualDocumentBaseVersions.g.cs" />
+    <Compile Include="ContractualDocumentBase\ContractualDocumentBase.g.cs" />
+    <Compile Include="ContractualDocumentBase\ContractualDocumentBaseCollectionView.xaml.cs">
+      <DependentUpon>ContractualDocumentBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContractualDocumentBase\ContractualDocumentBaseView.xaml.cs">
+      <DependentUpon>ContractualDocumentBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CounterpartyDocument%40Tracking\CounterpartyDocumentTracking.g.cs" />
+    <Compile Include="CounterpartyDocument%40Versions\CounterpartyDocumentVersions.g.cs" />
+    <Compile Include="CounterpartyDocument\CounterpartyDocument.g.cs" />
+    <Compile Include="CounterpartyDocument\CounterpartyDocumentCollectionView.xaml.cs">
+      <DependentUpon>CounterpartyDocumentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CounterpartyDocument\CounterpartyDocumentView.xaml.cs">
+      <DependentUpon>CounterpartyDocumentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignment.g.cs" />
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>DeadlineExtensionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentView.xaml.cs">
+      <DependentUpon>DeadlineExtensionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotification.g.cs" />
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationCollectionView.xaml.cs">
+      <DependentUpon>DeadlineExtensionNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionNotification\DeadlineExtensionNotificationView.xaml.cs">
+      <DependentUpon>DeadlineExtensionNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionTask%40Observers\DeadlineExtensionTaskObservers.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTask.g.cs" />
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskCollectionView.xaml.cs">
+      <DependentUpon>DeadlineExtensionTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineExtensionTask\DeadlineExtensionTaskView.xaml.cs">
+      <DependentUpon>DeadlineExtensionTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignment.g.cs" />
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentCollectionView.xaml.cs">
+      <DependentUpon>DeadlineRejectionAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentView.xaml.cs">
+      <DependentUpon>DeadlineRejectionAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DistributionList%40Addressees\DistributionListAddressees.g.cs" />
+    <Compile Include="DistributionList\DistributionList.g.cs" />
+    <Compile Include="DistributionList\DistributionListCollectionView.xaml.cs">
+      <DependentUpon>DistributionListCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DistributionList\DistributionListView.xaml.cs">
+      <DependentUpon>DistributionListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentComparisonInfo\DocumentComparisonInfo.g.cs" />
+    <Compile Include="DocumentComparisonInfo\DocumentComparisonInfoCollectionView.xaml.cs">
+      <DependentUpon>DocumentComparisonInfoCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentComparisonInfo\DocumentComparisonInfoView.xaml.cs">
+      <DependentUpon>DocumentComparisonInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItem.g.cs" />
+    <Compile Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItemCollectionView.xaml.cs">
+      <DependentUpon>DocumentFullTextSearchQueueItemCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItemView.xaml.cs">
+      <DependentUpon>DocumentFullTextSearchQueueItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentGroupBase%40DocumentKinds\DocumentGroupBaseDocumentKinds.g.cs" />
+    <Compile Include="DocumentGroupBase\DocumentGroupBase.g.cs" />
+    <Compile Include="DocumentGroupBase\DocumentGroupBaseCollectionView.xaml.cs">
+      <DependentUpon>DocumentGroupBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentGroupBase\DocumentGroupBaseView.xaml.cs">
+      <DependentUpon>DocumentGroupBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentKind%40AvailableActions\DocumentKindAvailableActions.g.cs" />
+    <Compile Include="DocumentKind\DocumentKind.g.cs" />
+    <Compile Include="DocumentKind\DocumentKindCollectionView.xaml.cs">
+      <DependentUpon>DocumentKindCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentKind\DocumentKindView.xaml.cs">
+      <DependentUpon>DocumentKindView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentRegister%40NumberFormatItems\DocumentRegisterNumberFormatItems.g.cs" />
+    <Compile Include="DocumentRegister\DocumentRegister.g.cs" />
+    <Compile Include="DocumentRegister\DocumentRegisterCollectionView.xaml.cs">
+      <DependentUpon>DocumentRegisterCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentRegister\DocumentRegisterView.xaml.cs">
+      <DependentUpon>DocumentRegisterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentSendAction\DocumentSendAction.g.cs" />
+    <Compile Include="DocumentSendAction\DocumentSendActionCollectionView.xaml.cs">
+      <DependentUpon>DocumentSendActionCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentSendAction\DocumentSendActionView.xaml.cs">
+      <DependentUpon>DocumentSendActionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentTemplate%40BusinessUnits\DocumentTemplateBusinessUnits.g.cs" />
+    <Compile Include="DocumentTemplate%40Departments\DocumentTemplateDepartments.g.cs" />
+    <Compile Include="DocumentTemplate%40DocumentKinds\DocumentTemplateDocumentKinds.g.cs" />
+    <Compile Include="DocumentTemplate%40Versions\DocumentTemplateVersions.g.cs" />
+    <Compile Include="DocumentTemplate\DocumentTemplate.g.cs" />
+    <Compile Include="DocumentTemplate\DocumentTemplateCollectionView.xaml.cs">
+      <DependentUpon>DocumentTemplateCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentTemplate\DocumentTemplateView.xaml.cs">
+      <DependentUpon>DocumentTemplateView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentType\DocumentType.g.cs" />
+    <Compile Include="DocumentType\DocumentTypeCollectionView.xaml.cs">
+      <DependentUpon>DocumentTypeCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentType\DocumentTypeView.xaml.cs">
+      <DependentUpon>DocumentTypeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExchangeDocument%40Tracking\ExchangeDocumentTracking.g.cs" />
+    <Compile Include="ExchangeDocument%40Versions\ExchangeDocumentVersions.g.cs" />
+    <Compile Include="ExchangeDocument\ExchangeDocument.g.cs" />
+    <Compile Include="ExchangeDocument\ExchangeDocumentCollectionView.xaml.cs">
+      <DependentUpon>ExchangeDocumentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExchangeDocument\ExchangeDocumentView.xaml.cs">
+      <DependentUpon>ExchangeDocumentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FileRetentionPeriod\FileRetentionPeriod.g.cs" />
+    <Compile Include="FileRetentionPeriod\FileRetentionPeriodCollectionView.xaml.cs">
+      <DependentUpon>FileRetentionPeriodCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FileRetentionPeriod\FileRetentionPeriodView.xaml.cs">
+      <DependentUpon>FileRetentionPeriodView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormalizedPowerOfAttorney%40Tracking\FormalizedPowerOfAttorneyTracking.g.cs" />
+    <Compile Include="FormalizedPowerOfAttorney%40Versions\FormalizedPowerOfAttorneyVersions.g.cs" />
+    <Compile Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorney.g.cs" />
+    <Compile Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorneyCollectionView.xaml.cs">
+      <DependentUpon>FormalizedPowerOfAttorneyCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorneyView.xaml.cs">
+      <DependentUpon>FormalizedPowerOfAttorneyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalAssignment\FreeApprovalAssignment.g.cs" />
+    <Compile Include="FreeApprovalAssignment\FreeApprovalAssignmentCollectionView.xaml.cs">
+      <DependentUpon>FreeApprovalAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalAssignment\FreeApprovalAssignmentView.xaml.cs">
+      <DependentUpon>FreeApprovalAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignment.g.cs" />
+    <Compile Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignmentCollectionView.xaml.cs">
+      <DependentUpon>FreeApprovalFinishAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignmentView.xaml.cs">
+      <DependentUpon>FreeApprovalFinishAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalNotification\FreeApprovalNotification.g.cs" />
+    <Compile Include="FreeApprovalNotification\FreeApprovalNotificationCollectionView.xaml.cs">
+      <DependentUpon>FreeApprovalNotificationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalNotification\FreeApprovalNotificationView.xaml.cs">
+      <DependentUpon>FreeApprovalNotificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalReworkAssignment%40Approvers\FreeApprovalReworkAssignmentApprovers.g.cs" />
+    <Compile Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignment.g.cs" />
+    <Compile Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignmentCollectionView.xaml.cs">
+      <DependentUpon>FreeApprovalReworkAssignmentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignmentView.xaml.cs">
+      <DependentUpon>FreeApprovalReworkAssignmentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalTask%40AddedAddenda\FreeApprovalTaskAddedAddenda.g.cs" />
+    <Compile Include="FreeApprovalTask%40Approvers\FreeApprovalTaskApprovers.g.cs" />
+    <Compile Include="FreeApprovalTask%40Observers\FreeApprovalTaskObservers.g.cs" />
+    <Compile Include="FreeApprovalTask%40RemovedAddenda\FreeApprovalTaskRemovedAddenda.g.cs" />
+    <Compile Include="FreeApprovalTask\FreeApprovalTask.g.cs" />
+    <Compile Include="FreeApprovalTask\FreeApprovalTaskCollectionView.xaml.cs">
+      <DependentUpon>FreeApprovalTaskCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FreeApprovalTask\FreeApprovalTaskView.xaml.cs">
+      <DependentUpon>FreeApprovalTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IncomingDocumentBase%40Addressees\IncomingDocumentBaseAddressees.g.cs" />
+    <Compile Include="IncomingDocumentBase%40Tracking\IncomingDocumentBaseTracking.g.cs" />
+    <Compile Include="IncomingDocumentBase%40Versions\IncomingDocumentBaseVersions.g.cs" />
+    <Compile Include="IncomingDocumentBase\IncomingDocumentBase.g.cs" />
+    <Compile Include="IncomingDocumentBase\IncomingDocumentBaseCollectionView.xaml.cs">
+      <DependentUpon>IncomingDocumentBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IncomingDocumentBase\IncomingDocumentBaseView.xaml.cs">
+      <DependentUpon>IncomingDocumentBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InternalDocumentBase%40Tracking\InternalDocumentBaseTracking.g.cs" />
+    <Compile Include="InternalDocumentBase%40Versions\InternalDocumentBaseVersions.g.cs" />
+    <Compile Include="InternalDocumentBase\InternalDocumentBase.g.cs" />
+    <Compile Include="InternalDocumentBase\InternalDocumentBaseCollectionView.xaml.cs">
+      <DependentUpon>InternalDocumentBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InternalDocumentBase\InternalDocumentBaseView.xaml.cs">
+      <DependentUpon>InternalDocumentBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MailDeliveryMethod\MailDeliveryMethod.g.cs" />
+    <Compile Include="MailDeliveryMethod\MailDeliveryMethodCollectionView.xaml.cs">
+      <DependentUpon>MailDeliveryMethodCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MailDeliveryMethod\MailDeliveryMethodView.xaml.cs">
+      <DependentUpon>MailDeliveryMethodView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Memo%40Addressees\MemoAddressees.g.cs" />
+    <Compile Include="Memo%40Tracking\MemoTracking.g.cs" />
+    <Compile Include="Memo%40Versions\MemoVersions.g.cs" />
+    <Compile Include="Memo\Memo.g.cs" />
+    <Compile Include="Memo\MemoCollectionView.xaml.cs">
+      <DependentUpon>MemoCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Memo\MemoView.xaml.cs">
+      <DependentUpon>MemoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MinutesBase%40Tracking\MinutesBaseTracking.g.cs" />
+    <Compile Include="MinutesBase%40Versions\MinutesBaseVersions.g.cs" />
+    <Compile Include="MinutesBase\MinutesBase.g.cs" />
+    <Compile Include="MinutesBase\MinutesBaseCollectionView.xaml.cs">
+      <DependentUpon>MinutesBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MinutesBase\MinutesBaseView.xaml.cs">
+      <DependentUpon>MinutesBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Module.g.cs" />
+    <Compile Include="OfficialDocument%40Tracking\OfficialDocumentTracking.g.cs" />
+    <Compile Include="OfficialDocument%40Versions\OfficialDocumentVersions.g.cs" />
+    <Compile Include="OfficialDocument\OfficialDocument.g.cs" />
+    <Compile Include="OfficialDocument\OfficialDocumentCollectionView.xaml.cs">
+      <DependentUpon>OfficialDocumentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OfficialDocument\OfficialDocumentView.xaml.cs">
+      <DependentUpon>OfficialDocumentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OutgoingDocumentBase%40Addressees\OutgoingDocumentBaseAddressees.g.cs" />
+    <Compile Include="OutgoingDocumentBase%40Tracking\OutgoingDocumentBaseTracking.g.cs" />
+    <Compile Include="OutgoingDocumentBase%40Versions\OutgoingDocumentBaseVersions.g.cs" />
+    <Compile Include="OutgoingDocumentBase\OutgoingDocumentBase.g.cs" />
+    <Compile Include="OutgoingDocumentBase\OutgoingDocumentBaseCollectionView.xaml.cs">
+      <DependentUpon>OutgoingDocumentBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OutgoingDocumentBase\OutgoingDocumentBaseView.xaml.cs">
+      <DependentUpon>OutgoingDocumentBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalSetting\PersonalSetting.g.cs" />
+    <Compile Include="PersonalSetting\PersonalSettingCollectionView.xaml.cs">
+      <DependentUpon>PersonalSettingCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalSetting\PersonalSettingView.xaml.cs">
+      <DependentUpon>PersonalSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorney%40Tracking\PowerOfAttorneyTracking.g.cs" />
+    <Compile Include="PowerOfAttorney%40Versions\PowerOfAttorneyVersions.g.cs" />
+    <Compile Include="PowerOfAttorneyBase%40Tracking\PowerOfAttorneyBaseTracking.g.cs" />
+    <Compile Include="PowerOfAttorneyBase%40Versions\PowerOfAttorneyBaseVersions.g.cs" />
+    <Compile Include="PowerOfAttorneyBase\PowerOfAttorneyBase.g.cs" />
+    <Compile Include="PowerOfAttorneyBase\PowerOfAttorneyBaseCollectionView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorneyBase\PowerOfAttorneyBaseView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItem.g.cs" />
+    <Compile Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItemCollectionView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyQueueItemCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItemView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyQueueItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorneyRevocation%40Tracking\PowerOfAttorneyRevocationTracking.g.cs" />
+    <Compile Include="PowerOfAttorneyRevocation%40Versions\PowerOfAttorneyRevocationVersions.g.cs" />
+    <Compile Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocation.g.cs" />
+    <Compile Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocationCollectionView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyRevocationCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocationView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyRevocationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorney\PowerOfAttorney.g.cs" />
+    <Compile Include="PowerOfAttorney\PowerOfAttorneyCollectionView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PowerOfAttorney\PowerOfAttorneyView.xaml.cs">
+      <DependentUpon>PowerOfAttorneyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectBase\ProjectBase.g.cs" />
+    <Compile Include="ProjectBase\ProjectBaseCollectionView.xaml.cs">
+      <DependentUpon>ProjectBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectBase\ProjectBaseView.xaml.cs">
+      <DependentUpon>ProjectBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationGroup%40Departments\RegistrationGroupDepartments.g.cs" />
+    <Compile Include="RegistrationGroup%40RecipientLinks\RegistrationGroupRecipientLinks.g.cs" />
+    <Compile Include="RegistrationGroup\RegistrationGroup.g.cs" />
+    <Compile Include="RegistrationGroup\RegistrationGroupCollectionView.xaml.cs">
+      <DependentUpon>RegistrationGroupCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationGroup\RegistrationGroupView.xaml.cs">
+      <DependentUpon>RegistrationGroupView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationSetting%40BusinessUnits\RegistrationSettingBusinessUnits.g.cs" />
+    <Compile Include="RegistrationSetting%40Departments\RegistrationSettingDepartments.g.cs" />
+    <Compile Include="RegistrationSetting%40DocumentKinds\RegistrationSettingDocumentKinds.g.cs" />
+    <Compile Include="RegistrationSetting\RegistrationSetting.g.cs" />
+    <Compile Include="RegistrationSetting\RegistrationSettingCollectionView.xaml.cs">
+      <DependentUpon>RegistrationSettingCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationSetting\RegistrationSettingView.xaml.cs">
+      <DependentUpon>RegistrationSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ApprovalRuleCardReport\ApprovalRuleCardReport.g.cs" />
+    <Compile Include="Reports\ApprovalRulesConsolidatedReport\ApprovalRulesConsolidatedReport.g.cs" />
+    <Compile Include="Reports\ApprovalSheetReport\ApprovalSheetReport.g.cs" />
+    <Compile Include="Reports\BarcodePageReport\BarcodePageReport.g.cs" />
+    <Compile Include="Reports\DepartmentsAssignmentCompletionReport\DepartmentsAssignmentCompletionReport.g.cs" />
+    <Compile Include="Reports\DistributionSheetReport\DistributionSheetReport.g.cs" />
+    <Compile Include="Reports\DocumentUsageReport\DocumentUsageReport.g.cs" />
+    <Compile Include="Reports\EmployeeAssignmentsReport\EmployeeAssignmentsReport.g.cs" />
+    <Compile Include="Reports\EmployeesAssignmentCompletionReport\EmployeesAssignmentCompletionReport.g.cs" />
+    <Compile Include="Reports\EnvelopeC4Report\EnvelopeC4Report.g.cs" />
+    <Compile Include="Reports\EnvelopeC5Report\EnvelopeC5Report.g.cs" />
+    <Compile Include="Reports\EnvelopeC65Report\EnvelopeC65Report.g.cs" />
+    <Compile Include="Reports\EnvelopeE65Report\EnvelopeE65Report.g.cs" />
+    <Compile Include="Reports\ExchangeOrderReport\ExchangeOrderReport.g.cs" />
+    <Compile Include="Reports\ExchangeServiceDocumentReport\ExchangeServiceDocumentReport.g.cs" />
+    <Compile Include="Reports\MailRegisterReport\MailRegisterReport.g.cs" />
+    <Compile Include="Reports\RegistrationSettingReport\RegistrationSettingReport.g.cs" />
+    <Compile Include="Reports\SkippedNumbersReport\SkippedNumbersReport.g.cs" />
+    <Compile Include="RetentionPolicy%40DocumentKinds\RetentionPolicyDocumentKinds.g.cs" />
+    <Compile Include="RetentionPolicy\RetentionPolicy.g.cs" />
+    <Compile Include="RetentionPolicy\RetentionPolicyCollectionView.xaml.cs">
+      <DependentUpon>RetentionPolicyCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RetentionPolicy\RetentionPolicyView.xaml.cs">
+      <DependentUpon>RetentionPolicyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignatureSetting%40BusinessUnits\SignatureSettingBusinessUnits.g.cs" />
+    <Compile Include="SignatureSetting%40Categories\SignatureSettingCategories.g.cs" />
+    <Compile Include="SignatureSetting%40Departments\SignatureSettingDepartments.g.cs" />
+    <Compile Include="SignatureSetting%40DocumentKinds\SignatureSettingDocumentKinds.g.cs" />
+    <Compile Include="SignatureSetting\SignatureSetting.g.cs" />
+    <Compile Include="SignatureSetting\SignatureSettingCollectionView.xaml.cs">
+      <DependentUpon>SignatureSettingCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignatureSetting\SignatureSettingView.xaml.cs">
+      <DependentUpon>SignatureSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleDocument%40Tracking\SimpleDocumentTracking.g.cs" />
+    <Compile Include="SimpleDocument%40Versions\SimpleDocumentVersions.g.cs" />
+    <Compile Include="SimpleDocument\SimpleDocument.g.cs" />
+    <Compile Include="SimpleDocument\SimpleDocumentCollectionView.xaml.cs">
+      <DependentUpon>SimpleDocumentCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleDocument\SimpleDocumentView.xaml.cs">
+      <DependentUpon>SimpleDocumentView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SmartProcessingSetting%40AdditionalClassifiers\SmartProcessingSettingAdditionalClassifiers.g.cs" />
+    <Compile Include="SmartProcessingSetting%40CaptureSources\SmartProcessingSettingCaptureSources.g.cs" />
+    <Compile Include="SmartProcessingSetting%40ProcessingRules\SmartProcessingSettingProcessingRules.g.cs" />
+    <Compile Include="SmartProcessingSetting\SmartProcessingSetting.g.cs" />
+    <Compile Include="SmartProcessingSetting\SmartProcessingSettingCollectionView.xaml.cs">
+      <DependentUpon>SmartProcessingSettingCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SmartProcessingSetting\SmartProcessingSettingView.xaml.cs">
+      <DependentUpon>SmartProcessingSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StampSetting%40BusinessUnits\StampSettingBusinessUnits.g.cs" />
+    <Compile Include="StampSetting\StampSetting.g.cs" />
+    <Compile Include="StampSetting\StampSettingCollectionView.xaml.cs">
+      <DependentUpon>StampSettingCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StampSetting\StampSettingView.xaml.cs">
+      <DependentUpon>StampSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StoragePolicy%40DocumentKinds\StoragePolicyDocumentKinds.g.cs" />
+    <Compile Include="StoragePolicyBase%40DocumentKinds\StoragePolicyBaseDocumentKinds.g.cs" />
+    <Compile Include="StoragePolicyBase\StoragePolicyBase.g.cs" />
+    <Compile Include="StoragePolicyBase\StoragePolicyBaseCollectionView.xaml.cs">
+      <DependentUpon>StoragePolicyBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StoragePolicyBase\StoragePolicyBaseView.xaml.cs">
+      <DependentUpon>StoragePolicyBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StoragePolicy\StoragePolicy.g.cs" />
+    <Compile Include="StoragePolicy\StoragePolicyCollectionView.xaml.cs">
+      <DependentUpon>StoragePolicyCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StoragePolicy\StoragePolicyView.xaml.cs">
+      <DependentUpon>StoragePolicyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Topic\Topic.g.cs" />
+    <Compile Include="Topic\TopicCollectionView.xaml.cs">
+      <DependentUpon>TopicCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Topic\TopicView.xaml.cs">
+      <DependentUpon>TopicView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItemCollectionView.xaml" />
+    <Page Include="AccessRightsBulkQueueItem\AccessRightsBulkQueueItemView.xaml" />
+    <Page Include="AccessRightsRule\AccessRightsRuleCollectionView.xaml" />
+    <Page Include="AccessRightsRule\AccessRightsRuleView.xaml" />
+    <Page Include="AccountingDocumentBase\AccountingDocumentBaseCollectionView.xaml" />
+    <Page Include="AccountingDocumentBase\AccountingDocumentBaseView.xaml" />
+    <Page Include="Addendum\AddendumCollectionView.xaml" />
+    <Page Include="Addendum\AddendumView.xaml" />
+    <Page Include="ApprovalAssignment\ApprovalAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalAssignment\ApprovalAssignmentView.xaml" />
+    <Page Include="ApprovalCheckingAssignment\ApprovalCheckingAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalCheckingAssignment\ApprovalCheckingAssignmentView.xaml" />
+    <Page Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalCheckReturnAssignment\ApprovalCheckReturnAssignmentView.xaml" />
+    <Page Include="ApprovalConvertPdfStage\ApprovalConvertPdfStageCollectionView.xaml" />
+    <Page Include="ApprovalConvertPdfStage\ApprovalConvertPdfStageView.xaml" />
+    <Page Include="ApprovalExecutionAssignment\ApprovalExecutionAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalExecutionAssignment\ApprovalExecutionAssignmentView.xaml" />
+    <Page Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItemCollectionView.xaml" />
+    <Page Include="ApprovalFunctionQueueItem\ApprovalFunctionQueueItemView.xaml" />
+    <Page Include="ApprovalFunctionStageBase\ApprovalFunctionStageBaseCollectionView.xaml" />
+    <Page Include="ApprovalFunctionStageBase\ApprovalFunctionStageBaseView.xaml" />
+    <Page Include="ApprovalManagerAssignment\ApprovalManagerAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalManagerAssignment\ApprovalManagerAssignmentView.xaml" />
+    <Page Include="ApprovalNotification\ApprovalNotificationCollectionView.xaml" />
+    <Page Include="ApprovalNotification\ApprovalNotificationView.xaml" />
+    <Page Include="ApprovalPrintingAssignment\ApprovalPrintingAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalPrintingAssignment\ApprovalPrintingAssignmentView.xaml" />
+    <Page Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalRegistrationAssignment\ApprovalRegistrationAssignmentView.xaml" />
+    <Page Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStageCollectionView.xaml" />
+    <Page Include="ApprovalRegistrationFtsStage\ApprovalRegistrationFtsStageView.xaml" />
+    <Page Include="ApprovalReviewAssignment\ApprovalReviewAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalReviewAssignment\ApprovalReviewAssignmentView.xaml" />
+    <Page Include="ApprovalReviewTaskStage\ApprovalReviewTaskStageCollectionView.xaml" />
+    <Page Include="ApprovalReviewTaskStage\ApprovalReviewTaskStageView.xaml" />
+    <Page Include="ApprovalReworkAssignment\ApprovalReworkAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalReworkAssignment\ApprovalReworkAssignmentView.xaml" />
+    <Page Include="ApprovalRoleBase\ApprovalRoleBaseCollectionView.xaml" />
+    <Page Include="ApprovalRoleBase\ApprovalRoleBaseView.xaml" />
+    <Page Include="ApprovalRole\ApprovalRoleCollectionView.xaml" />
+    <Page Include="ApprovalRole\ApprovalRoleView.xaml" />
+    <Page Include="ApprovalRuleBase\ApprovalRuleBaseCollectionView.xaml" />
+    <Page Include="ApprovalRuleBase\ApprovalRuleBaseView.xaml" />
+    <Page Include="ApprovalRule\ApprovalRuleCollectionView.xaml" />
+    <Page Include="ApprovalRule\ApprovalRuleView.xaml" />
+    <Page Include="ApprovalSendingAssignment\ApprovalSendingAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalSendingAssignment\ApprovalSendingAssignmentView.xaml" />
+    <Page Include="ApprovalSigningAssignment\ApprovalSigningAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalSigningAssignment\ApprovalSigningAssignmentView.xaml" />
+    <Page Include="ApprovalSimpleAssignment\ApprovalSimpleAssignmentCollectionView.xaml" />
+    <Page Include="ApprovalSimpleAssignment\ApprovalSimpleAssignmentView.xaml" />
+    <Page Include="ApprovalSimpleNotification\ApprovalSimpleNotificationCollectionView.xaml" />
+    <Page Include="ApprovalSimpleNotification\ApprovalSimpleNotificationView.xaml" />
+    <Page Include="ApprovalStageBase\ApprovalStageBaseCollectionView.xaml" />
+    <Page Include="ApprovalStageBase\ApprovalStageBaseView.xaml" />
+    <Page Include="ApprovalStage\ApprovalStageCollectionView.xaml" />
+    <Page Include="ApprovalStage\ApprovalStageView.xaml" />
+    <Page Include="ApprovalTask\ApprovalTaskCollectionView.xaml" />
+    <Page Include="ApprovalTask\ApprovalTaskView.xaml" />
+    <Page Include="CaseFile\CaseFileCollectionView.xaml" />
+    <Page Include="CaseFile\CaseFileView.xaml" />
+    <Page Include="CheckReturnAssignment\CheckReturnAssignmentCollectionView.xaml" />
+    <Page Include="CheckReturnAssignment\CheckReturnAssignmentView.xaml" />
+    <Page Include="CheckReturnCheckAssignment\CheckReturnCheckAssignmentCollectionView.xaml" />
+    <Page Include="CheckReturnCheckAssignment\CheckReturnCheckAssignmentView.xaml" />
+    <Page Include="CheckReturnTask\CheckReturnTaskCollectionView.xaml" />
+    <Page Include="CheckReturnTask\CheckReturnTaskView.xaml" />
+    <Page Include="ConditionBase\ConditionBaseCollectionView.xaml" />
+    <Page Include="ConditionBase\ConditionBaseView.xaml" />
+    <Page Include="Condition\ConditionCollectionView.xaml" />
+    <Page Include="Condition\ConditionView.xaml" />
+    <Page Include="ContractualDocumentBase\ContractualDocumentBaseCollectionView.xaml" />
+    <Page Include="ContractualDocumentBase\ContractualDocumentBaseView.xaml" />
+    <Page Include="CounterpartyDocument\CounterpartyDocumentCollectionView.xaml" />
+    <Page Include="CounterpartyDocument\CounterpartyDocumentView.xaml" />
+    <Page Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentCollectionView.xaml" />
+    <Page Include="DeadlineExtensionAssignment\DeadlineExtensionAssignmentView.xaml" />
+    <Page Include="DeadlineExtensionNotification\DeadlineExtensionNotificationCollectionView.xaml" />
+    <Page Include="DeadlineExtensionNotification\DeadlineExtensionNotificationView.xaml" />
+    <Page Include="DeadlineExtensionTask\DeadlineExtensionTaskCollectionView.xaml" />
+    <Page Include="DeadlineExtensionTask\DeadlineExtensionTaskView.xaml" />
+    <Page Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentCollectionView.xaml" />
+    <Page Include="DeadlineRejectionAssignment\DeadlineRejectionAssignmentView.xaml" />
+    <Page Include="DistributionList\DistributionListCollectionView.xaml" />
+    <Page Include="DistributionList\DistributionListView.xaml" />
+    <Page Include="DocumentComparisonInfo\DocumentComparisonInfoCollectionView.xaml" />
+    <Page Include="DocumentComparisonInfo\DocumentComparisonInfoView.xaml" />
+    <Page Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItemCollectionView.xaml" />
+    <Page Include="DocumentFullTextSearchQueueItem\DocumentFullTextSearchQueueItemView.xaml" />
+    <Page Include="DocumentGroupBase\DocumentGroupBaseCollectionView.xaml" />
+    <Page Include="DocumentGroupBase\DocumentGroupBaseView.xaml" />
+    <Page Include="DocumentKind\DocumentKindCollectionView.xaml" />
+    <Page Include="DocumentKind\DocumentKindView.xaml" />
+    <Page Include="DocumentRegister\DocumentRegisterCollectionView.xaml" />
+    <Page Include="DocumentRegister\DocumentRegisterView.xaml" />
+    <Page Include="DocumentSendAction\DocumentSendActionCollectionView.xaml" />
+    <Page Include="DocumentSendAction\DocumentSendActionView.xaml" />
+    <Page Include="DocumentTemplate\DocumentTemplateCollectionView.xaml" />
+    <Page Include="DocumentTemplate\DocumentTemplateView.xaml" />
+    <Page Include="DocumentType\DocumentTypeCollectionView.xaml" />
+    <Page Include="DocumentType\DocumentTypeView.xaml" />
+    <Page Include="ExchangeDocument\ExchangeDocumentCollectionView.xaml" />
+    <Page Include="ExchangeDocument\ExchangeDocumentView.xaml" />
+    <Page Include="FileRetentionPeriod\FileRetentionPeriodCollectionView.xaml" />
+    <Page Include="FileRetentionPeriod\FileRetentionPeriodView.xaml" />
+    <Page Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorneyCollectionView.xaml" />
+    <Page Include="FormalizedPowerOfAttorney\FormalizedPowerOfAttorneyView.xaml" />
+    <Page Include="FreeApprovalAssignment\FreeApprovalAssignmentCollectionView.xaml" />
+    <Page Include="FreeApprovalAssignment\FreeApprovalAssignmentView.xaml" />
+    <Page Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignmentCollectionView.xaml" />
+    <Page Include="FreeApprovalFinishAssignment\FreeApprovalFinishAssignmentView.xaml" />
+    <Page Include="FreeApprovalNotification\FreeApprovalNotificationCollectionView.xaml" />
+    <Page Include="FreeApprovalNotification\FreeApprovalNotificationView.xaml" />
+    <Page Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignmentCollectionView.xaml" />
+    <Page Include="FreeApprovalReworkAssignment\FreeApprovalReworkAssignmentView.xaml" />
+    <Page Include="FreeApprovalTask\FreeApprovalTaskCollectionView.xaml" />
+    <Page Include="FreeApprovalTask\FreeApprovalTaskView.xaml" />
+    <Page Include="IncomingDocumentBase\IncomingDocumentBaseCollectionView.xaml" />
+    <Page Include="IncomingDocumentBase\IncomingDocumentBaseView.xaml" />
+    <Page Include="InternalDocumentBase\InternalDocumentBaseCollectionView.xaml" />
+    <Page Include="InternalDocumentBase\InternalDocumentBaseView.xaml" />
+    <Page Include="MailDeliveryMethod\MailDeliveryMethodCollectionView.xaml" />
+    <Page Include="MailDeliveryMethod\MailDeliveryMethodView.xaml" />
+    <Page Include="Memo\MemoCollectionView.xaml" />
+    <Page Include="Memo\MemoView.xaml" />
+    <Page Include="MinutesBase\MinutesBaseCollectionView.xaml" />
+    <Page Include="MinutesBase\MinutesBaseView.xaml" />
+    <Page Include="ModuleDataTemplates.xaml" />
+    <Page Include="OfficialDocument\OfficialDocumentCollectionView.xaml" />
+    <Page Include="OfficialDocument\OfficialDocumentView.xaml" />
+    <Page Include="OutgoingDocumentBase\OutgoingDocumentBaseCollectionView.xaml" />
+    <Page Include="OutgoingDocumentBase\OutgoingDocumentBaseView.xaml" />
+    <Page Include="PersonalSetting\PersonalSettingCollectionView.xaml" />
+    <Page Include="PersonalSetting\PersonalSettingView.xaml" />
+    <Page Include="PowerOfAttorneyBase\PowerOfAttorneyBaseCollectionView.xaml" />
+    <Page Include="PowerOfAttorneyBase\PowerOfAttorneyBaseView.xaml" />
+    <Page Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItemCollectionView.xaml" />
+    <Page Include="PowerOfAttorneyQueueItem\PowerOfAttorneyQueueItemView.xaml" />
+    <Page Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocationCollectionView.xaml" />
+    <Page Include="PowerOfAttorneyRevocation\PowerOfAttorneyRevocationView.xaml" />
+    <Page Include="PowerOfAttorney\PowerOfAttorneyCollectionView.xaml" />
+    <Page Include="PowerOfAttorney\PowerOfAttorneyView.xaml" />
+    <Page Include="ProjectBase\ProjectBaseCollectionView.xaml" />
+    <Page Include="ProjectBase\ProjectBaseView.xaml" />
+    <Page Include="RegistrationGroup\RegistrationGroupCollectionView.xaml" />
+    <Page Include="RegistrationGroup\RegistrationGroupView.xaml" />
+    <Page Include="RegistrationSetting\RegistrationSettingCollectionView.xaml" />
+    <Page Include="RegistrationSetting\RegistrationSettingView.xaml" />
+    <Page Include="RetentionPolicy\RetentionPolicyCollectionView.xaml" />
+    <Page Include="RetentionPolicy\RetentionPolicyView.xaml" />
+    <Page Include="SignatureSetting\SignatureSettingCollectionView.xaml" />
+    <Page Include="SignatureSetting\SignatureSettingView.xaml" />
+    <Page Include="SimpleDocument\SimpleDocumentCollectionView.xaml" />
+    <Page Include="SimpleDocument\SimpleDocumentView.xaml" />
+    <Page Include="SmartProcessingSetting\SmartProcessingSettingCollectionView.xaml" />
+    <Page Include="SmartProcessingSetting\SmartProcessingSettingView.xaml" />
+    <Page Include="StampSetting\StampSettingCollectionView.xaml" />
+    <Page Include="StampSetting\StampSettingView.xaml" />
+    <Page Include="StoragePolicyBase\StoragePolicyBaseCollectionView.xaml" />
+    <Page Include="StoragePolicyBase\StoragePolicyBaseView.xaml" />
+    <Page Include="StoragePolicy\StoragePolicyCollectionView.xaml" />
+    <Page Include="StoragePolicy\StoragePolicyView.xaml" />
+    <Page Include="Topic\TopicCollectionView.xaml" />
+    <Page Include="Topic\TopicView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationUI" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Presentation">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommonLibrary.Controls">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GongSolutions.Wpf.DragDrop">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\GongSolutions.Wpf.DragDrop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Client">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Client">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.ArioExtensions">
+      <HintPath>..\Sungero.Docflow.Libraries\ArioExtensions\Sungero.ArioExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Client">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Client">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Client">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Company\Sungero.Company.ClientBase\Sungero.Company.ClientBase.csproj">
+      <Project>{39d743bb-a69f-1df6-1611-bae0b605b22d}</Project>
+      <Name>Sungero.Company.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.DirectumRX\Sungero.DirectumRX.ClientBase\Sungero.DirectumRX.ClientBase.csproj">
+      <Project>{d53ca45d-7343-e40a-a6c2-90a5f7c85244}</Project>
+      <Name>Sungero.DirectumRX.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Projects\Sungero.Projects.ClientBase\Sungero.Projects.ClientBase.csproj">
+      <Project>{189f3bd9-a58f-11b5-3b8a-f57d5cd8d540}</Project>
+      <Name>Sungero.Projects.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Commons\Sungero.Commons.ClientBase\Sungero.Commons.ClientBase.csproj">
+      <Project>{9bf82d81-01c3-cf3a-a65d-f6aebeccb848}</Project>
+      <Name>Sungero.Commons.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Parties\Sungero.Parties.ClientBase\Sungero.Parties.ClientBase.csproj">
+      <Project>{20ce99b8-f3ec-a3fc-3014-f9a2fb33c6ca}</Project>
+      <Name>Sungero.Parties.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.PowerOfAttorneyCore\Sungero.PowerOfAttorneyCore.ClientBase\Sungero.PowerOfAttorneyCore.ClientBase.csproj">
+      <Project>{d47f3ab9-ae86-56e4-f641-7e17fa92057e}</Project>
+      <Name>Sungero.PowerOfAttorneyCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Client\Sungero.ExchangeCore.Client.csproj">
+      <Project>{bf30ce18-b987-454f-8d17-c02d6d081bf4}</Project>
+      <Name>Sungero.ExchangeCore.Client</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

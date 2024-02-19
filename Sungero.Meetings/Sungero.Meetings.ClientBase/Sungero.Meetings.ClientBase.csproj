@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{d2d1c7e4-b02d-fc31-3b6a-304bda43ecd3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Meetings.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.Meetings.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Agenda%40Tracking\AgendaTracking.g.cs" />
+    <Compile Include="Agenda%40Versions\AgendaVersions.g.cs" />
+    <Compile Include="Agenda\Agenda.g.cs" />
+    <Compile Include="Agenda\AgendaActions.cs" />
+    <Compile Include="Agenda\AgendaClientFunctions.cs" />
+    <Compile Include="Agenda\AgendaHandlers.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Meeting%40Members\MeetingMembers.g.cs" />
+    <Compile Include="Meeting\Meeting.g.cs" />
+    <Compile Include="Meeting\MeetingActions.cs" />
+    <Compile Include="Meeting\MeetingClientFunctions.cs" />
+    <Compile Include="Meeting\MeetingHandlers.cs" />
+    <Compile Include="Minutes%40Tracking\MinutesTracking.g.cs" />
+    <Compile Include="Minutes%40Versions\MinutesVersions.g.cs" />
+    <Compile Include="Minutes\Minutes.g.cs" />
+    <Compile Include="Minutes\MinutesActions.cs" />
+    <Compile Include="Minutes\MinutesClientFunctions.cs" />
+    <Compile Include="Minutes\MinutesHandlers.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.Shared\Sungero.Docflow.Shared.csproj">
+      <Project>{f3fc6dad-369c-2736-1200-c9e107f1d0b4}</Project>
+      <Name>Sungero.Docflow.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.Shared\Sungero.ExchangeCore.Shared.csproj">
+      <Project>{02b9b526-7200-af51-5141-610a0c6241a7}</Project>
+      <Name>Sungero.ExchangeCore.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Meetings.Shared\Sungero.Meetings.Shared.csproj">
+      <Project>{93c0f95b-512f-d5c3-c17d-c3dfef959151}</Project>
+      <Name>Sungero.Meetings.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Agenda\Icons\Agenda.ico" />
+    <Resource Include="Agenda\Icons\Agenda.svg" />
+    <Resource Include="Agenda\Icons\Agenda_large.svg" />
+    <Resource Include="Meeting\Icons\Action_AddMember_large_638059fdba2a4146bcaa31bdc86d4ae8.png" />
+    <Resource Include="Meeting\Icons\Action_AddMember_large_638059fdba2a4146bcaa31bdc86d4ae8.svg" />
+    <Resource Include="Meeting\Icons\Action_AddMember_small_638059fdba2a4146bcaa31bdc86d4ae8.png" />
+    <Resource Include="Meeting\Icons\Action_AddMember_small_638059fdba2a4146bcaa31bdc86d4ae8.svg" />
+    <Resource Include="Meeting\Icons\Action_AddToCalendar_large_17fa713cb0f8490f9a548fa3b33841f3.png" />
+    <Resource Include="Meeting\Icons\Action_AddToCalendar_small_17fa713cb0f8490f9a548fa3b33841f3.png" />
+    <Resource Include="Meeting\Icons\Action_AddToCalendar_small_17fa713cb0f8490f9a548fa3b33841f3.svg" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowAgenda_large_a4f5d0ecae96460cbeafb49507c9cb3c.png" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowAgenda_large_a4f5d0ecae96460cbeafb49507c9cb3c.svg" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowAgenda_small_a4f5d0ecae96460cbeafb49507c9cb3c.png" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowAgenda_small_a4f5d0ecae96460cbeafb49507c9cb3c.svg" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowMinutes_large_38e183fa286b4e8bad624aa7cdc7ac9a.png" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowMinutes_large_38e183fa286b4e8bad624aa7cdc7ac9a.svg" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowMinutes_small_38e183fa286b4e8bad624aa7cdc7ac9a.png" />
+    <Resource Include="Meeting\Icons\Action_CreateOrShowMinutes_small_38e183fa286b4e8bad624aa7cdc7ac9a.svg" />
+    <Resource Include="Meeting\Icons\Action_MeetingDocuments_large_784451088cb64e87adf496c5d27c94e9.png" />
+    <Resource Include="Meeting\Icons\Action_MeetingDocuments_large_784451088cb64e87adf496c5d27c94e9.svg" />
+    <Resource Include="Meeting\Icons\Action_MeetingDocuments_small_784451088cb64e87adf496c5d27c94e9.png" />
+    <Resource Include="Meeting\Icons\Action_MeetingDocuments_small_784451088cb64e87adf496c5d27c94e9.svg" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItemExecutionReport_large_2aeeb07c2f6d4d328c5174f3c9f6e821.png" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItemExecutionReport_large_2aeeb07c2f6d4d328c5174f3c9f6e821.svg" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItemExecutionReport_small_2aeeb07c2f6d4d328c5174f3c9f6e821.png" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItemExecutionReport_small_2aeeb07c2f6d4d328c5174f3c9f6e821.svg" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItems_large_4336e9ab0f154dee9537e856b29eda00.png" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItems_large_4336e9ab0f154dee9537e856b29eda00.svg" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItems_small_4336e9ab0f154dee9537e856b29eda00.png" />
+    <Resource Include="Meeting\Icons\Action_OpenActionItems_small_4336e9ab0f154dee9537e856b29eda00.svg" />
+    <Resource Include="Meeting\Icons\Meeting.ico" />
+    <Resource Include="Meeting\Icons\Meeting.svg" />
+    <Resource Include="Meeting\Icons\Meeting_large.svg" />
+    <Resource Include="Meeting\Icons\Ribbon_Documents_a3c250b804f84b87bdb7d91f0218310b.png" />
+    <Resource Include="Meeting\Icons\Ribbon_Documents_a3c250b804f84b87bdb7d91f0218310b.svg" />
+    <Resource Include="Meeting\Icons\Ribbon_Documents_small_a3c250b804f84b87bdb7d91f0218310b.png" />
+    <Resource Include="Meeting\Icons\Ribbon_Documents_small_a3c250b804f84b87bdb7d91f0218310b.svg" />
+    <Resource Include="Minutes\Icons\Action_CreateActionItems_large_b086c44f9c3e499cb018811e1c67d4fa.png" />
+    <Resource Include="Minutes\Icons\Action_CreateActionItems_large_b086c44f9c3e499cb018811e1c67d4fa.svg" />
+    <Resource Include="Minutes\Icons\Action_CreateActionItems_small_b086c44f9c3e499cb018811e1c67d4fa.png" />
+    <Resource Include="Minutes\Icons\Action_CreateActionItems_small_b086c44f9c3e499cb018811e1c67d4fa.svg" />
+    <Resource Include="Minutes\Icons\Ribbon_ActionItems_94f9e30d0918477a92bf9cc73bd67252.png" />
+    <Resource Include="Minutes\Icons\Ribbon_ActionItems_94f9e30d0918477a92bf9cc73bd67252.svg" />
+    <Resource Include="Minutes\Icons\Ribbon_ActionItems_small_94f9e30d0918477a92bf9cc73bd67252.png" />
+    <Resource Include="Minutes\Icons\Ribbon_ActionItems_small_94f9e30d0918477a92bf9cc73bd67252.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agenda\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Meeting\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Meeting\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Meeting\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="Minutes\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="Minutes\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="Minutes\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

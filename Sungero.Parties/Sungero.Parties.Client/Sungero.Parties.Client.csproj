@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{b5b9c823-b86e-9e7e-1e0f-5c2aeafe72a5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.Parties.Client</RootNamespace>
+    <AssemblyName>Sungero.Parties.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Bank%40ExchangeBoxes\BankExchangeBoxes.g.cs" />
+    <Compile Include="Bank\Bank.g.cs" />
+    <Compile Include="Bank\BankCollectionView.xaml.cs">
+      <DependentUpon>BankCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\BankView.xaml.cs">
+      <DependentUpon>BankView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Company%40ExchangeBoxes\CompanyExchangeBoxes.g.cs" />
+    <Compile Include="CompanyBase%40ExchangeBoxes\CompanyBaseExchangeBoxes.g.cs" />
+    <Compile Include="CompanyBase\CompanyBase.g.cs" />
+    <Compile Include="CompanyBase\CompanyBaseCollectionView.xaml.cs">
+      <DependentUpon>CompanyBaseCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyBase\CompanyBaseView.xaml.cs">
+      <DependentUpon>CompanyBaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Company.g.cs" />
+    <Compile Include="Company\CompanyCollectionView.xaml.cs">
+      <DependentUpon>CompanyCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyView.xaml.cs">
+      <DependentUpon>CompanyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\Contact.g.cs" />
+    <Compile Include="Contact\ContactCollectionView.xaml.cs">
+      <DependentUpon>ContactCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\ContactView.xaml.cs">
+      <DependentUpon>ContactView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Counterparty%40ExchangeBoxes\CounterpartyExchangeBoxes.g.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKind.g.cs" />
+    <Compile Include="CounterpartyKind\CounterpartyKindCollectionView.xaml.cs">
+      <DependentUpon>CounterpartyKindCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CounterpartyKind\CounterpartyKindView.xaml.cs">
+      <DependentUpon>CounterpartyKindView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Counterparty\Counterparty.g.cs" />
+    <Compile Include="Counterparty\CounterpartyCollectionView.xaml.cs">
+      <DependentUpon>CounterpartyCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Counterparty\CounterpartyView.xaml.cs">
+      <DependentUpon>CounterpartyView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsite.g.cs" />
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteCollectionView.xaml.cs">
+      <DependentUpon>DueDiligenceWebsiteCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DueDiligenceWebsite\DueDiligenceWebsiteView.xaml.cs">
+      <DependentUpon>DueDiligenceWebsiteView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKind.g.cs" />
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindCollectionView.xaml.cs">
+      <DependentUpon>IdentityDocumentKindCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityDocumentKind\IdentityDocumentKindView.xaml.cs">
+      <DependentUpon>IdentityDocumentKindView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Module.g.cs" />
+    <Compile Include="Person%40ExchangeBoxes\PersonExchangeBoxes.g.cs" />
+    <Compile Include="Person\Person.g.cs" />
+    <Compile Include="Person\PersonCollectionView.xaml.cs">
+      <DependentUpon>PersonCollectionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Person\PersonView.xaml.cs">
+      <DependentUpon>PersonView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Bank\BankCollectionView.xaml" />
+    <Page Include="Bank\BankView.xaml" />
+    <Page Include="CompanyBase\CompanyBaseCollectionView.xaml" />
+    <Page Include="CompanyBase\CompanyBaseView.xaml" />
+    <Page Include="Company\CompanyCollectionView.xaml" />
+    <Page Include="Company\CompanyView.xaml" />
+    <Page Include="Contact\ContactCollectionView.xaml" />
+    <Page Include="Contact\ContactView.xaml" />
+    <Page Include="CounterpartyKind\CounterpartyKindCollectionView.xaml" />
+    <Page Include="CounterpartyKind\CounterpartyKindView.xaml" />
+    <Page Include="Counterparty\CounterpartyCollectionView.xaml" />
+    <Page Include="Counterparty\CounterpartyView.xaml" />
+    <Page Include="DueDiligenceWebsite\DueDiligenceWebsiteCollectionView.xaml" />
+    <Page Include="DueDiligenceWebsite\DueDiligenceWebsiteView.xaml" />
+    <Page Include="IdentityDocumentKind\IdentityDocumentKindCollectionView.xaml" />
+    <Page Include="IdentityDocumentKind\IdentityDocumentKindView.xaml" />
+    <Page Include="ModuleDataTemplates.xaml" />
+    <Page Include="Person\PersonCollectionView.xaml" />
+    <Page Include="Person\PersonView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationUI" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Presentation">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CommonLibrary.Controls">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GongSolutions.Wpf.DragDrop">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\GongSolutions.Wpf.DragDrop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Client">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Client">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Client">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Client">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Client">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\..\Sungero.Commons\Sungero.Commons.ClientBase\Sungero.Commons.ClientBase.csproj">
+      <Project>{9bf82d81-01c3-cf3a-a65d-f6aebeccb848}</Project>
+      <Name>Sungero.Commons.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.DirectumRX\Sungero.DirectumRX.ClientBase\Sungero.DirectumRX.ClientBase.csproj">
+      <Project>{d53ca45d-7343-e40a-a6c2-90a5f7c85244}</Project>
+      <Name>Sungero.DirectumRX.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.ExchangeCore\Sungero.ExchangeCore.ClientBase\Sungero.ExchangeCore.ClientBase.csproj">
+      <Project>{1cd518df-3fd7-eb8e-fa0d-8af40f54bd57}</Project>
+      <Name>Sungero.ExchangeCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Company\Sungero.Company.ClientBase\Sungero.Company.ClientBase.csproj">
+      <Project>{39d743bb-a69f-1df6-1611-bae0b605b22d}</Project>
+      <Name>Sungero.Company.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Docflow\Sungero.Docflow.ClientBase\Sungero.Docflow.ClientBase.csproj">
+      <Project>{08345ec2-c0ce-3841-3af5-dec25462d98a}</Project>
+      <Name>Sungero.Docflow.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.PowerOfAttorneyCore\Sungero.PowerOfAttorneyCore.ClientBase\Sungero.PowerOfAttorneyCore.ClientBase.csproj">
+      <Project>{d47f3ab9-ae86-56e4-f641-7e17fa92057e}</Project>
+      <Name>Sungero.PowerOfAttorneyCore.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Sungero.Projects\Sungero.Projects.ClientBase\Sungero.Projects.ClientBase.csproj">
+      <Project>{189f3bd9-a58f-11b5-3b8a-f57d5cd8d540}</Project>
+      <Name>Sungero.Projects.ClientBase</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Parties.Shared\Sungero.Parties.Shared.csproj">
+      <Project>{913448dc-cfc4-386d-5c5a-bf9119e4dfc8}</Project>
+      <Name>Sungero.Parties.Shared</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.Parties.ClientBase\Sungero.Parties.ClientBase.csproj">
+      <Project>{20ce99b8-f3ec-a3fc-3014-f9a2fb33c6ca}</Project>
+      <Name>Sungero.Parties.ClientBase</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

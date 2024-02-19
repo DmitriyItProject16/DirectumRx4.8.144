@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{d47f3ab9-ae86-56e4-f641-7e17fa92057e}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sungero.PowerOfAttorneyCore.ClientBase</RootNamespace>
+    <AssemblyName>Sungero.PowerOfAttorneyCore.ClientBase</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Module.g.cs" />
+    <Compile Include="ModuleClientFunctions.cs" />
+    <Compile Include="ModuleHandlers.cs" />
+    <Compile Include="ModuleWidgetHandlers.cs" />
+    <Compile Include="PowerOfAttorneyServiceApp\PowerOfAttorneyServiceApp.g.cs" />
+    <Compile Include="PowerOfAttorneyServiceApp\PowerOfAttorneyServiceAppActions.cs" />
+    <Compile Include="PowerOfAttorneyServiceApp\PowerOfAttorneyServiceAppClientFunctions.cs" />
+    <Compile Include="PowerOfAttorneyServiceApp\PowerOfAttorneyServiceAppHandlers.cs" />
+    <Compile Include="PowerOfAttorneyServiceConnection\PowerOfAttorneyServiceConnection.g.cs" />
+    <Compile Include="PowerOfAttorneyServiceConnection\PowerOfAttorneyServiceConnectionActions.cs" />
+    <Compile Include="PowerOfAttorneyServiceConnection\PowerOfAttorneyServiceConnectionClientFunctions.cs" />
+    <Compile Include="PowerOfAttorneyServiceConnection\PowerOfAttorneyServiceConnectionHandlers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="CommonLibrary">
+      <HintPath>..\..\..\.sds\Libraries\Common\CommonLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Declension">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Declension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Dialogs">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Dialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Localization">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Localization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Exceptions">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Exceptions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reflection">
+      <HintPath>..\..\..\.sds\Libraries\Common\Sungero.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version = 4.0.3.0, Culture = neutral, PublicKeyToken = cc7b13ffcd2ddd51">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Metadata">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\Unity.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.Shared">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Domain.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Kernel\Sungero.Domain.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.CoreEntities.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\CoreEntities\Sungero.CoreEntities.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\..\.sds\Libraries\3dParty\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Polly.Contrib.WaitAndRetry">
+      <HintPath>..\Sungero.PowerOfAttorneyCore.Libraries\PowerOfAttorneyServiceExtensions\Polly.Contrib.WaitAndRetry.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Polly">
+      <HintPath>..\Sungero.PowerOfAttorneyCore.Libraries\PowerOfAttorneyServiceExtensions\Polly.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PowerOfAttorneyServiceExtensions">
+      <HintPath>..\Sungero.PowerOfAttorneyCore.Libraries\PowerOfAttorneyServiceExtensions\PowerOfAttorneyServiceExtensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Interfaces">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Reporting.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Report\Sungero.Reporting.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.ClientBase">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.ClientBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Content.Shared">
+      <HintPath>..\..\..\.sds\Libraries\SungeroLibrary\Sungero.Content.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sungero.Workflow.Shared">
+      <HintPath>..\..\..\.sds\Libraries\Workflow\Sungero.Workflow.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\.sds\Sungero.Domain.Interfaces\Sungero.Domain.Interfaces.csproj">
+      <Project>{75c348f3-8b41-4177-967f-758d41a03eb6}</Project>
+      <Name>Sungero.Domain.Interfaces</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sungero.PowerOfAttorneyCore.Shared\Sungero.PowerOfAttorneyCore.Shared.csproj">
+      <Project>{e505e0b8-2a62-e74b-f203-cfa55f2f9bbd}</Project>
+      <Name>Sungero.PowerOfAttorneyCore.Shared</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PowerOfAttorneyServiceApp\Icons\Action_APIKey_large_a33c66d9adc443c8880160dfc94e2246.png" />
+    <Resource Include="PowerOfAttorneyServiceApp\Icons\Action_APIKey_large_a33c66d9adc443c8880160dfc94e2246.svg" />
+    <Resource Include="PowerOfAttorneyServiceApp\Icons\Action_APIKey_small_a33c66d9adc443c8880160dfc94e2246.png" />
+    <Resource Include="PowerOfAttorneyServiceApp\Icons\Action_APIKey_small_a33c66d9adc443c8880160dfc94e2246.svg" />
+    <Resource Include="PowerOfAttorneyServiceConnection\Icons\Action_CheckConnection_large_bf8dc15edc5a48f4a7c875e18dd0ae03.png" />
+    <Resource Include="PowerOfAttorneyServiceConnection\Icons\Action_CheckConnection_large_bf8dc15edc5a48f4a7c875e18dd0ae03.svg" />
+    <Resource Include="PowerOfAttorneyServiceConnection\Icons\Action_CheckConnection_small_bf8dc15edc5a48f4a7c875e18dd0ae03.png" />
+    <Resource Include="PowerOfAttorneyServiceConnection\Icons\Action_CheckConnection_small_bf8dc15edc5a48f4a7c875e18dd0ae03.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PowerOfAttorneyServiceApp\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyServiceApp\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyServiceApp\Generated\DefaultFolderView.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyServiceConnection\Generated\DefaultCardView.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyServiceConnection\Generated\DefaultCollectionView.xml" />
+    <EmbeddedResource Include="PowerOfAttorneyServiceConnection\Generated\DefaultFolderView.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
